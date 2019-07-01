@@ -14,18 +14,18 @@ class LoginController extends Controller
     |
     | This controller handles authenticating users for the application and
     | redirecting them to your home screen. The controller uses a trait
-    | to conveniently provide this functionality to your appliations.
+    | to conveniently provide its functionality to your applications.
     |
     */
 
     use AuthenticatesUsers;
 
     /**
-     * Where to redirect users after login / registration.
+     * Where to redirect users after login.
      *
      * @var string
      */
-    protected $redirectTo = 'dashboard';
+    protected $redirectTo = '/home';
 
     /**
      * Create a new controller instance.
@@ -34,19 +34,6 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest', ['except' => 'logout']);
-    }
-
-    /**
-     * Check user's role and redirect user based on their role
-     * @return
-     */
-    public function authenticated()
-    {
-        if (auth()->user()->hasRole('admin')) {
-            return redirect('/admin/dashboard');
-        }
-
-        return redirect('dashboard');
+        $this->middleware('guest')->except('logout');
     }
 }
