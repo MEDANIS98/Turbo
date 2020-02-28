@@ -13,4 +13,8 @@
 
 Route::view('/', 'index');
 Route::view('/about', 'about');
-
+Route::view('/login', 'login');
+Route::view('/wishlist', 'wishlist');
+Route::view('/cart', 'cart');
+Route::view('/contact', 'contact');
+Route::view('/track', 'track');

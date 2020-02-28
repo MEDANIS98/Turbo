@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<!-- Mirrored from red-parts.html.themeforest.scompiler.ru/themes/blue-ltr/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Feb 2020 19:33:55 GMT -->
+
 
 <head>
     <meta charset="UTF-8">
@@ -2683,6 +2683,6 @@
     <script src="js/number.js"></script>
     <script src="js/main.js"></script>
 </body>
-<!-- Mirrored from red-parts.html.themeforest.scompiler.ru/themes/blue-ltr/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Feb 2020 19:34:07 GMT -->
+
 
 </html>
