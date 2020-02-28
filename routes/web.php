@@ -18,3 +18,6 @@ Route::view('/wishlist', 'wishlist');
 Route::view('/cart', 'cart');
 Route::view('/contact', 'contact');
 Route::view('/track', 'track');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
