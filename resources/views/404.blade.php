@@ -1673,20 +1673,20 @@
                                     <div class="footer-newsletter__social-links social-links">
                                         <ul class="social-links__list">
                                             <li class="social-links__item social-links__item--facebook"><a
-                                                    href="https://themeforest.net/user/kos9" target="_blank"><i
-                                                        class="fab fa-facebook-f"></i></a></li>
+                                                    href="https://themeforest.net/user/kos9" target="_blank"
+                                                    rel="noopener"><i class="fab fa-facebook-f"></i></a></li>
                                             <li class="social-links__item social-links__item--twitter"><a
-                                                    href="https://themeforest.net/user/kos9" target="_blank"><i
-                                                        class="fab fa-twitter"></i></a></li>
+                                                    href="https://themeforest.net/user/kos9" target="_blank"
+                                                    rel="noopener"><i class="fab fa-twitter"></i></a></li>
                                             <li class="social-links__item social-links__item--youtube"><a
-                                                    href="https://themeforest.net/user/kos9" target="_blank"><i
-                                                        class="fab fa-youtube"></i></a></li>
+                                                    href="https://themeforest.net/user/kos9" target="_blank"
+                                                    rel="noopener"><i class="fab fa-youtube"></i></a></li>
                                             <li class="social-links__item social-links__item--instagram"><a
-                                                    href="https://themeforest.net/user/kos9" target="_blank"><i
-                                                        class="fab fa-instagram"></i></a></li>
+                                                    href="https://themeforest.net/user/kos9" target="_blank"
+                                                    rel="noopener"><i class="fab fa-instagram"></i></a></li>
                                             <li class="social-links__item social-links__item--rss"><a
-                                                    href="https://themeforest.net/user/kos9" target="_blank"><i
-                                                        class="fas fa-rss"></i></a></li>
+                                                    href="https://themeforest.net/user/kos9" target="_blank"
+                                                    rel="noopener"><i class="fas fa-rss"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1699,7 +1699,7 @@
                         <div class="site-footer__bottom-row">
                             <div class="site-footer__copyright">
                                 <!-- copyright --> Powered by HTML — Designed by <a
-                                    href="https://themeforest.net/user/kos9" target="_blank">Kos</a>
+                                    href="https://themeforest.net/user/kos9" target="_blank" rel="noopener">Kos</a>
                                 <!-- copyright / end -->
                             </div>
                             <div class="site-footer__payments"><img src="images/payments.png" alt=""></div>
@@ -2311,7 +2311,8 @@
                         </li>
                         <li data-mobile-menu-item><a
                                 href="https://themeforest.net/item/redparts-auto-parts-html-template/24735474"
-                                class="highlight" target="_blank" data-mobile-menu-trigger>Buy Theme</a></li>
+                                class="highlight" target="_blank" rel="noopener" data-mobile-menu-trigger>Buy Theme</a>
+                        </li>
                     </ul>
                     <div class="mobile-menu__spring"></div>
                     <div class="mobile-menu__divider"></div><a class="mobile-menu__contacts" href="#">

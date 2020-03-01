@@ -34,7 +34,7 @@
 					<div class="mobile-header__body"><button class="mobile-header__menu-button" type="button"><svg width="18px"
 								height="14px">
 								<path d="M-0,8L-0,6L18,6L18,8L-0,8ZM-0,-0L18,-0L18,2L-0,2L-0,-0ZM14,14L-0,14L-0,12L14,12L14,14Z" />
-								</svg></button> <a class="mobile-header__logo" href="#">
+							</svg></button> <a class="mobile-header__logo" href="#">
 							<!-- mobile-logo --> <svg width="130" height="20">
 								<path class="mobile-header__logo-part-one" d="M40,19.9c-0.3,0-0.7,0.1-1,0.1h-4.5c-0.8,0-1.5-0.7-1.5-1.5v-17C33,0.7,33.7,0,34.5,0H39c0.3,0,0.7,0,1,0.1
 	c4.5,0.5,8,4.3,8,8.9v2C48,15.6,44.5,19.5,40,19.9z M44,9.5C44,6.7,41.8,4,39,4h-0.8C37.5,4,37,4.5,37,5.2v9.6
@@ -90,12 +90,12 @@
 									class="mobile-indicator__button"><span class="mobile-indicator__icon"><svg width="20" height="20">
 											<path d="M20,20h-2c0-4.4-3.6-8-8-8s-8,3.6-8,8H0c0-4.2,2.6-7.8,6.3-9.3C4.9,9.6,4,7.9,4,6c0-3.3,2.7-6,6-6s6,2.7,6,6
 	c0,1.9-0.9,3.6-2.3,4.7C17.4,12.2,20,15.8,20,20z M14,6c0-2.2-1.8-4-4-4S6,3.8,6,6s1.8,4,4,4S14,8.2,14,6z" />
-											</svg></span></a></div>
+										</svg></span></a></div>
 							<div class="mobile-indicator d-none d-md-block"><a href="wishlist.html"
 									class="mobile-indicator__button"><span class="mobile-indicator__icon"><svg width="20" height="20">
 											<path d="M14,3c2.2,0,4,1.8,4,4c0,4-5.2,10-8,10S2,11,2,7c0-2.2,1.8-4,4-4c1,0,1.9,0.4,2.7,1L10,5.2L11.3,4C12.1,3.4,13,3,14,3 M14,1
 	c-1.5,0-2.9,0.6-4,1.5C8.9,1.6,7.5,1,6,1C2.7,1,0,3.7,0,7c0,5,6,12,10,12s10-7,10-12C20,3.7,17.3,1,14,1L14,1z" />
-											</svg></span></a></div>
+										</svg></span></a></div>
 							<div class="mobile-indicator"><a href="cart.html" class="mobile-indicator__button"><span
 										class="mobile-indicator__icon"><svg width="20" height="20">
 											<circle cx="7" cy="17" r="2" />
@@ -133,7 +133,7 @@
 									class="topbar__button-arrow"><svg width="7px" height="5px">
 										<path
 											d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
-										</svg></span></button>
+									</svg></span></button>
 							<div class="topbar__menu-body"><a class="topbar__menu-item" href="#">€ Euro</a> <a
 									class="topbar__menu-item" href="#">£ Pound Sterling</a> <a class="topbar__menu-item" href="#">$ US
 									Dollar</a> <a class="topbar__menu-item" href="#">₽ Russian Ruble</a></div>
@@ -144,7 +144,7 @@
 										height="5px">
 										<path
 											d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
-										</svg></span></button>
+									</svg></span></button>
 							<div class="topbar__menu-body"><a class="topbar__menu-item" href="#"><img
 										src="images/languages/language-1.png" alt=""><span>English</span> </a><a class="topbar__menu-item"
 									href="#"><img src="images/languages/language-2.png" alt=""><span>French</span> </a><a
@@ -164,7 +164,7 @@
 										width="9px" height="6px">
 										<path
 											d="M0.2,0.4c0.4-0.4,1-0.5,1.4-0.1l2.9,3l2.9-3c0.4-0.4,1.1-0.4,1.4,0.1c0.3,0.4,0.3,0.9-0.1,1.3L4.5,6L0.3,1.6C-0.1,1.3-0.1,0.7,0.2,0.4z" />
-										</svg></span></button>
+									</svg></span></button>
 							<div class="departments__menu">
 								<div class="departments__arrow"></div>
 								<div class="departments__body">
@@ -653,7 +653,7 @@
 										href="index.html" class="main-menu__link">Home <svg width="7px" height="5px">
 											<path
 												d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
-											</svg></a>
+										</svg></a>
 									<div class="main-menu__submenu">
 										<ul class="menu">
 											<li class="menu__item"><a href="index.html" class="menu__link">Home One</a></li>
@@ -662,7 +662,7 @@
 													class="menu__link">Header Spaceship <span class="menu__arrow"><svg width="6px" height="9px">
 															<path
 																d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-															</svg></span></a>
+														</svg></span></a>
 												<div class="menu__submenu">
 													<ul class="menu">
 														<li class="menu__item"><a href="header-spaceship-variant-one.html"
@@ -678,7 +678,7 @@
 													class="menu__link">Header Classic <span class="menu__arrow"><svg width="6px" height="9px">
 															<path
 																d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-															</svg></span></a>
+														</svg></span></a>
 												<div class="menu__submenu">
 													<ul class="menu">
 														<li class="menu__item"><a href="header-classic-variant-one.html" class="menu__link">Variant
@@ -698,7 +698,7 @@
 													class="menu__link">Mobile Header <span class="menu__arrow"><svg width="6px" height="9px">
 															<path
 																d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-															</svg></span></a>
+														</svg></span></a>
 												<div class="menu__submenu">
 													<ul class="menu">
 														<li class="menu__item"><a href="mobile-header-variant-one.html" class="menu__link">Variant
@@ -715,14 +715,14 @@
 										href="shop-grid-4-columns-sidebar.html" class="main-menu__link">Shop <svg width="7px" height="5px">
 											<path
 												d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
-											</svg></a>
+										</svg></a>
 									<div class="main-menu__submenu">
 										<ul class="menu">
 											<li class="menu__item menu__item--has-submenu"><a href="category-4-columns-sidebar.html"
 													class="menu__link">Category <span class="menu__arrow"><svg width="6px" height="9px">
 															<path
 																d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-															</svg></span></a>
+														</svg></span></a>
 												<div class="menu__submenu">
 													<ul class="menu">
 														<li class="menu__item"><a href="category-3-columns-sidebar.html" class="menu__link">3
@@ -748,7 +748,7 @@
 													class="menu__link">Shop Grid <span class="menu__arrow"><svg width="6px" height="9px">
 															<path
 																d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-															</svg></span></a>
+														</svg></span></a>
 												<div class="menu__submenu">
 													<ul class="menu">
 														<li class="menu__item"><a href="shop-grid-6-columns-full.html" class="menu__link">6 Columns
@@ -772,7 +772,7 @@
 													class="menu__link">Product <span class="menu__arrow"><svg width="6px" height="9px">
 															<path
 																d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-															</svg></span></a>
+														</svg></span></a>
 												<div class="menu__submenu">
 													<ul class="menu">
 														<li class="menu__item"><a href="product-full.html" class="menu__link">Full Width</a></li>
@@ -793,14 +793,14 @@
 										href="blog-classic-right-sidebar.html" class="main-menu__link">Blog <svg width="7px" height="5px">
 											<path
 												d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
-											</svg></a>
+										</svg></a>
 									<div class="main-menu__submenu">
 										<ul class="menu">
 											<li class="menu__item menu__item--has-submenu"><a href="blog-classic-right-sidebar.html"
 													class="menu__link">Blog Classic <span class="menu__arrow"><svg width="6px" height="9px">
 															<path
 																d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-															</svg></span></a>
+														</svg></span></a>
 												<div class="menu__submenu">
 													<ul class="menu">
 														<li class="menu__item"><a href="blog-classic-left-sidebar.html" class="menu__link">Left
@@ -814,7 +814,7 @@
 													class="menu__link">Blog List <span class="menu__arrow"><svg width="6px" height="9px">
 															<path
 																d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-															</svg></span></a>
+														</svg></span></a>
 												<div class="menu__submenu">
 													<ul class="menu">
 														<li class="menu__item"><a href="blog-list-left-sidebar.html" class="menu__link">Left
@@ -828,7 +828,7 @@
 													class="menu__link">Blog Grid <span class="menu__arrow"><svg width="6px" height="9px">
 															<path
 																d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-															</svg></span></a>
+														</svg></span></a>
 												<div class="menu__submenu">
 													<ul class="menu">
 														<li class="menu__item"><a href="blog-grid-left-sidebar.html" class="menu__link">Left
@@ -842,7 +842,7 @@
 													class="menu__link">Post Page <span class="menu__arrow"><svg width="6px" height="9px">
 															<path
 																d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-															</svg></span></a>
+														</svg></span></a>
 												<div class="menu__submenu">
 													<ul class="menu">
 														<li class="menu__item"><a href="post-full-width.html" class="menu__link">Full Width</a></li>
@@ -862,7 +862,7 @@
 										href="account-login.html" class="main-menu__link">Account <svg width="7px" height="5px">
 											<path
 												d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
-											</svg></a>
+										</svg></a>
 									<div class="main-menu__submenu">
 										<ul class="menu">
 											<li class="menu__item"><a href="account-login.html" class="menu__link">Login & Register</a></li>
@@ -879,7 +879,7 @@
 										href="about-us.html" class="main-menu__link">Pages <svg width="7px" height="5px">
 											<path
 												d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
-											</svg></a>
+										</svg></a>
 									<div class="main-menu__submenu">
 										<ul class="menu">
 											<li class="menu__item"><a href="about-us.html" class="menu__link">About Us</a></li>
@@ -1043,7 +1043,7 @@
 															S</span> <span class="vehicles-list__item-details">Engine 2.0L 1742DA L4 FI Turbo</span>
 													</span><button type="button" class="vehicles-list__item-remove"><svg width="16" height="16">
 															<path d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z" />
-															</svg></button></label> <label class="vehicles-list__item"><span
+														</svg></button></label> <label class="vehicles-list__item"><span
 														class="vehicles-list__item-radio input-radio"><span class="input-radio__body"><input
 																class="input-radio__input" name="header-vehicle" type="radio"> <span
 																class="input-radio__circle"></span> </span></span><span
@@ -1051,7 +1051,7 @@
 															Premium</span> <span class="vehicles-list__item-details">Engine 3.0L 5626CC L6 QK</span>
 													</span><button type="button" class="vehicles-list__item-remove"><svg width="16" height="16">
 															<path d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z" />
-															</svg></button></label></div>
+														</svg></button></label></div>
 										</div>
 										<div class="vehicle-picker__actions"><button type="button" class="btn btn-primary btn-sm"
 												data-to-panel="form">Add A Vehicle</button></div>
@@ -1174,7 +1174,7 @@
 									<path d="M26.4,21H11.2C10,21,9,20.2,8.8,19.1L5.4,4.8C5.3,4.3,4.9,4,4.4,4H1C0.4,4,0,3.6,0,3s0.4-1,1-1h3.4C5.8,2,7,3,7.3,4.3
 	l3.4,14.3c0.1,0.2,0.3,0.4,0.5,0.4h15.2c0.2,0,0.4-0.1,0.5-0.4l3.1-10c0.1-0.2,0-0.4-0.1-0.4C29.8,8.1,29.7,8,29.5,8H14
 	c-0.6,0-1-0.4-1-1s0.4-1,1-1h15.5c0.8,0,1.5,0.4,2,1c0.5,0.6,0.6,1.5,0.4,2.2l-3.1,10C28.5,20.3,27.5,21,26.4,21z" />
-									</svg> <span class="indicator__counter">3</span> </span><span class="indicator__title">Shopping
+								</svg> <span class="indicator__counter">3</span> </span><span class="indicator__title">Shopping
 								Cart</span> <span class="indicator__value">$250.00</span></a>
 						<div class="indicator__content">
 							<div class="dropcart">
@@ -1506,19 +1506,23 @@
 									<div class="footer-newsletter__social-links social-links">
 										<ul class="social-links__list">
 											<li class="social-links__item social-links__item--facebook"><a
-													href="https://themeforest.net/user/kos9" target="_blank"><i class="fab fa-facebook-f"></i></a>
+													href="https://themeforest.net/user/kos9" target="_blank" rel="noopener"><i
+														class="fab fa-facebook-f"></i></a>
 											</li>
 											<li class="social-links__item social-links__item--twitter"><a
-													href="https://themeforest.net/user/kos9" target="_blank"><i class="fab fa-twitter"></i></a>
+													href="https://themeforest.net/user/kos9" target="_blank" rel="noopener"><i
+														class="fab fa-twitter"></i></a>
 											</li>
 											<li class="social-links__item social-links__item--youtube"><a
-													href="https://themeforest.net/user/kos9" target="_blank"><i class="fab fa-youtube"></i></a>
+													href="https://themeforest.net/user/kos9" target="_blank" rel="noopener"><i
+														class="fab fa-youtube"></i></a>
 											</li>
 											<li class="social-links__item social-links__item--instagram"><a
-													href="https://themeforest.net/user/kos9" target="_blank"><i class="fab fa-instagram"></i></a>
+													href="https://themeforest.net/user/kos9" target="_blank" rel="noopener"><i
+														class="fab fa-instagram"></i></a>
 											</li>
 											<li class="social-links__item social-links__item--rss"><a href="https://themeforest.net/user/kos9"
-													target="_blank"><i class="fas fa-rss"></i></a></li>
+													target="_blank" rel="noopener"><i class="fas fa-rss"></i></a></li>
 										</ul>
 									</div>
 								</div>
@@ -1531,7 +1535,7 @@
 						<div class="site-footer__bottom-row">
 							<div class="site-footer__copyright">
 								<!-- copyright --> Powered by HTML — Designed by <a href="https://themeforest.net/user/kos9"
-									target="_blank">Kos</a><!-- copyright / end -->
+									target="_blank" rel="noopener">Kos</a><!-- copyright / end -->
 							</div>
 							<div class="site-footer__payments"><img src="images/payments.png" alt=""></div>
 						</div>
@@ -1560,14 +1564,14 @@
 										width="6px" height="9px">
 										<path
 											d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-										</svg></span></button>
+									</svg></span></button>
 							<div class="mobile-menu__setting-panel" data-mobile-menu-panel>
 								<div class="mobile-menu__panel mobile-menu__panel--hidden">
 									<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back" type="button"><svg
 												width="7" height="11">
 												<path
 													d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-												</svg></button>
+											</svg></button>
 										<div class="mobile-menu__panel-title">Language</div>
 									</div>
 									<div class="mobile-menu__panel-body">
@@ -1604,14 +1608,14 @@
 										width="6px" height="9px">
 										<path
 											d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-										</svg></span></button>
+									</svg></span></button>
 							<div class="mobile-menu__setting-panel" data-mobile-menu-panel>
 								<div class="mobile-menu__panel mobile-menu__panel--hidden">
 									<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back" type="button"><svg
 												width="7" height="11">
 												<path
 													d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-												</svg></button>
+											</svg></button>
 										<div class="mobile-menu__panel-title">Currency</div>
 									</div>
 									<div class="mobile-menu__panel-body">
@@ -1667,7 +1671,7 @@
 												width="7" height="11">
 												<path
 													d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-												</svg></button>
+											</svg></button>
 										<div class="mobile-menu__panel-title">Home</div>
 									</div>
 									<div class="mobile-menu__panel-body">
@@ -1685,7 +1689,7 @@
 																type="button"><svg width="7" height="11">
 																	<path
 																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																	</svg></button>
+																</svg></button>
 															<div class="mobile-menu__panel-title">Header Spaceship</div>
 														</div>
 														<div class="mobile-menu__panel-body">
@@ -1711,7 +1715,7 @@
 																type="button"><svg width="7" height="11">
 																	<path
 																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																	</svg></button>
+																</svg></button>
 															<div class="mobile-menu__panel-title">Header Classic</div>
 														</div>
 														<div class="mobile-menu__panel-body">
@@ -1741,7 +1745,7 @@
 																type="button"><svg width="7" height="11">
 																	<path
 																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																	</svg></button>
+																</svg></button>
 															<div class="mobile-menu__panel-title">Mobile Header</div>
 														</div>
 														<div class="mobile-menu__panel-body">
@@ -1770,7 +1774,7 @@
 												width="7" height="11">
 												<path
 													d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-												</svg></button>
+											</svg></button>
 										<div class="mobile-menu__panel-title">Shop</div>
 									</div>
 									<div class="mobile-menu__panel-body">
@@ -1785,7 +1789,7 @@
 																type="button"><svg width="7" height="11">
 																	<path
 																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																	</svg></button>
+																</svg></button>
 															<div class="mobile-menu__panel-title">Category</div>
 														</div>
 														<div class="mobile-menu__panel-body">
@@ -1821,7 +1825,7 @@
 																type="button"><svg width="7" height="11">
 																	<path
 																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																	</svg></button>
+																</svg></button>
 															<div class="mobile-menu__panel-title">Shop Grid</div>
 														</div>
 														<div class="mobile-menu__panel-body">
@@ -1857,7 +1861,7 @@
 																type="button"><svg width="7" height="11">
 																	<path
 																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																	</svg></button>
+																</svg></button>
 															<div class="mobile-menu__panel-title">Product</div>
 														</div>
 														<div class="mobile-menu__panel-body">
@@ -1895,7 +1899,7 @@
 												width="7" height="11">
 												<path
 													d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-												</svg></button>
+											</svg></button>
 										<div class="mobile-menu__panel-title">Blog</div>
 									</div>
 									<div class="mobile-menu__panel-body">
@@ -1910,7 +1914,7 @@
 																type="button"><svg width="7" height="11">
 																	<path
 																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																	</svg></button>
+																</svg></button>
 															<div class="mobile-menu__panel-title">Blog Classic</div>
 														</div>
 														<div class="mobile-menu__panel-body">
@@ -1934,7 +1938,7 @@
 																type="button"><svg width="7" height="11">
 																	<path
 																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																	</svg></button>
+																</svg></button>
 															<div class="mobile-menu__panel-title">Blog List</div>
 														</div>
 														<div class="mobile-menu__panel-body">
@@ -1958,7 +1962,7 @@
 																type="button"><svg width="7" height="11">
 																	<path
 																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																	</svg></button>
+																</svg></button>
 															<div class="mobile-menu__panel-title">Blog Grid</div>
 														</div>
 														<div class="mobile-menu__panel-body">
@@ -1982,7 +1986,7 @@
 																type="button"><svg width="7" height="11">
 																	<path
 																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																	</svg></button>
+																</svg></button>
 															<div class="mobile-menu__panel-title">Post Page</div>
 														</div>
 														<div class="mobile-menu__panel-body">
@@ -2015,7 +2019,7 @@
 												width="7" height="11">
 												<path
 													d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-												</svg></button>
+											</svg></button>
 										<div class="mobile-menu__panel-title">Account</div>
 									</div>
 									<div class="mobile-menu__panel-body">
@@ -2049,7 +2053,7 @@
 												width="7" height="11">
 												<path
 													d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-												</svg></button>
+											</svg></button>
 										<div class="mobile-menu__panel-title">Pages</div>
 									</div>
 									<div class="mobile-menu__panel-body">
@@ -2074,7 +2078,7 @@
 							</div>
 						</li>
 						<li data-mobile-menu-item><a href="https://themeforest.net/item/redparts-auto-parts-html-template/24735474"
-								class="highlight" target="_blank" data-mobile-menu-trigger>Buy Theme</a></li>
+								class="highlight" target="_blank" rel="noopener" data-mobile-menu-trigger>Buy Theme</a></li>
 					</ul>
 					<div class="mobile-menu__spring"></div>
 					<div class="mobile-menu__divider"></div><a class="mobile-menu__contacts" href="#">
@@ -2170,7 +2174,7 @@
 										class="vehicles-list__item-details">Engine 2.0L 1742DA L4 FI Turbo</span> </span><button
 									type="button" class="vehicles-list__item-remove"><svg width="16" height="16">
 										<path d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z" />
-										</svg></button></label> <label class="vehicles-list__item"><span
+									</svg></button></label> <label class="vehicles-list__item"><span
 									class="vehicles-list__item-radio input-radio"><span class="input-radio__body"><input
 											class="input-radio__input" name="header-vehicle" type="radio"> <span
 											class="input-radio__circle"></span> </span></span><span class="vehicles-list__item-info"><span
@@ -2178,7 +2182,7 @@
 										class="vehicles-list__item-details">Engine 3.0L 5626CC L6 QK</span> </span><button type="button"
 									class="vehicles-list__item-remove"><svg width="16" height="16">
 										<path d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z" />
-										</svg></button></label></div>
+									</svg></button></label></div>
 					</div>
 					<div class="vehicle-picker-modal__actions"><button type="button"
 							class="btn btn-sm btn-secondary vehicle-picker-modal__close-button">Cancel</button> <button type="button"
