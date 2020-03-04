@@ -2189,9 +2189,6 @@
                                 </div>
                             </div>
                         </li>
-                        <li data-mobile-menu-item><a
-                                href="https://themeforest.net/item/redparts-auto-parts-html-template/24735474"
-                                class="highlight" target="_blank" data-mobile-menu-trigger>Buy Theme</a></li>
                     </ul>
                     <div class="mobile-menu__spring"></div>
                     <div class="mobile-menu__divider"></div><a class="mobile-menu__contacts" href="#">
