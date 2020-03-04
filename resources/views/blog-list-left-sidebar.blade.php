@@ -86,17 +86,17 @@
 											<path d="M19.2,17.8c0,0-0.2,0.5-0.5,0.8c-0.4,0.4-0.9,0.6-0.9,0.6s-0.9,0.7-2.8-1.6c-1.1-1.4-2.2-2.8-3.1-3.9C10.9,14.5,9.5,15,8,15
 	c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7c0,1.5-0.5,2.9-1.3,4c1.1,0.8,2.5,2,4,3.1C20,16.8,19.2,17.8,19.2,17.8z M8,3C5.2,3,3,5.2,3,8
 	c0,2.8,2.2,5,5,5c2.8,0,5-2.2,5-5C13,5.2,10.8,3,8,3z" /></svg></span></button></div>
-							<div class="mobile-indicator d-none d-md-block"><a href="account-login.html"
+							<div class="mobile-indicator d-none d-md-block"><a href="/login"
 									class="mobile-indicator__button"><span class="mobile-indicator__icon"><svg width="20" height="20">
 											<path d="M20,20h-2c0-4.4-3.6-8-8-8s-8,3.6-8,8H0c0-4.2,2.6-7.8,6.3-9.3C4.9,9.6,4,7.9,4,6c0-3.3,2.7-6,6-6s6,2.7,6,6
 	c0,1.9-0.9,3.6-2.3,4.7C17.4,12.2,20,15.8,20,20z M14,6c0-2.2-1.8-4-4-4S6,3.8,6,6s1.8,4,4,4S14,8.2,14,6z" />
 											</svg></span></a></div>
-							<div class="mobile-indicator d-none d-md-block"><a href="wishlist.html"
+							<div class="mobile-indicator d-none d-md-block"><a href="/wishlist"
 									class="mobile-indicator__button"><span class="mobile-indicator__icon"><svg width="20" height="20">
 											<path d="M14,3c2.2,0,4,1.8,4,4c0,4-5.2,10-8,10S2,11,2,7c0-2.2,1.8-4,4-4c1,0,1.9,0.4,2.7,1L10,5.2L11.3,4C12.1,3.4,13,3,14,3 M14,1
 	c-1.5,0-2.9,0.6-4,1.5C8.9,1.6,7.5,1,6,1C2.7,1,0,3.7,0,7c0,5,6,12,10,12s10-7,10-12C20,3.7,17.3,1,14,1L14,1z" />
 											</svg></span></a></div>
-							<div class="mobile-indicator"><a href="cart.html" class="mobile-indicator__button"><span
+							<div class="mobile-indicator"><a href="/cart" class="mobile-indicator__button"><span
 										class="mobile-indicator__icon"><svg width="20" height="20">
 											<circle cx="7" cy="17" r="2" />
 											<circle cx="15" cy="17" r="2" />
@@ -117,9 +117,9 @@
 				<div class="header__topbar-start">
 					<div class="topbar topbar--spaceship-start">
 						<div class="topbar__item-text d-none d-xxl-flex">Call Us: (800) 060-0730</div>
-						<div class="topbar__item-text"><a class="topbar__link" href="about-us.html">About Us</a></div>
+						<div class="topbar__item-text"><a class="topbar__link" href="/about">About Us</a></div>
 						<div class="topbar__item-text"><a class="topbar__link" href="contact-us-v1.html">Contacts</a></div>
-						<div class="topbar__item-text"><a class="topbar__link" href="track-order.html">Track Order</a></div>
+						<div class="topbar__item-text"><a class="topbar__link" href="/track-order">Track Order</a></div>
 					</div>
 				</div>
 				<div class="header__topbar-end-bg"></div>
@@ -712,61 +712,61 @@
 									</div>
 								</li>
 								<li class="main-menu__item main-menu__item--submenu--menu main-menu__item--has-submenu"><a
-										href="shop-grid-4-columns-sidebar.html" class="main-menu__link">Shop <svg width="7px" height="5px">
+										href="/shop-grid-4-columns-sidebar" class="main-menu__link">Shop <svg width="7px" height="5px">
 											<path
 												d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
 											</svg></a>
 									<div class="main-menu__submenu">
 										<ul class="menu">
-											<li class="menu__item menu__item--has-submenu"><a href="category-4-columns-sidebar.html"
+											<li class="menu__item menu__item--has-submenu"><a href="category-4-sidebar"
 													class="menu__link">Category <span class="menu__arrow"><svg width="6px" height="9px">
 															<path
 																d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
 															</svg></span></a>
 												<div class="menu__submenu">
 													<ul class="menu">
-														<li class="menu__item"><a href="category-3-columns-sidebar.html" class="menu__link">3
+														<li class="menu__item"><a href="category-3-sidebar" class="menu__link">3
 																Columns Sidebar</a></li>
-														<li class="menu__item"><a href="category-4-columns-sidebar.html" class="menu__link">4
+														<li class="menu__item"><a href="category-4-sidebar" class="menu__link">4
 																Columns Sidebar</a></li>
-														<li class="menu__item"><a href="category-5-columns-sidebar.html" class="menu__link">5
+														<li class="menu__item"><a href="category-5-sidebar" class="menu__link">5
 																Columns Sidebar</a></li>
-														<li class="menu__item"><a href="category-4-columns-full.html" class="menu__link">4 Columns
+														<li class="menu__item"><a href="/category-4-full" class="menu__link">4 Columns
 																Full</a></li>
-														<li class="menu__item"><a href="category-5-columns-full.html" class="menu__link">5 Columns
+														<li class="menu__item"><a href="/category-5-full" class="menu__link">5 Columns
 																Full</a></li>
-														<li class="menu__item"><a href="category-6-columns-full.html" class="menu__link">6 Columns
+														<li class="menu__item"><a href="/category-6-full" class="menu__link">6 Columns
 																Full</a></li>
-														<li class="menu__item"><a href="category-7-columns-full.html" class="menu__link">7 Columns
+														<li class="menu__item"><a href="/category-7-full" class="menu__link">7 Columns
 																Full</a></li>
-														<li class="menu__item"><a href="category-right-sidebar.html" class="menu__link">Right
+														<li class="menu__item"><a href="/category-right-sidebar" class="menu__link">Right
 																Sidebar</a></li>
 													</ul>
 												</div>
 											</li>
-											<li class="menu__item menu__item--has-submenu"><a href="shop-grid-4-columns-sidebar.html"
+											<li class="menu__item menu__item--has-submenu"><a href="/shop-grid-4-columns-sidebar"
 													class="menu__link">Shop Grid <span class="menu__arrow"><svg width="6px" height="9px">
 															<path
 																d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
 															</svg></span></a>
 												<div class="menu__submenu">
 													<ul class="menu">
-														<li class="menu__item"><a href="shop-grid-6-columns-full.html" class="menu__link">6 Columns
+														<li class="menu__item"><a href="/shop-grid-6-columns-full" class="menu__link">6 Columns
 																Full</a></li>
-														<li class="menu__item"><a href="shop-grid-5-columns-full.html" class="menu__link">5 Columns
+														<li class="menu__item"><a href="/shop-grid-5-columns-full" class="menu__link">5 Columns
 																Full</a></li>
-														<li class="menu__item"><a href="shop-grid-4-columns-full.html" class="menu__link">4 Columns
+														<li class="menu__item"><a href="/shop-grid-4-columns-full" class="menu__link">4 Columns
 																Full</a></li>
-														<li class="menu__item"><a href="shop-grid-4-columns-sidebar.html" class="menu__link">4
+														<li class="menu__item"><a href="/shop-grid-4-columns-sidebar" class="menu__link">4
 																Columns Sidebar</a></li>
-														<li class="menu__item"><a href="shop-grid-3-columns-sidebar.html" class="menu__link">3
+														<li class="menu__item"><a href="/shop-grid-3-columns-sidebar" class="menu__link">3
 																Columns Sidebar</a></li>
 													</ul>
 												</div>
 											</li>
-											<li class="menu__item"><a href="shop-list.html" class="menu__link">Shop List</a></li>
-											<li class="menu__item"><a href="shop-table.html" class="menu__link">Shop Table</a></li>
-											<li class="menu__item"><a href="shop-right-sidebar.html" class="menu__link">Shop Right Sidebar</a>
+											<li class="menu__item"><a href="/shop-list" class="menu__link">Shop List</a></li>
+											<li class="menu__item"><a href="/shop-table" class="menu__link">Shop Table</a></li>
+											<li class="menu__item"><a href="/shop-right-sidebar" class="menu__link">Shop Right Sidebar</a>
 											</li>
 											<li class="menu__item menu__item--has-submenu"><a href="product-full.html"
 													class="menu__link">Product <span class="menu__arrow"><svg width="6px" height="9px">
@@ -781,31 +781,31 @@
 													</ul>
 												</div>
 											</li>
-											<li class="menu__item"><a href="cart.html" class="menu__link">Cart</a></li>
-											<li class="menu__item"><a href="checkout.html" class="menu__link">Checkout</a></li>
-											<li class="menu__item"><a href="wishlist.html" class="menu__link">Wishlist</a></li>
-											<li class="menu__item"><a href="compare.html" class="menu__link">Compare</a></li>
-											<li class="menu__item"><a href="track-order.html" class="menu__link">Track Order</a></li>
+											<li class="menu__item"><a href="/cart" class="menu__link">Cart</a></li>
+											<li class="menu__item"><a href="/checkout" class="menu__link">Checkout</a></li>
+											<li class="menu__item"><a href="/wishlist" class="menu__link">Wishlist</a></li>
+											<li class="menu__item"><a href="/compare" class="menu__link">Compare</a></li>
+											<li class="menu__item"><a href="/track-order" class="menu__link">Track Order</a></li>
 										</ul>
 									</div>
 								</li>
 								<li class="main-menu__item main-menu__item--submenu--menu main-menu__item--has-submenu"><a
-										href="blog-classic-right-sidebar.html" class="main-menu__link">Blog <svg width="7px" height="5px">
+										href="/blog-classic-right" class="main-menu__link">Blog <svg width="7px" height="5px">
 											<path
 												d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
 											</svg></a>
 									<div class="main-menu__submenu">
 										<ul class="menu">
-											<li class="menu__item menu__item--has-submenu"><a href="blog-classic-right-sidebar.html"
+											<li class="menu__item menu__item--has-submenu"><a href="/blog-classic-right"
 													class="menu__link">Blog Classic <span class="menu__arrow"><svg width="6px" height="9px">
 															<path
 																d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
 															</svg></span></a>
 												<div class="menu__submenu">
 													<ul class="menu">
-														<li class="menu__item"><a href="blog-classic-left-sidebar.html" class="menu__link">Left
+														<li class="menu__item"><a href="/blog-classic-left" class="menu__link">Left
 																Sidebar</a></li>
-														<li class="menu__item"><a href="blog-classic-right-sidebar.html" class="menu__link">Right
+														<li class="menu__item"><a href="/blog-classic-right" class="menu__link">Right
 																Sidebar</a></li>
 													</ul>
 												</div>
@@ -838,17 +838,17 @@
 													</ul>
 												</div>
 											</li>
-											<li class="menu__item menu__item--has-submenu"><a href="post-full-width.html"
+											<li class="menu__item menu__item--has-submenu"><a href="/post-width"
 													class="menu__link">Post Page <span class="menu__arrow"><svg width="6px" height="9px">
 															<path
 																d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
 															</svg></span></a>
 												<div class="menu__submenu">
 													<ul class="menu">
-														<li class="menu__item"><a href="post-full-width.html" class="menu__link">Full Width</a></li>
-														<li class="menu__item"><a href="post-left-sidebar.html" class="menu__link">Left Sidebar</a>
+														<li class="menu__item"><a href="/post-width" class="menu__link">Full Width</a></li>
+														<li class="menu__item"><a href="/post-left" class="menu__link">Left Sidebar</a>
 														</li>
-														<li class="menu__item"><a href="post-right-sidebar.html" class="menu__link">Right
+														<li class="menu__item"><a href="/post-right" class="menu__link">Right
 																Sidebar</a></li>
 													</ul>
 												</div>
@@ -859,37 +859,37 @@
 									</div>
 								</li>
 								<li class="main-menu__item main-menu__item--submenu--menu main-menu__item--has-submenu"><a
-										href="account-login.html" class="main-menu__link">Account <svg width="7px" height="5px">
+										href="/login" class="main-menu__link">Account <svg width="7px" height="5px">
 											<path
 												d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
 											</svg></a>
 									<div class="main-menu__submenu">
 										<ul class="menu">
-											<li class="menu__item"><a href="account-login.html" class="menu__link">Login & Register</a></li>
-											<li class="menu__item"><a href="account-dashboard.html" class="menu__link">Dashboard</a></li>
-											<li class="menu__item"><a href="account-garage.html" class="menu__link">Garage</a></li>
-											<li class="menu__item"><a href="account-profile.html" class="menu__link">Edit Profile</a></li>
-											<li class="menu__item"><a href="account-orders.html" class="menu__link">Order History</a></li>
-											<li class="menu__item"><a href="account-addresses.html" class="menu__link">Address Book</a></li>
-											<li class="menu__item"><a href="account-password.html" class="menu__link">Change Password</a></li>
+											<li class="menu__item"><a href="/login" class="menu__link">Login & Register</a></li>
+											<li class="menu__item"><a href="/dashboard" class="menu__link">Dashboard</a></li>
+											<li class="menu__item"><a href="/garage" class="menu__link">Garage</a></li>
+											<li class="menu__item"><a href="/account-profile" class="menu__link">Edit Profile</a></li>
+											<li class="menu__item"><a href="/account-orders" class="menu__link">Order History</a></li>
+											<li class="menu__item"><a href="/account-addresses" class="menu__link">Address Book</a></li>
+											<li class="menu__item"><a href="/account-password" class="menu__link">Change Password</a></li>
 										</ul>
 									</div>
 								</li>
 								<li class="main-menu__item main-menu__item--submenu--menu main-menu__item--has-submenu"><a
-										href="about-us.html" class="main-menu__link">Pages <svg width="7px" height="5px">
+										href="/about" class="main-menu__link">Pages <svg width="7px" height="5px">
 											<path
 												d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
 											</svg></a>
 									<div class="main-menu__submenu">
 										<ul class="menu">
-											<li class="menu__item"><a href="about-us.html" class="menu__link">About Us</a></li>
+											<li class="menu__item"><a href="/about" class="menu__link">About Us</a></li>
 											<li class="menu__item"><a href="contact-us-v1.html" class="menu__link">Contact Us v1</a></li>
 											<li class="menu__item"><a href="contact-us-v2.html" class="menu__link">Contact Us v2</a></li>
 											<li class="menu__item"><a href="404.html" class="menu__link">404</a></li>
-											<li class="menu__item"><a href="terms.html" class="menu__link">Terms And Conditions</a></li>
-											<li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
-											<li class="menu__item"><a href="components.html" class="menu__link">Components</a></li>
-											<li class="menu__item"><a href="typography.html" class="menu__link">Typography</a></li>
+											<li class="menu__item"><a href="/terms" class="menu__link">Terms And Conditions</a></li>
+											<li class="menu__item"><a href="/faq" class="menu__link">FAQ</a></li>
+											<li class="menu__item"><a href="/components" class="menu__link">Components</a></li>
+											<li class="menu__item"><a href="/typography" class="menu__link">Typography</a></li>
 										</ul>
 									</div>
 								</li>
@@ -1118,12 +1118,12 @@
 					</div>
 				</div>
 				<div class="header__indicators">
-					<div class="indicator"><a href="wishlist.html" class="indicator__button"><span class="indicator__icon"><svg
+					<div class="indicator"><a href="/wishlist" class="indicator__button"><span class="indicator__icon"><svg
 									width="32" height="32">
 									<path d="M23,4c3.9,0,7,3.1,7,7c0,6.3-11.4,15.9-14,16.9C13.4,26.9,2,17.3,2,11c0-3.9,3.1-7,7-7c2.1,0,4.1,1,5.4,2.6l1.6,2l1.6-2
 	C18.9,5,20.9,4,23,4 M23,2c-2.8,0-5.4,1.3-7,3.4C14.4,3.3,11.8,2,9,2c-5,0-9,4-9,9c0,8,14,19,16,19s16-11,16-19C32,6,28,2,23,2L23,2
 	z" /></svg></span></a></div>
-					<div class="indicator indicator--trigger--click"><a href="account-login.html" class="indicator__button"><span
+					<div class="indicator indicator--trigger--click"><a href="/login" class="indicator__button"><span
 								class="indicator__icon"><svg width="32" height="32">
 									<path d="M16,18C9.4,18,4,23.4,4,30H2c0-6.2,4-11.5,9.6-13.3C9.4,15.3,8,12.8,8,10c0-4.4,3.6-8,8-8s8,3.6,8,8c0,2.8-1.5,5.3-3.6,6.7
 	C26,18.5,30,23.8,30,30h-2C28,23.4,22.6,18,16,18z M22,10c0-3.3-2.7-6-6-6s-6,2.7-6,6s2.7,6,6,6S22,13.3,22,10z" /></svg>
@@ -1143,7 +1143,7 @@
 									</div>
 									<div class="form-group account-menu__form-button"><button type="submit"
 											class="btn btn-primary btn-sm">Login</button></div>
-									<div class="account-menu__form-link"><a href="account-login.html">Create An Account</a></div>
+									<div class="account-menu__form-link"><a href="/login">Create An Account</a></div>
 								</form>
 								<div class="account-menu__divider"></div><a href="#" class="account-menu__user">
 									<div class="account-menu__user-avatar"><img src="images/avatars/avatar-4.jpg" alt=""></div>
@@ -1154,20 +1154,20 @@
 								</a>
 								<div class="account-menu__divider"></div>
 								<ul class="account-menu__links">
-									<li><a href="account-dashboard.html">Dashboard</a></li>
-									<li><a href="account-dashboard.html">Garage</a></li>
-									<li><a href="account-profile.html">Edit Profile</a></li>
-									<li><a href="account-orders.html">Order History</a></li>
-									<li><a href="account-addresses.html">Addresses</a></li>
+									<li><a href="/dashboard">Dashboard</a></li>
+									<li><a href="/dashboard">Garage</a></li>
+									<li><a href="/account-profile">Edit Profile</a></li>
+									<li><a href="/account-orders">Order History</a></li>
+									<li><a href="/account-addresses">Addresses</a></li>
 								</ul>
 								<div class="account-menu__divider"></div>
 								<ul class="account-menu__links">
-									<li><a href="account-login.html">Logout</a></li>
+									<li><a href="/login">Logout</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="indicator indicator--trigger--click"><a href="cart.html" class="indicator__button"><span
+					<div class="indicator indicator--trigger--click"><a href="/cart" class="indicator__button"><span
 								class="indicator__icon"><svg width="32" height="32">
 									<circle cx="10.5" cy="27.5" r="2.5" />
 									<circle cx="23.5" cy="27.5" r="2.5" />
@@ -1255,8 +1255,8 @@
 										</tr>
 									</table>
 								</div>
-								<div class="dropcart__actions"><a href="cart.html" class="btn btn-secondary">View Cart</a> <a
-										href="checkout.html" class="btn btn-primary">Checkout</a></div>
+								<div class="dropcart__actions"><a href="/cart" class="btn btn-secondary">View Cart</a> <a
+										href="/checkout" class="btn btn-primary">Checkout</a></div>
 							</div>
 						</div>
 					</div>
@@ -1481,13 +1481,13 @@
 									<div class="posts-list__body">
 										<div class="posts-list__item">
 											<div class="post-card post-card--layout--list">
-												<div class="post-card__image"><a href="post-full-width.html"><img
+												<div class="post-card__image"><a href="/post-width"><img
 															src="images/posts/post-1-730x485.jpg" alt=""></a></div>
 												<div class="post-card__content">
-													<div class="post-card__category"><a href="blog-classic-right-sidebar.html">Special Offers</a>
+													<div class="post-card__category"><a href="/blog-classic-right">Special Offers</a>
 													</div>
 													<div class="post-card__title">
-														<h2><a href="post-full-width.html">Philosophy That Addresses Topics Such As Goodness</a>
+														<h2><a href="/post-width">Philosophy That Addresses Topics Such As Goodness</a>
 														</h2>
 													</div>
 													<div class="post-card__date">By <a href="#">Jessica Moore</a> on October 19, 2019</div>
@@ -1497,20 +1497,20 @@
 															iaculis. Suspendisse tempor orci non sapien ullamcorper dapibus. Suspendisse at velit
 															diam. Donec pharetra nec enim blandit vulputate.</div>
 													</div>
-													<div class="post-card__more"><a href="post-full-width.html"
+													<div class="post-card__more"><a href="/post-width"
 															class="btn btn-secondary btn-sm">Read more</a></div>
 												</div>
 											</div>
 										</div>
 										<div class="posts-list__item">
 											<div class="post-card post-card--layout--list">
-												<div class="post-card__image"><a href="post-full-width.html"><img
+												<div class="post-card__image"><a href="/post-width"><img
 															src="images/posts/post-2-730x485.jpg" alt=""></a></div>
 												<div class="post-card__content">
-													<div class="post-card__category"><a href="blog-classic-right-sidebar.html">Latest News</a>
+													<div class="post-card__category"><a href="/blog-classic-right">Latest News</a>
 													</div>
 													<div class="post-card__title">
-														<h2><a href="post-full-width.html">Logic Is The Study Of Reasoning And Argument Part 2</a>
+														<h2><a href="/post-width">Logic Is The Study Of Reasoning And Argument Part 2</a>
 														</h2>
 													</div>
 													<div class="post-card__date">By <a href="#">Jessica Moore</a> on September 5, 2019</div>
@@ -1520,20 +1520,20 @@
 															iaculis. Suspendisse tempor orci non sapien ullamcorper dapibus. Suspendisse at velit
 															diam. Donec pharetra nec enim blandit vulputate.</div>
 													</div>
-													<div class="post-card__more"><a href="post-full-width.html"
+													<div class="post-card__more"><a href="/post-width"
 															class="btn btn-secondary btn-sm">Read more</a></div>
 												</div>
 											</div>
 										</div>
 										<div class="posts-list__item">
 											<div class="post-card post-card--layout--list">
-												<div class="post-card__image"><a href="post-full-width.html"><img
+												<div class="post-card__image"><a href="/post-width"><img
 															src="images/posts/post-3-730x485.jpg" alt=""></a></div>
 												<div class="post-card__content">
-													<div class="post-card__category"><a href="blog-classic-right-sidebar.html">New Arrivals</a>
+													<div class="post-card__category"><a href="/blog-classic-right">New Arrivals</a>
 													</div>
 													<div class="post-card__title">
-														<h2><a href="post-full-width.html">Some Philosophers Specialize In One Or More Historical
+														<h2><a href="/post-width">Some Philosophers Specialize In One Or More Historical
 																Periods</a></h2>
 													</div>
 													<div class="post-card__date">By <a href="#">Jessica Moore</a> on August 12, 2019</div>
@@ -1543,20 +1543,20 @@
 															iaculis. Suspendisse tempor orci non sapien ullamcorper dapibus. Suspendisse at velit
 															diam. Donec pharetra nec enim blandit vulputate.</div>
 													</div>
-													<div class="post-card__more"><a href="post-full-width.html"
+													<div class="post-card__more"><a href="/post-width"
 															class="btn btn-secondary btn-sm">Read more</a></div>
 												</div>
 											</div>
 										</div>
 										<div class="posts-list__item">
 											<div class="post-card post-card--layout--list">
-												<div class="post-card__image"><a href="post-full-width.html"><img
+												<div class="post-card__image"><a href="/post-width"><img
 															src="images/posts/post-4-730x485.jpg" alt=""></a></div>
 												<div class="post-card__content">
-													<div class="post-card__category"><a href="blog-classic-right-sidebar.html">Special Offers</a>
+													<div class="post-card__category"><a href="/blog-classic-right">Special Offers</a>
 													</div>
 													<div class="post-card__title">
-														<h2><a href="post-full-width.html">A Variety Of Other Academic And Non-Academic Approaches
+														<h2><a href="/post-width">A Variety Of Other Academic And Non-Academic Approaches
 																Have Been Explored</a></h2>
 													</div>
 													<div class="post-card__date">By <a href="#">Jessica Moore</a> on Jule 30, 2019</div>
@@ -1566,20 +1566,20 @@
 															iaculis. Suspendisse tempor orci non sapien ullamcorper dapibus. Suspendisse at velit
 															diam. Donec pharetra nec enim blandit vulputate.</div>
 													</div>
-													<div class="post-card__more"><a href="post-full-width.html"
+													<div class="post-card__more"><a href="/post-width"
 															class="btn btn-secondary btn-sm">Read more</a></div>
 												</div>
 											</div>
 										</div>
 										<div class="posts-list__item">
 											<div class="post-card post-card--layout--list">
-												<div class="post-card__image"><a href="post-full-width.html"><img
+												<div class="post-card__image"><a href="/post-width"><img
 															src="images/posts/post-5-730x485.jpg" alt=""></a></div>
 												<div class="post-card__content">
-													<div class="post-card__category"><a href="blog-classic-right-sidebar.html">New Arrivals</a>
+													<div class="post-card__category"><a href="/blog-classic-right">New Arrivals</a>
 													</div>
 													<div class="post-card__title">
-														<h2><a href="post-full-width.html">Germany Was The First Country To Professionalize
+														<h2><a href="/post-width">Germany Was The First Country To Professionalize
 																Philosophy</a></h2>
 													</div>
 													<div class="post-card__date">By <a href="#">Jessica Moore</a> on June 12, 2019</div>
@@ -1589,20 +1589,20 @@
 															iaculis. Suspendisse tempor orci non sapien ullamcorper dapibus. Suspendisse at velit
 															diam. Donec pharetra nec enim blandit vulputate.</div>
 													</div>
-													<div class="post-card__more"><a href="post-full-width.html"
+													<div class="post-card__more"><a href="/post-width"
 															class="btn btn-secondary btn-sm">Read more</a></div>
 												</div>
 											</div>
 										</div>
 										<div class="posts-list__item">
 											<div class="post-card post-card--layout--list">
-												<div class="post-card__image"><a href="post-full-width.html"><img
+												<div class="post-card__image"><a href="/post-width"><img
 															src="images/posts/post-6-730x485.jpg" alt=""></a></div>
 												<div class="post-card__content">
-													<div class="post-card__category"><a href="blog-classic-right-sidebar.html">Special Offers</a>
+													<div class="post-card__category"><a href="/blog-classic-right">Special Offers</a>
 													</div>
 													<div class="post-card__title">
-														<h2><a href="post-full-width.html">Logic Is The Study Of Reasoning And Argument Part 1</a>
+														<h2><a href="/post-width">Logic Is The Study Of Reasoning And Argument Part 1</a>
 														</h2>
 													</div>
 													<div class="post-card__date">By <a href="#">Jessica Moore</a> on May 21, 2019</div>
@@ -1612,20 +1612,20 @@
 															iaculis. Suspendisse tempor orci non sapien ullamcorper dapibus. Suspendisse at velit
 															diam. Donec pharetra nec enim blandit vulputate.</div>
 													</div>
-													<div class="post-card__more"><a href="post-full-width.html"
+													<div class="post-card__more"><a href="/post-width"
 															class="btn btn-secondary btn-sm">Read more</a></div>
 												</div>
 											</div>
 										</div>
 										<div class="posts-list__item">
 											<div class="post-card post-card--layout--list">
-												<div class="post-card__image"><a href="post-full-width.html"><img
+												<div class="post-card__image"><a href="/post-width"><img
 															src="images/posts/post-7-730x485.jpg" alt=""></a></div>
 												<div class="post-card__content">
-													<div class="post-card__category"><a href="blog-classic-right-sidebar.html">Special Offers</a>
+													<div class="post-card__category"><a href="/blog-classic-right">Special Offers</a>
 													</div>
 													<div class="post-card__title">
-														<h2><a href="post-full-width.html">Many Inquiries Outside Of Academia Are Philosophical In
+														<h2><a href="/post-width">Many Inquiries Outside Of Academia Are Philosophical In
 																The Broad Sense</a></h2>
 													</div>
 													<div class="post-card__date">By <a href="#">Jessica Moore</a> on April 3, 2019</div>
@@ -1635,20 +1635,20 @@
 															iaculis. Suspendisse tempor orci non sapien ullamcorper dapibus. Suspendisse at velit
 															diam. Donec pharetra nec enim blandit vulputate.</div>
 													</div>
-													<div class="post-card__more"><a href="post-full-width.html"
+													<div class="post-card__more"><a href="/post-width"
 															class="btn btn-secondary btn-sm">Read more</a></div>
 												</div>
 											</div>
 										</div>
 										<div class="posts-list__item">
 											<div class="post-card post-card--layout--list">
-												<div class="post-card__image"><a href="post-full-width.html"><img
+												<div class="post-card__image"><a href="/post-width"><img
 															src="images/posts/post-8-730x485.jpg" alt=""></a></div>
 												<div class="post-card__content">
-													<div class="post-card__category"><a href="blog-classic-right-sidebar.html">Latest News</a>
+													<div class="post-card__category"><a href="/blog-classic-right">Latest News</a>
 													</div>
 													<div class="post-card__title">
-														<h2><a href="post-full-width.html">An Advantage Of Digital Circuits When Compared To Analog
+														<h2><a href="/post-width">An Advantage Of Digital Circuits When Compared To Analog
 																Circuits</a></h2>
 													</div>
 													<div class="post-card__date">By <a href="#">Jessica Moore</a> on Mart 29, 2019</div>
@@ -1658,20 +1658,20 @@
 															iaculis. Suspendisse tempor orci non sapien ullamcorper dapibus. Suspendisse at velit
 															diam. Donec pharetra nec enim blandit vulputate.</div>
 													</div>
-													<div class="post-card__more"><a href="post-full-width.html"
+													<div class="post-card__more"><a href="/post-width"
 															class="btn btn-secondary btn-sm">Read more</a></div>
 												</div>
 											</div>
 										</div>
 										<div class="posts-list__item">
 											<div class="post-card post-card--layout--list">
-												<div class="post-card__image"><a href="post-full-width.html"><img
+												<div class="post-card__image"><a href="/post-width"><img
 															src="images/posts/post-9-730x485.jpg" alt=""></a></div>
 												<div class="post-card__content">
-													<div class="post-card__category"><a href="blog-classic-right-sidebar.html">New Arrivals</a>
+													<div class="post-card__category"><a href="/blog-classic-right">New Arrivals</a>
 													</div>
 													<div class="post-card__title">
-														<h2><a href="post-full-width.html">A Digital Circuit Is Typically Constructed From Small
+														<h2><a href="/post-width">A Digital Circuit Is Typically Constructed From Small
 																Electronic Circuits</a></h2>
 													</div>
 													<div class="post-card__date">By <a href="#">Jessica Moore</a> on February 10, 2019</div>
@@ -1681,20 +1681,20 @@
 															iaculis. Suspendisse tempor orci non sapien ullamcorper dapibus. Suspendisse at velit
 															diam. Donec pharetra nec enim blandit vulputate.</div>
 													</div>
-													<div class="post-card__more"><a href="post-full-width.html"
+													<div class="post-card__more"><a href="/post-width"
 															class="btn btn-secondary btn-sm">Read more</a></div>
 												</div>
 											</div>
 										</div>
 										<div class="posts-list__item">
 											<div class="post-card post-card--layout--list">
-												<div class="post-card__image"><a href="post-full-width.html"><img
+												<div class="post-card__image"><a href="/post-width"><img
 															src="images/posts/post-10-730x485.jpg" alt=""></a></div>
 												<div class="post-card__content">
-													<div class="post-card__category"><a href="blog-classic-right-sidebar.html">Special Offers</a>
+													<div class="post-card__category"><a href="/blog-classic-right">Special Offers</a>
 													</div>
 													<div class="post-card__title">
-														<h2><a href="post-full-width.html">Engineers Use Many Methods To Minimize Logic
+														<h2><a href="/post-width">Engineers Use Many Methods To Minimize Logic
 																Functions</a></h2>
 													</div>
 													<div class="post-card__date">By <a href="#">Jessica Moore</a> on January 1, 2019</div>
@@ -1704,7 +1704,7 @@
 															iaculis. Suspendisse tempor orci non sapien ullamcorper dapibus. Suspendisse at velit
 															diam. Donec pharetra nec enim blandit vulputate.</div>
 													</div>
-													<div class="post-card__more"><a href="post-full-width.html"
+													<div class="post-card__more"><a href="/post-width"
 															class="btn btn-secondary btn-sm">Read more</a></div>
 												</div>
 											</div>
@@ -1948,16 +1948,16 @@
 						</div>
 					</div>
 					<div class="mobile-menu__divider"></div>
-					<div class="mobile-menu__indicators"><a class="mobile-menu__indicator" href="wishlist.html"><span
+					<div class="mobile-menu__indicators"><a class="mobile-menu__indicator" href="/wishlist"><span
 								class="mobile-menu__indicator-icon"><svg width="20" height="20">
 									<path d="M14,3c2.2,0,4,1.8,4,4c0,4-5.2,10-8,10S2,11,2,7c0-2.2,1.8-4,4-4c1,0,1.9,0.4,2.7,1L10,5.2L11.3,4C12.1,3.4,13,3,14,3 M14,1
 	c-1.5,0-2.9,0.6-4,1.5C8.9,1.6,7.5,1,6,1C2.7,1,0,3.7,0,7c0,5,6,12,10,12s10-7,10-12C20,3.7,17.3,1,14,1L14,1z" /></svg>
 							</span><span class="mobile-menu__indicator-title">Wishlist</span> </a><a class="mobile-menu__indicator"
-							href="account-dashboard.html"><span class="mobile-menu__indicator-icon"><svg width="20" height="20">
+							href="/dashboard"><span class="mobile-menu__indicator-icon"><svg width="20" height="20">
 									<path d="M20,20h-2c0-4.4-3.6-8-8-8s-8,3.6-8,8H0c0-4.2,2.6-7.8,6.3-9.3C4.9,9.6,4,7.9,4,6c0-3.3,2.7-6,6-6s6,2.7,6,6
 	c0,1.9-0.9,3.6-2.3,4.7C17.4,12.2,20,15.8,20,20z M14,6c0-2.2-1.8-4-4-4S6,3.8,6,6s1.8,4,4,4S14,8.2,14,6z" /></svg>
 							</span><span class="mobile-menu__indicator-title">Account</span> </a><a class="mobile-menu__indicator"
-							href="cart.html"><span class="mobile-menu__indicator-icon"><svg width="20" height="20">
+							href="/cart"><span class="mobile-menu__indicator-icon"><svg width="20" height="20">
 									<circle cx="7" cy="17" r="2" />
 									<circle cx="15" cy="17" r="2" />
 									<path d="M20,4.4V5l-1.8,6.3c-0.1,0.4-0.5,0.7-1,0.7H6.7c-0.4,0-0.8-0.3-1-0.7L3.3,3.9C3.1,3.3,2.6,3,2.1,3H0.4C0.2,3,0,2.8,0,2.6
@@ -1965,7 +1965,7 @@
 	C17.9,5.2,17.7,5,17.5,5H9.4C9.2,5,9,4.8,9,4.6V3.4C9,3.2,9.2,3,9.4,3h9.2C19.4,3,20,3.6,20,4.4z" /></svg> <span
 									class="mobile-menu__indicator-counter">3</span> </span><span
 								class="mobile-menu__indicator-title">Cart</span> </a><a class="mobile-menu__indicator"
-							href="account-garage.html"><span class="mobile-menu__indicator-icon"><svg width="20" height="20">
+							href="/garage"><span class="mobile-menu__indicator-icon"><svg width="20" height="20">
 									<path d="M6.6,2c2,0,4.8,0,6.8,0c1,0,2.9,0.8,3.6,2.2C17.7,5.7,17.9,7,18.4,7C20,7,20,8,20,8v1h-1v7.5c0,0.8-0.7,1.5-1.5,1.5h-1
 	c-0.8,0-1.5-0.7-1.5-1.5V16H5v0.5C5,17.3,4.3,18,3.5,18h-1C1.7,18,1,17.3,1,16.5V16V9H0V8c0,0,0.1-1,1.6-1C2.1,7,2.3,5.7,3,4.2
 	C3.7,2.8,5.6,2,6.6,2z M13.3,4H6.7c-0.8,0-1.4,0-2,0.7c-0.5,0.6-0.8,1.5-1,2C3.6,7.1,3.5,7.9,3.7,8C4.5,8.4,6.1,9,10,9
@@ -2077,7 +2077,7 @@
 								</div>
 							</div>
 						</li>
-						<li data-mobile-menu-item><a href="shop-grid-4-columns-sidebar.html" class="" data-mobile-menu-trigger>Shop
+						<li data-mobile-menu-item><a href="/shop-grid-4-columns-sidebar" class="" data-mobile-menu-trigger>Shop
 								<svg width="7" height="11">
 									<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
 	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
@@ -2107,28 +2107,28 @@
 														</div>
 														<div class="mobile-menu__panel-body">
 															<ul class="mobile-menu__links">
-																<li data-mobile-menu-item><a href="category-3-columns-sidebar.html" class=""
+																<li data-mobile-menu-item><a href="category-3-sidebar" class=""
 																		data-mobile-menu-trigger>3 Columns Sidebar</a></li>
-																<li data-mobile-menu-item><a href="category-4-columns-sidebar.html" class=""
+																<li data-mobile-menu-item><a href="category-4-sidebar" class=""
 																		data-mobile-menu-trigger>4 Columns Sidebar</a></li>
-																<li data-mobile-menu-item><a href="category-5-columns-sidebar.html" class=""
+																<li data-mobile-menu-item><a href="category-5-sidebar" class=""
 																		data-mobile-menu-trigger>5 Columns Sidebar</a></li>
-																<li data-mobile-menu-item><a href="category-4-columns-full.html" class=""
+																<li data-mobile-menu-item><a href="/category-4-full" class=""
 																		data-mobile-menu-trigger>4 Columns Full</a></li>
-																<li data-mobile-menu-item><a href="category-5-columns-full.html" class=""
+																<li data-mobile-menu-item><a href="/category-5-full" class=""
 																		data-mobile-menu-trigger>5 Columns Full</a></li>
-																<li data-mobile-menu-item><a href="category-6-columns-full.html" class=""
+																<li data-mobile-menu-item><a href="/category-6-full" class=""
 																		data-mobile-menu-trigger>6 Columns Full</a></li>
-																<li data-mobile-menu-item><a href="category-7-columns-full.html" class=""
+																<li data-mobile-menu-item><a href="/category-7-full" class=""
 																		data-mobile-menu-trigger>7 Columns Full</a></li>
-																<li data-mobile-menu-item><a href="category-right-sidebar.html" class=""
+																<li data-mobile-menu-item><a href="/category-right-sidebar" class=""
 																		data-mobile-menu-trigger>Right Sidebar</a></li>
 															</ul>
 														</div>
 													</div>
 												</div>
 											</li>
-											<li data-mobile-menu-item><a href="shop-grid-4-columns-sidebar.html" class=""
+											<li data-mobile-menu-item><a href="/shop-grid-4-columns-sidebar" class=""
 													data-mobile-menu-trigger>Shop Grid <svg width="7" height="11">
 														<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
 	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
@@ -2143,26 +2143,26 @@
 														</div>
 														<div class="mobile-menu__panel-body">
 															<ul class="mobile-menu__links">
-																<li data-mobile-menu-item><a href="shop-grid-6-columns-full.html" class=""
+																<li data-mobile-menu-item><a href="/shop-grid-6-columns-full" class=""
 																		data-mobile-menu-trigger>6 Columns Full</a></li>
-																<li data-mobile-menu-item><a href="shop-grid-5-columns-full.html" class=""
+																<li data-mobile-menu-item><a href="/shop-grid-5-columns-full" class=""
 																		data-mobile-menu-trigger>5 Columns Full</a></li>
-																<li data-mobile-menu-item><a href="shop-grid-4-columns-full.html" class=""
+																<li data-mobile-menu-item><a href="/shop-grid-4-columns-full" class=""
 																		data-mobile-menu-trigger>4 Columns Full</a></li>
-																<li data-mobile-menu-item><a href="shop-grid-4-columns-sidebar.html" class=""
+																<li data-mobile-menu-item><a href="/shop-grid-4-columns-sidebar" class=""
 																		data-mobile-menu-trigger>4 Columns Sidebar</a></li>
-																<li data-mobile-menu-item><a href="shop-grid-3-columns-sidebar.html" class=""
+																<li data-mobile-menu-item><a href="/shop-grid-3-columns-sidebar" class=""
 																		data-mobile-menu-trigger>3 Columns Sidebar</a></li>
 															</ul>
 														</div>
 													</div>
 												</div>
 											</li>
-											<li data-mobile-menu-item><a href="shop-list.html" class="" data-mobile-menu-trigger>Shop List</a>
+											<li data-mobile-menu-item><a href="/shop-list" class="" data-mobile-menu-trigger>Shop List</a>
 											</li>
-											<li data-mobile-menu-item><a href="shop-table.html" class="" data-mobile-menu-trigger>Shop
+											<li data-mobile-menu-item><a href="/shop-table" class="" data-mobile-menu-trigger>Shop
 													Table</a></li>
-											<li data-mobile-menu-item><a href="shop-right-sidebar.html" class="" data-mobile-menu-trigger>Shop
+											<li data-mobile-menu-item><a href="/shop-right-sidebar" class="" data-mobile-menu-trigger>Shop
 													Right Sidebar</a></li>
 											<li data-mobile-menu-item><a href="product-full.html" class="" data-mobile-menu-trigger>Product
 													<svg width="7" height="11">
@@ -2188,21 +2188,21 @@
 													</div>
 												</div>
 											</li>
-											<li data-mobile-menu-item><a href="cart.html" class="" data-mobile-menu-trigger>Cart</a></li>
-											<li data-mobile-menu-item><a href="checkout.html" class="" data-mobile-menu-trigger>Checkout</a>
+											<li data-mobile-menu-item><a href="/cart" class="" data-mobile-menu-trigger>Cart</a></li>
+											<li data-mobile-menu-item><a href="/checkout" class="" data-mobile-menu-trigger>Checkout</a>
 											</li>
-											<li data-mobile-menu-item><a href="wishlist.html" class="" data-mobile-menu-trigger>Wishlist</a>
+											<li data-mobile-menu-item><a href="/wishlist" class="" data-mobile-menu-trigger>Wishlist</a>
 											</li>
-											<li data-mobile-menu-item><a href="compare.html" class="" data-mobile-menu-trigger>Compare</a>
+											<li data-mobile-menu-item><a href="/compare" class="" data-mobile-menu-trigger>Compare</a>
 											</li>
-											<li data-mobile-menu-item><a href="track-order.html" class="" data-mobile-menu-trigger>Track
+											<li data-mobile-menu-item><a href="/track-order" class="" data-mobile-menu-trigger>Track
 													Order</a></li>
 										</ul>
 									</div>
 								</div>
 							</div>
 						</li>
-						<li data-mobile-menu-item><a href="blog-classic-right-sidebar.html" class="" data-mobile-menu-trigger>Blog
+						<li data-mobile-menu-item><a href="/blog-classic-right" class="" data-mobile-menu-trigger>Blog
 								<svg width="7" height="11">
 									<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
 	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
@@ -2217,7 +2217,7 @@
 									</div>
 									<div class="mobile-menu__panel-body">
 										<ul class="mobile-menu__links">
-											<li data-mobile-menu-item><a href="blog-classic-right-sidebar.html" class=""
+											<li data-mobile-menu-item><a href="/blog-classic-right" class=""
 													data-mobile-menu-trigger>Blog Classic <svg width="7" height="11">
 														<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
 	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
@@ -2232,9 +2232,9 @@
 														</div>
 														<div class="mobile-menu__panel-body">
 															<ul class="mobile-menu__links">
-																<li data-mobile-menu-item><a href="blog-classic-left-sidebar.html" class=""
+																<li data-mobile-menu-item><a href="/blog-classic-left" class=""
 																		data-mobile-menu-trigger>Left Sidebar</a></li>
-																<li data-mobile-menu-item><a href="blog-classic-right-sidebar.html" class=""
+																<li data-mobile-menu-item><a href="/blog-classic-right" class=""
 																		data-mobile-menu-trigger>Right Sidebar</a></li>
 															</ul>
 														</div>
@@ -2289,7 +2289,7 @@
 													</div>
 												</div>
 											</li>
-											<li data-mobile-menu-item><a href="post-full-width.html" class="" data-mobile-menu-trigger>Post
+											<li data-mobile-menu-item><a href="/post-width" class="" data-mobile-menu-trigger>Post
 													Page <svg width="7" height="11">
 														<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
 	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
@@ -2304,11 +2304,11 @@
 														</div>
 														<div class="mobile-menu__panel-body">
 															<ul class="mobile-menu__links">
-																<li data-mobile-menu-item><a href="post-full-width.html" class=""
+																<li data-mobile-menu-item><a href="/post-width" class=""
 																		data-mobile-menu-trigger>Full Width</a></li>
-																<li data-mobile-menu-item><a href="post-left-sidebar.html" class=""
+																<li data-mobile-menu-item><a href="/post-left" class=""
 																		data-mobile-menu-trigger>Left Sidebar</a></li>
-																<li data-mobile-menu-item><a href="post-right-sidebar.html" class=""
+																<li data-mobile-menu-item><a href="/post-right" class=""
 																		data-mobile-menu-trigger>Right Sidebar</a></li>
 															</ul>
 														</div>
@@ -2322,7 +2322,7 @@
 								</div>
 							</div>
 						</li>
-						<li data-mobile-menu-item><a href="account-login.html" class="" data-mobile-menu-trigger>Account <svg
+						<li data-mobile-menu-item><a href="/login" class="" data-mobile-menu-trigger>Account <svg
 									width="7" height="11">
 									<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
 	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
@@ -2337,26 +2337,26 @@
 									</div>
 									<div class="mobile-menu__panel-body">
 										<ul class="mobile-menu__links">
-											<li data-mobile-menu-item><a href="account-login.html" class="" data-mobile-menu-trigger>Login &
+											<li data-mobile-menu-item><a href="/login" class="" data-mobile-menu-trigger>Login &
 													Register</a></li>
-											<li data-mobile-menu-item><a href="account-dashboard.html" class=""
+											<li data-mobile-menu-item><a href="/dashboard" class=""
 													data-mobile-menu-trigger>Dashboard</a></li>
-											<li data-mobile-menu-item><a href="account-garage.html" class=""
+											<li data-mobile-menu-item><a href="/garage" class=""
 													data-mobile-menu-trigger>Garage</a></li>
-											<li data-mobile-menu-item><a href="account-profile.html" class="" data-mobile-menu-trigger>Edit
+											<li data-mobile-menu-item><a href="/account-profile" class="" data-mobile-menu-trigger>Edit
 													Profile</a></li>
-											<li data-mobile-menu-item><a href="account-orders.html" class="" data-mobile-menu-trigger>Order
+											<li data-mobile-menu-item><a href="/account-orders" class="" data-mobile-menu-trigger>Order
 													History</a></li>
-											<li data-mobile-menu-item><a href="account-addresses.html" class=""
+											<li data-mobile-menu-item><a href="/account-addresses" class=""
 													data-mobile-menu-trigger>Address Book</a></li>
-											<li data-mobile-menu-item><a href="account-password.html" class="" data-mobile-menu-trigger>Change
+											<li data-mobile-menu-item><a href="/account-password" class="" data-mobile-menu-trigger>Change
 													Password</a></li>
 										</ul>
 									</div>
 								</div>
 							</div>
 						</li>
-						<li data-mobile-menu-item><a href="about-us.html" class="" data-mobile-menu-trigger>Pages <svg width="7"
+						<li data-mobile-menu-item><a href="/about" class="" data-mobile-menu-trigger>Pages <svg width="7"
 									height="11">
 									<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
 	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
@@ -2371,19 +2371,19 @@
 									</div>
 									<div class="mobile-menu__panel-body">
 										<ul class="mobile-menu__links">
-											<li data-mobile-menu-item><a href="about-us.html" class="" data-mobile-menu-trigger>About Us</a>
+											<li data-mobile-menu-item><a href="/about" class="" data-mobile-menu-trigger>About Us</a>
 											</li>
 											<li data-mobile-menu-item><a href="contact-us-v1.html" class="" data-mobile-menu-trigger>Contact
 													Us v1</a></li>
 											<li data-mobile-menu-item><a href="contact-us-v2.html" class="" data-mobile-menu-trigger>Contact
 													Us v2</a></li>
 											<li data-mobile-menu-item><a href="404.html" class="" data-mobile-menu-trigger>404</a></li>
-											<li data-mobile-menu-item><a href="terms.html" class="" data-mobile-menu-trigger>Terms And
+											<li data-mobile-menu-item><a href="/terms" class="" data-mobile-menu-trigger>Terms And
 													Conditions</a></li>
-											<li data-mobile-menu-item><a href="faq.html" class="" data-mobile-menu-trigger>FAQ</a></li>
-											<li data-mobile-menu-item><a href="components.html" class=""
+											<li data-mobile-menu-item><a href="/faq" class="" data-mobile-menu-trigger>FAQ</a></li>
+											<li data-mobile-menu-item><a href="/components" class=""
 													data-mobile-menu-trigger>Components</a></li>
-											<li data-mobile-menu-item><a href="typography.html" class=""
+											<li data-mobile-menu-item><a href="/typography" class=""
 													data-mobile-menu-trigger>Typography</a></li>
 										</ul>
 									</div>

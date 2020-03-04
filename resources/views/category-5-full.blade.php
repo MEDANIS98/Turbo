@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','right-sidebar')
+@section('title','category-5-colu')
 @section('content')
 
 <div class="site__body">
@@ -22,12 +22,12 @@
 			</div>
 		</div>
 	</div>
-	<div class="block block-split block-split--has-sidebar">
+	<div class="block block-split">
 		<div class="container">
 			<div class="block-split__row row no-gutters">
 				<div class="block-split__item block-split__item-content col-auto">
 					<div class="block">
-						<div class="categories-list categories-list--layout--columns-4-sidebar">
+						<div class="categories-list categories-list--layout--columns-5-full">
 							<ul class="categories-list__body">
 								<li class="categories-list__item"><a href="#"><img src="images/categories/category-1-200x200.jpg"
 											alt="">
@@ -89,7 +89,7 @@
 						</div>
 					</div>
 					<div class="block-space block-space--layout--divider-nl"></div>
-					<div class="block block-products-carousel" data-layout="grid-4-sidebar">
+					<div class="block block-products-carousel" data-layout="grid-5">
 						<div class="container">
 							<div class="section-header">
 								<div class="section-header__body">
@@ -802,7 +802,7 @@
 						</div>
 					</div>
 					<div class="block-space block-space--layout--divider-nl"></div>
-					<div class="block block-products-carousel" data-layout="horizontal-sidebar">
+					<div class="block block-products-carousel" data-layout="horizontal">
 						<div class="container">
 							<div class="section-header">
 								<div class="section-header__body">
@@ -1185,7 +1185,7 @@
 						</div>
 					</div>
 					<div class="block-space block-space--layout--divider-nl"></div>
-					<div class="block block-brands block-brands--layout--columns-7-sidebar">
+					<div class="block block-brands block-brands--layout--columns-8-full">
 						<div class="container">
 							<ul class="block-brands__list">
 								<li class="block-brands__item"><a href="#" class="block-brands__item-link"><img
@@ -1253,147 +1253,6 @@
 											class="block-brands__item-name">SquareGarage</span></a></li>
 								<li class="block-brands__divider" role="presentation"></li>
 							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="block-split__item block-split__item-sidebar col-auto">
-					<div class="card widget widget-categories-list">
-						<div class="widget-categories-list__body" data-collapse
-							data-collapse-opened-class="widget-categories-list--open">
-							<ul class="widget-categories-list__root">
-								<li class="widget-categories-list__root-item widget-categories-list__root-item--has-children"
-									data-collapse-item><a href="#" class="widget-categories-list__root-link">Headlights & Lighting</a>
-									<ul class="widget-categories-list__child">
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Turn Signals</a></li>
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Fog Lights</a></li>
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Headlights</a></li>
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Switches & Relays</a></li>
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Tail Lights</a></li>
-									</ul>
-									<ul class="widget-categories-list__child" data-collapse-content>
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Corner Lights</a></li>
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Off-Road Lighting</a></li>
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Lighting Accessories</a></li>
-									</ul><button type="button" class="widget-categories-list__show-more" data-collapse-trigger><span
-											class="widget-categories-list__show-more-expand-text">Show More</span> <span
-											class="widget-categories-list__show-more-collapse-text">Show Less</span> <span
-											class="widget-categories-list__show-more-arrow"><svg width="9" height="6">
-												<path
-													d="M0.2,0.4c0.4-0.4,1-0.5,1.4-0.1l2.9,3l2.9-3c0.4-0.4,1.1-0.4,1.4,0.1c0.3,0.4,0.3,0.9-0.1,1.3L4.5,6L0.3,1.6C-0.1,1.3-0.1,0.7,0.2,0.4z" />
-											</svg></span></button>
-								</li>
-								<li class="widget-categories-list__root-item widget-categories-list__root-item--has-children"
-									data-collapse-item><a href="#" class="widget-categories-list__root-link">Interior Parts</a>
-									<ul class="widget-categories-list__child">
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Floor Mats</a></li>
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Gauges</a></li>
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Consoles & Organizers</a></li>
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Mobile Electronics</a></li>
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Steering Wheels</a></li>
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Cargo Accessories</a></li>
-									</ul>
-								</li>
-								<li class="widget-categories-list__root-item widget-categories-list__root-item--has-children"
-									data-collapse-item><a href="#" class="widget-categories-list__root-link">Engine & Drivetrain</a>
-									<ul class="widget-categories-list__child">
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Air Filters</a></li>
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Oxygen Sensors</a></li>
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Heating</a></li>
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Exhaust</a></li>
-										<li class="widget-categories-list__child-item"><a href="#"
-												class="widget-categories-list__child-link">Cranks & Pistons</a></li>
-									</ul>
-								</li>
-								<li class="widget-categories-list__root-item" data-collapse-item><a href="#"
-										class="widget-categories-list__root-link">Repair Manuals</a></li>
-								<li class="widget-categories-list__root-item" data-collapse-item><a href="#"
-										class="widget-categories-list__root-link">Suspension</a></li>
-								<li class="widget-categories-list__root-item" data-collapse-item><a href="#"
-										class="widget-categories-list__root-link">Fuel Systems</a></li>
-								<li class="widget-categories-list__root-item" data-collapse-item><a href="#"
-										class="widget-categories-list__root-link">Air Filters</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="card widget widget-products">
-						<div class="widget__header">
-							<h4>Latest Products</h4>
-						</div>
-						<div class="widget-products__list">
-							<div class="widget-products__item">
-								<div class="widget-products__image"><a href="product-full.html"><img
-											src="images/products/product-1-64x64.jpg" alt=""></a></div>
-								<div class="widget-products__info">
-									<div class="widget-products__name"><a href="product-full.html">Brandix Spark Plug Kit ASR-400</a>
-									</div>
-									<div class="widget-products__prices">
-										<div class="widget-products__price widget-products__price--current">$19.00</div>
-									</div>
-								</div>
-							</div>
-							<div class="widget-products__item">
-								<div class="widget-products__image"><a href="product-full.html"><img
-											src="images/products/product-2-64x64.jpg" alt=""></a></div>
-								<div class="widget-products__info">
-									<div class="widget-products__name"><a href="product-full.html">Brandix Brake Kit BDX-750Z370-S</a>
-									</div>
-									<div class="widget-products__prices">
-										<div class="widget-products__price widget-products__price--current">$224.00</div>
-									</div>
-								</div>
-							</div>
-							<div class="widget-products__item">
-								<div class="widget-products__image"><a href="product-full.html"><img
-											src="images/products/product-3-64x64.jpg" alt=""></a></div>
-								<div class="widget-products__info">
-									<div class="widget-products__name"><a href="product-full.html">Left Headlight Of Brandix Z54</a>
-									</div>
-									<div class="widget-products__prices">
-										<div class="widget-products__price widget-products__price--new">$349.00</div>
-										<div class="widget-products__price widget-products__price--old">$415.00</div>
-									</div>
-								</div>
-							</div>
-							<div class="widget-products__item">
-								<div class="widget-products__image"><a href="product-full.html"><img
-											src="images/products/product-4-64x64.jpg" alt=""></a></div>
-								<div class="widget-products__info">
-									<div class="widget-products__name"><a href="product-full.html">Glossy Gray 19" Aluminium Wheel
-											AR-19</a></div>
-									<div class="widget-products__prices">
-										<div class="widget-products__price widget-products__price--current">$589.00</div>
-									</div>
-								</div>
-							</div>
-							<div class="widget-products__item">
-								<div class="widget-products__image"><a href="product-full.html"><img
-											src="images/products/product-5-64x64.jpg" alt=""></a></div>
-								<div class="widget-products__info">
-									<div class="widget-products__name"><a href="product-full.html">Twin Exhaust Pipe From Brandix
-											Z54</a></div>
-									<div class="widget-products__prices">
-										<div class="widget-products__price widget-products__price--current">$749.00</div>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
