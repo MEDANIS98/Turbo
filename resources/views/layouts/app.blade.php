@@ -1745,10 +1745,7 @@
 	C15.5,10.2,14,11.3,14,12z" /></svg> </span><span class="mobile-menu__indicator-title">Garage</span></a></div>
                     <div class="mobile-menu__divider"></div>
                     <ul class="mobile-menu__links">
-                        <li data-mobile-menu-item><a href="/" class="" data-mobile-menu-trigger>Home <svg width="7"
-                                    height="11">
-                                    <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
-	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
+                        <li data-mobile-menu-item><a href="/" class="" data-mobile-menu-trigger>Home</a>
                             <div class="mobile-menu__links-panel" data-mobile-menu-panel>
                                 <div class="mobile-menu__panel mobile-menu__panel--hidden">
                                     <div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back"
