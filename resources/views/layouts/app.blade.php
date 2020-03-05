@@ -136,7 +136,7 @@
                         <div class="topbar__item-text"><a class="topbar__link" href="/about">About</a></div>
                         <div class="topbar__item-text"><a class="topbar__link" href="/contact">Contacts</a>
                         </div>
-                        <div class="topbar__item-text"><a class="topbar__link" href="/track">Track Order</a>
+                        <div class="topbar__item-text"><a class="topbar__link" href="/track-order">Track Order</a>
                         </div>
                     </div>
                 </div>
@@ -159,23 +159,7 @@
                                     href="#">$ US
                                     Dollar</a> <a class="topbar__menu-item" href="#">₽ Russian Ruble</a></div>
                         </div>
-                        <div class="topbar__menu"><button
-                                class="topbar__button topbar__button--has-arrow topbar__menu-button" type="button"><span
-                                    class="topbar__button-label">Language:</span> <span
-                                    class="topbar__button-title">EN</span> <span class="topbar__button-arrow"><svg
-                                        width="7px" height="5px">
-                                        <path
-                                            d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
-                                    </svg></span></button>
-                            <div class="topbar__menu-body"><a class="topbar__menu-item" href="#"><img
-                                        src="images/languages/language-1.png" alt=""><span>English</span> </a><a
-                                    class="topbar__menu-item" href="#"><img src="images/languages/language-2.png"
-                                        alt=""><span>French</span> </a><a class="topbar__menu-item" href="#"><img
-                                        src="images/languages/language-3.png" alt=""><span>German</span> </a><a
-                                    class="topbar__menu-item" href="#"><img src="images/languages/language-4.png"
-                                        alt=""><span>Russian</span> </a><a class="topbar__menu-item" href="#"><img
-                                        src="images/languages/language-5.png" alt=""><span>Italian</span></a></div>
-                        </div>
+                        @include('partials.languageSwitcher')
                     </div>
                 </div>
                 <div class="header__navbar">
@@ -264,7 +248,8 @@
                                                                 <li
                                                                     class="megamenu-links__item megamenu-links__item--has-submenu">
                                                                     <a class="megamenu-links__item-link"
-                                                                        href="#">Headlights & Lighting</a>
+                                                                        href="#">Headlights
+                                                                        & Lighting</a>
                                                                     <ul class="megamenu-links">
                                                                         <li class="megamenu-links__item"><a
                                                                                 class="megamenu-links__item-link"
@@ -324,7 +309,8 @@
                                                                 <li
                                                                     class="megamenu-links__item megamenu-links__item--has-submenu">
                                                                     <a class="megamenu-links__item-link"
-                                                                        href="#">Interior Parts</a>
+                                                                        href="#">Interior
+                                                                        Parts</a>
                                                                     <ul class="megamenu-links">
                                                                         <li class="megamenu-links__item"><a
                                                                                 class="megamenu-links__item-link"
@@ -473,7 +459,8 @@
                                                                 <li
                                                                     class="megamenu-links__item megamenu-links__item--has-submenu">
                                                                     <a class="megamenu-links__item-link"
-                                                                        href="#">Headlights & Lighting</a>
+                                                                        href="#">Headlights
+                                                                        & Lighting</a>
                                                                     <ul class="megamenu-links">
                                                                         <li class="megamenu-links__item"><a
                                                                                 class="megamenu-links__item-link"
@@ -533,7 +520,8 @@
                                                                 <li
                                                                     class="megamenu-links__item megamenu-links__item--has-submenu">
                                                                     <a class="megamenu-links__item-link"
-                                                                        href="#">Interior Parts</a>
+                                                                        href="#">Interior
+                                                                        Parts</a>
                                                                     <ul class="megamenu-links">
                                                                         <li class="megamenu-links__item"><a
                                                                                 class="megamenu-links__item-link"
@@ -659,7 +647,8 @@
                                                                 <li
                                                                     class="megamenu-links__item megamenu-links__item--has-submenu">
                                                                     <a class="megamenu-links__item-link"
-                                                                        href="#">Headlights & Lighting</a>
+                                                                        href="#">Headlights
+                                                                        & Lighting</a>
                                                                     <ul class="megamenu-links">
                                                                         <li class="megamenu-links__item"><a
                                                                                 class="megamenu-links__item-link"
@@ -668,9 +657,10 @@
                                                                                 class="megamenu-links__item-link"
                                                                                 href="#">Tail
                                                                                 Lights</a></li>
-                                                                        <li class="megamenu-links__item"><a
+                                                                        <li class="megamenu-links__item"> <a
                                                                                 class="megamenu-links__item-link"
-                                                                                href="#">Fog
+                                                                                href="#">
+                                                                                Fog
                                                                                 Lights</a></li>
                                                                         <li class="megamenu-links__item"><a
                                                                                 class="megamenu-links__item-link"
@@ -719,7 +709,8 @@
                                                                 <li
                                                                     class="megamenu-links__item megamenu-links__item--has-submenu">
                                                                     <a class="megamenu-links__item-link"
-                                                                        href="#">Interior Parts</a>
+                                                                        href="#">Interior
+                                                                        Parts</a>
                                                                     <ul class="megamenu-links">
                                                                         <li class="megamenu-links__item"><a
                                                                                 class="megamenu-links__item-link"
@@ -811,7 +802,8 @@
                                                                 <li
                                                                     class="megamenu-links__item megamenu-links__item--has-submenu">
                                                                     <a class="megamenu-links__item-link"
-                                                                        href="#">Headlights & Lighting</a>
+                                                                        href="#">Headlights
+                                                                        & Lighting</a>
                                                                     <ul class="megamenu-links">
                                                                         <li class="megamenu-links__item"><a
                                                                                 class="megamenu-links__item-link"
@@ -926,271 +918,176 @@
                         <div class="main-menu">
                             <ul class="main-menu__list">
                                 <li class="main-menu__item main-menu__item--submenu--menu main-menu__item--has-submenu">
-                                    <a href="/" class="main-menu__link">Home <svg width="7px" height="5px">
-                                            <path
-                                                d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
-                                        </svg></a>
-                                    <div class="main-menu__submenu">
-                                        <ul class="menu">
-                                            <li class="menu__item"><a href="/" class="menu__link">Home One</a>
-                                        </ul>
-                                    </div>
+                                    <a href="/" class="main-menu__link">Home</a>
+
                                 </li>
                                 <li class="main-menu__item main-menu__item--submenu--menu main-menu__item--has-submenu">
-                                    <a href="shop-grid-4-columns-sidebar.html" class="main-menu__link">Shop <svg
-                                            width="7px" height="5px">
-                                            <path
-                                                d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
-                                        </svg></a>
-                                    <div class="main-menu__submenu">
-                                        <ul class="menu">
-                                            <li class="menu__item menu__item--has-submenu"><a
-                                                    href="category-4-columns-sidebar.html" class="menu__link">Category
-                                                    <span class="menu__arrow"><svg width="6px" height="9px">
-                                                            <path
-                                                                d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-                                                        </svg></span></a>
-                                                <div class="menu__submenu">
-                                                    <ul class="menu">
-                                                        <li class="menu__item"><a href="category-3-columns-sidebar.html"
-                                                                class="menu__link">3
-                                                                Columns Sidebar</a></li>
-                                                        <li class="menu__item"><a href="category-4-columns-sidebar.html"
-                                                                class="menu__link">4
-                                                                Columns Sidebar</a></li>
-                                                        <li class="menu__item"><a href="category-5-columns-sidebar.html"
-                                                                class="menu__link">5
-                                                                Columns Sidebar</a></li>
-                                                        <li class="menu__item"><a href="category-4-columns-full.html"
-                                                                class="menu__link">4 Columns
-                                                                Full</a></li>
-                                                        <li class="menu__item"><a href="category-5-columns-full.html"
-                                                                class="menu__link">5 Columns
-                                                                Full</a></li>
-                                                        <li class="menu__item"><a href="category-6-columns-full.html"
-                                                                class="menu__link">6 Columns
-                                                                Full</a></li>
-                                                        <li class="menu__item"><a href="category-7-columns-full.html"
-                                                                class="menu__link">7 Columns
-                                                                Full</a></li>
-                                                        <li class="menu__item"><a href="category-right-sidebar.html"
-                                                                class="menu__link">Right
-                                                                Sidebar</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="menu__item menu__item--has-submenu"><a
-                                                    href="shop-grid-4-columns-sidebar.html" class="menu__link">Shop Grid
-                                                    <span class="menu__arrow"><svg width="6px" height="9px">
-                                                            <path
-                                                                d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-                                                        </svg></span></a>
-                                                <div class="menu__submenu">
-                                                    <ul class="menu">
-                                                        <li class="menu__item"><a href="shop-grid-6-columns-full.html"
-                                                                class="menu__link">6 Columns
-                                                                Full</a></li>
-                                                        <li class="menu__item"><a href="shop-grid-5-columns-full.html"
-                                                                class="menu__link">5 Columns
-                                                                Full</a></li>
-                                                        <li class="menu__item"><a href="shop-grid-4-columns-full.html"
-                                                                class="menu__link">4 Columns
-                                                                Full</a></li>
-                                                        <li class="menu__item"><a
-                                                                href="shop-grid-4-columns-sidebar.html"
-                                                                class="menu__link">4
-                                                                Columns Sidebar</a></li>
-                                                        <li class="menu__item"><a
-                                                                href="shop-grid-3-columns-sidebar.html"
-                                                                class="menu__link">3
-                                                                Columns Sidebar</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="menu__item"><a href="shop-list.html" class="menu__link">Shop
-                                                    List</a></li>
-                                            <li class="menu__item"><a href="shop-table.html" class="menu__link">Shop
-                                                    Table</a></li>
-                                            <li class="menu__item"><a href="shop-right-sidebar.html"
-                                                    class="menu__link">Shop Right Sidebar</a>
-                                            </li>
-                                            <li class="menu__item menu__item--has-submenu"><a href="product-full.html"
-                                                    class="menu__link">Product <span class="menu__arrow"><svg
-                                                            width="6px" height="9px">
-                                                            <path
-                                                                d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-                                                        </svg></span></a>
-                                                <div class="menu__submenu">
-                                                    <ul class="menu">
-                                                        <li class="menu__item"><a href="product-full.html"
-                                                                class="menu__link">Full Width</a></li>
-                                                        <li class="menu__item"><a href="product-sidebar.html"
-                                                                class="menu__link">Left Sidebar</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="menu__item"><a href="cart.html" class="menu__link">Cart</a></li>
-                                            <li class="menu__item"><a href="checkout.html"
-                                                    class="menu__link">Checkout</a></li>
-                                            <li class="menu__item"><a href="wishlist.html"
-                                                    class="menu__link">Wishlist</a></li>
-                                            <li class="menu__item"><a href="compare.html" class="menu__link">Compare</a>
-                                            </li>
-                                            <li class="menu__item"><a href="track-order.html" class="menu__link">Track
-                                                    Order</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="main-menu__item main-menu__item--submenu--menu main-menu__item--has-submenu">
-                                    <a href="blog-classic-right-sidebar.html" class="main-menu__link">Blog <svg
-                                            width="7px" height="5px">
-                                            <path
-                                                d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
-                                        </svg></a>
-                                    <div class="main-menu__submenu">
-                                        <ul class="menu">
-                                            <li class="menu__item menu__item--has-submenu"><a
-                                                    href="blog-classic-right-sidebar.html" class="menu__link">Blog
-                                                    Classic <span class="menu__arrow"><svg width="6px" height="9px">
-                                                            <path
-                                                                d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-                                                        </svg></span></a>
-                                                <div class="menu__submenu">
-                                                    <ul class="menu">
-                                                        <li class="menu__item"><a href="blog-classic-left-sidebar.html"
-                                                                class="menu__link">Left
-                                                                Sidebar</a></li>
-                                                        <li class="menu__item"><a href="blog-classic-right-sidebar.html"
-                                                                class="menu__link">Right
-                                                                Sidebar</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="menu__item menu__item--has-submenu"><a
-                                                    href="blog-list-right-sidebar.html" class="menu__link">Blog List
-                                                    <span class="menu__arrow"><svg width="6px" height="9px">
-                                                            <path
-                                                                d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-                                                        </svg></span></a>
-                                                <div class="menu__submenu">
-                                                    <ul class="menu">
-                                                        <li class="menu__item"><a href="blog-list-left-sidebar.html"
-                                                                class="menu__link">Left
-                                                                Sidebar</a></li>
-                                                        <li class="menu__item"><a href="blog-list-right-sidebar.html"
-                                                                class="menu__link">Right
-                                                                Sidebar</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="menu__item menu__item--has-submenu"><a
-                                                    href="blog-grid-right-sidebar.html" class="menu__link">Blog Grid
-                                                    <span class="menu__arrow"><svg width="6px" height="9px">
-                                                            <path
-                                                                d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-                                                        </svg></span></a>
-                                                <div class="menu__submenu">
-                                                    <ul class="menu">
-                                                        <li class="menu__item"><a href="blog-grid-left-sidebar.html"
-                                                                class="menu__link">Left
-                                                                Sidebar</a></li>
-                                                        <li class="menu__item"><a href="blog-grid-right-sidebar.html"
-                                                                class="menu__link">Right
-                                                                Sidebar</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="menu__item menu__item--has-submenu"><a
-                                                    href="post-full-width.html" class="menu__link">Post Page <span
-                                                        class="menu__arrow"><svg width="6px" height="9px">
-                                                            <path
-                                                                d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-                                                        </svg></span></a>
-                                                <div class="menu__submenu">
-                                                    <ul class="menu">
-                                                        <li class="menu__item"><a href="post-full-width.html"
-                                                                class="menu__link">Full Width</a></li>
-                                                        <li class="menu__item"><a href="post-left-sidebar.html"
-                                                                class="menu__link">Left Sidebar</a>
-                                                        </li>
-                                                        <li class="menu__item"><a href="post-right-sidebar.html"
-                                                                class="menu__link">Right
-                                                                Sidebar</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="menu__item"><a href="post-without-image.html"
-                                                    class="menu__link">Post Without Image</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="main-menu__item main-menu__item--submenu--menu main-menu__item--has-submenu">
-                                    <a href="account-login.html" class="main-menu__link">Account <svg width="7px"
+                                    <a href="/shop-grid-4-columns-sidebar" class="main-menu__link">Shop <svg width="7px"
                                             height="5px">
                                             <path
                                                 d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
                                         </svg></a>
                                     <div class="main-menu__submenu">
                                         <ul class="menu">
-                                            <li class="menu__item"><a href="account-login.html" class="menu__link">Login
-                                                    & Register</a></li>
-                                            <li class="menu__item"><a href="account-dashboard.html"
-                                                    class="menu__link">Dashboard</a></li>
-                                            <li class="menu__item"><a href="account-garage.html"
-                                                    class="menu__link">Garage</a></li>
-                                            <li class="menu__item"><a href="account-profile.html"
-                                                    class="menu__link">Edit Profile</a></li>
-                                            <li class="menu__item"><a href="account-orders.html"
-                                                    class="menu__link">Order History</a></li>
-                                            <li class="menu__item"><a href="account-addresses.html"
-                                                    class="menu__link">Address Book</a></li>
-                                            <li class="menu__item"><a href="account-password.html"
-                                                    class="menu__link">Change Password</a></li>
-                                        </ul>
-                                    </div>
+                                            <li class="menu__item menu__item--has-submenu"><a href="category-4-sidebar"
+                                                    class="menu__link">Category
+                                                    <span class="menu__arrow"><svg width="7" height="11">
+                                                            <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
+                                                    	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></span></a>
+                                                <div class="menu__submenu">
+                                                    <ul class="menu">
+                                                        <li class="menu__item"><a href="category-3-sidebar"
+                                                                class="menu__link">3
+                                                                Columns Sidebar</a></li>
+                                                        <li class="menu__item"><a href="category-4-sidebar"
+                                                                class="menu__link">4
+                                                                Columns Sidebar</a></li>
+                                                        <li class="menu__item"><a href="category-5-sidebar"
+                                                                class="menu__link">5
+                                                                Columns Sidebar</a></li>
+                                                        <li class="menu__item"><a href="/category-4-full"
+                                                                class="menu__link">4 Columns
+                                                                Full</a></li>
+                                                        <li class="menu__item"><a href="/category-5-full"
+                                                                class="menu__link">5 Columns
+                                                                Full</a></li>
+                                                        <li class="menu__item"><a href="/category-6-full"
+                                                                class="menu__link">6 Columns
+                                                                Full</a></li>
+                                                        <li class="menu__item"><a href="/category-7-full"
+                                                                class="menu__link">7 Columns
+                                                                Full</a></li>
+                                                        <li class="menu__item"><a href="/category-right-sidebar"
+                                                                class="menu__link">Right
+                                                                Sidebar</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+
+                                            <li class="menu__item"><a href="/shop-list" class="menu__link">Shop
+                                                    List</a></li>
+                                            <li class="menu__item"><a href="/shop-table" class="menu__link">Shop
+                                                    Table</a></li>
+                                            <li class="menu__item"><a href="/shop-right-sidebar" class="menu__link">Shop
+                                                    Right Sidebar</a></li>
+                                            <li class="menu__item"><a href="/product" class="menu__link">Product</a>
+                                            </li>
+
                                 </li>
-                                <li class="main-menu__item main-menu__item--submenu--menu main-menu__item--has-submenu">
-                                    <a href="about-us.html" class="main-menu__link">Pages <svg width="7px" height="5px">
-                                            <path
-                                                d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
-                                        </svg></a>
-                                    <div class="main-menu__submenu">
-                                        <ul class="menu">
-                                            <li class="menu__item"><a href="about-us.html" class="menu__link">About
-                                                    Us</a></li>
-                                            <li class="menu__item"><a href="contact-us-v1.html"
-                                                    class="menu__link">Contact Us v1</a></li>
-                                            <li class="menu__item"><a href="contact-us-v2.html"
-                                                    class="menu__link">Contact Us v2</a></li>
-                                            <li class="menu__item"><a href="404.html" class="menu__link">404</a></li>
-                                            <li class="menu__item"><a href="terms.html" class="menu__link">Terms And
-                                                    Conditions</a></li>
-                                            <li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
-                                            <li class="menu__item"><a href="components.html"
-                                                    class="menu__link">Components</a></li>
-                                            <li class="menu__item"><a href="typography.html"
-                                                    class="menu__link">Typography</a></li>
-                                        </ul>
-                                    </div>
+                                <li class="menu__item"><a href="/cart" class="menu__link">Cart</a></li>
+                                <li class="menu__item"><a href="/checkout" class="menu__link">Checkout</a>
                                 </li>
+                                <li class="menu__item"><a href="/wishlist" class="menu__link">Wishlist</a>
+                                </li>
+                                <li class="menu__item"><a href="/compare" class="menu__link">Compare</a>
+                                </li>
+                                <li class="menu__item"><a href="/track-order" class="menu__link">Track
+                                        Order</a></li>
                             </ul>
                         </div>
+                        </li>
+                        <li class="main-menu__item main-menu__item--submenu--menu main-menu__item--has-submenu">
+                            <a href="/blog-classic-right" class="main-menu__link">Blog <svg width="7px" height="5px">
+                                    <path
+                                        d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
+                                </svg></a>
+                            <div class="main-menu__submenu">
+                                <ul class="menu">
+                                    <li class="menu__item menu__item--has-submenu"><a href="/blog-classic-right"
+                                            class="menu__link">Blog
+                                            Classic <span class="menu__arrow"><svg width="6px" height="9px">
+                                                    <path
+                                                        d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
+                                                </svg></span></a>
+                                        <div class="menu__submenu">
+                                            <ul class="menu">
+                                                <li class="menu__item"><a href="/blog-classic-left"
+                                                        class="menu__link">Left
+                                                        Sidebar</a></li>
+
+                                            </ul>
+
+                                    </li>
+                                    <li class="menu__item menu__item--has-submenu"><a href="/post-width"
+                                            class="menu__link">Post Page <span class="menu__arrow"><svg width="6px"
+                                                    height="9px">
+                                                    <path
+                                                        d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
+                                                </svg></span></a>
+                                        <div class="menu__submenu">
+                                            <ul class="menu">
+
+
+                                    </li>
+                                    <li class="menu__item"><a href="/post-right" class="menu__link">Right
+                                            Sidebar</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                        </li>
+                        </ul>
                     </div>
+                    </li>
+                    <li class="main-menu__item main-menu__item--submenu--menu main-menu__item--has-submenu">
+                        <a href="/login" class="main-menu__link">Account <svg width="7px" height="5px">
+                                <path
+                                    d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
+                            </svg></a>
+                        <div class="main-menu__submenu">
+                            <ul class="menu">
+                                <li class="menu__item"><a href="/login" class="menu__link">Login
+                                        & Register</a></li>
+                                <li class="menu__item"><a href="/garage" class="menu__link">Dashboard</a>
+                                </li>
+                                <li class="menu__item"><a href="/garage" class="menu__link">Garage</a></li>
+                                <li class="menu__item"><a href="/account-profile" class="menu__link">Edit
+                                        Profile</a></li>
+                                <li class="menu__item"><a href="/account-orders" class="menu__link">Order
+                                        History</a></li>
+                                <li class="menu__item"><a href="/account-addresses" class="menu__link">Address
+                                        Book</a></li>
+                                <li class="menu__item"><a href="/account-password" class="menu__link">Change
+                                        Password</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="main-menu__item main-menu__item--submenu--menu main-menu__item--has-submenu">
+                        <a href="/about" class="main-menu__link">Pages <svg width="7px" height="5px">
+                                <path
+                                    d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
+                            </svg></a>
+                        <div class="main-menu__submenu">
+                            <ul class="menu">
+                                <li class="menu__item"><a href="/about" class="menu__link">About
+                                        Us</a></li>
+                                <li class="menu__item"><a href="/contact" class="menu__link">contact</a>
+                                </li>
+                                <li class="menu__item"><a href="/terms" class="menu__link">Terms And
+                                        Conditions</a></li>
+                                <li class="menu__item"><a href="FAQ" class="menu__link">FAQ</a>
+                                </li>
+                                <li class="menu__item"><a href="/components" class="menu__link">Components</a></li>
+                                <li class="menu__item"><a href="/typography" class="menu__link">Typography</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    </ul>
                 </div>
-                <div class="header__logo"><a href="/" class="logo">
-                        <div class="logo__slogan">Auto parts for Cars, trucks and motorcycles</div>
-                        <div class="logo__image">
-                            <!-- logo --> <svg width="168" height="26">
-                                <path class="logo__part-primary" d="M50,26h-5c-1.1,0-2-0.9-2-2V2c0-1.1,0.9-2,2-2h5c6.6,0,12,5.4,12,12v2C62,20.6,56.6,26,50,26z M57,12
+            </div>
+    </div>
+    <div class="header__logo"><a href="/" class="logo">
+            <div class="logo__slogan">Auto parts for Cars, trucks and motorcycles</div>
+            <div class="logo__image">
+                <!-- logo --> <svg width="168" height="26">
+                    <path class="logo__part-primary" d="M50,26h-5c-1.1,0-2-0.9-2-2V2c0-1.1,0.9-2,2-2h5c6.6,0,12,5.4,12,12v2C62,20.6,56.6,26,50,26z M57,12
 	c0-3.9-3.1-7-7-7h-0.8C48.5,5,48,5.5,48,6.2v13.6c0,0.7,0.5,1.2,1.2,1.2H50c3.9,0,7-3.1,7-7V12z M38.5,26h-13h-2
 	c-0.8,0-1.5-0.7-1.5-1.5v-2v-9v-2v-8v-2C22,0.7,22.7,0,23.5,0h2h13C39.3,0,40,0.7,40,1.5v2C40,4.3,39.3,5,38.5,5H27v5h9.5
 	c0.8,0,1.5,0.7,1.5,1.5v2c0,0.8-0.7,1.5-1.5,1.5H27v6h11.5c0.8,0,1.5,0.7,1.5,1.5v2C40,25.3,39.3,26,38.5,26z M18.8,23.8
 	c0.6,1-0.1,2.3-1.3,2.3h-2.3c-0.5,0-1-0.3-1.3-0.8L9.7,18H5v6.5C5,25.3,4.3,26,3.5,26h-2C0.7,26,0,25.3,0,24.5v-23
 	C0,0.7,0.7,0,1.5,0H10c5,0,9,4,9,9c0,3.2-1.7,6.1-4.3,7.7L18.8,23.8z M10,5H6C5.5,5,5,5.4,5,6v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4
 	S12.2,5,10,5z"></path>
-                                <path class="logo__part-secondary" d="M166.5,8h-2.3c-0.6,0-1.1-0.4-1.4-1c-0.5-1.2-2-2-3.8-2c-2.2,0-4,1.3-4,3c0,0.9,0.6,1.8,1.5,2.3
+                    <path class="logo__part-secondary" d="M166.5,8h-2.3c-0.6,0-1.1-0.4-1.4-1c-0.5-1.2-2-2-3.8-2c-2.2,0-4,1.3-4,3c0,0.9,0.6,1.8,1.5,2.3
 	c0.2,0.1,0.5,0.3,0.7,0.4c0.9,0.3,1.2,1.3,0.7,2.1l-1,1.7c-0.4,0.7-1.2,0.9-1.9,0.6c-1.2-0.5-2.3-1.3-3.1-2.2c-1.2-1.4-2-3.1-2-5
 	c0-4.4,4-8,9-8c4.3,0,8,2.6,8.9,6.2C168.2,7.1,167.4,8,166.5,8z M151.5,18h2.3c0.6,0,1.1,0.4,1.4,1c0.5,1.2,2,2,3.8,2
 	c2.2,0,4-1.3,4-3c0-0.9-0.6-1.8-1.5-2.3c-0.2-0.1-0.5-0.3-0.7-0.4c-0.9-0.3-1.2-1.3-0.7-2.1l1-1.7c0.4-0.6,1.2-0.9,1.9-0.6
@@ -1208,466 +1105,454 @@
 	c0.1,0.1,0.2,0.2,0.3,0.3c0.3,0.3,0.5,0.7,0.8,1.1c0.1,0.1,0.1,0.2,0.2,0.3C83,4.8,83.1,5,83.1,5.1c0.2,0.5,0.4,1,0.6,1.6
 	c0,0.2,0.1,0.4,0.1,0.6c0,0.2,0.1,0.4,0.1,0.6C83.9,8,84,8.2,84,8.4c0,0.2,0,0.4,0,0.6s0,0.4,0,0.6C84,9.8,83.9,10,83.9,10.2z M75,5
 	h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path>
-                            </svg><!-- logo / end -->
-                        </div>
-                    </a></div>
-                <div class="header__search">
-                    <div class="search">
-                        <form action="#" class="search__body">
-                            <div class="search__shadow"></div><input class="search__input" type="text"
-                                placeholder="Enter Keyword or Part Number"> <button
-                                class="search__button search__button--start" type="button"><span
-                                    class="search__button-icon"><svg width="20" height="20">
-                                        <path d="M6.6,2c2,0,4.8,0,6.8,0c1,0,2.9,0.8,3.6,2.2C17.7,5.7,17.9,7,18.4,7C20,7,20,8,20,8v1h-1v7.5c0,0.8-0.7,1.5-1.5,1.5h-1
+                </svg><!-- logo / end -->
+            </div>
+        </a></div>
+    <div class="header__search">
+        <div class="search">
+            <form action="#" class="search__body">
+                <div class="search__shadow"></div><input class="search__input" type="text"
+                    placeholder="Enter Keyword or Part Number"> <button class="search__button search__button--start"
+                    type="button"><span class="search__button-icon"><svg width="20" height="20">
+                            <path d="M6.6,2c2,0,4.8,0,6.8,0c1,0,2.9,0.8,3.6,2.2C17.7,5.7,17.9,7,18.4,7C20,7,20,8,20,8v1h-1v7.5c0,0.8-0.7,1.5-1.5,1.5h-1
 	c-0.8,0-1.5-0.7-1.5-1.5V16H5v0.5C5,17.3,4.3,18,3.5,18h-1C1.7,18,1,17.3,1,16.5V16V9H0V8c0,0,0.1-1,1.6-1C2.1,7,2.3,5.7,3,4.2
 	C3.7,2.8,5.6,2,6.6,2z M13.3,4H6.7c-0.8,0-1.4,0-2,0.7c-0.5,0.6-0.8,1.5-1,2C3.6,7.1,3.5,7.9,3.7,8C4.5,8.4,6.1,9,10,9
 	c4,0,5.4-0.6,6.3-1c0.2-0.1,0.2-0.8,0-1.2c-0.2-0.4-0.5-1.5-1-2C14.7,4,14.1,4,13.3,4z M4,10c-0.4-0.3-1.5-0.5-2,0
 	c-0.4,0.4-0.4,1.6,0,2c0.5,0.5,4,0.4,4,0C6,11.2,4.5,10.3,4,10z M14,12c0,0.4,3.5,0.5,4,0c0.4-0.4,0.4-1.6,0-2c-0.5-0.5-1.3-0.3-2,0
 	C15.5,10.2,14,11.3,14,12z" /></svg> </span><span class="search__button-title">Select Vehicle</span></button> <button
-                                class="search__button search__button--end" type="submit"><span
-                                    class="search__button-icon"><svg width="20" height="20">
-                                        <path d="M19.2,17.8c0,0-0.2,0.5-0.5,0.8c-0.4,0.4-0.9,0.6-0.9,0.6s-0.9,0.7-2.8-1.6c-1.1-1.4-2.2-2.8-3.1-3.9C10.9,14.5,9.5,15,8,15
+                    class="search__button search__button--end" type="submit"><span class="search__button-icon"><svg
+                            width="20" height="20">
+                            <path d="M19.2,17.8c0,0-0.2,0.5-0.5,0.8c-0.4,0.4-0.9,0.6-0.9,0.6s-0.9,0.7-2.8-1.6c-1.1-1.4-2.2-2.8-3.1-3.9C10.9,14.5,9.5,15,8,15
 	c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7c0,1.5-0.5,2.9-1.3,4c1.1,0.8,2.5,2,4,3.1C20,16.8,19.2,17.8,19.2,17.8z M8,3C5.2,3,3,5.2,3,8
 	c0,2.8,2.2,5,5,5c2.8,0,5-2.2,5-5C13,5.2,10.8,3,8,3z" /></svg></span></button>
-                            <div class="search__box"></div>
-                            <div class="search__decor">
-                                <div class="search__decor-start"></div>
-                                <div class="search__decor-end"></div>
-                            </div>
-                            <div class="search__dropdown search__dropdown--suggestions suggestions">
-                                <div class="suggestions__group">
-                                    <div class="suggestions__group-title">Products</div>
-                                    <div class="suggestions__group-content"><a
-                                            class="suggestions__item suggestions__product" href="#">
-                                            <div class="suggestions__product-image"><img
-                                                    src="images/products/product-2-40x40.jpg" alt="">
-                                            </div>
-                                            <div class="suggestions__product-info">
-                                                <div class="suggestions__product-name">Brandix Brake Kit BDX-750Z370-S
-                                                </div>
-                                                <div class="suggestions__product-rating">
-                                                    <div class="suggestions__product-rating-stars">
-                                                        <div class="rating">
-                                                            <div class="rating__body">
-                                                                <div class="rating__star rating__star--active"></div>
-                                                                <div class="rating__star rating__star--active"></div>
-                                                                <div class="rating__star rating__star--active"></div>
-                                                                <div class="rating__star rating__star--active"></div>
-                                                                <div class="rating__star rating__star--active"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="suggestions__product-rating-label">5 on 22 reviews</div>
-                                                </div>
-                                            </div>
-                                            <div class="suggestions__product-price">$224.00</div>
-                                        </a><a class="suggestions__item suggestions__product" href="#">
-                                            <div class="suggestions__product-image"><img
-                                                    src="images/products/product-3-40x40.jpg" alt="">
-                                            </div>
-                                            <div class="suggestions__product-info">
-                                                <div class="suggestions__product-name">Left Headlight Of Brandix Z54
-                                                </div>
-                                                <div class="suggestions__product-rating">
-                                                    <div class="suggestions__product-rating-stars">
-                                                        <div class="rating">
-                                                            <div class="rating__body">
-                                                                <div class="rating__star rating__star--active"></div>
-                                                                <div class="rating__star rating__star--active"></div>
-                                                                <div class="rating__star rating__star--active"></div>
-                                                                <div class="rating__star"></div>
-                                                                <div class="rating__star"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="suggestions__product-rating-label">3 on 14 reviews</div>
-                                                </div>
-                                            </div>
-                                            <div class="suggestions__product-price">$349.00</div>
-                                        </a><a class="suggestions__item suggestions__product" href="#">
-                                            <div class="suggestions__product-image"><img
-                                                    src="images/products/product-4-40x40.jpg" alt="">
-                                            </div>
-                                            <div class="suggestions__product-info">
-                                                <div class="suggestions__product-name">Glossy Gray 19" Aluminium Wheel
-                                                    AR-19</div>
-                                                <div class="suggestions__product-rating">
-                                                    <div class="suggestions__product-rating-stars">
-                                                        <div class="rating">
-                                                            <div class="rating__body">
-                                                                <div class="rating__star rating__star--active"></div>
-                                                                <div class="rating__star rating__star--active"></div>
-                                                                <div class="rating__star rating__star--active"></div>
-                                                                <div class="rating__star rating__star--active"></div>
-                                                                <div class="rating__star"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="suggestions__product-rating-label">4 on 26 reviews</div>
-                                                </div>
-                                            </div>
-                                            <div class="suggestions__product-price">$589.00</div>
-                                        </a></div>
+                <div class="search__box"></div>
+                <div class="search__decor">
+                    <div class="search__decor-start"></div>
+                    <div class="search__decor-end"></div>
+                </div>
+                <div class="search__dropdown search__dropdown--suggestions suggestions">
+                    <div class="suggestions__group">
+                        <div class="suggestions__group-title">Products</div>
+                        <div class="suggestions__group-content"><a class="suggestions__item suggestions__product"
+                                href="#">
+                                <div class="suggestions__product-image"><img src="images/products/product-2-40x40.jpg"
+                                        alt="">
                                 </div>
-                                <div class="suggestions__group">
-                                    <div class="suggestions__group-title">Categories</div>
-                                    <div class="suggestions__group-content"><a
-                                            class="suggestions__item suggestions__category" href="#">Headlights &
-                                            Lighting</a> <a class="suggestions__item suggestions__category"
-                                            href="#">Fuel System & Filters</a> <a
-                                            class="suggestions__item suggestions__category" href="#">Body Parts &
-                                            Mirrors</a> <a class="suggestions__item suggestions__category"
-                                            href="#">Interior Accessories</a></div>
-                                </div>
-                            </div>
-                            <div class="search__dropdown search__dropdown--vehicle-picker vehicle-picker">
-                                <div class="search__dropdown-arrow"></div>
-                                <div class="vehicle-picker__panel vehicle-picker__panel--list vehicle-picker__panel--active"
-                                    data-panel="list">
-                                    <div class="vehicle-picker__panel-body">
-                                        <div class="vehicle-picker__text">Select a vehicle to find exact fit parts</div>
-                                        <div class="vehicles-list">
-                                            <div class="vehicles-list__body"><label class="vehicles-list__item"><span
-                                                        class="vehicles-list__item-radio input-radio"><span
-                                                            class="input-radio__body"><input class="input-radio__input"
-                                                                name="header-vehicle" type="radio"> <span
-                                                                class="input-radio__circle"></span> </span></span><span
-                                                        class="vehicles-list__item-info"><span
-                                                            class="vehicles-list__item-name">2011 Ford Focus
-                                                            S</span> <span class="vehicles-list__item-details">Engine
-                                                            2.0L 1742DA L4 FI Turbo</span>
-                                                    </span><button type="button" class="vehicles-list__item-remove"><svg
-                                                            width="16" height="16">
-                                                            <path
-                                                                d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z" />
-                                                        </svg></button></label> <label class="vehicles-list__item"><span
-                                                        class="vehicles-list__item-radio input-radio"><span
-                                                            class="input-radio__body"><input class="input-radio__input"
-                                                                name="header-vehicle" type="radio"> <span
-                                                                class="input-radio__circle"></span> </span></span><span
-                                                        class="vehicles-list__item-info"><span
-                                                            class="vehicles-list__item-name">2019 Audi Q7
-                                                            Premium</span> <span
-                                                            class="vehicles-list__item-details">Engine 3.0L 5626CC L6
-                                                            QK</span>
-                                                    </span><button type="button" class="vehicles-list__item-remove"><svg
-                                                            width="16" height="16">
-                                                            <path
-                                                                d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z" />
-                                                        </svg></button></label></div>
+                                <div class="suggestions__product-info">
+                                    <div class="suggestions__product-name">Brandix Brake Kit BDX-750Z370-S
+                                    </div>
+                                    <div class="suggestions__product-rating">
+                                        <div class="suggestions__product-rating-stars">
+                                            <div class="rating">
+                                                <div class="rating__body">
+                                                    <div class="rating__star rating__star--active"></div>
+                                                    <div class="rating__star rating__star--active"></div>
+                                                    <div class="rating__star rating__star--active"></div>
+                                                    <div class="rating__star rating__star--active"></div>
+                                                    <div class="rating__star rating__star--active"></div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="vehicle-picker__actions"><button type="button"
-                                                class="btn btn-primary btn-sm" data-to-panel="form">Add A
-                                                Vehicle</button></div>
+                                        <div class="suggestions__product-rating-label">5 on 22 reviews</div>
                                     </div>
                                 </div>
-                                <div class="vehicle-picker__panel vehicle-picker__panel--form" data-panel="form">
-                                    <div class="vehicle-picker__panel-body">
-                                        <div class="vehicle-form vehicle-form--layout--search">
-                                            <div class="vehicle-form__item vehicle-form__item--select"><select
-                                                    class="form-control form-control-select2" aria-label="Year">
-                                                    <option value="none">Select Year</option>
-                                                    <option>2010</option>
-                                                    <option>2011</option>
-                                                    <option>2012</option>
-                                                    <option>2013</option>
-                                                    <option>2014</option>
-                                                    <option>2015</option>
-                                                    <option>2016</option>
-                                                    <option>2017</option>
-                                                    <option>2018</option>
-                                                    <option>2019</option>
-                                                    <option>2020</option>
-                                                </select></div>
-                                            <div class="vehicle-form__item vehicle-form__item--select"><select
-                                                    class="form-control form-control-select2" aria-label="Brand"
-                                                    disabled="disabled">
-                                                    <option value="none">Select Brand</option>
-                                                    <option>Audi</option>
-                                                    <option>BMW</option>
-                                                    <option>Ferrari</option>
-                                                    <option>Ford</option>
-                                                    <option>KIA</option>
-                                                    <option>Nissan</option>
-                                                    <option>Tesla</option>
-                                                    <option>Toyota</option>
-                                                </select></div>
-                                            <div class="vehicle-form__item vehicle-form__item--select"><select
-                                                    class="form-control form-control-select2" aria-label="Model"
-                                                    disabled="disabled">
-                                                    <option value="none">Select Model</option>
-                                                    <option>Explorer</option>
-                                                    <option>Focus S</option>
-                                                    <option>Fusion SE</option>
-                                                    <option>Mustang</option>
-                                                </select></div>
-                                            <div class="vehicle-form__item vehicle-form__item--select"><select
-                                                    class="form-control form-control-select2" aria-label="Engine"
-                                                    disabled="disabled">
-                                                    <option value="none">Select Engine</option>
-                                                    <option>Gas 1.6L 125 hp AT/L4</option>
-                                                    <option>Diesel 2.5L 200 hp AT/L5</option>
-                                                    <option>Diesel 3.0L 250 hp MT/L5</option>
-                                                </select></div>
-                                            <div class="vehicle-form__divider">Or</div>
-                                            <div class="vehicle-form__item"><input type="text" class="form-control"
-                                                    placeholder="Enter VIN number" aria-label="VIN number"></div>
+                                <div class="suggestions__product-price">$224.00</div>
+                            </a><a class="suggestions__item suggestions__product" href="#">
+                                <div class="suggestions__product-image"><img src="images/products/product-3-40x40.jpg"
+                                        alt="">
+                                </div>
+                                <div class="suggestions__product-info">
+                                    <div class="suggestions__product-name">Left Headlight Of Brandix Z54
+                                    </div>
+                                    <div class="suggestions__product-rating">
+                                        <div class="suggestions__product-rating-stars">
+                                            <div class="rating">
+                                                <div class="rating__body">
+                                                    <div class="rating__star rating__star--active"></div>
+                                                    <div class="rating__star rating__star--active"></div>
+                                                    <div class="rating__star rating__star--active"></div>
+                                                    <div class="rating__star"></div>
+                                                    <div class="rating__star"></div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="vehicle-picker__actions">
-                                            <div class="search__car-selector-link"><a href="#" data-to-panel="list">Back
-                                                    to vehicles list</a>
-                                            </div><button type="button" class="btn btn-primary btn-sm"
-                                                disabled="disabled">Add A
-                                                Vehicle</button>
-                                        </div>
+                                        <div class="suggestions__product-rating-label">3 on 14 reviews</div>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                                <div class="suggestions__product-price">$349.00</div>
+                            </a><a class="suggestions__item suggestions__product" href="#">
+                                <div class="suggestions__product-image"><img src="images/products/product-4-40x40.jpg"
+                                        alt="">
+                                </div>
+                                <div class="suggestions__product-info">
+                                    <div class="suggestions__product-name">Glossy Gray 19" Aluminium Wheel
+                                        AR-19</div>
+                                    <div class="suggestions__product-rating">
+                                        <div class="suggestions__product-rating-stars">
+                                            <div class="rating">
+                                                <div class="rating__body">
+                                                    <div class="rating__star rating__star--active"></div>
+                                                    <div class="rating__star rating__star--active"></div>
+                                                    <div class="rating__star rating__star--active"></div>
+                                                    <div class="rating__star rating__star--active"></div>
+                                                    <div class="rating__star"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="suggestions__product-rating-label">4 on 26 reviews</div>
+                                    </div>
+                                </div>
+                                <div class="suggestions__product-price">$589.00</div>
+                            </a></div>
+                    </div>
+                    <div class="suggestions__group">
+                        <div class="suggestions__group-title">Categories</div>
+                        <div class="suggestions__group-content"><a class="suggestions__item suggestions__category"
+                                href="#">Headlights &
+                                Lighting</a> <a class="suggestions__item suggestions__category" href="#">Fuel
+                                System & Filters</a> <a class="suggestions__item suggestions__category" href="#">Body
+                                Parts &
+                                Mirrors</a> <a class="suggestions__item suggestions__category" href="#">Interior
+                                Accessories</a></div>
                     </div>
                 </div>
-                <div class="header__indicators">
-                    <div class="indicator"><a href="wishlist.html" class="indicator__button"><span
-                                class="indicator__icon"><svg width="32" height="32">
-                                    <path d="M23,4c3.9,0,7,3.1,7,7c0,6.3-11.4,15.9-14,16.9C13.4,26.9,2,17.3,2,11c0-3.9,3.1-7,7-7c2.1,0,4.1,1,5.4,2.6l1.6,2l1.6-2
+                <div class="search__dropdown search__dropdown--vehicle-picker vehicle-picker">
+                    <div class="search__dropdown-arrow"></div>
+                    <div class="vehicle-picker__panel vehicle-picker__panel--list vehicle-picker__panel--active"
+                        data-panel="list">
+                        <div class="vehicle-picker__panel-body">
+                            <div class="vehicle-picker__text">Select a vehicle to find exact fit parts</div>
+                            <div class="vehicles-list">
+                                <div class="vehicles-list__body"><label class="vehicles-list__item"><span
+                                            class="vehicles-list__item-radio input-radio"><span
+                                                class="input-radio__body"><input class="input-radio__input"
+                                                    name="header-vehicle" type="radio"> <span
+                                                    class="input-radio__circle"></span> </span></span><span
+                                            class="vehicles-list__item-info"><span class="vehicles-list__item-name">2011
+                                                Ford Focus
+                                                S</span> <span class="vehicles-list__item-details">Engine
+                                                2.0L 1742DA L4 FI Turbo</span>
+                                        </span><button type="button" class="vehicles-list__item-remove"><svg width="16"
+                                                height="16">
+                                                <path
+                                                    d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z" />
+                                            </svg></button></label> <label class="vehicles-list__item"><span
+                                            class="vehicles-list__item-radio input-radio"><span
+                                                class="input-radio__body"><input class="input-radio__input"
+                                                    name="header-vehicle" type="radio"> <span
+                                                    class="input-radio__circle"></span> </span></span><span
+                                            class="vehicles-list__item-info"><span class="vehicles-list__item-name">2019
+                                                Audi Q7
+                                                Premium</span> <span class="vehicles-list__item-details">Engine
+                                                3.0L 5626CC L6
+                                                QK</span>
+                                        </span><button type="button" class="vehicles-list__item-remove"><svg width="16"
+                                                height="16">
+                                                <path
+                                                    d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z" />
+                                            </svg></button></label></div>
+                            </div>
+                            <div class="vehicle-picker__actions"><button type="button" class="btn btn-primary btn-sm"
+                                    data-to-panel="form">Add A
+                                    Vehicle</button></div>
+                        </div>
+                    </div>
+                    <div class="vehicle-picker__panel vehicle-picker__panel--form" data-panel="form">
+                        <div class="vehicle-picker__panel-body">
+                            <div class="vehicle-form vehicle-form--layout--search">
+                                <div class="vehicle-form__item vehicle-form__item--select"><select
+                                        class="form-control form-control-select2" aria-label="Year">
+                                        <option value="none">Select Year</option>
+                                        <option>2010</option>
+                                        <option>2011</option>
+                                        <option>2012</option>
+                                        <option>2013</option>
+                                        <option>2014</option>
+                                        <option>2015</option>
+                                        <option>2016</option>
+                                        <option>2017</option>
+                                        <option>2018</option>
+                                        <option>2019</option>
+                                        <option>2020</option>
+                                    </select></div>
+                                <div class="vehicle-form__item vehicle-form__item--select"><select
+                                        class="form-control form-control-select2" aria-label="Brand"
+                                        disabled="disabled">
+                                        <option value="none">Select Brand</option>
+                                        <option>Audi</option>
+                                        <option>BMW</option>
+                                        <option>Ferrari</option>
+                                        <option>Ford</option>
+                                        <option>KIA</option>
+                                        <option>Nissan</option>
+                                        <option>Tesla</option>
+                                        <option>Toyota</option>
+                                    </select></div>
+                                <div class="vehicle-form__item vehicle-form__item--select"><select
+                                        class="form-control form-control-select2" aria-label="Model"
+                                        disabled="disabled">
+                                        <option value="none">Select Model</option>
+                                        <option>Explorer</option>
+                                        <option>Focus S</option>
+                                        <option>Fusion SE</option>
+                                        <option>Mustang</option>
+                                    </select></div>
+                                <div class="vehicle-form__item vehicle-form__item--select"><select
+                                        class="form-control form-control-select2" aria-label="Engine"
+                                        disabled="disabled">
+                                        <option value="none">Select Engine</option>
+                                        <option>Gas 1.6L 125 hp AT/L4</option>
+                                        <option>Diesel 2.5L 200 hp AT/L5</option>
+                                        <option>Diesel 3.0L 250 hp MT/L5</option>
+                                    </select></div>
+                                <div class="vehicle-form__divider">Or</div>
+                                <div class="vehicle-form__item"><input type="text" class="form-control"
+                                        placeholder="Enter VIN number" aria-label="VIN number"></div>
+                            </div>
+                            <div class="vehicle-picker__actions">
+                                <div class="search__car-selector-link"><a href="#" data-to-panel="list">Back
+                                        to vehicles list</a>
+                                </div><button type="button" class="btn btn-primary btn-sm" disabled="disabled">Add A
+                                    Vehicle</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="header__indicators">
+        <div class="indicator"><a href="/wishlist" class="indicator__button"><span class="indicator__icon"><svg
+                        width="32" height="32">
+                        <path d="M23,4c3.9,0,7,3.1,7,7c0,6.3-11.4,15.9-14,16.9C13.4,26.9,2,17.3,2,11c0-3.9,3.1-7,7-7c2.1,0,4.1,1,5.4,2.6l1.6,2l1.6-2
 	C18.9,5,20.9,4,23,4 M23,2c-2.8,0-5.4,1.3-7,3.4C14.4,3.3,11.8,2,9,2c-5,0-9,4-9,9c0,8,14,19,16,19s16-11,16-19C32,6,28,2,23,2L23,2
 	z" /></svg></span></a></div>
-                    <div class="indicator indicator--trigger--click"><a href="account-login.html"
-                            class="indicator__button"><span class="indicator__icon"><svg width="32" height="32">
-                                    <path d="M16,18C9.4,18,4,23.4,4,30H2c0-6.2,4-11.5,9.6-13.3C9.4,15.3,8,12.8,8,10c0-4.4,3.6-8,8-8s8,3.6,8,8c0,2.8-1.5,5.3-3.6,6.7
+        <div class="indicator indicator--trigger--click"><a href="/login" class="indicator__button"><span
+                    class="indicator__icon"><svg width="32" height="32">
+                        <path d="M16,18C9.4,18,4,23.4,4,30H2c0-6.2,4-11.5,9.6-13.3C9.4,15.3,8,12.8,8,10c0-4.4,3.6-8,8-8s8,3.6,8,8c0,2.8-1.5,5.3-3.6,6.7
 	C26,18.5,30,23.8,30,30h-2C28,23.4,22.6,18,16,18z M22,10c0-3.3-2.7-6-6-6s-6,2.7-6,6s2.7,6,6,6S22,13.3,22,10z" /></svg>
-                            </span><span class="indicator__title">Hello, Log In</span> <span class="indicator__value">My
-                                Account</span></a>
-                        <div class="indicator__content">
-                            <div class="account-menu">
-                                <form class="account-menu__form">
-                                    <div class="account-menu__form-title">Log In to Your Account</div>
-                                    <div class="form-group"><label for="header-signin-email" class="sr-only">Email
-                                            address</label> <input id="header-signin-email" type="email"
-                                            class="form-control form-control-sm" placeholder="Email address"></div>
-                                    <div class="form-group"><label for="header-signin-password"
-                                            class="sr-only">Password</label>
-                                        <div class="account-menu__form-forgot"><input id="header-signin-password"
-                                                type="password" class="form-control form-control-sm"
-                                                placeholder="Password"> <a href="#"
-                                                class="account-menu__form-forgot-link">Forgot?</a></div>
-                                    </div>
-                                    <div class="form-group account-menu__form-button"><button type="submit"
-                                            class="btn btn-primary btn-sm">Login</button></div>
-                                    <div class="account-menu__form-link"><a href="account-login.html">Create An
-                                            Account</a></div>
-                                </form>
-                                <div class="account-menu__divider"></div><a href="#" class="account-menu__user">
-                                    <div class="account-menu__user-avatar"><img src="images/avatars/avatar-4.jpg"
-                                            alt=""></div>
-                                    <div class="account-menu__user-info">
-                                        <div class="account-menu__user-name">Ryan Ford</div>
-                                        <div class="account-menu__user-email">red-parts@example.com</div>
-                                    </div>
-                                </a>
-                                <div class="account-menu__divider"></div>
-                                <ul class="account-menu__links">
-                                    <li><a href="account-dashboard.html">Dashboard</a></li>
-                                    <li><a href="account-dashboard.html">Garage</a></li>
-                                    <li><a href="account-profile.html">Edit Profile</a></li>
-                                    <li><a href="account-orders.html">Order History</a></li>
-                                    <li><a href="account-addresses.html">Addresses</a></li>
-                                </ul>
-                                <div class="account-menu__divider"></div>
-                                <ul class="account-menu__links">
-                                    <li><a href="account-login.html">Logout</a></li>
-                                </ul>
-                            </div>
+                </span><span class="indicator__title">Hello, Log In</span> <span class="indicator__value">My
+                    Account</span></a>
+            <div class="indicator__content">
+                <div class="account-menu">
+                    <form class="account-menu__form">
+                        <div class="account-menu__form-title">Log In to Your Account</div>
+                        <div class="form-group"><label for="header-signin-email" class="sr-only">Email
+                                address</label> <input id="header-signin-email" type="email"
+                                class="form-control form-control-sm" placeholder="Email address"></div>
+                        <div class="form-group"><label for="header-signin-password" class="sr-only">Password</label>
+                            <div class="account-menu__form-forgot"><input id="header-signin-password" type="password"
+                                    class="form-control form-control-sm" placeholder="Password">
+                                <a href="#" class="account-menu__form-forgot-link">Forgot?</a></div>
                         </div>
-                    </div>
-                    <div class="indicator indicator--trigger--click"><a href="cart.html" class="indicator__button"><span
-                                class="indicator__icon"><svg width="32" height="32">
-                                    <circle cx="10.5" cy="27.5" r="2.5" />
-                                    <circle cx="23.5" cy="27.5" r="2.5" />
-                                    <path d="M26.4,21H11.2C10,21,9,20.2,8.8,19.1L5.4,4.8C5.3,4.3,4.9,4,4.4,4H1C0.4,4,0,3.6,0,3s0.4-1,1-1h3.4C5.8,2,7,3,7.3,4.3
-	l3.4,14.3c0.1,0.2,0.3,0.4,0.5,0.4h15.2c0.2,0,0.4-0.1,0.5-0.4l3.1-10c0.1-0.2,0-0.4-0.1-0.4C29.8,8.1,29.7,8,29.5,8H14
-	c-0.6,0-1-0.4-1-1s0.4-1,1-1h15.5c0.8,0,1.5,0.4,2,1c0.5,0.6,0.6,1.5,0.4,2.2l-3.1,10C28.5,20.3,27.5,21,26.4,21z" />
-                                </svg> <span class="indicator__counter">3</span> </span><span
-                                class="indicator__title">Shopping
-                                Cart</span> <span class="indicator__value">$250.00</span></a>
-                        <div class="indicator__content">
-                            <div class="dropcart">
-                                <ul class="dropcart__list">
-                                    <li class="dropcart__item">
-                                        <div class="dropcart__item-image"><a href="product-full.html"><img
-                                                    src="images/products/product-4-70x70.jpg" alt=""></a></div>
-                                        <div class="dropcart__item-info">
-                                            <div class="dropcart__item-name"><a href="product-full.html">Glossy Gray 19"
-                                                    Aluminium Wheel
-                                                    AR-19</a></div>
-                                            <ul class="dropcart__item-features">
-                                                <li>Color: Yellow</li>
-                                                <li>Material: Aluminium</li>
-                                            </ul>
-                                            <div class="dropcart__item-meta">
-                                                <div class="dropcart__item-quantity">2</div>
-                                                <div class="dropcart__item-price">$699.00</div>
-                                            </div>
-                                        </div><button type="button" class="dropcart__item-remove"><svg width="10"
-                                                height="10">
-                                                <path d="M8.8,8.8L8.8,8.8c-0.4,0.4-1,0.4-1.4,0L5,6.4L2.6,8.8c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L3.6,5L1.2,2.6
-	c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L5,3.6l2.4-2.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L6.4,5l2.4,2.4
-	C9.2,7.8,9.2,8.4,8.8,8.8z" /></svg></button>
-                                    </li>
-                                    <li class="dropcart__divider" role="presentation"></li>
-                                    <li class="dropcart__item">
-                                        <div class="dropcart__item-image"><a href="product-full.html"><img
-                                                    src="images/products/product-2-70x70.jpg" alt=""></a></div>
-                                        <div class="dropcart__item-info">
-                                            <div class="dropcart__item-name"><a href="product-full.html">Brandix Brake
-                                                    Kit BDX-750Z370-S</a>
-                                            </div>
-                                            <div class="dropcart__item-meta">
-                                                <div class="dropcart__item-quantity">1</div>
-                                                <div class="dropcart__item-price">$849.00</div>
-                                            </div>
-                                        </div><button type="button" class="dropcart__item-remove"><svg width="10"
-                                                height="10">
-                                                <path d="M8.8,8.8L8.8,8.8c-0.4,0.4-1,0.4-1.4,0L5,6.4L2.6,8.8c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L3.6,5L1.2,2.6
-	c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L5,3.6l2.4-2.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L6.4,5l2.4,2.4
-	C9.2,7.8,9.2,8.4,8.8,8.8z" /></svg></button>
-                                    </li>
-                                    <li class="dropcart__divider" role="presentation"></li>
-                                    <li class="dropcart__item">
-                                        <div class="dropcart__item-image"><a href="product-full.html"><img
-                                                    src="images/products/product-5-70x70.jpg" alt=""></a></div>
-                                        <div class="dropcart__item-info">
-                                            <div class="dropcart__item-name"><a href="product-full.html">Twin Exhaust
-                                                    Pipe From Brandix
-                                                    Z54</a></div>
-                                            <ul class="dropcart__item-features">
-                                                <li>Color: True Red</li>
-                                            </ul>
-                                            <div class="dropcart__item-meta">
-                                                <div class="dropcart__item-quantity">3</div>
-                                                <div class="dropcart__item-price">$1210.00</div>
-                                            </div>
-                                        </div><button type="button" class="dropcart__item-remove"><svg width="10"
-                                                height="10">
-                                                <path d="M8.8,8.8L8.8,8.8c-0.4,0.4-1,0.4-1.4,0L5,6.4L2.6,8.8c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L3.6,5L1.2,2.6
-	c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L5,3.6l2.4-2.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L6.4,5l2.4,2.4
-	C9.2,7.8,9.2,8.4,8.8,8.8z" /></svg></button>
-                                    </li>
-                                    <li class="dropcart__divider" role="presentation"></li>
-                                </ul>
-                                <div class="dropcart__totals">
-                                    <table>
-                                        <tr>
-                                            <th>Subtotal</th>
-                                            <td>$5877.00</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Shipping</th>
-                                            <td>$25.00</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Tax</th>
-                                            <td>$0.00</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Total</th>
-                                            <td>$5902.00</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="dropcart__actions"><a href="cart.html" class="btn btn-secondary">View
-                                        Cart</a> <a href="checkout.html" class="btn btn-primary">Checkout</a></div>
-                            </div>
+                        <div class="form-group account-menu__form-button"><button type="submit"
+                                class="btn btn-primary btn-sm">Login</button></div>
+                        <div class="account-menu__form-link"><a href="/login">Create An
+                                Account</a></div>
+                    </form>
+                    <div class="account-menu__divider"></div><a href="#" class="account-menu__user">
+                        <div class="account-menu__user-avatar"><img src="images/avatars/avatar-4.jpg" alt="">
                         </div>
-                    </div>
+                        <div class="account-menu__user-info">
+                            <div class="account-menu__user-name">Ryan Ford</div>
+                            <div class="account-menu__user-email">red-parts@example.com</div>
+                        </div>
+                    </a>
+                    <div class="account-menu__divider"></div>
+                    <ul class="account-menu__links">
+                        <li><a href="/dashboard">Dashboard</a></li>
+                        <li><a href="/garage">Garage</a></li>
+                        <li><a href="/account-profile">Edit Profile</a></li>
+                        <li><a href="/account-orders">Order History</a></li>
+                        <li><a href="/account-addresses">Addresses</a></li>
+                    </ul>
+                    <div class="account-menu__divider"></div>
+                    <ul class="account-menu__links">
+                        <li><a href="/login">Logout</a></li>
+                    </ul>
                 </div>
             </div>
-        </header><!-- site__header / end -->
-        <!-- site__body -->
-        <div class="site__body">
-            @yield('content')
-        </div><!-- site__body / end -->
-        <!-- site__footer -->
-        <footer class="site__footer">
-            <div class="site-footer">
-                <div class="decor site-footer__decor decor--type--bottom">
-                    <div class="decor__body">
-                        <div class="decor__start"></div>
-                        <div class="decor__end"></div>
-                        <div class="decor__center"></div>
+        </div>
+        <div class="indicator indicator--trigger--click"><a href="/cart" class="indicator__button"><span
+                    class="indicator__icon"><svg width="32" height="32">
+                        <circle cx="10.5" cy="27.5" r="2.5" />
+                        <circle cx="23.5" cy="27.5" r="2.5" />
+                        <path d="M26.4,21H11.2C10,21,9,20.2,8.8,19.1L5.4,4.8C5.3,4.3,4.9,4,4.4,4H1C0.4,4,0,3.6,0,3s0.4-1,1-1h3.4C5.8,2,7,3,7.3,4.3
+	l3.4,14.3c0.1,0.2,0.3,0.4,0.5,0.4h15.2c0.2,0,0.4-0.1,0.5-0.4l3.1-10c0.1-0.2,0-0.4-0.1-0.4C29.8,8.1,29.7,8,29.5,8H14
+	c-0.6,0-1-0.4-1-1s0.4-1,1-1h15.5c0.8,0,1.5,0.4,2,1c0.5,0.6,0.6,1.5,0.4,2.2l-3.1,10C28.5,20.3,27.5,21,26.4,21z" />
+                    </svg> <span class="indicator__counter">3</span> </span><span class="indicator__title">Shopping
+                    Cart</span> <span class="indicator__value">$250.00</span></a>
+            <div class="indicator__content">
+                <div class="dropcart">
+                    <ul class="dropcart__list">
+                        <li class="dropcart__item">
+                            <div class="dropcart__item-image"><a href="product-full.html"><img
+                                        src="images/products/product-4-70x70.jpg" alt=""></a></div>
+                            <div class="dropcart__item-info">
+                                <div class="dropcart__item-name"><a href="product-full.html">Glossy Gray 19"
+                                        Aluminium Wheel
+                                        AR-19</a></div>
+                                <ul class="dropcart__item-features">
+                                    <li>Color: Yellow</li>
+                                    <li>Material: Aluminium</li>
+                                </ul>
+                                <div class="dropcart__item-meta">
+                                    <div class="dropcart__item-quantity">2</div>
+                                    <div class="dropcart__item-price">$699.00</div>
+                                </div>
+                            </div><button type="button" class="dropcart__item-remove"><svg width="10" height="10">
+                                    <path d="M8.8,8.8L8.8,8.8c-0.4,0.4-1,0.4-1.4,0L5,6.4L2.6,8.8c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L3.6,5L1.2,2.6
+	c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L5,3.6l2.4-2.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L6.4,5l2.4,2.4
+	C9.2,7.8,9.2,8.4,8.8,8.8z" /></svg></button>
+                        </li>
+                        <li class="dropcart__divider" role="presentation"></li>
+                        <li class="dropcart__item">
+                            <div class="dropcart__item-image"><a href="product-full.html"><img
+                                        src="images/products/product-2-70x70.jpg" alt=""></a></div>
+                            <div class="dropcart__item-info">
+                                <div class="dropcart__item-name"><a href="product-full.html">Brandix Brake
+                                        Kit BDX-750Z370-S</a>
+                                </div>
+                                <div class="dropcart__item-meta">
+                                    <div class="dropcart__item-quantity">1</div>
+                                    <div class="dropcart__item-price">$849.00</div>
+                                </div>
+                            </div><button type="button" class="dropcart__item-remove"><svg width="10" height="10">
+                                    <path d="M8.8,8.8L8.8,8.8c-0.4,0.4-1,0.4-1.4,0L5,6.4L2.6,8.8c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L3.6,5L1.2,2.6
+	c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L5,3.6l2.4-2.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L6.4,5l2.4,2.4
+	C9.2,7.8,9.2,8.4,8.8,8.8z" /></svg></button>
+                        </li>
+                        <li class="dropcart__divider" role="presentation"></li>
+                        <li class="dropcart__item">
+                            <div class="dropcart__item-image"><a href="product-full.html"><img
+                                        src="images/products/product-5-70x70.jpg" alt=""></a></div>
+                            <div class="dropcart__item-info">
+                                <div class="dropcart__item-name"><a href="product-full.html">Twin Exhaust
+                                        Pipe From Brandix
+                                        Z54</a></div>
+                                <ul class="dropcart__item-features">
+                                    <li>Color: True Red</li>
+                                </ul>
+                                <div class="dropcart__item-meta">
+                                    <div class="dropcart__item-quantity">3</div>
+                                    <div class="dropcart__item-price">$1210.00</div>
+                                </div>
+                            </div><button type="button" class="dropcart__item-remove"><svg width="10" height="10">
+                                    <path d="M8.8,8.8L8.8,8.8c-0.4,0.4-1,0.4-1.4,0L5,6.4L2.6,8.8c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L3.6,5L1.2,2.6
+	c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L5,3.6l2.4-2.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L6.4,5l2.4,2.4
+	C9.2,7.8,9.2,8.4,8.8,8.8z" /></svg></button>
+                        </li>
+                        <li class="dropcart__divider" role="presentation"></li>
+                    </ul>
+                    <div class="dropcart__totals">
+                        <table>
+                            <tr>
+                                <th>Subtotal</th>
+                                <td>$5877.00</td>
+                            </tr>
+                            <tr>
+                                <th>Shipping</th>
+                                <td>$25.00</td>
+                            </tr>
+                            <tr>
+                                <th>Tax</th>
+                                <td>$0.00</td>
+                            </tr>
+                            <tr>
+                                <th>Total</th>
+                                <td>$5902.00</td>
+                            </tr>
+                        </table>
                     </div>
+                    <div class="dropcart__actions"><a href="/cart" class="btn btn-secondary">View
+                            Cart</a> <a href="/checkout" class="btn btn-primary">Checkout</a></div>
                 </div>
-                <div class="site-footer__widgets">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-xl-4">
-                                <div class="site-footer__widget footer-contacts">
-                                    <h5 class="footer-contacts__title">Contact Us</h5>
-                                    <div class="footer-contacts__text">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Integer in
-                                        feugiat lorem.</div>
-                                    <address class="footer-contacts__contacts">
-                                        <dl>
-                                            <dt>Phone Number</dt>
-                                            <dd>+1 (800) 060-07-30</dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>Email Address</dt>
-                                            <dd>red-parts@example.com</dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>Our Location</dt>
-                                            <dd>715 Fake Street, New York 10021 USA</dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>Working Hours</dt>
-                                            <dd>Mon-Sat 10:00pm - 7:00pm</dd>
-                                        </dl>
-                                    </address>
-                                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </header><!-- site__header / end -->
+    <!-- site__body -->
+    <div class="site__body">
+        @yield('content')
+    </div><!-- site__body / end -->
+    <!-- site__footer -->
+    <footer class="site__footer">
+        <div class="site-footer">
+            <div class="decor site-footer__decor decor--type--bottom">
+                <div class="decor__body">
+                    <div class="decor__start"></div>
+                    <div class="decor__end"></div>
+                    <div class="decor__center"></div>
+                </div>
+            </div>
+            <div class="site-footer__widgets">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-xl-4">
+                            <div class="site-footer__widget footer-contacts">
+                                <h5 class="footer-contacts__title">Contact Us</h5>
+                                <div class="footer-contacts__text">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Integer in
+                                    feugiat lorem.</div>
+                                <address class="footer-contacts__contacts">
+                                    <dl>
+                                        <dt>Phone Number</dt>
+                                        <dd>+1 (800) 060-07-30</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Email Address</dt>
+                                        <dd>red-parts@example.com</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Our Location</dt>
+                                        <dd>715 Fake Street, New York 10021 USA</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Working Hours</dt>
+                                        <dd>Mon-Sat 10:00pm - 7:00pm</dd>
+                                    </dl>
+                                </address>
                             </div>
-                            <div class="col-6 col-md-3 col-xl-2">
-                                <div class="site-footer__widget footer-links">
-                                    <h5 class="footer-links__title">Information</h5>
-                                    <ul class="footer-links__list">
-                                        <li class="footer-links__item"><a href="#" class="footer-links__link">About
-                                                Us</a></li>
-                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Delivery
-                                                Information</a></li>
-                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Privacy
-                                                Policy</a></li>
-                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Brands</a>
-                                        </li>
-                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Contact
-                                                Us</a></li>
-                                        <li class="footer-links__item"><a href="#"
-                                                class="footer-links__link">Returns</a></li>
-                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Site
-                                                Map</a></li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-xl-2">
+                            <div class="site-footer__widget footer-links">
+                                <h5 class="footer-links__title">Information</h5>
+                                <ul class="footer-links__list">
+                                    <li class="footer-links__item"><a href="/about" class="footer-links__link">About
+                                            Us</a></li>
+                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Delivery
+                                            Information</a></li>
+                                    <li class="footer-links__item"><a href="/terms"
+                                            class="footer-links__link">@lang('Terms And Conditions')</a></li>
+                                    <li class="footer-links__item"><a href="/contact" class="footer-links__link">Contact
+                                            Us</a></li>
+                                    <li class="footer-links__item"><a href="/faq" class="footer-links__link">FAQ</a>
+                                    </li>
+                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Site
+                                            Map</a></li>
+                                </ul>
                             </div>
-                            <div class="col-6 col-md-3 col-xl-2">
-                                <div class="site-footer__widget footer-links">
-                                    <h5 class="footer-links__title">My Account</h5>
-                                    <ul class="footer-links__list">
-                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Store
-                                                Location</a></li>
-                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Order
-                                                History</a></li>
-                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Wish
-                                                List</a></li>
-                                        <li class="footer-links__item"><a href="#"
-                                                class="footer-links__link">Newsletter</a></li>
-                                        <li class="footer-links__item"><a href="#"
-                                                class="footer-links__link">Specials</a></li>
-                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Gift
-                                                Certificates</a></li>
-                                        <li class="footer-links__item"><a href="#"
-                                                class="footer-links__link">Affiliate</a></li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-xl-2">
+                            <div class="site-footer__widget footer-links">
+                                <h5 class="footer-links__title">My Account</h5>
+                                <ul class="footer-links__list">
+                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Store
+                                            Location</a></li>
+                                    <li class="footer-links__item"><a href="/account-orders"
+                                            class="footer-links__link">Order
+                                            History</a></li>
+                                    <li class="footer-links__item"><a href="/wishlist" class="footer-links__link">Wish
+                                            List</a></li>
+                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Newsletter</a>
+                                    </li>
+                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Specials</a>
+                                    </li>
+                                    <li class="footer-links__item"><a href="#" class="footer-links__link">Gift
+                                            Certificates</a></li>
                             </div>
+<<<<<<< HEAD
                             <div class="col-12 col-md-6 col-xl-4">
                                 <div class="site-footer__widget footer-newsletter">
                                     <h5 class="footer-newsletter__title">Newsletter</h5>
@@ -1706,11 +1591,52 @@
                                                     rel="noopener"><i class="fas fa-rss"></i></a></li>
                                         </ul>
                                     </div>
+=======
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="site-footer__widget footer-newsletter">
+                                <h5 class="footer-newsletter__title">Newsletter</h5>
+                                <div class="footer-newsletter__text">Enter your email address below to subscribe to
+                                    our newsletter and
+                                    keep up to date with discounts and special offers.</div>
+                                <form action="#" class="footer-newsletter__form"><label class="sr-only"
+                                        for="footer-newsletter-address">Email Address</label> <input type="text"
+                                        class="footer-newsletter__form-input" id="footer-newsletter-address"
+                                        placeholder="Email Address..."> <button
+                                        class="footer-newsletter__form-button">Subscribe</button>
+                                </form>
+                                <div class="footer-newsletter__text footer-newsletter__text--social">Follow us on
+                                    social networks
+                                </div>
+                                <div class="footer-newsletter__social-links social-links">
+                                    <ul class="social-links__list">
+                                        <li class="social-links__item social-links__item--facebook"><a
+                                                href="https://themeforest.net/user/kos9" target="_blank"><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li class="social-links__item social-links__item--twitter"><a
+                                                href="https://themeforest.net/user/kos9" target="_blank"><i
+                                                    class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li class="social-links__item social-links__item--youtube"><a
+                                                href="https://themeforest.net/user/kos9" target="_blank"><i
+                                                    class="fab fa-youtube"></i></a>
+                                        </li>
+                                        <li class="social-links__item social-links__item--instagram"><a
+                                                href="https://themeforest.net/user/kos9" target="_blank"><i
+                                                    class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li class="social-links__item social-links__item--rss"><a
+                                                href="https://themeforest.net/user/kos9" target="_blank"><i
+                                                    class="fas fa-rss"></i></a></li>
+                                    </ul>
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <div class="site-footer__bottom">
                     <div class="container">
                         <div class="site-footer__bottom-row">
@@ -1720,11 +1646,24 @@
                                 <!-- copyright / end -->
                             </div>
                             <div class="site-footer__payments"><img src="images/payments.png" alt=""></div>
+=======
+            </div>
+            <div class="site-footer__bottom">
+                <div class="container">
+                    <div class="site-footer__bottom-row">
+                        <div class="site-footer__copyright">
+                            <!-- copyright -->
+                            @lang('All Rights Reserved') © {{ date('Y') }}
+                            - Designed by <a href="https://sitando.com" target="_blank">Sitando</a>
+                            <!-- copyright / end -->
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
                         </div>
+                        <div class="site-footer__payments"><img src="images/payments.png" alt=""></div>
                     </div>
                 </div>
             </div>
-        </footer><!-- site__footer / end -->
+        </div>
+    </footer><!-- site__footer / end -->
     </div><!-- site / end -->
     <!-- mobile-menu -->
     <div class="mobile-menu">
@@ -1831,18 +1770,18 @@
                         </div>
                     </div>
                     <div class="mobile-menu__divider"></div>
-                    <div class="mobile-menu__indicators"><a class="mobile-menu__indicator" href="wishlist.html"><span
+                    <div class="mobile-menu__indicators"><a class="mobile-menu__indicator" href="/wishlist"><span
                                 class="mobile-menu__indicator-icon"><svg width="20" height="20">
                                     <path d="M14,3c2.2,0,4,1.8,4,4c0,4-5.2,10-8,10S2,11,2,7c0-2.2,1.8-4,4-4c1,0,1.9,0.4,2.7,1L10,5.2L11.3,4C12.1,3.4,13,3,14,3 M14,1
 	c-1.5,0-2.9,0.6-4,1.5C8.9,1.6,7.5,1,6,1C2.7,1,0,3.7,0,7c0,5,6,12,10,12s10-7,10-12C20,3.7,17.3,1,14,1L14,1z" /></svg>
                             </span><span class="mobile-menu__indicator-title">Wishlist</span> </a><a
-                            class="mobile-menu__indicator" href="account-dashboard.html"><span
+                            class="mobile-menu__indicator" href="/dashboard"><span
                                 class="mobile-menu__indicator-icon"><svg width="20" height="20">
                                     <path d="M20,20h-2c0-4.4-3.6-8-8-8s-8,3.6-8,8H0c0-4.2,2.6-7.8,6.3-9.3C4.9,9.6,4,7.9,4,6c0-3.3,2.7-6,6-6s6,2.7,6,6
 	c0,1.9-0.9,3.6-2.3,4.7C17.4,12.2,20,15.8,20,20z M14,6c0-2.2-1.8-4-4-4S6,3.8,6,6s1.8,4,4,4S14,8.2,14,6z" /></svg>
                             </span><span class="mobile-menu__indicator-title">Account</span> </a><a
-                            class="mobile-menu__indicator" href="cart.html"><span
-                                class="mobile-menu__indicator-icon"><svg width="20" height="20">
+                            class="mobile-menu__indicator" href="/cart"><span class="mobile-menu__indicator-icon"><svg
+                                    width="20" height="20">
                                     <circle cx="7" cy="17" r="2" />
                                     <circle cx="15" cy="17" r="2" />
                                     <path d="M20,4.4V5l-1.8,6.3c-0.1,0.4-0.5,0.7-1,0.7H6.7c-0.4,0-0.8-0.3-1-0.7L3.3,3.9C3.1,3.3,2.6,3,2.1,3H0.4C0.2,3,0,2.8,0,2.6
@@ -1850,8 +1789,7 @@
 	C17.9,5.2,17.7,5,17.5,5H9.4C9.2,5,9,4.8,9,4.6V3.4C9,3.2,9.2,3,9.4,3h9.2C19.4,3,20,3.6,20,4.4z" /></svg> <span
                                     class="mobile-menu__indicator-counter">3</span> </span><span
                                 class="mobile-menu__indicator-title">Cart</span> </a><a class="mobile-menu__indicator"
-                            href="account-garage.html"><span class="mobile-menu__indicator-icon"><svg width="20"
-                                    height="20">
+                            href="/garage"><span class="mobile-menu__indicator-icon"><svg width="20" height="20">
                                     <path d="M6.6,2c2,0,4.8,0,6.8,0c1,0,2.9,0.8,3.6,2.2C17.7,5.7,17.9,7,18.4,7C20,7,20,8,20,8v1h-1v7.5c0,0.8-0.7,1.5-1.5,1.5h-1
 	c-0.8,0-1.5-0.7-1.5-1.5V16H5v0.5C5,17.3,4.3,18,3.5,18h-1C1.7,18,1,17.3,1,16.5V16V9H0V8c0,0,0.1-1,1.6-1C2.1,7,2.3,5.7,3,4.2
 	C3.7,2.8,5.6,2,6.6,2z M13.3,4H6.7c-0.8,0-1.4,0-2,0.7c-0.5,0.6-0.8,1.5-1,2C3.6,7.1,3.5,7.9,3.7,8C4.5,8.4,6.1,9,10,9
@@ -1860,10 +1798,7 @@
 	C15.5,10.2,14,11.3,14,12z" /></svg> </span><span class="mobile-menu__indicator-title">Garage</span></a></div>
                     <div class="mobile-menu__divider"></div>
                     <ul class="mobile-menu__links">
-                        <li data-mobile-menu-item><a href="/" class="" data-mobile-menu-trigger>Home <svg width="7"
-                                    height="11">
-                                    <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
-	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
+                        <li data-mobile-menu-item><a href="/" class="" data-mobile-menu-trigger>Home</a>
                             <div class="mobile-menu__links-panel" data-mobile-menu-panel>
                                 <div class="mobile-menu__panel mobile-menu__panel--hidden">
                                     <div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back"
@@ -1980,7 +1915,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li data-mobile-menu-item><a href="shop-grid-4-columns-sidebar.html" class=""
+                        <li data-mobile-menu-item><a href="/shop-grid-4-columns-sidebar" class=""
                                 data-mobile-menu-trigger>Shop
                                 <svg width="7" height="11">
                                     <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
@@ -2016,9 +1951,8 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li data-mobile-menu-item><a href="shop-grid-4-columns-sidebar.html"
-                                                    class="" data-mobile-menu-trigger>Shop Grid <svg width="7"
-                                                        height="11">
+                                            <li data-mobile-menu-item><a href="/shop-grid-4-columns-sidebar" class=""
+                                                    data-mobile-menu-trigger>Shop Grid <svg width="7" height="11">
                                                         <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
 	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
                                                 <div class="mobile-menu__links-panel" data-mobile-menu-panel>
@@ -2034,20 +1968,20 @@
                                                         <div class="mobile-menu__panel-body">
                                                             <ul class="mobile-menu__links">
                                                                 <li data-mobile-menu-item><a
-                                                                        href="shop-grid-6-columns-full.html" class=""
+                                                                        href="/shop-grid-6-columns-full" class=""
                                                                         data-mobile-menu-trigger>6 Columns Full</a></li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="shop-grid-5-columns-full.html" class=""
+                                                                        href="/shop-grid-5-columns-full" class=""
                                                                         data-mobile-menu-trigger>5 Columns Full</a></li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="shop-grid-4-columns-full.html" class=""
+                                                                        href="/shop-grid-4-columns-full" class=""
                                                                         data-mobile-menu-trigger>4 Columns Full</a></li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="shop-grid-4-columns-sidebar.html" class=""
+                                                                        href="/shop-grid-4-columns-sidebar" class=""
                                                                         data-mobile-menu-trigger>4 Columns Sidebar</a>
                                                                 </li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="shop-grid-3-columns-sidebar.html" class=""
+                                                                        href="/shop-grid-3-columns-sidebar" class=""
                                                                         data-mobile-menu-trigger>3 Columns Sidebar</a>
                                                                 </li>
                                                             </ul>
@@ -2055,13 +1989,13 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li data-mobile-menu-item><a href="shop-list.html" class=""
+                                            <li data-mobile-menu-item><a href="/shop-list" class=""
                                                     data-mobile-menu-trigger>Shop List</a>
                                             </li>
-                                            <li data-mobile-menu-item><a href="shop-table.html" class=""
+                                            <li data-mobile-menu-item><a href="/shop-table" class=""
                                                     data-mobile-menu-trigger>Shop
                                                     Table</a></li>
-                                            <li data-mobile-menu-item><a href="shop-right-sidebar.html" class=""
+                                            <li data-mobile-menu-item><a href="/shop-right-sidebar" class=""
                                                     data-mobile-menu-trigger>Shop
                                                     Right Sidebar</a></li>
                                             <li data-mobile-menu-item><a href="product-full.html" class=""
@@ -2092,18 +2026,18 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li data-mobile-menu-item><a href="cart.html" class=""
+                                            <li data-mobile-menu-item><a href="/cart" class=""
                                                     data-mobile-menu-trigger>Cart</a></li>
-                                            <li data-mobile-menu-item><a href="checkout.html" class=""
+                                            <li data-mobile-menu-item><a href="/checkout" class=""
                                                     data-mobile-menu-trigger>Checkout</a>
                                             </li>
-                                            <li data-mobile-menu-item><a href="wishlist.html" class=""
+                                            <li data-mobile-menu-item><a href="/wishlist" class=""
                                                     data-mobile-menu-trigger>Wishlist</a>
                                             </li>
-                                            <li data-mobile-menu-item><a href="compare.html" class=""
+                                            <li data-mobile-menu-item><a href="/compare" class=""
                                                     data-mobile-menu-trigger>Compare</a>
                                             </li>
-                                            <li data-mobile-menu-item><a href="track-order.html" class=""
+                                            <li data-mobile-menu-item><a href="/track-order" class=""
                                                     data-mobile-menu-trigger>Track
                                                     Order</a></li>
                                         </ul>
@@ -2111,8 +2045,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li data-mobile-menu-item><a href="blog-classic-right-sidebar.html" class=""
-                                data-mobile-menu-trigger>Blog
+                        <li data-mobile-menu-item><a href="/blog-classic-right" class="" data-mobile-menu-trigger>Blog
                                 <svg width="7" height="11">
                                     <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
 	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
@@ -2127,7 +2060,7 @@
                                     </div>
                                     <div class="mobile-menu__panel-body">
                                         <ul class="mobile-menu__links">
-                                            <li data-mobile-menu-item><a href="blog-classic-right-sidebar.html" class=""
+                                            <li data-mobile-menu-item><a href="/blog-classic-right" class=""
                                                     data-mobile-menu-trigger>Blog Classic <svg width="7" height="11">
                                                         <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
 	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
@@ -2143,12 +2076,12 @@
                                                         </div>
                                                         <div class="mobile-menu__panel-body">
                                                             <ul class="mobile-menu__links">
-                                                                <li data-mobile-menu-item><a
-                                                                        href="blog-classic-left-sidebar.html" class=""
-                                                                        data-mobile-menu-trigger>Left Sidebar</a></li>
-                                                                <li data-mobile-menu-item><a
-                                                                        href="blog-classic-right-sidebar.html" class=""
-                                                                        data-mobile-menu-trigger>Right Sidebar</a></li>
+                                                                <li data-mobile-menu-item><a href="/blog-classic-left"
+                                                                        class="" data-mobile-menu-trigger>Left
+                                                                        Sidebar</a></li>
+                                                                <li data-mobile-menu-item><a href="/blog-classic-right"
+                                                                        class="" data-mobile-menu-trigger>Right
+                                                                        Sidebar</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -2193,22 +2126,8 @@
                                                                     <path
                                                                         d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
                                                                 </svg></button>
-                                                            <div class="mobile-menu__panel-title">Blog Grid</div>
-                                                        </div>
-                                                        <div class="mobile-menu__panel-body">
-                                                            <ul class="mobile-menu__links">
-                                                                <li data-mobile-menu-item><a
-                                                                        href="blog-grid-left-sidebar.html" class=""
-                                                                        data-mobile-menu-trigger>Left Sidebar</a></li>
-                                                                <li data-mobile-menu-item><a
-                                                                        href="blog-grid-right-sidebar.html" class=""
-                                                                        data-mobile-menu-trigger>Right Sidebar</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li data-mobile-menu-item><a href="post-full-width.html" class=""
+
+                                            <li data-mobile-menu-item><a href="/post-width" class=""
                                                     data-mobile-menu-trigger>Post
                                                     Page <svg width="7" height="11">
                                                         <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
@@ -2225,14 +2144,9 @@
                                                         </div>
                                                         <div class="mobile-menu__panel-body">
                                                             <ul class="mobile-menu__links">
-                                                                <li data-mobile-menu-item><a href="post-full-width.html"
-                                                                        class="" data-mobile-menu-trigger>Full Width</a>
-                                                                </li>
-                                                                <li data-mobile-menu-item><a
-                                                                        href="post-left-sidebar.html" class=""
-                                                                        data-mobile-menu-trigger>Left Sidebar</a></li>
-                                                                <li data-mobile-menu-item><a
-                                                                        href="post-right-sidebar.html" class=""
+
+
+                                                                <li data-mobile-menu-item><a href="/post-right" class=""
                                                                         data-mobile-menu-trigger>Right Sidebar</a></li>
                                                             </ul>
                                                         </div>
@@ -2247,7 +2161,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li data-mobile-menu-item><a href="account-login.html" class="" data-mobile-menu-trigger>Account
+                        <li data-mobile-menu-item><a href="/login" class="" data-mobile-menu-trigger>Account
                                 <svg width="7" height="11">
                                     <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
 	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
@@ -2262,22 +2176,22 @@
                                     </div>
                                     <div class="mobile-menu__panel-body">
                                         <ul class="mobile-menu__links">
-                                            <li data-mobile-menu-item><a href="account-login.html" class=""
+                                            <li data-mobile-menu-item><a href="/login" class=""
                                                     data-mobile-menu-trigger>Login &
                                                     Register</a></li>
-                                            <li data-mobile-menu-item><a href="account-dashboard.html" class=""
+                                            <li data-mobile-menu-item><a href="/dashboard" class=""
                                                     data-mobile-menu-trigger>Dashboard</a></li>
-                                            <li data-mobile-menu-item><a href="account-garage.html" class=""
+                                            <li data-mobile-menu-item><a href="/garage" class=""
                                                     data-mobile-menu-trigger>Garage</a></li>
-                                            <li data-mobile-menu-item><a href="account-profile.html" class=""
+                                            <li data-mobile-menu-item><a href="/account-profile" class=""
                                                     data-mobile-menu-trigger>Edit
                                                     Profile</a></li>
-                                            <li data-mobile-menu-item><a href="account-orders.html" class=""
+                                            <li data-mobile-menu-item><a href="/account-orders" class=""
                                                     data-mobile-menu-trigger>Order
                                                     History</a></li>
-                                            <li data-mobile-menu-item><a href="account-addresses.html" class=""
+                                            <li data-mobile-menu-item><a href="/account-addresses" class=""
                                                     data-mobile-menu-trigger>Address Book</a></li>
-                                            <li data-mobile-menu-item><a href="account-password.html" class=""
+                                            <li data-mobile-menu-item><a href="/account-password" class=""
                                                     data-mobile-menu-trigger>Change
                                                     Password</a></li>
                                         </ul>
@@ -2285,7 +2199,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li data-mobile-menu-item><a href="about-us.html" class="" data-mobile-menu-trigger>Pages <svg
+                        <li data-mobile-menu-item><a href="/about" class="" data-mobile-menu-trigger>Pages <svg
                                     width="7" height="11">
                                     <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
 	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
@@ -2300,7 +2214,7 @@
                                     </div>
                                     <div class="mobile-menu__panel-body">
                                         <ul class="mobile-menu__links">
-                                            <li data-mobile-menu-item><a href="about-us.html" class=""
+                                            <li data-mobile-menu-item><a href="/about" class=""
                                                     data-mobile-menu-trigger>About Us</a>
                                             </li>
                                             <li data-mobile-menu-item><a href="contact-us-v1.html" class=""
@@ -2311,24 +2225,27 @@
                                                     Us v2</a></li>
                                             <li data-mobile-menu-item><a href="404.html" class=""
                                                     data-mobile-menu-trigger>404</a></li>
-                                            <li data-mobile-menu-item><a href="terms.html" class=""
+                                            <li data-mobile-menu-item><a href="/terms" class=""
                                                     data-mobile-menu-trigger>Terms And
                                                     Conditions</a></li>
-                                            <li data-mobile-menu-item><a href="faq.html" class=""
+                                            <li data-mobile-menu-item><a href="/faq" class=""
                                                     data-mobile-menu-trigger>FAQ</a></li>
-                                            <li data-mobile-menu-item><a href="components.html" class=""
+                                            <li data-mobile-menu-item><a href="/components" class=""
                                                     data-mobile-menu-trigger>Components</a></li>
-                                            <li data-mobile-menu-item><a href="typography.html" class=""
+                                            <li data-mobile-menu-item><a href="/typography" class=""
                                                     data-mobile-menu-trigger>Typography</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </li>
+<<<<<<< HEAD
                         <li data-mobile-menu-item><a
                                 href="https://themeforest.net/item/redparts-auto-parts-html-template/24735474"
                                 class="highlight" target="_blank" rel="noopener" data-mobile-menu-trigger>Buy Theme</a>
                         </li>
+=======
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
                     </ul>
                     <div class="mobile-menu__spring"></div>
                     <div class="mobile-menu__divider"></div><a class="mobile-menu__contacts" href="#">

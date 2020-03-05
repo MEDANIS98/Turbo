@@ -1,92 +1,36 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+@extends('layouts.app')
+@section('title','Login/Register')
+@section('content')
 
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="format-detection" content="telephone=no">
-	<title>Login — Red Parts</title>
-	<link rel="icon" type="image/png" href="images/favicon.png"><!-- fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i"><!-- css -->
-	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="vendor/photoswipe/photoswipe.css">
-	<link rel="stylesheet" href="vendor/photoswipe/default-skin/default-skin.css">
-	<link rel="stylesheet" href="vendor/select2/css/select2.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/style.header-spaceship-variant-one.css" media="(min-width: 1200px)">
-	<link rel="stylesheet" href="css/style.mobile-header-variant-one.css" media="(max-width: 1199px)">
-	<!-- font - fontawesome -->
-	<link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97489509-8"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag("js", new Date());
-		gtag("config", "UA-97489509-8");
-	</script>
-</head>
-
-<body>
-	<!-- site -->
-	<div class="site">
-		<!-- site__mobile-header -->
-		<header class="site__mobile-header">
-			<div class="mobile-header">
-				<div class="container">
-					<div class="mobile-header__body"><button class="mobile-header__menu-button" type="button"><svg width="18px"
-								height="14px">
-								<path d="M-0,8L-0,6L18,6L18,8L-0,8ZM-0,-0L18,-0L18,2L-0,2L-0,-0ZM14,14L-0,14L-0,12L14,12L14,14Z" />
-							</svg></button> <a class="mobile-header__logo" href="#">
-							<!-- mobile-logo --> <svg width="130" height="20">
-								<path class="mobile-header__logo-part-one" d="M40,19.9c-0.3,0-0.7,0.1-1,0.1h-4.5c-0.8,0-1.5-0.7-1.5-1.5v-17C33,0.7,33.7,0,34.5,0H39c0.3,0,0.7,0,1,0.1
-	c4.5,0.5,8,4.3,8,8.9v2C48,15.6,44.5,19.5,40,19.9z M44,9.5C44,6.7,41.8,4,39,4h-0.8C37.5,4,37,4.5,37,5.2v9.6
-	c0,0.7,0.5,1.2,1.2,1.2H39c2.8,0,5-2.7,5-5.5V9.5z M29.5,20h-11c-0.8,0-1.5-0.7-1.5-1.5v-17C17,0.7,17.7,0,18.5,0h11
-	C30.3,0,31,0.7,31,1.5v1C31,3.3,30.3,4,29.5,4H21v4h6.5C28.3,8,29,8.7,29,9.5v1c0,0.8-0.7,1.5-1.5,1.5H21v4h8.5
-	c0.8,0,1.5,0.7,1.5,1.5v1C31,19.3,30.3,20,29.5,20z M14.8,17.8c0.6,1-0.1,2.3-1.3,2.3h-2L8,14H4v4.5C4,19.3,3.3,20,2.5,20h-1
-	C0.7,20,0,19.3,0,18.5v-17C0,0.7,0.7,0,1.5,0H8c0.3,0,0.7,0,1,0.1c3.4,0.5,6,3.4,6,6.9c0,2.4-1.2,4.5-3.1,5.8L14.8,17.8z M9,4.2
-	C8.7,4.1,8.3,4,8,4H5C4.4,4,4,4.4,4,5v4c0,0.6,0.4,1,1,1h3c0.3,0,0.7-0.1,1-0.2c0.3-0.1,0.7-0.3,0.9-0.5C10.6,8.8,11,7.9,11,7
-	C11,5.7,10.2,4.6,9,4.2z"></path>
-								<path class="mobile-header__logo-part-two" d="M128.6,6h-1c-0.5,0-0.9-0.3-1.2-0.7c-0.2-0.3-0.4-0.6-0.8-0.8c-0.5-0.3-1.4-0.5-2.1-0.5c-1.5,0-2.8,0.9-2.8,2
-	c0,0.7,0.5,1.3,1.2,1.6c0.8,0.4,1.1,1.3,0.7,2.1l-0.4,0.9c-0.4,0.7-1.2,1-1.8,0.6c-0.6-0.3-1.2-0.7-1.6-1.2c-1-1.1-1.7-2.5-1.7-4
-	c0-3.3,2.9-6,6.5-6c2.8,0,5.5,1.7,6.4,4C130.3,4.9,129.6,6,128.6,6z M113.5,4H109v14.5c0,0.8-0.7,1.5-1.5,1.5h-1
-	c-0.8,0-1.5-0.7-1.5-1.5V4h-4.5C99.7,4,99,3.3,99,2.5v-1c0-0.8,0.7-1.5,1.5-1.5h13c0.8,0,1.5,0.7,1.5,1.5v1C115,3.3,114.3,4,113.5,4
-	z M97.8,17.8c0.6,1-0.1,2.3-1.3,2.3h-2L91,14h-4v4.5c0,0.8-0.7,1.5-1.5,1.5h-1c-0.8,0-1.5-0.7-1.5-1.5v-17C83,0.7,83.7,0,84.5,0H91
-	c0.3,0,0.7,0,1,0.1c3.4,0.5,6,3.4,6,6.9c0,2.4-1.2,4.5-3.1,5.8L97.8,17.8z M92,4.2C91.7,4.1,91.3,4,91,4h-3c-0.6,0-1,0.4-1,1v4
-	c0,0.6,0.4,1,1,1h3c0.3,0,0.7-0.1,1-0.2c0.3-0.1,0.7-0.3,0.9-0.5C93.6,8.8,94,7.9,94,7C94,5.7,93.2,4.6,92,4.2z M79.5,20h-1.1
-	c-0.6,0-1.2-0.4-1.4-1l-1.5-4h-6.1L68,19c-0.2,0.6-0.8,1-1.4,1h-1.1c-1,0-1.8-1-1.4-2l6.2-17c0.2-0.6,0.8-1,1.4-1h1.6
-	c0.6,0,1.2,0.4,1.4,1l6.2,17C81.3,19,80.5,20,79.5,20z M72.5,6.6L70.9,11h3.2L72.5,6.6z M58,14h-4v4.5c0,0.8-0.7,1.5-1.5,1.5h-1
-	c-0.8,0-1.5-0.7-1.5-1.5v-17C50,0.7,50.7,0,51.5,0H58c3.9,0,7,3.1,7,7S61.9,14,58,14z M61,7c0-1.3-0.8-2.4-2-2.8
-	C58.7,4.1,58.3,4,58,4h-3c-0.5,0-1,0.4-1,1v4c0,0.6,0.5,1,1,1h3c0.3,0,0.7-0.1,1-0.2c0.3-0.1,0.7-0.3,0.9-0.5C60.6,8.8,61,7.9,61,7z
-	 M118.4,14h1c0.5,0,0.9,0.3,1.2,0.7c0.2,0.3,0.4,0.6,0.8,0.8c0.5,0.3,1.4,0.5,2.1,0.5c1.5,0,2.8-0.9,2.8-2c0-0.7-0.5-1.3-1.2-1.6
-	c-0.8-0.4-1.1-1.3-0.7-2.1l0.4-0.9c0.4-0.7,1.2-1,1.8-0.6c0.6,0.3,1.2,0.7,1.6,1.2c1,1.1,1.7,2.5,1.7,4c0,3.3-2.9,6-6.5,6
-	c-2.8,0-5.5-1.7-6.4-4C116.7,15.1,117.4,14,118.4,14z"></path>
-							</svg><!-- mobile-logo / end --></a>
-						<div class="mobile-header__search mobile-search">
-							<form class="mobile-search__body"><input type="text" class="mobile-search__input"
-									placeholder="Enter keyword or part number"> <button type="button"
-									class="mobile-search__vehicle-picker" aria-label="Select Vehicle"><svg width="20" height="20">
-										<path d="M6.6,2c2,0,4.8,0,6.8,0c1,0,2.9,0.8,3.6,2.2C17.7,5.7,17.9,7,18.4,7C20,7,20,8,20,8v1h-1v7.5c0,0.8-0.7,1.5-1.5,1.5h-1
-	c-0.8,0-1.5-0.7-1.5-1.5V16H5v0.5C5,17.3,4.3,18,3.5,18h-1C1.7,18,1,17.3,1,16.5V16V9H0V8c0,0,0.1-1,1.6-1C2.1,7,2.3,5.7,3,4.2
-	C3.7,2.8,5.6,2,6.6,2z M13.3,4H6.7c-0.8,0-1.4,0-2,0.7c-0.5,0.6-0.8,1.5-1,2C3.6,7.1,3.5,7.9,3.7,8C4.5,8.4,6.1,9,10,9
-	c4,0,5.4-0.6,6.3-1c0.2-0.1,0.2-0.8,0-1.2c-0.2-0.4-0.5-1.5-1-2C14.7,4,14.1,4,13.3,4z M4,10c-0.4-0.3-1.5-0.5-2,0
-	c-0.4,0.4-0.4,1.6,0,2c0.5,0.5,4,0.4,4,0C6,11.2,4.5,10.3,4,10z M14,12c0,0.4,3.5,0.5,4,0c0.4-0.4,0.4-1.6,0-2c-0.5-0.5-1.3-0.3-2,0
-	C15.5,10.2,14,11.3,14,12z" /></svg> <span class="mobile-search__vehicle-picker-label">Vehicle</span></button> <button
-									type="submit" class="mobile-search__button mobile-search__button--search"><svg width="20" height="20">
-										<path d="M19.2,17.8c0,0-0.2,0.5-0.5,0.8c-0.4,0.4-0.9,0.6-0.9,0.6s-0.9,0.7-2.8-1.6c-1.1-1.4-2.2-2.8-3.1-3.9C10.9,14.5,9.5,15,8,15
-	c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7c0,1.5-0.5,2.9-1.3,4c1.1,0.8,2.5,2,4,3.1C20,16.8,19.2,17.8,19.2,17.8z M8,3C5.2,3,3,5.2,3,8
-	c0,2.8,2.2,5,5,5c2.8,0,5-2.2,5-5C13,5.2,10.8,3,8,3z" /></svg></button> <button type="button"
-									class="mobile-search__button mobile-search__button--close"><svg width="20" height="20">
-										<path d="M16.7,16.7L16.7,16.7c-0.4,0.4-1,0.4-1.4,0L10,11.4l-5.3,5.3c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L8.6,10L3.3,4.7
-	c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L10,8.6l5.3-5.3c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L11.4,10l5.3,5.3
-	C17.1,15.7,17.1,16.3,16.7,16.7z" /></svg></button>
-								<div class="mobile-search__field"></div>
+<div class="site__body">
+	<div class="block-space block-space--layout--after-header"></div>
+	<div class="block">
+		<div class="container container--max--lg">
+			<div class="row">
+				<div class="col-md-6 d-flex">
+					<div class="card flex-grow-1 mb-md-0 mr-0 mr-lg-3 ml-0 ml-lg-4">
+						<div class="card-body card-body--padding--2">
+							<h3 class="card-title">Login</h3>
+							<form>
+								<div class="form-group"><label for="signin-email">Email address</label> <input id="signin-email"
+										type="email" class="form-control" placeholder="customer@example.com"></div>
+								<div class="form-group"><label for="signin-password">Password</label> <input id="signin-password"
+										type="password" class="form-control" placeholder="Password"> <small class="form-text text-muted"><a
+											href="#">Forgot password?</a></small></div>
+								<div class="form-group">
+									<div class="form-check"><span class="input-check form-check-input"><span
+												class="input-check__body"><input class="input-check__input" type="checkbox"
+													id="signin-remember"> <span class="input-check__box"></span> <span
+													class="input-check__icon"><svg width="9px" height="7px">
+														<path d="M9,1.395L3.46,7L0,3.5L1.383,2.095L3.46,4.2L7.617,0L9,1.395Z" /></svg>
+												</span></span></span><label class="form-check-label" for="signin-remember">Remember
+											Me</label></div>
+								</div>
+								<div class="form-group mb-0"><button type="submit" class="btn btn-primary mt-3">Login</button></div>
 							</form>
 						</div>
+<<<<<<< HEAD
 						<div class="mobile-header__indicators">
 							<div class="mobile-indicator mobile-indicator--search d-md-none"><button type="button"
 									class="mobile-indicator__button"><span class="mobile-indicator__icon"><svg width="20" height="20">
@@ -1436,508 +1380,24 @@
 							</div>
 							<div class="site-footer__payments"><img src="images/payments.png" alt=""></div>
 						</div>
+=======
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
 					</div>
 				</div>
-			</div>
-		</footer><!-- site__footer / end -->
-	</div><!-- site / end -->
-	<!-- mobile-menu -->
-	<div class="mobile-menu">
-		<div class="mobile-menu__backdrop"></div>
-		<div class="mobile-menu__body"><button class="mobile-menu__close" type="button"><svg width="12" height="12">
-					<path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6
-	c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4
-	C11.2,9.8,11.2,10.4,10.8,10.8z" /></svg></button>
-			<div class="mobile-menu__panel">
-				<div class="mobile-menu__panel-header">
-					<div class="mobile-menu__panel-title">Menu</div>
-				</div>
-				<div class="mobile-menu__panel-body">
-					<div class="mobile-menu__settings-list">
-						<div class="mobile-menu__setting" data-mobile-menu-item><button class="mobile-menu__setting-button"
-								title="Language" data-mobile-menu-trigger><span class="mobile-menu__setting-icon"><img
-										src="images/languages/language-5.png" alt=""> </span><span
-									class="mobile-menu__setting-title">Italian</span> <span class="mobile-menu__setting-arrow"><svg
-										width="6px" height="9px">
-										<path
-											d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-									</svg></span></button>
-							<div class="mobile-menu__setting-panel" data-mobile-menu-panel>
-								<div class="mobile-menu__panel mobile-menu__panel--hidden">
-									<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back" type="button"><svg
-												width="7" height="11">
-												<path
-													d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-											</svg></button>
-										<div class="mobile-menu__panel-title">Language</div>
-									</div>
-									<div class="mobile-menu__panel-body">
-										<ul class="mobile-menu__links">
-											<li data-mobile-menu-item><button type="button" class="" data-mobile-menu-trigger>
-													<div class="mobile-menu__links-image"><img src="images/languages/language-1.png" alt=""></div>
-													English
-												</button></li>
-											<li data-mobile-menu-item><button type="button" class="" data-mobile-menu-trigger>
-													<div class="mobile-menu__links-image"><img src="images/languages/language-2.png" alt=""></div>
-													French
-												</button></li>
-											<li data-mobile-menu-item><button type="button" class="" data-mobile-menu-trigger>
-													<div class="mobile-menu__links-image"><img src="images/languages/language-3.png" alt=""></div>
-													German
-												</button></li>
-											<li data-mobile-menu-item><button type="button" class="" data-mobile-menu-trigger>
-													<div class="mobile-menu__links-image"><img src="images/languages/language-4.png" alt=""></div>
-													Russian
-												</button></li>
-											<li data-mobile-menu-item><button type="button" class="" data-mobile-menu-trigger>
-													<div class="mobile-menu__links-image"><img src="images/languages/language-5.png" alt=""></div>
-													Italian
-												</button></li>
-										</ul>
-									</div>
+				<div class="col-md-6 d-flex mt-4 mt-md-0">
+					<div class="card flex-grow-1 mb-0 ml-0 ml-lg-3 mr-0 mr-lg-4">
+						<div class="card-body card-body--padding--2">
+							<h3 class="card-title">Register</h3>
+							<form>
+								<div class="form-group"><label for="signup-email">Email address</label> <input id="signup-email"
+										type="email" class="form-control" placeholder="customer@example.com"></div>
+								<div class="form-group"><label for="signup-password">Password</label> <input id="signup-password"
+										type="password" class="form-control" placeholder="Password"></div>
+								<div class="form-group"><label for="signup-confirm">Repeat password</label> <input id="signup-confirm"
+										type="password" class="form-control" placeholder="Password"></div>
+								<div class="form-group mb-0"><button type="submit" class="btn btn-primary mt-3">Register</button>
 								</div>
-							</div>
-						</div>
-						<div class="mobile-menu__setting" data-mobile-menu-item><button class="mobile-menu__setting-button"
-								title="Currency" data-mobile-menu-trigger><span
-									class="mobile-menu__setting-icon mobile-menu__setting-icon--currency">$ </span><span
-									class="mobile-menu__setting-title">US Dollar</span> <span class="mobile-menu__setting-arrow"><svg
-										width="6px" height="9px">
-										<path
-											d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-									</svg></span></button>
-							<div class="mobile-menu__setting-panel" data-mobile-menu-panel>
-								<div class="mobile-menu__panel mobile-menu__panel--hidden">
-									<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back" type="button"><svg
-												width="7" height="11">
-												<path
-													d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-											</svg></button>
-										<div class="mobile-menu__panel-title">Currency</div>
-									</div>
-									<div class="mobile-menu__panel-body">
-										<ul class="mobile-menu__links">
-											<li data-mobile-menu-item><button type="button" class="" data-mobile-menu-trigger>€ Euro</button>
-											</li>
-											<li data-mobile-menu-item><button type="button" class="" data-mobile-menu-trigger>£ Pound
-													Sterling</button></li>
-											<li data-mobile-menu-item><button type="button" class="" data-mobile-menu-trigger>$ US
-													Dollar</button></li>
-											<li data-mobile-menu-item><button type="button" class="" data-mobile-menu-trigger>₽ Russian
-													Ruble</button></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="mobile-menu__divider"></div>
-					<div class="mobile-menu__indicators"><a class="mobile-menu__indicator" href="wishlist.html"><span
-								class="mobile-menu__indicator-icon"><svg width="20" height="20">
-									<path d="M14,3c2.2,0,4,1.8,4,4c0,4-5.2,10-8,10S2,11,2,7c0-2.2,1.8-4,4-4c1,0,1.9,0.4,2.7,1L10,5.2L11.3,4C12.1,3.4,13,3,14,3 M14,1
-	c-1.5,0-2.9,0.6-4,1.5C8.9,1.6,7.5,1,6,1C2.7,1,0,3.7,0,7c0,5,6,12,10,12s10-7,10-12C20,3.7,17.3,1,14,1L14,1z" /></svg>
-							</span><span class="mobile-menu__indicator-title">Wishlist</span> </a><a class="mobile-menu__indicator"
-							href="account-dashboard.html"><span class="mobile-menu__indicator-icon"><svg width="20" height="20">
-									<path d="M20,20h-2c0-4.4-3.6-8-8-8s-8,3.6-8,8H0c0-4.2,2.6-7.8,6.3-9.3C4.9,9.6,4,7.9,4,6c0-3.3,2.7-6,6-6s6,2.7,6,6
-	c0,1.9-0.9,3.6-2.3,4.7C17.4,12.2,20,15.8,20,20z M14,6c0-2.2-1.8-4-4-4S6,3.8,6,6s1.8,4,4,4S14,8.2,14,6z" /></svg>
-							</span><span class="mobile-menu__indicator-title">Account</span> </a><a class="mobile-menu__indicator"
-							href="cart.html"><span class="mobile-menu__indicator-icon"><svg width="20" height="20">
-									<circle cx="7" cy="17" r="2" />
-									<circle cx="15" cy="17" r="2" />
-									<path d="M20,4.4V5l-1.8,6.3c-0.1,0.4-0.5,0.7-1,0.7H6.7c-0.4,0-0.8-0.3-1-0.7L3.3,3.9C3.1,3.3,2.6,3,2.1,3H0.4C0.2,3,0,2.8,0,2.6
-	V1.4C0,1.2,0.2,1,0.4,1h2.5c1,0,1.8,0.6,2.1,1.6L5.1,3l2.3,6.8c0,0.1,0.2,0.2,0.3,0.2h8.6c0.1,0,0.3-0.1,0.3-0.2l1.3-4.4
-	C17.9,5.2,17.7,5,17.5,5H9.4C9.2,5,9,4.8,9,4.6V3.4C9,3.2,9.2,3,9.4,3h9.2C19.4,3,20,3.6,20,4.4z" /></svg> <span
-									class="mobile-menu__indicator-counter">3</span> </span><span
-								class="mobile-menu__indicator-title">Cart</span> </a><a class="mobile-menu__indicator"
-							href="account-garage.html"><span class="mobile-menu__indicator-icon"><svg width="20" height="20">
-									<path d="M6.6,2c2,0,4.8,0,6.8,0c1,0,2.9,0.8,3.6,2.2C17.7,5.7,17.9,7,18.4,7C20,7,20,8,20,8v1h-1v7.5c0,0.8-0.7,1.5-1.5,1.5h-1
-	c-0.8,0-1.5-0.7-1.5-1.5V16H5v0.5C5,17.3,4.3,18,3.5,18h-1C1.7,18,1,17.3,1,16.5V16V9H0V8c0,0,0.1-1,1.6-1C2.1,7,2.3,5.7,3,4.2
-	C3.7,2.8,5.6,2,6.6,2z M13.3,4H6.7c-0.8,0-1.4,0-2,0.7c-0.5,0.6-0.8,1.5-1,2C3.6,7.1,3.5,7.9,3.7,8C4.5,8.4,6.1,9,10,9
-	c4,0,5.4-0.6,6.3-1c0.2-0.1,0.2-0.8,0-1.2c-0.2-0.4-0.5-1.5-1-2C14.7,4,14.1,4,13.3,4z M4,10c-0.4-0.3-1.5-0.5-2,0
-	c-0.4,0.4-0.4,1.6,0,2c0.5,0.5,4,0.4,4,0C6,11.2,4.5,10.3,4,10z M14,12c0,0.4,3.5,0.5,4,0c0.4-0.4,0.4-1.6,0-2c-0.5-0.5-1.3-0.3-2,0
-	C15.5,10.2,14,11.3,14,12z" /></svg> </span><span class="mobile-menu__indicator-title">Garage</span></a></div>
-					<div class="mobile-menu__divider"></div>
-					<ul class="mobile-menu__links">
-						<li data-mobile-menu-item><a href="index.html" class="" data-mobile-menu-trigger>Home <svg width="7"
-									height="11">
-									<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
-	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
-							<div class="mobile-menu__links-panel" data-mobile-menu-panel>
-								<div class="mobile-menu__panel mobile-menu__panel--hidden">
-									<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back" type="button"><svg
-												width="7" height="11">
-												<path
-													d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-											</svg></button>
-										<div class="mobile-menu__panel-title">Home</div>
-									</div>
-									<div class="mobile-menu__panel-body">
-										<ul class="mobile-menu__links">
-											<li data-mobile-menu-item><a href="index.html" class="" data-mobile-menu-trigger>Home One</a></li>
-											<li data-mobile-menu-item><a href="index2.html" class="" data-mobile-menu-trigger>Home Two</a>
-											</li>
-											<li data-mobile-menu-item><a href="header-spaceship-variant-one.html" class=""
-													data-mobile-menu-trigger>Header Spaceship <svg width="7" height="11">
-														<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
-	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
-												<div class="mobile-menu__links-panel" data-mobile-menu-panel>
-													<div class="mobile-menu__panel mobile-menu__panel--hidden">
-														<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back"
-																type="button"><svg width="7" height="11">
-																	<path
-																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																</svg></button>
-															<div class="mobile-menu__panel-title">Header Spaceship</div>
-														</div>
-														<div class="mobile-menu__panel-body">
-															<ul class="mobile-menu__links">
-																<li data-mobile-menu-item><a href="header-spaceship-variant-one.html" class=""
-																		data-mobile-menu-trigger>Variant One</a></li>
-																<li data-mobile-menu-item><a href="header-spaceship-variant-two.html" class=""
-																		data-mobile-menu-trigger>Variant Two</a></li>
-																<li data-mobile-menu-item><a href="header-spaceship-variant-three.html" class=""
-																		data-mobile-menu-trigger>Variant Three</a></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</li>
-											<li data-mobile-menu-item><a href="header-classic-variant-one.html" class=""
-													data-mobile-menu-trigger>Header Classic <svg width="7" height="11">
-														<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
-	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
-												<div class="mobile-menu__links-panel" data-mobile-menu-panel>
-													<div class="mobile-menu__panel mobile-menu__panel--hidden">
-														<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back"
-																type="button"><svg width="7" height="11">
-																	<path
-																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																</svg></button>
-															<div class="mobile-menu__panel-title">Header Classic</div>
-														</div>
-														<div class="mobile-menu__panel-body">
-															<ul class="mobile-menu__links">
-																<li data-mobile-menu-item><a href="header-classic-variant-one.html" class=""
-																		data-mobile-menu-trigger>Variant One</a></li>
-																<li data-mobile-menu-item><a href="header-classic-variant-two.html" class=""
-																		data-mobile-menu-trigger>Variant Two</a></li>
-																<li data-mobile-menu-item><a href="header-classic-variant-three.html" class=""
-																		data-mobile-menu-trigger>Variant Three</a></li>
-																<li data-mobile-menu-item><a href="header-classic-variant-four.html" class=""
-																		data-mobile-menu-trigger>Variant Four</a></li>
-																<li data-mobile-menu-item><a href="header-classic-variant-five.html" class=""
-																		data-mobile-menu-trigger>Variant Five</a></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</li>
-											<li data-mobile-menu-item><a href="mobile-header-variant-one.html" class=""
-													data-mobile-menu-trigger>Mobile Header <svg width="7" height="11">
-														<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
-	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
-												<div class="mobile-menu__links-panel" data-mobile-menu-panel>
-													<div class="mobile-menu__panel mobile-menu__panel--hidden">
-														<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back"
-																type="button"><svg width="7" height="11">
-																	<path
-																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																</svg></button>
-															<div class="mobile-menu__panel-title">Mobile Header</div>
-														</div>
-														<div class="mobile-menu__panel-body">
-															<ul class="mobile-menu__links">
-																<li data-mobile-menu-item><a href="mobile-header-variant-one.html" class=""
-																		data-mobile-menu-trigger>Variant One</a></li>
-																<li data-mobile-menu-item><a href="mobile-header-variant-two.html" class=""
-																		data-mobile-menu-trigger>Variant Two</a></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li data-mobile-menu-item><a href="shop-grid-4-columns-sidebar.html" class="" data-mobile-menu-trigger>Shop
-								<svg width="7" height="11">
-									<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
-	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
-							<div class="mobile-menu__links-panel" data-mobile-menu-panel>
-								<div class="mobile-menu__panel mobile-menu__panel--hidden">
-									<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back" type="button"><svg
-												width="7" height="11">
-												<path
-													d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-											</svg></button>
-										<div class="mobile-menu__panel-title">Shop</div>
-									</div>
-									<div class="mobile-menu__panel-body">
-										<ul class="mobile-menu__links">
-											<li data-mobile-menu-item><a href="category.html" class="" data-mobile-menu-trigger>Category <svg
-														width="7" height="11">
-														<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
-	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
-												<div class="mobile-menu__links-panel" data-mobile-menu-panel>
-													<div class="mobile-menu__panel mobile-menu__panel--hidden">
-														<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back"
-																type="button"><svg width="7" height="11">
-																	<path
-																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																</svg></button>
-															<div class="mobile-menu__panel-title">Category</div>
-														</div>
-														<div class="mobile-menu__panel-body">
-															<ul class="mobile-menu__links">
-																<li data-mobile-menu-item><a href="category-3-columns-sidebar.html" class=""
-																		data-mobile-menu-trigger>3 Columns Sidebar</a></li>
-																<li data-mobile-menu-item><a href="category-4-columns-sidebar.html" class=""
-																		data-mobile-menu-trigger>4 Columns Sidebar</a></li>
-																<li data-mobile-menu-item><a href="category-5-columns-sidebar.html" class=""
-																		data-mobile-menu-trigger>5 Columns Sidebar</a></li>
-																<li data-mobile-menu-item><a href="category-4-columns-full.html" class=""
-																		data-mobile-menu-trigger>4 Columns Full</a></li>
-																<li data-mobile-menu-item><a href="category-5-columns-full.html" class=""
-																		data-mobile-menu-trigger>5 Columns Full</a></li>
-																<li data-mobile-menu-item><a href="category-6-columns-full.html" class=""
-																		data-mobile-menu-trigger>6 Columns Full</a></li>
-																<li data-mobile-menu-item><a href="category-7-columns-full.html" class=""
-																		data-mobile-menu-trigger>7 Columns Full</a></li>
-																<li data-mobile-menu-item><a href="category-right-sidebar.html" class=""
-																		data-mobile-menu-trigger>Right Sidebar</a></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</li>
-											<li data-mobile-menu-item><a href="shop-grid-4-columns-sidebar.html" class=""
-													data-mobile-menu-trigger>Shop Grid <svg width="7" height="11">
-														<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
-	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
-												<div class="mobile-menu__links-panel" data-mobile-menu-panel>
-													<div class="mobile-menu__panel mobile-menu__panel--hidden">
-														<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back"
-																type="button"><svg width="7" height="11">
-																	<path
-																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																</svg></button>
-															<div class="mobile-menu__panel-title">Shop Grid</div>
-														</div>
-														<div class="mobile-menu__panel-body">
-															<ul class="mobile-menu__links">
-																<li data-mobile-menu-item><a href="shop-grid-6-columns-full.html" class=""
-																		data-mobile-menu-trigger>6 Columns Full</a></li>
-																<li data-mobile-menu-item><a href="shop-grid-5-columns-full.html" class=""
-																		data-mobile-menu-trigger>5 Columns Full</a></li>
-																<li data-mobile-menu-item><a href="shop-grid-4-columns-full.html" class=""
-																		data-mobile-menu-trigger>4 Columns Full</a></li>
-																<li data-mobile-menu-item><a href="shop-grid-4-columns-sidebar.html" class=""
-																		data-mobile-menu-trigger>4 Columns Sidebar</a></li>
-																<li data-mobile-menu-item><a href="shop-grid-3-columns-sidebar.html" class=""
-																		data-mobile-menu-trigger>3 Columns Sidebar</a></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</li>
-											<li data-mobile-menu-item><a href="shop-list.html" class="" data-mobile-menu-trigger>Shop List</a>
-											</li>
-											<li data-mobile-menu-item><a href="shop-table.html" class="" data-mobile-menu-trigger>Shop
-													Table</a></li>
-											<li data-mobile-menu-item><a href="shop-right-sidebar.html" class="" data-mobile-menu-trigger>Shop
-													Right Sidebar</a></li>
-											<li data-mobile-menu-item><a href="product-full.html" class="" data-mobile-menu-trigger>Product
-													<svg width="7" height="11">
-														<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
-	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
-												<div class="mobile-menu__links-panel" data-mobile-menu-panel>
-													<div class="mobile-menu__panel mobile-menu__panel--hidden">
-														<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back"
-																type="button"><svg width="7" height="11">
-																	<path
-																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																</svg></button>
-															<div class="mobile-menu__panel-title">Product</div>
-														</div>
-														<div class="mobile-menu__panel-body">
-															<ul class="mobile-menu__links">
-																<li data-mobile-menu-item><a href="product-full.html" class=""
-																		data-mobile-menu-trigger>Full Width</a></li>
-																<li data-mobile-menu-item><a href="product-sidebar.html" class=""
-																		data-mobile-menu-trigger>Left Sidebar</a></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</li>
-											<li data-mobile-menu-item><a href="cart.html" class="" data-mobile-menu-trigger>Cart</a></li>
-											<li data-mobile-menu-item><a href="checkout.html" class="" data-mobile-menu-trigger>Checkout</a>
-											</li>
-											<li data-mobile-menu-item><a href="wishlist.html" class="" data-mobile-menu-trigger>Wishlist</a>
-											</li>
-											<li data-mobile-menu-item><a href="compare.html" class="" data-mobile-menu-trigger>Compare</a>
-											</li>
-											<li data-mobile-menu-item><a href="track-order.html" class="" data-mobile-menu-trigger>Track
-													Order</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li data-mobile-menu-item><a href="blog-classic-right-sidebar.html" class="" data-mobile-menu-trigger>Blog
-								<svg width="7" height="11">
-									<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
-	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
-							<div class="mobile-menu__links-panel" data-mobile-menu-panel>
-								<div class="mobile-menu__panel mobile-menu__panel--hidden">
-									<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back" type="button"><svg
-												width="7" height="11">
-												<path
-													d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-											</svg></button>
-										<div class="mobile-menu__panel-title">Blog</div>
-									</div>
-									<div class="mobile-menu__panel-body">
-										<ul class="mobile-menu__links">
-											<li data-mobile-menu-item><a href="blog-classic-right-sidebar.html" class=""
-													data-mobile-menu-trigger>Blog Classic <svg width="7" height="11">
-														<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
-	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
-												<div class="mobile-menu__links-panel" data-mobile-menu-panel>
-													<div class="mobile-menu__panel mobile-menu__panel--hidden">
-														<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back"
-																type="button"><svg width="7" height="11">
-																	<path
-																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																</svg></button>
-															<div class="mobile-menu__panel-title">Blog Classic</div>
-														</div>
-														<div class="mobile-menu__panel-body">
-															<ul class="mobile-menu__links">
-																<li data-mobile-menu-item><a href="blog-classic-left-sidebar.html" class=""
-																		data-mobile-menu-trigger>Left Sidebar</a></li>
-																<li data-mobile-menu-item><a href="blog-classic-right-sidebar.html" class=""
-																		data-mobile-menu-trigger>Right Sidebar</a></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</li>
-											<li data-mobile-menu-item><a href="blog-list-right-sidebar.html" class=""
-													data-mobile-menu-trigger>Blog List <svg width="7" height="11">
-														<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
-	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
-												<div class="mobile-menu__links-panel" data-mobile-menu-panel>
-													<div class="mobile-menu__panel mobile-menu__panel--hidden">
-														<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back"
-																type="button"><svg width="7" height="11">
-																	<path
-																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																</svg></button>
-															<div class="mobile-menu__panel-title">Blog List</div>
-														</div>
-														<div class="mobile-menu__panel-body">
-															<ul class="mobile-menu__links">
-																<li data-mobile-menu-item><a href="blog-list-left-sidebar.html" class=""
-																		data-mobile-menu-trigger>Left Sidebar</a></li>
-																<li data-mobile-menu-item><a href="blog-list-right-sidebar.html" class=""
-																		data-mobile-menu-trigger>Right Sidebar</a></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</li>
-											<li data-mobile-menu-item><a href="blog-grid-right-sidebar.html" class=""
-													data-mobile-menu-trigger>Blog Grid <svg width="7" height="11">
-														<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
-	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
-												<div class="mobile-menu__links-panel" data-mobile-menu-panel>
-													<div class="mobile-menu__panel mobile-menu__panel--hidden">
-														<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back"
-																type="button"><svg width="7" height="11">
-																	<path
-																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																</svg></button>
-															<div class="mobile-menu__panel-title">Blog Grid</div>
-														</div>
-														<div class="mobile-menu__panel-body">
-															<ul class="mobile-menu__links">
-																<li data-mobile-menu-item><a href="blog-grid-left-sidebar.html" class=""
-																		data-mobile-menu-trigger>Left Sidebar</a></li>
-																<li data-mobile-menu-item><a href="blog-grid-right-sidebar.html" class=""
-																		data-mobile-menu-trigger>Right Sidebar</a></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</li>
-											<li data-mobile-menu-item><a href="post-full-width.html" class="" data-mobile-menu-trigger>Post
-													Page <svg width="7" height="11">
-														<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
-	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
-												<div class="mobile-menu__links-panel" data-mobile-menu-panel>
-													<div class="mobile-menu__panel mobile-menu__panel--hidden">
-														<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back"
-																type="button"><svg width="7" height="11">
-																	<path
-																		d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-																</svg></button>
-															<div class="mobile-menu__panel-title">Post Page</div>
-														</div>
-														<div class="mobile-menu__panel-body">
-															<ul class="mobile-menu__links">
-																<li data-mobile-menu-item><a href="post-full-width.html" class=""
-																		data-mobile-menu-trigger>Full Width</a></li>
-																<li data-mobile-menu-item><a href="post-left-sidebar.html" class=""
-																		data-mobile-menu-trigger>Left Sidebar</a></li>
-																<li data-mobile-menu-item><a href="post-right-sidebar.html" class=""
-																		data-mobile-menu-trigger>Right Sidebar</a></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</li>
-											<li data-mobile-menu-item><a href="post-without-image.html" class="" data-mobile-menu-trigger>Post
-													Without Image</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li data-mobile-menu-item><a href="account-login.html" class="" data-mobile-menu-trigger>Account <svg
-									width="7" height="11">
-									<path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
-	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></a>
-							<div class="mobile-menu__links-panel" data-mobile-menu-panel>
-								<div class="mobile-menu__panel mobile-menu__panel--hidden">
-									<div class="mobile-menu__panel-header"><button class="mobile-menu__panel-back" type="button"><svg
-												width="7" height="11">
-												<path
-													d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
-											</svg></button>
-										<div class="mobile-menu__panel-title">Account</div>
-									</div>
-									<div class="mobile-menu__panel-body">
-										<ul class="mobile-menu__links">
-											<li data-mobile-menu-item><a href="account-login.html" class="" data-mobile-menu-trigger>Login &
-													Register</a></li>
-											<li data-mobile-menu-item><a href="account-dashboard.html" class=""
-													data-mobile-menu-trigger>Dashboard</a></li>
-											<li data-mobile-menu-item><a href="account-garage.html" class=""
-													data-mobile-menu-trigger>Garage</a></li>
-											<li data-mobile-menu-item><a href="account-profile.html" class="" data-mobile-menu-trigger>Edit
-													Profile</a></li>
-											<li data-mobile-menu-item><a href="account-orders.html" class="" data-mobile-menu-trigger>Order
-													History</a></li>
-											<li data-mobile-menu-item><a href="account-addresses.html" class=""
-													data-mobile-menu-trigger>Address Book</a></li>
-											<li data-mobile-menu-item><a href="account-password.html" class="" data-mobile-menu-trigger>Change
-													Password</a></li>
-										</ul>
-									</div>
-								</div>
+<<<<<<< HEAD
 							</div>
 						</li>
 						<li data-mobile-menu-item><a href="about-us.html" class="" data-mobile-menu-trigger>Pages <svg width="7"
@@ -2162,30 +1622,14 @@
 							<div class="pswp__preloader__cut">
 								<div class="pswp__preloader__donut"></div>
 							</div>
+=======
+							</form>
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
 						</div>
 					</div>
 				</div>
-				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-					<div class="pswp__share-tooltip"></div>
-				</div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button
-					class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-				<div class="pswp__caption">
-					<div class="pswp__caption__center"></div>
-				</div>
 			</div>
 		</div>
-	</div><!-- photoswipe / end -->
-	<!-- scripts -->
-	<script src="vendor/jquery/jquery.min.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="vendor/owl-carousel/owl.carousel.min.js"></script>
-	<script src="vendor/nouislider/nouislider.min.js"></script>
-	<script src="vendor/photoswipe/photoswipe.min.js"></script>
-	<script src="vendor/photoswipe/photoswipe-ui-default.min.js"></script>
-	<script src="vendor/select2/js/select2.min.js"></script>
-	<script src="js/number.js"></script>
-	<script src="js/main.js"></script>
-</body>
-
-
-</html>
+	</div>
+	<div class="block-space block-space--layout--before-footer"></div>
+	@stop

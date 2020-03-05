@@ -118,7 +118,7 @@
     c0,2.284-7.074,4.474-7.074,8.399v2.178c0,1.147,1.319,1.781,2.23,1.781h7.995c1.426,0,2.332-2.195,1.348-3.669
     c0.265,0.137,0.569,0.21,0.898,0.21h4.552v1.678c0,1.049,1.01,1.781,2.455,1.781s2.455-0.733,2.455-1.781v-1.678h0.262
     c1.02,0,1.781-1.225,1.781-2.32C48,19.144,47.251,18.168,46.218,18.168L46.218,18.168z M34.241,24.861h-7.987
-    c-0.389,0-0.802-0.258-0.824-0.375v-2.179c0-3.056,7.074-5.046,7.074-8.399c0-1.107-0.754-2.298-2.41-2.298
+    c-0.389,0-0.802-0.258-0.824-0.375v-2.179c0-3.056,7.074-5.046,7.074-8.399c0-1P.107-0.754-2.298-2.41-2.298
     c-1.473,0-2.388,0.915-2.388,2.388c0,0.236-0.405,0.577-1.138,0.577c-0.492,0-0.869-0.082-0.869-1.116
     c0-2.344,2.253-3.609,4.373-3.609c2.251,0,4.53,1.355,4.53,3.946c0,4.526-6.94,5.826-6.94,8.511v0.202
     c0,0.389,0.315,0.703,0.703,0.703l5.882,0c0.091,0.015,0.354,0.314,0.354,0.802C34.601,24.494,34.349,24.825,34.241,24.861
@@ -1649,18 +1649,18 @@
                 <div class="category-card__body">
                     <div class="category-card__content">
                         <div class="category-card__info">
-                            <div class="category-card__name"><a href="category-4-columns-sidebar.html">Wheels &
+                            <div class="category-card__name"><a href="category-4-sidebar">Wheels &
                                     Tires</a></div>
                             <ul class="category-card__children">
-                                <li><a href="category-4-columns-sidebar.html">Wheel Covers</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Brake Kits</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Tire Chains</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Wheel disks</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Tires</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Sensors</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Accessories</a></li>
+                                <li><a href="category-4-sidebar">Wheel Covers</a></li>
+                                <li><a href="category-4-sidebar">Brake Kits</a></li>
+                                <li><a href="category-4-sidebar">Tire Chains</a></li>
+                                <li><a href="category-4-sidebar">Wheel disks</a></li>
+                                <li><a href="category-4-sidebar">Tires</a></li>
+                                <li><a href="category-4-sidebar">Sensors</a></li>
+                                <li><a href="category-4-sidebar">Accessories</a></li>
                             </ul>
-                            <div class="category-card__actions"><a href="shop-grid-4-columns-sidebar.html"
+                            <div class="category-card__actions"><a href="/shop-grid-4-columns-sidebar"
                                     class="btn btn-primary btn-sm">Shop All</a></div>
                         </div>
                     </div>
@@ -2285,18 +2285,18 @@
                 <div class="category-card__body">
                     <div class="category-card__content">
                         <div class="category-card__info">
-                            <div class="category-card__name"><a href="category-4-columns-sidebar.html">Interior
+                            <div class="category-card__name"><a href="category-4-sidebar">Interior
                                     Parts</a></div>
                             <ul class="category-card__children">
-                                <li><a href="category-4-columns-sidebar.html">Dashboards</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Seat Covers</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Floor Mats</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Sun Shades</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Visors</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Car Covers</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Accessories</a></li>
+                                <li><a href="category-4-sidebar">Dashboards</a></li>
+                                <li><a href="category-4-sidebar">Seat Covers</a></li>
+                                <li><a href="category-4-sidebar">Floor Mats</a></li>
+                                <li><a href="category-4-sidebar">Sun Shades</a></li>
+                                <li><a href="category-4-sidebar">Visors</a></li>
+                                <li><a href="category-4-sidebar">Car Covers</a></li>
+                                <li><a href="category-4-sidebar">Accessories</a></li>
                             </ul>
-                            <div class="category-card__actions"><a href="shop-grid-4-columns-sidebar.html"
+                            <div class="category-card__actions"><a href="/shop-grid-4-columns-sidebar"
                                     class="btn btn-primary btn-sm">Shop All</a></div>
                         </div>
                     </div>
@@ -2921,19 +2921,19 @@
                 <div class="category-card__body">
                     <div class="category-card__content">
                         <div class="category-card__info">
-                            <div class="category-card__name"><a href="category-4-columns-sidebar.html">Engine &
+                            <div class="category-card__name"><a href="category-4-sidebar">Engine &
                                     Drivetrain</a>
                             </div>
                             <ul class="category-card__children">
-                                <li><a href="category-4-columns-sidebar.html">Timing Belts</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Spark Plugs</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Oil Pans</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Engine Gaskets</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Oil Filters</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Engine Mounts</a></li>
-                                <li><a href="category-4-columns-sidebar.html">Accessories</a></li>
+                                <li><a href="category-4-sidebar">Timing Belts</a></li>
+                                <li><a href="category-4-sidebar">Spark Plugs</a></li>
+                                <li><a href="category-4-sidebar">Oil Pans</a></li>
+                                <li><a href="category-4-sidebar">Engine Gaskets</a></li>
+                                <li><a href="category-4-sidebar">Oil Filters</a></li>
+                                <li><a href="category-4-sidebar">Engine Mounts</a></li>
+                                <li><a href="category-4-sidebar">Accessories</a></li>
                             </ul>
-                            <div class="category-card__actions"><a href="shop-grid-4-columns-sidebar.html"
+                            <div class="category-card__actions"><a href="/shop-grid-4-columns-sidebar"
                                     class="btn btn-primary btn-sm">Shop All</a></div>
                         </div>
                     </div>
@@ -4016,13 +4016,13 @@
             <div class="owl-carousel">
                 <div class="block-posts-carousel__item">
                     <div class="post-card">
-                        <div class="post-card__image"><a href="post-full-width.html"><img
+                        <div class="post-card__image"><a href="/post-width"><img
                                     src="images/posts/post-1-730x485.jpg" alt=""></a></div>
                         <div class="post-card__content">
-                            <div class="post-card__category"><a href="blog-classic-right-sidebar.html">Special
+                            <div class="post-card__category"><a href="/blog-classic-right">Special
                                     Offers</a></div>
                             <div class="post-card__title">
-                                <h2><a href="post-full-width.html">Philosophy That Addresses Topics Such As
+                                <h2><a href="/post-width">Philosophy That Addresses Topics Such As
                                         Goodness</a></h2>
                             </div>
                             <div class="post-card__date">By <a href="#">Jessica Moore</a> on October 19,
@@ -4036,7 +4036,7 @@
                                     velit diam. Donec
                                     pharetra nec enim blandit vulputate.</div>
                             </div>
-                            <div class="post-card__more"><a href="post-full-width.html"
+                            <div class="post-card__more"><a href="/post-width"
                                     class="btn btn-secondary btn-sm">Read
                                     more</a></div>
                         </div>
@@ -4044,13 +4044,13 @@
                 </div>
                 <div class="block-posts-carousel__item">
                     <div class="post-card">
-                        <div class="post-card__image"><a href="post-full-width.html"><img
+                        <div class="post-card__image"><a href="/post-width"><img
                                     src="images/posts/post-2-730x485.jpg" alt=""></a></div>
                         <div class="post-card__content">
-                            <div class="post-card__category"><a href="blog-classic-right-sidebar.html">Latest News</a>
+                            <div class="post-card__category"><a href="/blog-classic-right">Latest News</a>
                             </div>
                             <div class="post-card__title">
-                                <h2><a href="post-full-width.html">Logic Is The Study Of Reasoning And
+                                <h2><a href="/post-width">Logic Is The Study Of Reasoning And
                                         Argument Part 2</a></h2>
                             </div>
                             <div class="post-card__date">By <a href="#">Jessica Moore</a> on September 5,
@@ -4064,7 +4064,7 @@
                                     velit diam. Donec
                                     pharetra nec enim blandit vulputate.</div>
                             </div>
-                            <div class="post-card__more"><a href="post-full-width.html"
+                            <div class="post-card__more"><a href="/post-width"
                                     class="btn btn-secondary btn-sm">Read
                                     more</a></div>
                         </div>
@@ -4072,13 +4072,13 @@
                 </div>
                 <div class="block-posts-carousel__item">
                     <div class="post-card">
-                        <div class="post-card__image"><a href="post-full-width.html"><img
+                        <div class="post-card__image"><a href="/post-width"><img
                                     src="images/posts/post-3-730x485.jpg" alt=""></a></div>
                         <div class="post-card__content">
-                            <div class="post-card__category"><a href="blog-classic-right-sidebar.html">New
+                            <div class="post-card__category"><a href="/blog-classic-right">New
                                     Arrivals</a></div>
                             <div class="post-card__title">
-                                <h2><a href="post-full-width.html">Some Philosophers Specialize In One Or
+                                <h2><a href="/post-width">Some Philosophers Specialize In One Or
                                         More Historical
                                         Periods</a></h2>
                             </div>
@@ -4093,7 +4093,7 @@
                                     velit diam. Donec
                                     pharetra nec enim blandit vulputate.</div>
                             </div>
-                            <div class="post-card__more"><a href="post-full-width.html"
+                            <div class="post-card__more"><a href="/post-width"
                                     class="btn btn-secondary btn-sm">Read
                                     more</a></div>
                         </div>
@@ -4101,13 +4101,13 @@
                 </div>
                 <div class="block-posts-carousel__item">
                     <div class="post-card">
-                        <div class="post-card__image"><a href="post-full-width.html"><img
+                        <div class="post-card__image"><a href="/post-width"><img
                                     src="images/posts/post-4-730x485.jpg" alt=""></a></div>
                         <div class="post-card__content">
-                            <div class="post-card__category"><a href="blog-classic-right-sidebar.html">Special
+                            <div class="post-card__category"><a href="/blog-classic-right">Special
                                     Offers</a></div>
                             <div class="post-card__title">
-                                <h2><a href="post-full-width.html">A Variety Of Other Academic And
+                                <h2><a href="/post-width">A Variety Of Other Academic And
                                         Non-Academic Approaches Have
                                         Been Explored</a></h2>
                             </div>
@@ -4122,7 +4122,7 @@
                                     velit diam. Donec
                                     pharetra nec enim blandit vulputate.</div>
                             </div>
-                            <div class="post-card__more"><a href="post-full-width.html"
+                            <div class="post-card__more"><a href="/post-width"
                                     class="btn btn-secondary btn-sm">Read
                                     more</a></div>
                         </div>
@@ -4130,13 +4130,13 @@
                 </div>
                 <div class="block-posts-carousel__item">
                     <div class="post-card">
-                        <div class="post-card__image"><a href="post-full-width.html"><img
+                        <div class="post-card__image"><a href="/post-width"><img
                                     src="images/posts/post-5-730x485.jpg" alt=""></a></div>
                         <div class="post-card__content">
-                            <div class="post-card__category"><a href="blog-classic-right-sidebar.html">New
+                            <div class="post-card__category"><a href="/blog-classic-right">New
                                     Arrivals</a></div>
                             <div class="post-card__title">
-                                <h2><a href="post-full-width.html">Germany Was The First Country To
+                                <h2><a href="/post-width">Germany Was The First Country To
                                         Professionalize Philosophy</a>
                                 </h2>
                             </div>
@@ -4151,7 +4151,7 @@
                                     velit diam. Donec
                                     pharetra nec enim blandit vulputate.</div>
                             </div>
-                            <div class="post-card__more"><a href="post-full-width.html"
+                            <div class="post-card__more"><a href="/post-width"
                                     class="btn btn-secondary btn-sm">Read
                                     more</a></div>
                         </div>
@@ -4159,13 +4159,13 @@
                 </div>
                 <div class="block-posts-carousel__item">
                     <div class="post-card">
-                        <div class="post-card__image"><a href="post-full-width.html"><img
+                        <div class="post-card__image"><a href="/post-width"><img
                                     src="images/posts/post-6-730x485.jpg" alt=""></a></div>
                         <div class="post-card__content">
-                            <div class="post-card__category"><a href="blog-classic-right-sidebar.html">Special
+                            <div class="post-card__category"><a href="/blog-classic-right">Special
                                     Offers</a></div>
                             <div class="post-card__title">
-                                <h2><a href="post-full-width.html">Logic Is The Study Of Reasoning And
+                                <h2><a href="/post-width">Logic Is The Study Of Reasoning And
                                         Argument Part 1</a></h2>
                             </div>
                             <div class="post-card__date">By <a href="#">Jessica Moore</a> on May 21, 2019
@@ -4179,7 +4179,7 @@
                                     velit diam. Donec
                                     pharetra nec enim blandit vulputate.</div>
                             </div>
-                            <div class="post-card__more"><a href="post-full-width.html"
+                            <div class="post-card__more"><a href="/post-width"
                                     class="btn btn-secondary btn-sm">Read
                                     more</a></div>
                         </div>
