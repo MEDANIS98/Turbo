@@ -1,6 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+@extends('layouts.app')
+@section('title','wishlist')
+@section('content')
 
+<<<<<<< HEAD
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -1052,95 +1054,69 @@
 													</span><button type="button" class="vehicles-list__item-remove"><svg width="16" height="16">
 															<path d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z" />
 														</svg></button></label></div>
+=======
+<div class="site__body">
+	<div class="block-header block-header--has-breadcrumb block-header--has-title">
+		<div class="container">
+			<div class="block-header__body">
+				<nav class="breadcrumb block-header__breadcrumb" aria-label="breadcrumb">
+					<ol class="breadcrumb__list">
+						<li class="breadcrumb__spaceship-safe-area" role="presentation"></li>
+						<li class="breadcrumb__item breadcrumb__item--parent breadcrumb__item--first"><a href="index.html"
+								class="breadcrumb__item-link">Home</a></li>
+						<li class="breadcrumb__item breadcrumb__item--parent"><a href="#"
+								class="breadcrumb__item-link">Breadcrumb</a></li>
+						<li class="breadcrumb__item breadcrumb__item--current breadcrumb__item--last" aria-current="page"><span
+								class="breadcrumb__item-link">Current Page</span></li>
+						<li class="breadcrumb__title-safe-area" role="presentation"></li>
+					</ol>
+				</nav>
+				<h1 class="block-header__title">Wishlist</h1>
+			</div>
+		</div>
+	</div>
+	<div class="block">
+		<div class="container container--max--xl">
+			<div class="wishlist">
+				<table class="wishlist__table">
+					<thead class="wishlist__head">
+						<tr class="wishlist__row wishlist__row--head">
+							<th class="wishlist__column wishlist__column--head wishlist__column--image">Image</th>
+							<th class="wishlist__column wishlist__column--head wishlist__column--product">Product</th>
+							<th class="wishlist__column wishlist__column--head wishlist__column--stock">Stock status</th>
+							<th class="wishlist__column wishlist__column--head wishlist__column--price">Price</th>
+							<th class="wishlist__column wishlist__column--head wishlist__column--button"></th>
+							<th class="wishlist__column wishlist__column--head wishlist__column--remove"></th>
+						</tr>
+					</thead>
+					<tbody class="wishlist__body">
+						<tr class="wishlist__row wishlist__row--body">
+							<td class="wishlist__column wishlist__column--body wishlist__column--image"><a href="#"><img
+										src="images/products/product-1-160x160.jpg" alt=""></a></td>
+							<td class="wishlist__column wishlist__column--body wishlist__column--product">
+								<div class="wishlist__product-name"><a href="#">Brandix Spark Plug Kit ASR-400</a></div>
+								<div class="wishlist__product-rating">
+									<div class="wishlist__product-rating-stars">
+										<div class="rating">
+											<div class="rating__body">
+												<div class="rating__star rating__star--active"></div>
+												<div class="rating__star rating__star--active"></div>
+												<div class="rating__star rating__star--active"></div>
+												<div class="rating__star rating__star--active"></div>
+												<div class="rating__star"></div>
+											</div>
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
 										</div>
-										<div class="vehicle-picker__actions"><button type="button" class="btn btn-primary btn-sm"
-												data-to-panel="form">Add A Vehicle</button></div>
 									</div>
+									<div class="wishlist__product-rating-title">3 reviews</div>
 								</div>
-								<div class="vehicle-picker__panel vehicle-picker__panel--form" data-panel="form">
-									<div class="vehicle-picker__panel-body">
-										<div class="vehicle-form vehicle-form--layout--search">
-											<div class="vehicle-form__item vehicle-form__item--select"><select
-													class="form-control form-control-select2" aria-label="Year">
-													<option value="none">Select Year</option>
-													<option>2010</option>
-													<option>2011</option>
-													<option>2012</option>
-													<option>2013</option>
-													<option>2014</option>
-													<option>2015</option>
-													<option>2016</option>
-													<option>2017</option>
-													<option>2018</option>
-													<option>2019</option>
-													<option>2020</option>
-												</select></div>
-											<div class="vehicle-form__item vehicle-form__item--select"><select
-													class="form-control form-control-select2" aria-label="Brand" disabled="disabled">
-													<option value="none">Select Brand</option>
-													<option>Audi</option>
-													<option>BMW</option>
-													<option>Ferrari</option>
-													<option>Ford</option>
-													<option>KIA</option>
-													<option>Nissan</option>
-													<option>Tesla</option>
-													<option>Toyota</option>
-												</select></div>
-											<div class="vehicle-form__item vehicle-form__item--select"><select
-													class="form-control form-control-select2" aria-label="Model" disabled="disabled">
-													<option value="none">Select Model</option>
-													<option>Explorer</option>
-													<option>Focus S</option>
-													<option>Fusion SE</option>
-													<option>Mustang</option>
-												</select></div>
-											<div class="vehicle-form__item vehicle-form__item--select"><select
-													class="form-control form-control-select2" aria-label="Engine" disabled="disabled">
-													<option value="none">Select Engine</option>
-													<option>Gas 1.6L 125 hp AT/L4</option>
-													<option>Diesel 2.5L 200 hp AT/L5</option>
-													<option>Diesel 3.0L 250 hp MT/L5</option>
-												</select></div>
-											<div class="vehicle-form__divider">Or</div>
-											<div class="vehicle-form__item"><input type="text" class="form-control"
-													placeholder="Enter VIN number" aria-label="VIN number"></div>
-										</div>
-										<div class="vehicle-picker__actions">
-											<div class="search__car-selector-link"><a href="#" data-to-panel="list">Back to vehicles list</a>
-											</div><button type="button" class="btn btn-primary btn-sm" disabled="disabled">Add A
-												Vehicle</button>
-										</div>
+							</td>
+							<td class="wishlist__column wishlist__column--body wishlist__column--stock">
+								<div class="status-badge status-badge--style--success status-badge--has-text">
+									<div class="status-badge__body">
+										<div class="status-badge__text">In Stock</div>
 									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-				<div class="header__indicators">
-					<div class="indicator"><a href="wishlist.html" class="indicator__button"><span class="indicator__icon"><svg
-									width="32" height="32">
-									<path d="M23,4c3.9,0,7,3.1,7,7c0,6.3-11.4,15.9-14,16.9C13.4,26.9,2,17.3,2,11c0-3.9,3.1-7,7-7c2.1,0,4.1,1,5.4,2.6l1.6,2l1.6-2
-	C18.9,5,20.9,4,23,4 M23,2c-2.8,0-5.4,1.3-7,3.4C14.4,3.3,11.8,2,9,2c-5,0-9,4-9,9c0,8,14,19,16,19s16-11,16-19C32,6,28,2,23,2L23,2
-	z" /></svg></span></a></div>
-					<div class="indicator indicator--trigger--click"><a href="account-login.html" class="indicator__button"><span
-								class="indicator__icon"><svg width="32" height="32">
-									<path d="M16,18C9.4,18,4,23.4,4,30H2c0-6.2,4-11.5,9.6-13.3C9.4,15.3,8,12.8,8,10c0-4.4,3.6-8,8-8s8,3.6,8,8c0,2.8-1.5,5.3-3.6,6.7
-	C26,18.5,30,23.8,30,30h-2C28,23.4,22.6,18,16,18z M22,10c0-3.3-2.7-6-6-6s-6,2.7-6,6s2.7,6,6,6S22,13.3,22,10z" /></svg>
-							</span><span class="indicator__title">Hello, Log In</span> <span class="indicator__value">My
-								Account</span></a>
-						<div class="indicator__content">
-							<div class="account-menu">
-								<form class="account-menu__form">
-									<div class="account-menu__form-title">Log In to Your Account</div>
-									<div class="form-group"><label for="header-signin-email" class="sr-only">Email address</label> <input
-											id="header-signin-email" type="email" class="form-control form-control-sm"
-											placeholder="Email address"></div>
-									<div class="form-group"><label for="header-signin-password" class="sr-only">Password</label>
-										<div class="account-menu__form-forgot"><input id="header-signin-password" type="password"
-												class="form-control form-control-sm" placeholder="Password"> <a href="#"
-												class="account-menu__form-forgot-link">Forgot?</a></div>
-									</div>
+<<<<<<< HEAD
 									<div class="form-group account-menu__form-button"><button type="submit"
 											class="btn btn-primary btn-sm">Login</button></div>
 									<div class="account-menu__form-link"><a href="account-login.html">Create An Account</a></div>
@@ -1254,142 +1230,36 @@
 											<td>$5902.00</td>
 										</tr>
 									</table>
+=======
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
 								</div>
-								<div class="dropcart__actions"><a href="cart.html" class="btn btn-secondary">View Cart</a> <a
-										href="checkout.html" class="btn btn-primary">Checkout</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header><!-- site__header / end -->
-		<!-- site__body -->
-		<div class="site__body">
-			<div class="block-header block-header--has-breadcrumb block-header--has-title">
-				<div class="container">
-					<div class="block-header__body">
-						<nav class="breadcrumb block-header__breadcrumb" aria-label="breadcrumb">
-							<ol class="breadcrumb__list">
-								<li class="breadcrumb__spaceship-safe-area" role="presentation"></li>
-								<li class="breadcrumb__item breadcrumb__item--parent breadcrumb__item--first"><a href="index.html"
-										class="breadcrumb__item-link">Home</a></li>
-								<li class="breadcrumb__item breadcrumb__item--parent"><a href="#"
-										class="breadcrumb__item-link">Breadcrumb</a></li>
-								<li class="breadcrumb__item breadcrumb__item--current breadcrumb__item--last" aria-current="page"><span
-										class="breadcrumb__item-link">Current Page</span></li>
-								<li class="breadcrumb__title-safe-area" role="presentation"></li>
-							</ol>
-						</nav>
-						<h1 class="block-header__title">Wishlist</h1>
-					</div>
-				</div>
-			</div>
-			<div class="block">
-				<div class="container container--max--xl">
-					<div class="wishlist">
-						<table class="wishlist__table">
-							<thead class="wishlist__head">
-								<tr class="wishlist__row wishlist__row--head">
-									<th class="wishlist__column wishlist__column--head wishlist__column--image">Image</th>
-									<th class="wishlist__column wishlist__column--head wishlist__column--product">Product</th>
-									<th class="wishlist__column wishlist__column--head wishlist__column--stock">Stock status</th>
-									<th class="wishlist__column wishlist__column--head wishlist__column--price">Price</th>
-									<th class="wishlist__column wishlist__column--head wishlist__column--button"></th>
-									<th class="wishlist__column wishlist__column--head wishlist__column--remove"></th>
-								</tr>
-							</thead>
-							<tbody class="wishlist__body">
-								<tr class="wishlist__row wishlist__row--body">
-									<td class="wishlist__column wishlist__column--body wishlist__column--image"><a href="#"><img
-												src="images/products/product-1-160x160.jpg" alt=""></a></td>
-									<td class="wishlist__column wishlist__column--body wishlist__column--product">
-										<div class="wishlist__product-name"><a href="#">Brandix Spark Plug Kit ASR-400</a></div>
-										<div class="wishlist__product-rating">
-											<div class="wishlist__product-rating-stars">
-												<div class="rating">
-													<div class="rating__body">
-														<div class="rating__star rating__star--active"></div>
-														<div class="rating__star rating__star--active"></div>
-														<div class="rating__star rating__star--active"></div>
-														<div class="rating__star rating__star--active"></div>
-														<div class="rating__star"></div>
-													</div>
-												</div>
-											</div>
-											<div class="wishlist__product-rating-title">3 reviews</div>
-										</div>
-									</td>
-									<td class="wishlist__column wishlist__column--body wishlist__column--stock">
-										<div class="status-badge status-badge--style--success status-badge--has-text">
-											<div class="status-badge__body">
-												<div class="status-badge__text">In Stock</div>
-											</div>
-										</div>
-									</td>
-									<td class="wishlist__column wishlist__column--body wishlist__column--price">$19.00</td>
-									<td class="wishlist__column wishlist__column--body wishlist__column--button"><button type="button"
-											class="btn btn-sm btn-primary">Add to cart</button></td>
-									<td class="wishlist__column wishlist__column--body wishlist__column--remove"><button type="button"
-											class="wishlist__remove btn btn-sm btn-muted btn-icon"><svg width="12" height="12">
-												<path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6
+							</td>
+							<td class="wishlist__column wishlist__column--body wishlist__column--price">$19.00</td>
+							<td class="wishlist__column wishlist__column--body wishlist__column--button"><button type="button"
+									class="btn btn-sm btn-primary">Add to cart</button></td>
+							<td class="wishlist__column wishlist__column--body wishlist__column--remove"><button type="button"
+									class="wishlist__remove btn btn-sm btn-muted btn-icon"><svg width="12" height="12">
+										<path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6
 	c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4
 	C11.2,9.8,11.2,10.4,10.8,10.8z" /></svg></button></td>
-								</tr>
-								<tr class="wishlist__row wishlist__row--body">
-									<td class="wishlist__column wishlist__column--body wishlist__column--image"><a href="#"><img
-												src="images/products/product-2-160x160.jpg" alt=""></a></td>
-									<td class="wishlist__column wishlist__column--body wishlist__column--product">
-										<div class="wishlist__product-name"><a href="#">Brandix Brake Kit BDX-750Z370-S</a></div>
-										<div class="wishlist__product-rating">
-											<div class="wishlist__product-rating-stars">
-												<div class="rating">
-													<div class="rating__body">
-														<div class="rating__star rating__star--active"></div>
-														<div class="rating__star rating__star--active"></div>
-														<div class="rating__star rating__star--active"></div>
-														<div class="rating__star rating__star--active"></div>
-														<div class="rating__star rating__star--active"></div>
-													</div>
-												</div>
-											</div>
-											<div class="wishlist__product-rating-title">22 reviews</div>
-										</div>
-									</td>
-									<td class="wishlist__column wishlist__column--body wishlist__column--stock">
-										<div class="status-badge status-badge--style--success status-badge--has-text">
-											<div class="status-badge__body">
-												<div class="status-badge__text">In Stock</div>
+						</tr>
+						<tr class="wishlist__row wishlist__row--body">
+							<td class="wishlist__column wishlist__column--body wishlist__column--image"><a href="#"><img
+										src="images/products/product-2-160x160.jpg" alt=""></a></td>
+							<td class="wishlist__column wishlist__column--body wishlist__column--product">
+								<div class="wishlist__product-name"><a href="#">Brandix Brake Kit BDX-750Z370-S</a></div>
+								<div class="wishlist__product-rating">
+									<div class="wishlist__product-rating-stars">
+										<div class="rating">
+											<div class="rating__body">
+												<div class="rating__star rating__star--active"></div>
+												<div class="rating__star rating__star--active"></div>
+												<div class="rating__star rating__star--active"></div>
+												<div class="rating__star rating__star--active"></div>
+												<div class="rating__star rating__star--active"></div>
 											</div>
 										</div>
-									</td>
-									<td class="wishlist__column wishlist__column--body wishlist__column--price">$224.00</td>
-									<td class="wishlist__column wishlist__column--body wishlist__column--button"><button type="button"
-											class="btn btn-sm btn-primary">Add to cart</button></td>
-									<td class="wishlist__column wishlist__column--body wishlist__column--remove"><button type="button"
-											class="wishlist__remove btn btn-sm btn-muted btn-icon"><svg width="12" height="12">
-												<path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6
-	c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4
-	C11.2,9.8,11.2,10.4,10.8,10.8z" /></svg></button></td>
-								</tr>
-								<tr class="wishlist__row wishlist__row--body">
-									<td class="wishlist__column wishlist__column--body wishlist__column--image"><a href="#"><img
-												src="images/products/product-3-160x160.jpg" alt=""></a></td>
-									<td class="wishlist__column wishlist__column--body wishlist__column--product">
-										<div class="wishlist__product-name"><a href="#">Left Headlight Of Brandix Z54</a></div>
-										<div class="wishlist__product-rating">
-											<div class="wishlist__product-rating-stars">
-												<div class="rating">
-													<div class="rating__body">
-														<div class="rating__star rating__star--active"></div>
-														<div class="rating__star rating__star--active"></div>
-														<div class="rating__star rating__star--active"></div>
-														<div class="rating__star"></div>
-														<div class="rating__star"></div>
-													</div>
-												</div>
-											</div>
-											<div class="wishlist__product-rating-title">14 reviews</div>
-										</div>
+<<<<<<< HEAD
 									</td>
 									<td class="wishlist__column wishlist__column--body wishlist__column--stock">
 										<div class="status-badge status-badge--style--success status-badge--has-text">
@@ -1749,8 +1619,12 @@
 												</div>
 											</li>
 										</ul>
+=======
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
 									</div>
+									<div class="wishlist__product-rating-title">22 reviews</div>
 								</div>
+<<<<<<< HEAD
 							</div>
 						</li>
 						<li data-mobile-menu-item><a href="shop-grid-4-columns-sidebar.html" class="" data-mobile-menu-trigger>Shop
@@ -2028,8 +1902,45 @@
 											<li data-mobile-menu-item><a href="account-password.html" class="" data-mobile-menu-trigger>Change
 													Password</a></li>
 										</ul>
+=======
+							</td>
+							<td class="wishlist__column wishlist__column--body wishlist__column--stock">
+								<div class="status-badge status-badge--style--success status-badge--has-text">
+									<div class="status-badge__body">
+										<div class="status-badge__text">In Stock</div>
 									</div>
 								</div>
+							</td>
+							<td class="wishlist__column wishlist__column--body wishlist__column--price">$224.00</td>
+							<td class="wishlist__column wishlist__column--body wishlist__column--button"><button type="button"
+									class="btn btn-sm btn-primary">Add to cart</button></td>
+							<td class="wishlist__column wishlist__column--body wishlist__column--remove"><button type="button"
+									class="wishlist__remove btn btn-sm btn-muted btn-icon"><svg width="12" height="12">
+										<path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6
+	c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4
+	C11.2,9.8,11.2,10.4,10.8,10.8z" /></svg></button></td>
+						</tr>
+						<tr class="wishlist__row wishlist__row--body">
+							<td class="wishlist__column wishlist__column--body wishlist__column--image"><a href="#"><img
+										src="images/products/product-3-160x160.jpg" alt=""></a></td>
+							<td class="wishlist__column wishlist__column--body wishlist__column--product">
+								<div class="wishlist__product-name"><a href="#">Left Headlight Of Brandix Z54</a></div>
+								<div class="wishlist__product-rating">
+									<div class="wishlist__product-rating-stars">
+										<div class="rating">
+											<div class="rating__body">
+												<div class="rating__star rating__star--active"></div>
+												<div class="rating__star rating__star--active"></div>
+												<div class="rating__star rating__star--active"></div>
+												<div class="rating__star"></div>
+												<div class="rating__star"></div>
+											</div>
+										</div>
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
+									</div>
+									<div class="wishlist__product-rating-title">14 reviews</div>
+								</div>
+<<<<<<< HEAD
 							</div>
 						</li>
 						<li data-mobile-menu-item><a href="about-us.html" class="" data-mobile-menu-trigger>Pages <svg width="7"
@@ -2264,19 +2175,29 @@
 				<div class="pswp__caption">
 					<div class="pswp__caption__center"></div>
 				</div>
+=======
+							</td>
+							<td class="wishlist__column wishlist__column--body wishlist__column--stock">
+								<div class="status-badge status-badge--style--success status-badge--has-text">
+									<div class="status-badge__body">
+										<div class="status-badge__text">In Stock</div>
+									</div>
+								</div>
+							</td>
+							<td class="wishlist__column wishlist__column--body wishlist__column--price">$349.00</td>
+							<td class="wishlist__column wishlist__column--body wishlist__column--button"><button type="button"
+									class="btn btn-sm btn-primary">Add to cart</button></td>
+							<td class="wishlist__column wishlist__column--body wishlist__column--remove"><button type="button"
+									class="wishlist__remove btn btn-sm btn-muted btn-icon"><svg width="12" height="12">
+										<path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6
+	c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4
+	C11.2,9.8,11.2,10.4,10.8,10.8z" /></svg></button></td>
+						</tr>
+					</tbody>
+				</table>
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
 			</div>
 		</div>
-	</div><!-- photoswipe / end -->
-	<!-- scripts -->
-	<script src="vendor/jquery/jquery.min.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="vendor/owl-carousel/owl.carousel.min.js"></script>
-	<script src="vendor/nouislider/nouislider.min.js"></script>
-	<script src="vendor/photoswipe/photoswipe.min.js"></script>
-	<script src="vendor/photoswipe/photoswipe-ui-default.min.js"></script>
-	<script src="vendor/select2/js/select2.min.js"></script>
-	<script src="js/number.js"></script>
-	<script src="js/main.js"></script>
-</body>
-
-</html>
+	</div>
+	<div class="block-space block-space--layout--before-footer"></div>
+	@stop

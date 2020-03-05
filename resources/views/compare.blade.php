@@ -1,6 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+@extends('layouts.app')
+@section('title','Compare')
+@section('content')
 
+<<<<<<< HEAD
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -1052,65 +1054,71 @@
 													</span><button type="button" class="vehicles-list__item-remove"><svg width="16" height="16">
 															<path d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z" />
 														</svg></button></label></div>
+=======
+<div class="site__body">
+	<div class="block-header block-header--has-breadcrumb block-header--has-title">
+		<div class="container">
+			<div class="block-header__body">
+				<nav class="breadcrumb block-header__breadcrumb" aria-label="breadcrumb">
+					<ol class="breadcrumb__list">
+						<li class="breadcrumb__spaceship-safe-area" role="presentation"></li>
+						<li class="breadcrumb__item breadcrumb__item--parent breadcrumb__item--first"><a href="index.html"
+								class="breadcrumb__item-link">Home</a></li>
+						<li class="breadcrumb__item breadcrumb__item--parent"><a href="#"
+								class="breadcrumb__item-link">Breadcrumb</a></li>
+						<li class="breadcrumb__item breadcrumb__item--current breadcrumb__item--last" aria-current="page"><span
+								class="breadcrumb__item-link">Current Page</span></li>
+						<li class="breadcrumb__title-safe-area" role="presentation"></li>
+					</ol>
+				</nav>
+				<h1 class="block-header__title">Compare</h1>
+			</div>
+		</div>
+	</div>
+	<div class="block">
+		<div class="container">
+			<div class="compare card">
+				<div class="compare__options-list">
+					<div class="compare__option">
+						<div class="compare__option-label">Show:</div>
+						<div class="compare__option-control">
+							<div class="button-toggle">
+								<div class="button-toggle__list"><label class="button-toggle__item"><input type="radio"
+											class="button-toggle__input" name="compare-filter" checked="checked"> <span
+											class="button-toggle__button">All</span></label> <label class="button-toggle__item"><input
+											type="radio" class="button-toggle__input" name="compare-filter"> <span
+											class="button-toggle__button">Different</span></label></div>
+							</div>
+						</div>
+					</div>
+					<div class="compare__option">
+						<div class="compare__option-control"><button type="button" class="btn btn-secondary btn-xs">Clear
+								list</button></div>
+					</div>
+				</div>
+				<div class="table-responsive">
+					<table class="compare__table compare-table">
+						<tbody>
+							<tr class="compare-table__row">
+								<th class="compare-table__column compare-table__column--header">Product</th>
+								<td class="compare-table__column compare-table__column--product"><a href="#"
+										class="compare-table__product">
+										<div class="compare-table__product-image"><img src="images/products/product-1-150x150.jpg" alt="">
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
 										</div>
-										<div class="vehicle-picker__actions"><button type="button" class="btn btn-primary btn-sm"
-												data-to-panel="form">Add A Vehicle</button></div>
-									</div>
-								</div>
-								<div class="vehicle-picker__panel vehicle-picker__panel--form" data-panel="form">
-									<div class="vehicle-picker__panel-body">
-										<div class="vehicle-form vehicle-form--layout--search">
-											<div class="vehicle-form__item vehicle-form__item--select"><select
-													class="form-control form-control-select2" aria-label="Year">
-													<option value="none">Select Year</option>
-													<option>2010</option>
-													<option>2011</option>
-													<option>2012</option>
-													<option>2013</option>
-													<option>2014</option>
-													<option>2015</option>
-													<option>2016</option>
-													<option>2017</option>
-													<option>2018</option>
-													<option>2019</option>
-													<option>2020</option>
-												</select></div>
-											<div class="vehicle-form__item vehicle-form__item--select"><select
-													class="form-control form-control-select2" aria-label="Brand" disabled="disabled">
-													<option value="none">Select Brand</option>
-													<option>Audi</option>
-													<option>BMW</option>
-													<option>Ferrari</option>
-													<option>Ford</option>
-													<option>KIA</option>
-													<option>Nissan</option>
-													<option>Tesla</option>
-													<option>Toyota</option>
-												</select></div>
-											<div class="vehicle-form__item vehicle-form__item--select"><select
-													class="form-control form-control-select2" aria-label="Model" disabled="disabled">
-													<option value="none">Select Model</option>
-													<option>Explorer</option>
-													<option>Focus S</option>
-													<option>Fusion SE</option>
-													<option>Mustang</option>
-												</select></div>
-											<div class="vehicle-form__item vehicle-form__item--select"><select
-													class="form-control form-control-select2" aria-label="Engine" disabled="disabled">
-													<option value="none">Select Engine</option>
-													<option>Gas 1.6L 125 hp AT/L4</option>
-													<option>Diesel 2.5L 200 hp AT/L5</option>
-													<option>Diesel 3.0L 250 hp MT/L5</option>
-												</select></div>
-											<div class="vehicle-form__divider">Or</div>
-											<div class="vehicle-form__item"><input type="text" class="form-control"
-													placeholder="Enter VIN number" aria-label="VIN number"></div>
+										<div class="compare-table__product-name">Brandix Spark Plug Kit ASR-400</div>
+									</a></td>
+								<td class="compare-table__column compare-table__column--product"><a href="#"
+										class="compare-table__product">
+										<div class="compare-table__product-image"><img src="images/products/product-2-150x150.jpg" alt="">
 										</div>
-										<div class="vehicle-picker__actions">
-											<div class="search__car-selector-link"><a href="#" data-to-panel="list">Back to vehicles list</a>
-											</div><button type="button" class="btn btn-primary btn-sm" disabled="disabled">Add A
-												Vehicle</button>
+										<div class="compare-table__product-name">Brandix Brake Kit BDX-750Z370-S</div>
+									</a></td>
+								<td class="compare-table__column compare-table__column--product"><a href="#"
+										class="compare-table__product">
+										<div class="compare-table__product-image"><img src="images/products/product-3-150x150.jpg" alt="">
 										</div>
+<<<<<<< HEAD
 									</div>
 								</div>
 							</div>
@@ -1446,22 +1454,71 @@
 											<div class="status-badge status-badge--style--success status-badge--has-text">
 												<div class="status-badge__body">
 													<div class="status-badge__text">In Stock</div>
+=======
+										<div class="compare-table__product-name">Left Headlight Of Brandix Z54</div>
+									</a></td>
+								<td class="compare-table__column compare-table__column--product"><a href="#"
+										class="compare-table__product">
+										<div class="compare-table__product-image"><img src="images/products/product-4-150x150.jpg" alt="">
+										</div>
+										<div class="compare-table__product-name">Glossy Gray 19" Aluminium Wheel AR-19</div>
+									</a></td>
+								<td class="compare-table__column compare-table__column--product"><a href="#"
+										class="compare-table__product">
+										<div class="compare-table__product-image"><img src="images/products/product-5-150x150.jpg" alt="">
+										</div>
+										<div class="compare-table__product-name">Twin Exhaust Pipe From Brandix Z54</div>
+									</a></td>
+								<td class="compare-table__column compare-table__column--fake"></td>
+							</tr>
+							<tr class="compare-table__row">
+								<th class="compare-table__column compare-table__column--header">Rating</th>
+								<td class="compare-table__column compare-table__column--product">
+									<div class="compare-table__rating">
+										<div class="compare-table__rating-stars">
+											<div class="rating">
+												<div class="rating__body">
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star"></div>
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
 												</div>
 											</div>
-										</td>
-										<td class="compare-table__column compare-table__column--product">
-											<div class="status-badge status-badge--style--success status-badge--has-text">
-												<div class="status-badge__body">
-													<div class="status-badge__text">In Stock</div>
+										</div>
+										<div class="compare-table__rating-title">Based on 3 reviews</div>
+									</div>
+								</td>
+								<td class="compare-table__column compare-table__column--product">
+									<div class="compare-table__rating">
+										<div class="compare-table__rating-stars">
+											<div class="rating">
+												<div class="rating__body">
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star rating__star--active"></div>
 												</div>
 											</div>
-										</td>
-										<td class="compare-table__column compare-table__column--product">
-											<div class="status-badge status-badge--style--success status-badge--has-text">
-												<div class="status-badge__body">
-													<div class="status-badge__text">In Stock</div>
+										</div>
+										<div class="compare-table__rating-title">Based on 22 reviews</div>
+									</div>
+								</td>
+								<td class="compare-table__column compare-table__column--product">
+									<div class="compare-table__rating">
+										<div class="compare-table__rating-stars">
+											<div class="rating">
+												<div class="rating__body">
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star"></div>
+													<div class="rating__star"></div>
 												</div>
 											</div>
+<<<<<<< HEAD
 										</td>
 										<td class="compare-table__column compare-table__column--fake"></td>
 									</tr>
@@ -2142,25 +2199,69 @@
 													d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
 											</svg></button>
 										<div class="mobile-menu__panel-title">Account</div>
+=======
+										</div>
+										<div class="compare-table__rating-title">Based on 14 reviews</div>
 									</div>
-									<div class="mobile-menu__panel-body">
-										<ul class="mobile-menu__links">
-											<li data-mobile-menu-item><a href="account-login.html" class="" data-mobile-menu-trigger>Login &
-													Register</a></li>
-											<li data-mobile-menu-item><a href="account-dashboard.html" class=""
-													data-mobile-menu-trigger>Dashboard</a></li>
-											<li data-mobile-menu-item><a href="account-garage.html" class=""
-													data-mobile-menu-trigger>Garage</a></li>
-											<li data-mobile-menu-item><a href="account-profile.html" class="" data-mobile-menu-trigger>Edit
-													Profile</a></li>
-											<li data-mobile-menu-item><a href="account-orders.html" class="" data-mobile-menu-trigger>Order
-													History</a></li>
-											<li data-mobile-menu-item><a href="account-addresses.html" class=""
-													data-mobile-menu-trigger>Address Book</a></li>
-											<li data-mobile-menu-item><a href="account-password.html" class="" data-mobile-menu-trigger>Change
-													Password</a></li>
-										</ul>
+								</td>
+								<td class="compare-table__column compare-table__column--product">
+									<div class="compare-table__rating">
+										<div class="compare-table__rating-stars">
+											<div class="rating">
+												<div class="rating__body">
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star"></div>
+												</div>
+											</div>
+										</div>
+										<div class="compare-table__rating-title">Based on 26 reviews</div>
 									</div>
+								</td>
+								<td class="compare-table__column compare-table__column--product">
+									<div class="compare-table__rating">
+										<div class="compare-table__rating-stars">
+											<div class="rating">
+												<div class="rating__body">
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star rating__star--active"></div>
+													<div class="rating__star"></div>
+												</div>
+											</div>
+										</div>
+										<div class="compare-table__rating-title">Based on 9 reviews</div>
+									</div>
+								</td>
+								<td class="compare-table__column compare-table__column--fake"></td>
+							</tr>
+							<tr class="compare-table__row">
+								<th class="compare-table__column compare-table__column--header">Availability</th>
+								<td class="compare-table__column compare-table__column--product">
+									<div class="status-badge status-badge--style--success status-badge--has-text">
+										<div class="status-badge__body">
+											<div class="status-badge__text">In Stock</div>
+										</div>
+									</div>
+								</td>
+								<td class="compare-table__column compare-table__column--product">
+									<div class="status-badge status-badge--style--success status-badge--has-text">
+										<div class="status-badge__body">
+											<div class="status-badge__text">In Stock</div>
+										</div>
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
+									</div>
+								</td>
+								<td class="compare-table__column compare-table__column--product">
+									<div class="status-badge status-badge--style--success status-badge--has-text">
+										<div class="status-badge__body">
+											<div class="status-badge__text">In Stock</div>
+										</div>
+									</div>
+<<<<<<< HEAD
 								</div>
 							</div>
 						</li>
@@ -2176,25 +2277,23 @@
 													d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
 											</svg></button>
 										<div class="mobile-menu__panel-title">Pages</div>
+=======
+								</td>
+								<td class="compare-table__column compare-table__column--product">
+									<div class="status-badge status-badge--style--success status-badge--has-text">
+										<div class="status-badge__body">
+											<div class="status-badge__text">In Stock</div>
+										</div>
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
 									</div>
-									<div class="mobile-menu__panel-body">
-										<ul class="mobile-menu__links">
-											<li data-mobile-menu-item><a href="about-us.html" class="" data-mobile-menu-trigger>About Us</a>
-											</li>
-											<li data-mobile-menu-item><a href="contact-us-v1.html" class="" data-mobile-menu-trigger>Contact
-													Us v1</a></li>
-											<li data-mobile-menu-item><a href="contact-us-v2.html" class="" data-mobile-menu-trigger>Contact
-													Us v2</a></li>
-											<li data-mobile-menu-item><a href="404.html" class="" data-mobile-menu-trigger>404</a></li>
-											<li data-mobile-menu-item><a href="terms.html" class="" data-mobile-menu-trigger>Terms And
-													Conditions</a></li>
-											<li data-mobile-menu-item><a href="faq.html" class="" data-mobile-menu-trigger>FAQ</a></li>
-											<li data-mobile-menu-item><a href="components.html" class=""
-													data-mobile-menu-trigger>Components</a></li>
-											<li data-mobile-menu-item><a href="typography.html" class=""
-													data-mobile-menu-trigger>Typography</a></li>
-										</ul>
+								</td>
+								<td class="compare-table__column compare-table__column--product">
+									<div class="status-badge status-badge--style--success status-badge--has-text">
+										<div class="status-badge__body">
+											<div class="status-badge__text">In Stock</div>
+										</div>
 									</div>
+<<<<<<< HEAD
 								</div>
 							</div>
 						</li>
@@ -2412,3 +2511,89 @@
 </body>
 
 </html>
+=======
+								</td>
+								<td class="compare-table__column compare-table__column--fake"></td>
+							</tr>
+							<tr class="compare-table__row">
+								<th class="compare-table__column compare-table__column--header">Price</th>
+								<td class="compare-table__column compare-table__column--product">$19.00</td>
+								<td class="compare-table__column compare-table__column--product">$224.00</td>
+								<td class="compare-table__column compare-table__column--product">$349.00</td>
+								<td class="compare-table__column compare-table__column--product">$589.00</td>
+								<td class="compare-table__column compare-table__column--product">$749.00</td>
+								<td class="compare-table__column compare-table__column--fake"></td>
+							</tr>
+							<tr class="compare-table__row">
+								<th class="compare-table__column compare-table__column--header">Add to cart</th>
+								<td class="compare-table__column compare-table__column--product"><button type="button"
+										class="btn btn-sm btn-primary">Add to cart</button></td>
+								<td class="compare-table__column compare-table__column--product"><button type="button"
+										class="btn btn-sm btn-primary">Add to cart</button></td>
+								<td class="compare-table__column compare-table__column--product"><button type="button"
+										class="btn btn-sm btn-primary">Add to cart</button></td>
+								<td class="compare-table__column compare-table__column--product"><button type="button"
+										class="btn btn-sm btn-primary">Add to cart</button></td>
+								<td class="compare-table__column compare-table__column--product"><button type="button"
+										class="btn btn-sm btn-primary">Add to cart</button></td>
+								<td class="compare-table__column compare-table__column--fake"></td>
+							</tr>
+							<tr class="compare-table__row">
+								<th class="compare-table__column compare-table__column--header">SKU</th>
+								<td class="compare-table__column compare-table__column--product">140-10440-B</td>
+								<td class="compare-table__column compare-table__column--product">573-23743-C</td>
+								<td class="compare-table__column compare-table__column--product">009-50078-Z</td>
+								<td class="compare-table__column compare-table__column--product">A43-44328-B</td>
+								<td class="compare-table__column compare-table__column--product">729-51203-B</td>
+								<td class="compare-table__column compare-table__column--fake"></td>
+							</tr>
+							<tr class="compare-table__row">
+								<th class="compare-table__column compare-table__column--header">Weight</th>
+								<td class="compare-table__column compare-table__column--product">0.1 Kg</td>
+								<td class="compare-table__column compare-table__column--product">2.3 Kg</td>
+								<td class="compare-table__column compare-table__column--product">1.4 Kg</td>
+								<td class="compare-table__column compare-table__column--product">5 Kg</td>
+								<td class="compare-table__column compare-table__column--product">2 Kg</td>
+								<td class="compare-table__column compare-table__column--fake"></td>
+							</tr>
+							<tr class="compare-table__row">
+								<th class="compare-table__column compare-table__column--header">Color</th>
+								<td class="compare-table__column compare-table__column--product">Gray</td>
+								<td class="compare-table__column compare-table__column--product">Red</td>
+								<td class="compare-table__column compare-table__column--product">Black</td>
+								<td class="compare-table__column compare-table__column--product">Black</td>
+								<td class="compare-table__column compare-table__column--product">Metallic</td>
+								<td class="compare-table__column compare-table__column--fake"></td>
+							</tr>
+							<tr class="compare-table__row">
+								<th class="compare-table__column compare-table__column--header">Material</th>
+								<td class="compare-table__column compare-table__column--product">Thorium</td>
+								<td class="compare-table__column compare-table__column--product">Steel</td>
+								<td class="compare-table__column compare-table__column--product">Plastic</td>
+								<td class="compare-table__column compare-table__column--product">Aluminium</td>
+								<td class="compare-table__column compare-table__column--product">Aluminium</td>
+								<td class="compare-table__column compare-table__column--fake"></td>
+							</tr>
+							<tr class="compare-table__row">
+								<th class="compare-table__column compare-table__column--header"></th>
+								<td class="compare-table__column compare-table__column--product"><button type="button"
+										class="btn btn-sm btn-secondary">Remove</button></td>
+								<td class="compare-table__column compare-table__column--product"><button type="button"
+										class="btn btn-sm btn-secondary">Remove</button></td>
+								<td class="compare-table__column compare-table__column--product"><button type="button"
+										class="btn btn-sm btn-secondary">Remove</button></td>
+								<td class="compare-table__column compare-table__column--product"><button type="button"
+										class="btn btn-sm btn-secondary">Remove</button></td>
+								<td class="compare-table__column compare-table__column--product"><button type="button"
+										class="btn btn-sm btn-secondary">Remove</button></td>
+								<td class="compare-table__column compare-table__column--fake"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="block-space block-space--layout--before-footer"></div>
+	@stop
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d

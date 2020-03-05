@@ -1,6 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+@extends('layouts.app')
+@section('title','Shop-Table')
+@section('content')
 
+<<<<<<< HEAD
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -1265,6 +1267,9 @@
 		</header><!-- site__header / end -->
 		<!-- site__body -->
 		<div class="site__body">
+=======
+<div class="site__body">
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
 			<div class="block-header block-header--has-breadcrumb block-header--has-title">
 				<div class="container">
 					<div class="block-header__body">
@@ -3796,6 +3801,7 @@
 					<div class="block-space block-space--layout--before-footer"></div>
 				</div>
 			</div>
+<<<<<<< HEAD
 		</div><!-- site__body / end -->
 		<!-- site__footer -->
 		<footer class="site__footer">
@@ -4663,3 +4669,6 @@
 </body>
 
 </html>
+=======
+		@stop
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d

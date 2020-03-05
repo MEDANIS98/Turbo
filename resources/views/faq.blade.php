@@ -1,29 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+@extends('layouts.app')
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="format-detection" content="telephone=no">
-	<title>FAQ — Red Parts</title>
-	<link rel="icon" type="image/png" href="images/favicon.png"><!-- fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i"><!-- css -->
-	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="vendor/photoswipe/photoswipe.css">
-	<link rel="stylesheet" href="vendor/photoswipe/default-skin/default-skin.css">
-	<link rel="stylesheet" href="vendor/select2/css/select2.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/style.header-spaceship-variant-one.css" media="(min-width: 1200px)">
-	<link rel="stylesheet" href="css/style.mobile-header-variant-one.css" media="(max-width: 1199px)">
-	<!-- font - fontawesome -->
-	<link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97489509-8"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "UA-97489509-8");
-	</script>
-</head>
+@section('title', 'FAQ')
 
+<<<<<<< HEAD
 <body>
 	<!-- site -->
 	<div class="site">
@@ -1317,70 +1296,67 @@
 											esse cillum dolore eu fugiat.</p>
 									</div>
 								</div>
+=======
+@section('content')
+
+<div class="site__body">
+	<div class="block-space block-space--layout--spaceship-ledge-height"></div>
+	<div class="block faq">
+		<div class="container container--max--xl">
+			<div class="faq__header">
+				<h1 class="faq__header-title">Frequently Asked Questions</h1>
+			</div>
+			<div class="faq__section">
+				<h3 class="faq__section-title">Shipping Information</h3>
+				<div class="faq__section-body">
+					<div class="faq__question">
+						<h5 class="faq__question-title">What shipping methods are available?</h5>
+						<div class="faq__question-answer">
+							<div class="typography">
+								<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
+									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+									esse cillum dolore eu fugiat.</p>
 							</div>
 						</div>
 					</div>
-					<div class="faq__section">
-						<h3 class="faq__section-title">Payment Information</h3>
-						<div class="faq__section-body">
-							<div class="faq__question">
-								<h5 class="faq__question-title">What payments methods are available?</h5>
-								<div class="faq__question-answer">
-									<div class="typography">
-										<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
-											labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-											nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-											esse cillum dolore eu fugiat.</p>
-									</div>
-								</div>
-							</div>
-							<div class="faq__question">
-								<h5 class="faq__question-title">Can I split my payment?</h5>
-								<div class="faq__question-answer">
-									<div class="typography">
-										<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
-											labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-											nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-											esse cillum dolore eu fugiat.</p>
-									</div>
-								</div>
+					<div class="faq__question">
+						<h5 class="faq__question-title">Do you ship internationally?</h5>
+						<div class="faq__question-answer">
+							<div class="typography">
+								<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
+									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+									esse cillum dolore eu fugiat.</p>
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
 							</div>
 						</div>
 					</div>
-					<div class="faq__section">
-						<h3 class="faq__section-title">Orders and Returns</h3>
-						<div class="faq__section-body">
-							<div class="faq__question">
-								<h5 class="faq__question-title">How do I return or exchange an item?</h5>
-								<div class="faq__question-answer">
-									<div class="typography">
-										<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
-											labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-											nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-											esse cillum dolore eu fugiat.</p>
-									</div>
-								</div>
-							</div>
-							<div class="faq__question">
-								<h5 class="faq__question-title">How do I cancel an order?</h5>
-								<div class="faq__question-answer">
-									<div class="typography">
-										<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
-											labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-											nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-											esse cillum dolore eu fugiat.</p>
-									</div>
-								</div>
+					<div class="faq__question">
+						<h5 class="faq__question-title">How might I obtain an estimated date of delivery?</h5>
+						<div class="faq__question-answer">
+							<div class="typography">
+								<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
+									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+									esse cillum dolore eu fugiat.</p>
 							</div>
 						</div>
 					</div>
-					<div class="faq__footer">
-						<div class="faq__footer-title">Still Have A Questions?</div>
-						<div class="faq__footer-subtitle">We will be happy to answer any questions you may have.</div><a
-							href="contact-us-v1.html" class="btn btn-primary">Contact Us</a>
+					<div class="faq__question">
+						<h5 class="faq__question-title">Can I split my order to ship to different locations?</h5>
+						<div class="faq__question-answer">
+							<div class="typography">
+								<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
+									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+									esse cillum dolore eu fugiat.</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+<<<<<<< HEAD
 			<div class="block-space block-space--layout--before-footer"></div>
 		</div><!-- site__body / end -->
 		<!-- site__footer -->
@@ -1494,12 +1470,36 @@
 							<div class="site-footer__copyright">
 								<!-- copyright --> Powered by HTML — Designed by <a href="https://themeforest.net/user/kos9"
 									target="_blank" rel="noopener">Kos</a><!-- copyright / end -->
+=======
+			<div class="faq__section">
+				<h3 class="faq__section-title">Payment Information</h3>
+				<div class="faq__section-body">
+					<div class="faq__question">
+						<h5 class="faq__question-title">What payments methods are available?</h5>
+						<div class="faq__question-answer">
+							<div class="typography">
+								<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
+									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+									esse cillum dolore eu fugiat.</p>
 							</div>
-							<div class="site-footer__payments"><img src="images/payments.png" alt=""></div>
+						</div>
+					</div>
+					<div class="faq__question">
+						<h5 class="faq__question-title">Can I split my payment?</h5>
+						<div class="faq__question-answer">
+							<div class="typography">
+								<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
+									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+									esse cillum dolore eu fugiat.</p>
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+<<<<<<< HEAD
 		</footer><!-- site__footer / end -->
 	</div><!-- site / end -->
 	<!-- mobile-menu -->
@@ -2222,30 +2222,41 @@
 						<div class="pswp__preloader__icn">
 							<div class="pswp__preloader__cut">
 								<div class="pswp__preloader__donut"></div>
+=======
+			<div class="faq__section">
+				<h3 class="faq__section-title">Orders and Returns</h3>
+				<div class="faq__section-body">
+					<div class="faq__question">
+						<h5 class="faq__question-title">How do I return or exchange an item?</h5>
+						<div class="faq__question-answer">
+							<div class="typography">
+								<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
+									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+									esse cillum dolore eu fugiat.</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq__question">
+						<h5 class="faq__question-title">How do I cancel an order?</h5>
+						<div class="faq__question-answer">
+							<div class="typography">
+								<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
+									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+									esse cillum dolore eu fugiat.</p>
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-					<div class="pswp__share-tooltip"></div>
-				</div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button
-					class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-				<div class="pswp__caption">
-					<div class="pswp__caption__center"></div>
-				</div>
+			</div>
+			<div class="faq__footer">
+				<div class="faq__footer-title">Still Have A Questions?</div>
+				<div class="faq__footer-subtitle">We will be happy to answer any questions you may have.</div><a
+					href="contact-us-v1.html" class="btn btn-primary">Contact Us</a>
 			</div>
 		</div>
-	</div><!-- photoswipe / end -->
-	<!-- scripts -->
-	<script src="vendor/jquery/jquery.min.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="vendor/owl-carousel/owl.carousel.min.js"></script>
-	<script src="vendor/nouislider/nouislider.min.js"></script>
-	<script src="vendor/photoswipe/photoswipe.min.js"></script>
-	<script src="vendor/photoswipe/photoswipe-ui-default.min.js"></script>
-	<script src="vendor/select2/js/select2.min.js"></script>
-	<script src="js/number.js"></script>
-	<script src="js/main.js"></script>
-</body>
-
-</html>
+	</div>
+	<div class="block-space block-space--layout--before-footer"></div>
+	@stop

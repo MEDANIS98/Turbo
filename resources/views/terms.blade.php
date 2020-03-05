@@ -1,29 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+@extends('layouts.app')
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="format-detection" content="telephone=no">
-	<title>Terms And Conditions — Red Parts</title>
-	<link rel="icon" type="image/png" href="images/favicon.png"><!-- fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i"><!-- css -->
-	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="vendor/photoswipe/photoswipe.css">
-	<link rel="stylesheet" href="vendor/photoswipe/default-skin/default-skin.css">
-	<link rel="stylesheet" href="vendor/select2/css/select2.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/style.header-spaceship-variant-one.css" media="(min-width: 1200px)">
-	<link rel="stylesheet" href="css/style.mobile-header-variant-one.css" media="(max-width: 1199px)">
-	<!-- font - fontawesome -->
-	<link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97489509-8"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "UA-97489509-8");
-	</script>
-</head>
+@section('title', 'Terms')
 
+<<<<<<< HEAD
 <body>
 	<!-- site -->
 	<div class="site">
@@ -2120,54 +2099,46 @@
 					<div class="vehicle-picker-modal__actions"><button type="button" class="btn btn-sm btn-secondary"
 							data-to-panel="list">Back to list</button> <button type="button" class="btn btn-sm btn-primary">Add A
 							Vehicle</button></div>
+=======
+@section('content')
+<div class="block-space block-space--layout--spaceship-ledge-height"></div>
+<div class="block">
+	<div class="container">
+		<div class="document">
+			<div class="document__header">
+				<h1 class="document__title">Terms And Conditions</h1>
+				<div class="document__subtitle">This Agreement was last modified on 27 May 2018.</div>
+			</div>
+			<div class="document__content card">
+				<div class="typography">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac
+						pretium nibh facilisis. Vivamus venenatis viverra iaculis. Suspendisse tempor orci non sapien
+						ullamcorper dapibus. Suspendisse at velit diam. Donec pharetra nec enim blandit vulputate. Suspendisse
+						potenti. Pellentesque et molestie ante. In feugiat ante vitae ultricies malesuada.</p>
+					<h2>Definitions</h2>
+					<ol>
+						<li><strong>Risus</strong> — Morbi posuere eleifend sollicitudin. Praesent eget ante in enim
+							scelerisque scelerisque. Donec mi lorem, molestie a sapien non, laoreet convallis felis. In semper
+							felis in lacus venenatis, sit amet commodo leo interdum. Maecenas congue ut leo et auctor.</li>
+						<li><strong>Praesent</strong> — Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+							per inceptos himenaeos. Nulla orci ante, viverra in imperdiet in, pharetra et leo</li>
+						<li><strong>Vestibulum</strong> — Vestibulum arcu tellus, aliquam vel fermentum vestibulum, lacinia
+							pulvinar ipsum. In hac habitasse platea dictumst. Integer felis libero, blandit scelerisque mauris
+							eget, porta elementum sapien. Mauris luctus arcu non enim lobortis gravida.</li>
+					</ol>
+					<h2>Ornare dolor</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac
+						pretium nibh facilisis. Vivamus venenatis viverra iaculis. Suspendisse tempor orci non sapien
+						ullamcorper dapibus. Suspendisse at velit diam. Donec pharetra nec enim blandit vulputate. Suspendisse
+						potenti. Pellentesque et molestie ante. In feugiat ante vitae ultricies malesuada.</p>
+					<p>For information about how to contact us, please visit our <a href="contact-us.html">contact page</a>.
+					</p>
+					<div class="document__signature"><img src="images/signature.jpg" width="160" height="55" alt=""></div>
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
 				</div>
 			</div>
 		</div>
-	</div><!-- vehicle-picker-modal / end -->
-	<!-- photoswipe -->
-	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="pswp__bg"></div>
-		<div class="pswp__scroll-wrap">
-			<div class="pswp__container">
-				<div class="pswp__item"></div>
-				<div class="pswp__item"></div>
-				<div class="pswp__item"></div>
-			</div>
-			<div class="pswp__ui pswp__ui--hidden">
-				<div class="pswp__top-bar">
-					<div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
-						title="Close (Esc)"></button>
-					<!--<button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>--> <button
-						class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button
-						class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-					<div class="pswp__preloader">
-						<div class="pswp__preloader__icn">
-							<div class="pswp__preloader__cut">
-								<div class="pswp__preloader__donut"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-					<div class="pswp__share-tooltip"></div>
-				</div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button
-					class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-				<div class="pswp__caption">
-					<div class="pswp__caption__center"></div>
-				</div>
-			</div>
-		</div>
-	</div><!-- photoswipe / end -->
-	<!-- scripts -->
-	<script src="vendor/jquery/jquery.min.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="vendor/owl-carousel/owl.carousel.min.js"></script>
-	<script src="vendor/nouislider/nouislider.min.js"></script>
-	<script src="vendor/photoswipe/photoswipe.min.js"></script>
-	<script src="vendor/photoswipe/photoswipe-ui-default.min.js"></script>
-	<script src="vendor/select2/js/select2.min.js"></script>
-	<script src="js/number.js"></script>
-	<script src="js/main.js"></script>
-</body>
-
-</html>
+	</div>
+</div>
+<div class="block-space block-space--layout--before-footer"></div>
+@stop

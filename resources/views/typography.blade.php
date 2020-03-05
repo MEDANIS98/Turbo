@@ -1,29 +1,9 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+@extends('layouts.app')
+@section('title','Typography')
+@section('content')
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="format-detection" content="telephone=no">
-	<title>Typography — Red Parts</title>
-	<link rel="icon" type="image/png" href="images/favicon.png"><!-- fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i"><!-- css -->
-	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="vendor/owl-carousel/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="vendor/photoswipe/photoswipe.css">
-	<link rel="stylesheet" href="vendor/photoswipe/default-skin/default-skin.css">
-	<link rel="stylesheet" href="vendor/select2/css/select2.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/style.header-spaceship-variant-one.css" media="(min-width: 1200px)">
-	<link rel="stylesheet" href="css/style.mobile-header-variant-one.css" media="(max-width: 1199px)">
-	<!-- font - fontawesome -->
-	<link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97489509-8"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "UA-97489509-8");
-	</script>
-</head>
 
+<<<<<<< HEAD
 <body>
 	<!-- site -->
 	<div class="site">
@@ -2161,52 +2141,85 @@
 							Vehicle</button></div>
 				</div>
 			</div>
-		</div>
-	</div><!-- vehicle-picker-modal / end -->
-	<!-- photoswipe -->
-	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="pswp__bg"></div>
-		<div class="pswp__scroll-wrap">
-			<div class="pswp__container">
-				<div class="pswp__item"></div>
-				<div class="pswp__item"></div>
-				<div class="pswp__item"></div>
-			</div>
-			<div class="pswp__ui pswp__ui--hidden">
-				<div class="pswp__top-bar">
-					<div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
-						title="Close (Esc)"></button>
-					<!--<button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>--> <button
-						class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button
-						class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-					<div class="pswp__preloader">
-						<div class="pswp__preloader__icn">
-							<div class="pswp__preloader__cut">
-								<div class="pswp__preloader__donut"></div>
-							</div>
-						</div>
+=======
+<div class="site__body">
+	<div class="block-space block-space--layout--spaceship-ledge-height"></div>
+	<div class="block">
+		<div class="container">
+			<div class="document">
+				<div class="document__header">
+					<h1 class="document__title">Typography</h1>
+				</div>
+				<div class="document__content card">
+					<div class="typography">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac
+							pretium nibh facilisis. Vivamus venenatis viverra iaculis. Suspendisse tempor orci non sapien
+							ullamcorper dapibus. Suspendisse at velit diam. Donec pharetra nec enim blandit vulputate.</p>
+						<h2>H2 Header Example</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac
+							pretium nibh facilisis. Vivamus venenatis viverra iaculis. Suspendisse tempor orci non sapien
+							ullamcorper dapibus. Suspendisse at velit diam. Donec pharetra nec enim blandit vulputate.</p>
+						<h3>H3 Header Example</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac
+							pretium nibh facilisis. Vivamus venenatis viverra iaculis. Suspendisse tempor orci non sapien
+							ullamcorper dapibus. Suspendisse at velit diam. Donec pharetra nec enim blandit vulputate.</p>
+						<h4>H4 Header Example</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac
+							pretium nibh facilisis. Vivamus venenatis viverra iaculis. Suspendisse tempor orci non sapien
+							ullamcorper dapibus. Suspendisse at velit diam. Donec pharetra nec enim blandit vulputate.</p>
+						<h5>H5 Header Example</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac
+							pretium nibh facilisis. Vivamus venenatis viverra iaculis. Suspendisse tempor orci non sapien
+							ullamcorper dapibus. Suspendisse at velit diam. Donec pharetra nec enim blandit vulputate.</p>
+						<h6>H6 Header Example</h6>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac
+							pretium nibh facilisis. Vivamus venenatis viverra iaculis. Suspendisse tempor orci non sapien
+							ullamcorper dapibus. Suspendisse at velit diam. Donec pharetra nec enim blandit vulputate.</p>
+						<hr>
+						<h3>Blockquote</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac
+							pretium nibh facilisis. Vivamus venenatis viverra iaculis.</p>
+						<blockquote>
+							<p>Suspendisse tempor orci non sapien ullamcorper dapibus. At velit diam. Donec pharetra nec enim
+								blandit vulputate.</p>
+							<p><cite>Adam Taylor</cite></p>
+						</blockquote>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac
+							pretium nibh facilisis. Vivamus venenatis viverra iaculis.</p>
+						<hr>
+						<h3>Standard List</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac
+							pretium nibh facilisis. Vivamus venenatis viverra iaculis.</p>
+						<ul>
+							<li>Morbi dignissim hendrerit ligula, quis rutrum risus ultrices eu</li>
+							<li>Nullam dapibus id mauris dignissim dignissim. Sed ut metus mauris.</li>
+							<li>Nulla mollis justo faucibus, laoreet tortor ac, ornare arcu.</li>
+							<li>Libero quis mattis sollicitudin, ipsum sem mattis ligula, pharetra consectetur nisl mi sit amet
+								turpis.</li>
+							<li>Vivamus malesuada, mauris in pulvinar ultricies, eros ligula scelerisque mi, a porttitor nulla
+								ligula sed erat.</li>
+						</ul>
+						<h3>Numbered List</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac
+							pretium nibh facilisis. Vivamus venenatis viverra iaculis.</p>
+						<ol>
+							<li>Morbi dignissim hendrerit ligula, quis rutrum risus ultrices eu</li>
+							<li>Nullam dapibus id mauris dignissim dignissim. Sed ut metus mauris.</li>
+							<li>Nulla mollis justo faucibus, laoreet tortor ac, ornare arcu.</li>
+							<li>Libero quis mattis sollicitudin, ipsum sem mattis ligula, pharetra consectetur nisl mi sit amet
+								turpis.</li>
+							<li>Vivamus malesuada, mauris in pulvinar ultricies, eros ligula scelerisque mi, a porttitor nulla
+								ligula sed erat.</li>
+						</ol>
+						<h3>Text Styles</h3>
+						<p>Lorem ipsum <strong>bold text</strong>, consectetur <em>italic text</em>. Donec facilisis <del>line
+								through</del> neque ut purus fermentum, ac <a href="#">link</a>. Vivamus venenatis viverra iaculis.
+						</p>
 					</div>
 				</div>
-				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-					<div class="pswp__share-tooltip"></div>
-				</div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button
-					class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-				<div class="pswp__caption">
-					<div class="pswp__caption__center"></div>
-				</div>
 			</div>
+>>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
 		</div>
-	</div><!-- photoswipe / end -->
-	<!-- scripts -->
-	<script src="vendor/jquery/jquery.min.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="vendor/owl-carousel/owl.carousel.min.js"></script>
-	<script src="vendor/nouislider/nouislider.min.js"></script>
-	<script src="vendor/photoswipe/photoswipe.min.js"></script>
-	<script src="vendor/photoswipe/photoswipe-ui-default.min.js"></script>
-	<script src="vendor/select2/js/select2.min.js"></script>
-	<script src="js/number.js"></script>
-	<script src="js/main.js"></script>
-</body>
-
-</html>
+	</div>
+	<div class="block-space block-space--layout--before-footer"></div>
+	@stop
