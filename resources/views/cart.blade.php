@@ -336,12 +336,11 @@
                             <div class="site-footer__payments"><img src="images/payments.png" alt=""></div>
                             =======
                             </table><a class="btn btn-primary btn-xl btn-block" href="#">Proceed to checkout</a>
-                            >>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
                         </div>
                     </div>
                 </div>
             </div>
-            <<<<<<< HEAD </footer> <!-- site__footer / end -->
+        </footer> <!-- site__footer / end -->
     </div><!-- site / end -->
     <!-- mobile-menu -->
     <div class="mobile-menu">

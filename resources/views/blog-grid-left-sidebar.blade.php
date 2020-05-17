@@ -91,21 +91,12 @@
 											<path d="M20,20h-2c0-4.4-3.6-8-8-8s-8,3.6-8,8H0c0-4.2,2.6-7.8,6.3-9.3C4.9,9.6,4,7.9,4,6c0-3.3,2.7-6,6-6s6,2.7,6,6
 	c0,1.9-0.9,3.6-2.3,4.7C17.4,12.2,20,15.8,20,20z M14,6c0-2.2-1.8-4-4-4S6,3.8,6,6s1.8,4,4,4S14,8.2,14,6z" />
 										</svg></span></a></div>
-<<<<<<< HEAD
-							<div class="mobile-indicator d-none d-md-block"><a href="wishlist.html"
-									class="mobile-indicator__button"><span class="mobile-indicator__icon"><svg width="20" height="20">
-											<path d="M14,3c2.2,0,4,1.8,4,4c0,4-5.2,10-8,10S2,11,2,7c0-2.2,1.8-4,4-4c1,0,1.9,0.4,2.7,1L10,5.2L11.3,4C12.1,3.4,13,3,14,3 M14,1
-	c-1.5,0-2.9,0.6-4,1.5C8.9,1.6,7.5,1,6,1C2.7,1,0,3.7,0,7c0,5,6,12,10,12s10-7,10-12C20,3.7,17.3,1,14,1L14,1z" />
-										</svg></span></a></div>
-							<div class="mobile-indicator"><a href="cart.html" class="mobile-indicator__button"><span
-=======
 							<div class="mobile-indicator d-none d-md-block"><a href="/wishlist" class="mobile-indicator__button"><span
 										class="mobile-indicator__icon"><svg width="20" height="20">
 											<path d="M14,3c2.2,0,4,1.8,4,4c0,4-5.2,10-8,10S2,11,2,7c0-2.2,1.8-4,4-4c1,0,1.9,0.4,2.7,1L10,5.2L11.3,4C12.1,3.4,13,3,14,3 M14,1
 	c-1.5,0-2.9,0.6-4,1.5C8.9,1.6,7.5,1,6,1C2.7,1,0,3.7,0,7c0,5,6,12,10,12s10-7,10-12C20,3.7,17.3,1,14,1L14,1z" />
 										</svg></span></a></div>
 							<div class="mobile-indicator"><a href="/cart" class="mobile-indicator__button"><span
->>>>>>> 209187adbb27d6dd30f9b6e104fd17bafb9c612d
 										class="mobile-indicator__icon"><svg width="20" height="20">
 											<circle cx="7" cy="17" r="2" />
 											<circle cx="15" cy="17" r="2" />
