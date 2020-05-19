@@ -13,8 +13,8 @@
                 <div class="mobile-menu__settings-list">
                     <div class="mobile-menu__setting" data-mobile-menu-item><button class="mobile-menu__setting-button"
                             title="Language" data-mobile-menu-trigger><span class="mobile-menu__setting-icon"><img
-                                    src="images/languages/language-5.png" alt="">
-                            </span><span class="mobile-menu__setting-title">Italian</span> <span
+                                    src="images/languages/fr.png" alt="Français">
+                            </span><span class="mobile-menu__setting-title">Français</span> <span
                                 class="mobile-menu__setting-arrow"><svg width="6px" height="9px">
                                     <path
                                         d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
@@ -26,39 +26,21 @@
                                             <path
                                                 d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
                                         </svg></button>
-                                    <div class="mobile-menu__panel-title">Language</div>
+                                    <div class="mobile-menu__panel-title">@lang('Language')</div>
                                 </div>
                                 <div class="mobile-menu__panel-body">
                                     <ul class="mobile-menu__links">
                                         <li data-mobile-menu-item><button type="button" class=""
                                                 data-mobile-menu-trigger>
-                                                <div class="mobile-menu__links-image"><img
-                                                        src="images/languages/language-1.png" alt=""></div>
+                                                <div class="mobile-menu__links-image"><img src="images/languages/en.png"
+                                                        alt=""></div>
                                                 English
                                             </button></li>
                                         <li data-mobile-menu-item><button type="button" class=""
                                                 data-mobile-menu-trigger>
-                                                <div class="mobile-menu__links-image"><img
-                                                        src="images/languages/language-2.png" alt=""></div>
-                                                French
-                                            </button></li>
-                                        <li data-mobile-menu-item><button type="button" class=""
-                                                data-mobile-menu-trigger>
-                                                <div class="mobile-menu__links-image"><img
-                                                        src="images/languages/language-3.png" alt=""></div>
-                                                German
-                                            </button></li>
-                                        <li data-mobile-menu-item><button type="button" class=""
-                                                data-mobile-menu-trigger>
-                                                <div class="mobile-menu__links-image"><img
-                                                        src="images/languages/language-4.png" alt=""></div>
-                                                Russian
-                                            </button></li>
-                                        <li data-mobile-menu-item><button type="button" class=""
-                                                data-mobile-menu-trigger>
-                                                <div class="mobile-menu__links-image"><img
-                                                        src="images/languages/language-5.png" alt=""></div>
-                                                Italian
+                                                <div class="mobile-menu__links-image"><img src="images/languages/fr.png"
+                                                        alt=""></div>
+                                                Français
                                             </button></li>
                                     </ul>
                                 </div>
