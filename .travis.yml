@@ -1,12 +1,9 @@
 language: php
-sudo: required
+os: linux
 dist: trusty
 
 php:
   - 7.4
-
-addons:
-  chrome: stable
 
 install:
   - rm .env.example
