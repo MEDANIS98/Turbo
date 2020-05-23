@@ -18,3 +18,6 @@ before_script:
 
 script:
   - vendor/bin/phpunit --coverage-clover=coverage.xml --verbose
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
