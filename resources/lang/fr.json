@@ -4,5 +4,12 @@
     "en": "English",
     "fr": "Français",
     "ar": "العربية",
-    "About": "À Propos"
+    "About": "À Propos",
+    "Error": "Erreur",
+    "We can't seem to find the page you're looking for.": "Impossible de trouver la page que vous recherchez.",
+    "Try to use the search.": "Essayez d'utiliser la recherche.",
+    "Search Query...": "Requête de recherche ...",
+    "Search": "Chercher",
+    "Or go to the home page to start over.": "Ou allez sur la page d'accueil pour recommencer.",
+    "Go To Home Page": "Aller à la page d'accueil"
 }

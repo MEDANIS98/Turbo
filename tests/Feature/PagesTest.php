@@ -29,4 +29,16 @@ class PagesTest extends TestCase
 
         $response->assertOk();
     }
+
+    /**
+     * Test index page.
+     *
+     * @return void
+     */
+    public function testNotFoundPage()
+    {
+        $response = $this->get('/something');
+
+        $response->assertNotFound();
+    }
 }
