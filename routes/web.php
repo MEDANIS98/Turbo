@@ -19,7 +19,6 @@ Route::get('/lang/{locale}', 'LocalizationController@switch')
     ->name('locale')
     ->where('locale', '(en|fr|ar)');
 
-
 // views
 Route::view('/', 'index');
 Route::view('/about', 'about');
