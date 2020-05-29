@@ -19,15 +19,14 @@ Route::get('/lang/{locale}', 'LocalizationController@switch')
     ->name('locale')
     ->where('locale', '(en|fr|ar)');
 
-
 // views
 Route::view('/', 'index');
-Route::view('/about', 'about');
+Route::view('/about', 'about')->name('about');
+Route::view('/contact', 'contact')->name('contact');
+Route::view('/track-order', 'track-order')->name('track');
 Route::view('/login', 'login');
 Route::view('/wishlist', 'wishlist');
 Route::view('/cart', 'cart');
-Route::view('/contact', 'contact');
-Route::view('/track-order', 'track-order');
 Route::view('/terms', 'terms');
 Route::view('/faq', 'faq');
 Route::view('/components', 'components');
