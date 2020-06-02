@@ -12,6 +12,8 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
+        Storage::disk('public')->deleteDirectory('avatars');
+        Storage::disk('public')->makeDirectory('avatars');
         factory(User::class)->create();
     }
 }

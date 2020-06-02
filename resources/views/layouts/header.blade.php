@@ -1090,12 +1090,13 @@
 	C26,18.5,30,23.8,30,30h-2C28,23.4,22.6,18,16,18z M22,10c0-3.3-2.7-6-6-6s-6,2.7-6,6s2.7,6,6,6S22,13.3,22,10z" /></svg>
                 </span>
                 @guest
-                <span class="indicator__title">@lang('Hello, Log In')</span>
+                <span class="indicator__title">@lang('Hello')</span>
+                <span class="indicator__value">@lang('Login')</span>
                 @else
                 <span class="indicator__value">@lang('My Account')</span>
                 <span class="indicator__title">{{ auth()->user()->name }}</span>
+                @endguest
             </a>
-            @endguest
             <div class="indicator__content">
                 @include('partials.account_menu')
             </div>

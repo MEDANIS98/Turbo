@@ -1,7 +1,9 @@
 <div class="account-menu">
     @auth
-    <div class="account-menu__divider"></div><a href="#" class="account-menu__user">
-        <div class="account-menu__user-avatar"><img src="images/avatars/avatar-4.jpg" alt="">
+    <div class="account-menu__divider"></div>
+    <a href="#" class="account-menu__user">
+        <div class="account-menu__user-avatar">
+            <img src="{{ auth()->user()->avatar }}" alt="@lang('Avatar')">
         </div>
         <div class="account-menu__user-info">
             <div class="account-menu__user-name">{{ auth()->user()->name }}</div>
@@ -10,15 +12,23 @@
     </a>
     <div class="account-menu__divider"></div>
     <ul class="account-menu__links">
-        <li><a href="/dashboard">Dashboard</a></li>
-        <li><a href="/garage">Garage</a></li>
-        <li><a href="/account-profile">Edit Profile</a></li>
-        <li><a href="/account-orders">Order History</a></li>
-        <li><a href="/account-addresses">Addresses</a></li>
+        <li><a href="/dashboard">@lang('Dashboard')</a></li>
+        <li><a href="/garage">@lang('Garage')</a></li>
+        <li><a href="/account-profile">@lang('Edit Profile')</a></li>
+        <li><a href="/account-orders">@lang('Order History')</a></li>
+        <li><a href="/account-addresses">@lang('Addresses')</a></li>
     </ul>
     <div class="account-menu__divider"></div>
     <ul class="account-menu__links">
-        <li><a href="/login">Logout</a></li>
+        <li>
+            <a class="dropdown-item" href="{{ route('logout') }}"
+                onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+        </li>
     </ul>
     @else
     <form class="account-menu__form" method="POST" action="/login">
