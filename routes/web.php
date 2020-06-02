@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'HomeController@index')->name('home');
 Route::get('/lang/{locale}', 'LocalizationController@switch')
     ->name('locale')
     ->where('locale', '(en|fr|ar)');
