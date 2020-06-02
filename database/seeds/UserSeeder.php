@@ -1,6 +1,8 @@
 <?php
 
+use App\Order;
 use App\User;
+use App\Profile;
 use Illuminate\Database\Seeder;
 
 class UserSeeder extends Seeder
@@ -14,6 +16,10 @@ class UserSeeder extends Seeder
     {
         Storage::disk('public')->deleteDirectory('avatars');
         Storage::disk('public')->makeDirectory('avatars');
-        factory(User::class)->create();
+        factory(User::class)->create()->each(function ($user) {
+            $user->orders()->createMany(factory(Order::class, 5)->make()->toArray());
+            $profile = factory(Profile::class)->create(['user_id' => $user->id]);
+            $profile->addMedia(storage_path('app/public/' . $profile->avatar))->toMediaCollection();
+        });
     }
 }
