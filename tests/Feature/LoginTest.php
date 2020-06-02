@@ -71,6 +71,6 @@ class LoginTest extends TestCase
             'email' => $this->user->email,
             'password' => 'password',
         ]);
-        $response->assertRedirect('/');
+        $response->assertRedirect(RouteServiceProvider::HOME);
     }
 }
