@@ -78,5 +78,14 @@
     "Hello": "Bonjour",
     "Edit Profile": "Editer le profil",
     "Order History": "Historique des commandes",
-    "Addresses": "Adresses"
+    "Addresses": "Adresses",
+    "Navigation": "La navigation",
+    "Default": "Défaut",
+    "Phone Number": "Numéro de téléphone",
+    "Edit Address": "Modifier l'adresse",
+    "Recent Orders": "Dernières commandes",
+    "Order": "Commande",
+    "Status": "Statut",
+    "Date": "Date",
+    "Total": "Totale"
 }
