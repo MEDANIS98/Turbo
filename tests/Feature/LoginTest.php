@@ -2,10 +2,10 @@
 
 namespace Tests\Feature;
 
-use Storage;
 use App\User;
-use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Storage;
+use Tests\TestCase;
 
 class LoginTest extends TestCase
 {
@@ -13,7 +13,7 @@ class LoginTest extends TestCase
 
     private $user;
 
-    function setUp(): void
+    public function setUp(): void
     {
         parent::setUp();
         Storage::disk('public')->deleteDirectory('avatars');
@@ -25,34 +25,34 @@ class LoginTest extends TestCase
      * Test that a registered user has to
      * provide BOTH his username and email
      * alongside the password to be able
-     * to login
+     * to login.
      * @return void
      */
 
     /** @test */
-    function a_user_can_login_by_email(): void
+    public function a_user_can_login_by_email(): void
     {
         $this->withoutExceptionHandling();
         $this->post('/login', [
             'email' => $this->user->email,
-            'password' => 'password'
+            'password' => 'password',
         ]);
         $this->assertTrue(auth()->check());
     }
 
     /** @test */
-    function a_user_shall_not_login_with_just_password(): void
+    public function a_user_shall_not_login_with_just_password(): void
     {
         $this->withoutExceptionHandling();
         $this->expectException('Illuminate\Validation\ValidationException');
         factory(User::class)->create();
         $this->post('/login', [
-            'password' => 'password'
+            'password' => 'password',
         ]);
     }
 
     /** @test */
-    function a_user_shall_not_login_with_just_email(): void
+    public function a_user_shall_not_login_with_just_email(): void
     {
         $this->withoutExceptionHandling();
         $this->expectException('Illuminate\Validation\ValidationException');
