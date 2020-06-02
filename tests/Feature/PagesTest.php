@@ -3,9 +3,13 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
+use App\Providers\RouteServiceProvider;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class PagesTest extends TestCase
 {
+    use DatabaseMigrations;
+
     /**
      * Test index page.
      *
@@ -40,5 +44,17 @@ class PagesTest extends TestCase
         $response = $this->get('/something');
 
         $response->assertNotFound();
+    }
+
+    /**
+     * Test dashboard page.
+     *
+     * @return void
+     */
+    public function testDashboardPage(): void
+    {
+        $this->login();
+        $response = $this->get(RouteServiceProvider::HOME);
+        $response->assertOk();
     }
 }
