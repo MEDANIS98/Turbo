@@ -61,4 +61,15 @@ class LoginTest extends TestCase
             'email' => $this->user->email,
         ]);
     }
+
+    /** @test */
+    public function a_user_shall_be_redirected_if_logged_in(): void
+    {
+        $this->login();
+        $response = $this->post('/login', [
+            'email' => $this->user->email,
+            'password' => 'password',
+        ]);
+        $response->assertRedirect('/');
+    }
 }
