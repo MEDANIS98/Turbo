@@ -2,38 +2,7 @@
 <header class="site__header">
     <div class="header">
         <div class="header__megamenu-area megamenu-area"></div>
-        <div class="header__topbar-start-bg"></div>
-        <div class="header__topbar-start">
-            <div class="topbar topbar--spaceship-start">
-                <div class="topbar__item-text d-none d-xxl-flex">Call Us: (800) 060-0730</div>
-                <div class="topbar__item-text"><a class="topbar__link" href="/about">About</a></div>
-                <div class="topbar__item-text"><a class="topbar__link" href="/contact">Contacts</a>
-                </div>
-                <div class="topbar__item-text"><a class="topbar__link" href="/track-order">Track Order</a>
-                </div>
-            </div>
-        </div>
-        <div class="header__topbar-end-bg"></div>
-        <div class="header__topbar-end">
-            <div class="topbar topbar--spaceship-end">
-                <div class="topbar__item-button"><a href="#" class="topbar__button"><span
-                            class="topbar__button-label">Compare:</span> <span class="topbar__button-title">5</span></a>
-                </div>
-                <div class="topbar__item-button topbar__menu"><button
-                        class="topbar__button topbar__button--has-arrow topbar__menu-button" type="button"><span
-                            class="topbar__button-label">Currency:</span> <span class="topbar__button-title">USD</span>
-                        <span class="topbar__button-arrow"><svg width="7px" height="5px">
-                                <path
-                                    d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z" />
-                            </svg></span></button>
-                    <div class="topbar__menu-body"><a class="topbar__menu-item" href="#">€ Euro</a> <a
-                            class="topbar__menu-item" href="#">£ Pound Sterling</a> <a class="topbar__menu-item"
-                            href="#">$ US
-                            Dollar</a> <a class="topbar__menu-item" href="#">₽ Russian Ruble</a></div>
-                </div>
-                @include('partials.languageSwitcher')
-            </div>
-        </div>
+        @include('layouts.topbar')
         <div class="header__navbar">
             <div class="header__navbar-departments">
                 <div class="departments"><button class="departments__button" type="button"><span
@@ -1108,55 +1077,27 @@
         </div>
     </div>
     <div class="header__indicators">
-        <div class="indicator"><a href="/wishlist" class="indicator__button"><span class="indicator__icon"><svg
-                        width="32" height="32">
+        <div class="indicator">
+            <a href="/wishlist" class="indicator__button"><span class="indicator__icon">
+                    <svg width="32" height="32">
                         <path d="M23,4c3.9,0,7,3.1,7,7c0,6.3-11.4,15.9-14,16.9C13.4,26.9,2,17.3,2,11c0-3.9,3.1-7,7-7c2.1,0,4.1,1,5.4,2.6l1.6,2l1.6-2
 	C18.9,5,20.9,4,23,4 M23,2c-2.8,0-5.4,1.3-7,3.4C14.4,3.3,11.8,2,9,2c-5,0-9,4-9,9c0,8,14,19,16,19s16-11,16-19C32,6,28,2,23,2L23,2
 	z" /></svg></span></a></div>
-        <div class="indicator indicator--trigger--click"><a href="/login" class="indicator__button"><span
-                    class="indicator__icon"><svg width="32" height="32">
+        <div class="indicator indicator--trigger--click @if($errors->any()) indicator--open @endif">
+            <a href="/login" class="indicator__button">
+                <span class="indicator__icon"><svg width="32" height="32">
                         <path d="M16,18C9.4,18,4,23.4,4,30H2c0-6.2,4-11.5,9.6-13.3C9.4,15.3,8,12.8,8,10c0-4.4,3.6-8,8-8s8,3.6,8,8c0,2.8-1.5,5.3-3.6,6.7
 	C26,18.5,30,23.8,30,30h-2C28,23.4,22.6,18,16,18z M22,10c0-3.3-2.7-6-6-6s-6,2.7-6,6s2.7,6,6,6S22,13.3,22,10z" /></svg>
-                </span><span class="indicator__title">Hello, Log In</span> <span class="indicator__value">My
-                    Account</span></a>
+                </span>
+                @guest
+                <span class="indicator__title">@lang('Hello, Log In')</span>
+                @else
+                <span class="indicator__value">@lang('My Account')</span>
+                <span class="indicator__title">{{ auth()->user()->name }}</span>
+            </a>
+            @endguest
             <div class="indicator__content">
-                <div class="account-menu">
-                    <form class="account-menu__form">
-                        <div class="account-menu__form-title">Log In to Your Account</div>
-                        <div class="form-group"><label for="header-signin-email" class="sr-only">Email
-                                address</label> <input id="header-signin-email" type="email"
-                                class="form-control form-control-sm" placeholder="Email address"></div>
-                        <div class="form-group"><label for="header-signin-password" class="sr-only">Password</label>
-                            <div class="account-menu__form-forgot"><input id="header-signin-password" type="password"
-                                    class="form-control form-control-sm" placeholder="Password">
-                                <a href="#" class="account-menu__form-forgot-link">Forgot?</a></div>
-                        </div>
-                        <div class="form-group account-menu__form-button"><button type="submit"
-                                class="btn btn-primary btn-sm">Login</button></div>
-                        <div class="account-menu__form-link"><a href="/login">Create An
-                                Account</a></div>
-                    </form>
-                    <div class="account-menu__divider"></div><a href="#" class="account-menu__user">
-                        <div class="account-menu__user-avatar"><img src="images/avatars/avatar-4.jpg" alt="">
-                        </div>
-                        <div class="account-menu__user-info">
-                            <div class="account-menu__user-name">Ryan Ford</div>
-                            <div class="account-menu__user-email">red-parts@example.com</div>
-                        </div>
-                    </a>
-                    <div class="account-menu__divider"></div>
-                    <ul class="account-menu__links">
-                        <li><a href="/dashboard">Dashboard</a></li>
-                        <li><a href="/garage">Garage</a></li>
-                        <li><a href="/account-profile">Edit Profile</a></li>
-                        <li><a href="/account-orders">Order History</a></li>
-                        <li><a href="/account-addresses">Addresses</a></li>
-                    </ul>
-                    <div class="account-menu__divider"></div>
-                    <ul class="account-menu__links">
-                        <li><a href="/login">Logout</a></li>
-                    </ul>
-                </div>
+                @include('partials.account_menu')
             </div>
         </div>
         <div class="indicator indicator--trigger--click"><a href="/cart" class="indicator__button"><span
