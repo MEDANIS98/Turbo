@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', __('Not Found'))
+@section('title', __('Page Not Found'))
 
 @section('content')
 
@@ -10,7 +10,7 @@
         <div class="not-found">
             <div class="not-found__404">Oops! @lang('Error') 404</div>
             <div class="not-found__content">
-                <h1 class="not-found__title">@lang('Not Found')</h1>
+                <h1 class="not-found__title">@lang('Page Not Found')</h1>
                 <p class="not-found__text">@lang('We can\'t seem to find the page you\'re looking for.')<br>
                     @lang('Try to use the search.')</p>
                 <form class="not-found__search">
