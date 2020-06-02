@@ -58,7 +58,7 @@
                     </div>
                     <div class="col-6 col-md-3 col-xl-2">
                         <div class="site-footer__widget footer-links">
-                            <h5 class="footer-links__title">My Account</h5>
+                            <h5 class="footer-links__title">@lang('My Account')</h5>
                             <ul class="footer-links__list">
                                 <li class="footer-links__item"><a href="#" class="footer-links__link">Store
                                         Location</a></li>
