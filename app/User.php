@@ -1,9 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App;
 
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -50,6 +51,7 @@ class User extends Authenticatable
         if ($mediaItems) {
             return $mediaItems[0]->getFullUrl();
         }
+
         return '/images/avatar.png';
     }
 
@@ -59,6 +61,7 @@ class User extends Authenticatable
         if ($mediaItems) {
             return $mediaItems[0]->getUrl('account_menu');
         }
+
         return '/images/avatar44x44.png';
     }
 

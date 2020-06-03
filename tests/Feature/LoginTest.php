@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests\Feature;
 
 use Storage;
@@ -27,7 +29,6 @@ class LoginTest extends TestCase
      * provide BOTH his username and email
      * alongside the password to be able
      * to login.
-     * @return void
      */
 
     /** @test */
