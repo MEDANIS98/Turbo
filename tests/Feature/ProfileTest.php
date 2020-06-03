@@ -34,7 +34,7 @@ class ProfileTest extends TestCase
     public function testProfileAvatar(): void
     {
         // Create a profile and set the user id to the user in the constructor
-        $this->profile->addMedia(storage_path('app/public/' . $this->profile->avatar))
+        $this->profile->addMedia(storage_path('app/public/'.$this->profile->avatar))
             ->toMediaCollection();
         $this->assertNotEquals('/images/avatar.png', $this->user->avatar);
         $this->assertNotEquals('/images/avatar.png', $this->user->accountMenuAvatar);
