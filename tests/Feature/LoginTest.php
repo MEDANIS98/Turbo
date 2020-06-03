@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Tests\Feature;
 
-use Storage;
 use App\User;
 use Tests\TestCase;
 use App\Providers\RouteServiceProvider;
@@ -19,8 +18,6 @@ class LoginTest extends TestCase
     public function setUp(): void
     {
         parent::setUp();
-        Storage::disk('public')->deleteDirectory('avatars');
-        Storage::disk('public')->makeDirectory('avatars');
         $this->user = factory(User::class)->create();
     }
 
