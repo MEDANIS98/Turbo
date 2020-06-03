@@ -12,6 +12,7 @@ php:
   - 7.4
 
 install:
+  - wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
   - rm .env.example
   - cp .env.travis .env
   - travis_retry composer install --no-interaction --prefer-dist --no-suggest
