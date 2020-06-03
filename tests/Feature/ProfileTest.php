@@ -38,4 +38,10 @@ class ProfileTest extends TestCase
         $this->assertNotEquals('/images/avatar.png', $this->user->avatar);
         $this->assertNotEquals('/images/avatar.png', $this->user->accountMenuAvatar);
     }
+
+    public function testUserRelationship(): void
+    {
+        $user = $this->profile->user;
+        $this->assertInstanceOf(User::class, $user);
+    }
 }
