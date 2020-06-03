@@ -73,11 +73,10 @@ class LoginTest extends TestCase
     }
 
     /**
-     * Test unauthenticated redirect
+     * Test unauthenticated redirect.
      *
      * Assert that unauthenticated access attempt redirects to login
      *
-     * @return void
      **/
     public function testUnauthenticatedRedirection(): void
     {
