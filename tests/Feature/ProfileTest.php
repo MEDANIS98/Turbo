@@ -36,5 +36,6 @@ class ProfileTest extends TestCase
         $profile->addMedia(storage_path('app/public/' . $profile->avatar))
             ->toMediaCollection();
         $this->assertNotEquals('/images/avatar.png', $this->user->avatar);
+        $this->assertNotEquals('/images/avatar.png', $this->user->accountMenuAvatar);
     }
 }
