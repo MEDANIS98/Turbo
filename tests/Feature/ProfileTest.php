@@ -41,6 +41,8 @@ class ProfileTest extends TestCase
             $this->assertNotEquals('/images/avatar.png', $this->user->accountMenuAvatar);
         } catch (FileDoesNotExist $exception) {
             $this->expectException(FileDoesNotExist::class);
+            $this->profile->addMedia(storage_path('app/public/' . $this->profile->avatar))
+                ->toMediaCollection();
         }
     }
 
