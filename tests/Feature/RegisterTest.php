@@ -1,12 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests\Feature;
 
 use App\User;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class RegisterTest extends TestCase
 {
@@ -14,12 +15,10 @@ class RegisterTest extends TestCase
 
     /**
      * Test users can register.
-     *
-     * @return void
      */
 
     /** @test */
-    function a_user_can_signup(): void
+    public function a_user_can_signup(): void
     {
         $fakeUser = factory(User::class)->make()->toArray();
         $user = $fakeUser;

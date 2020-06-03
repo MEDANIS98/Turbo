@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests\Feature;
 
 use Tests\TestCase;
@@ -48,8 +50,6 @@ class PagesTest extends TestCase
 
     /**
      * Test dashboard page.
-     *
-     * @return void
      */
     public function testDashboardPage(): void
     {

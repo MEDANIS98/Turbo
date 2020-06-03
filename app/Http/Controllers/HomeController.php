@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+declare(strict_types=1);
 
-use Illuminate\Http\Request;
+namespace App\Http\Controllers;
 
 class HomeController extends Controller
 {
@@ -26,6 +26,7 @@ class HomeController extends Controller
         $user = auth()->user();
         $profile = $user->profile;
         $orders = $user->orders()->latest()->take(3)->get();
+
         return view('dashboard', compact('user', 'profile', 'orders'));
     }
 }
