@@ -2,12 +2,6 @@ language: php
 os: linux
 dist: bionic
 
-addons:
-  apt:
-    packages:
-      # Needed for media library (uses intervention image for conversion)
-      - php7.4-gd
-
 php:
   - 7.4
 
