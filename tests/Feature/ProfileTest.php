@@ -7,6 +7,7 @@ use App\User;
 use App\Profile;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Spatie\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
 
 class ProfileTest extends TestCase
 {
@@ -33,10 +34,14 @@ class ProfileTest extends TestCase
     public function testProfileAvatar(): void
     {
         // Create a profile and set the user id to the user in the constructor
-        $this->profile->addMedia(storage_path('app/public/' . $this->profile->avatar))
-            ->toMediaCollection();
-        $this->assertNotEquals('/images/avatar.png', $this->user->avatar);
-        $this->assertNotEquals('/images/avatar.png', $this->user->accountMenuAvatar);
+        try {
+            $this->profile->addMedia(storage_path('app/public/' . $this->profile->avatar))
+                ->toMediaCollection();
+            $this->assertNotEquals('/images/avatar.png', $this->user->avatar);
+            $this->assertNotEquals('/images/avatar.png', $this->user->accountMenuAvatar);
+        } catch (FileDoesNotExist $exception) {
+            $this->expectException(FileDoesNotExist::class);
+        }
     }
 
     public function testUserRelationship(): void
