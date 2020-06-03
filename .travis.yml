@@ -1,6 +1,6 @@
 language: php
 os: linux
-dist: trusty
+dist: bionic
 
 addons:
   apt:
@@ -11,8 +11,11 @@ addons:
 php:
   - 7.4
 
+before_install:
+  - sudo wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+  - sudo apt-get -y install php7.4-gd
+
 install:
-  - wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
   - rm .env.example
   - cp .env.travis .env
   - travis_retry composer install --no-interaction --prefer-dist --no-suggest
