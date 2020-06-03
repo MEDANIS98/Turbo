@@ -71,4 +71,17 @@ class LoginTest extends TestCase
         ]);
         $response->assertRedirect(RouteServiceProvider::HOME);
     }
+
+    /**
+     * Test unauthenticated redirect
+     *
+     * Assert that unauthenticated access attempt redirects to login
+     *
+     * @return void
+     **/
+    public function testUnauthenticatedRedirection(): void
+    {
+        $response = $this->get('/dashboard');
+        $response->assertRedirect('/login');
+    }
 }
