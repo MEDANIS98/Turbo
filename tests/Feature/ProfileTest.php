@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests\Feature;
 
 use Storage;
@@ -12,7 +14,8 @@ class ProfileTest extends TestCase
 {
     use DatabaseMigrations;
 
-    private object $user, $profile;
+    private object $user;
+    private object $profile;
 
     public function setUp(): void
     {
@@ -21,14 +24,12 @@ class ProfileTest extends TestCase
         Storage::disk('public')->makeDirectory('avatars');
         $this->user = create(User::class);
         $this->profile = create(Profile::class, [
-            'user_id' => $this->user->id
+            'user_id' => $this->user->id,
         ]);
     }
 
     /**
      * Test profile.
-     *
-     * @return void
      */
     public function testProfileAvatar(): void
     {

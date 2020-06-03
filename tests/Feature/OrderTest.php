@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests\Feature;
 
 use App\User;
@@ -12,13 +14,12 @@ class OrderTest extends TestCase
     use DatabaseMigrations;
 
     /**
-     * Test User Relationship
+     * Test User Relationship.
      *
      * Assert that the user property on the Order model returns an object
      * that is an instance of the User model
      *
      *
-     * @return void
      **/
     public function testUserRelationship(): void
     {
