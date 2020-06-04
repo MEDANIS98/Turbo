@@ -27,7 +27,7 @@ abstract class TestCase extends BaseTestCase
     }
 
     /**
-     * Get log information
+     * Get log information.
      *
      * Get today's log file and convert its content to array
      *
@@ -36,11 +36,12 @@ abstract class TestCase extends BaseTestCase
     protected function getLogInfo()
     {
         $log = explode(PHP_EOL, file_get_contents($this->getLogFileFullPath()));
+
         return $log;
     }
 
     /**
-     * Get log file full path
+     * Get log file full path.
      *
      * resolve the log file system path in storage
      *
@@ -50,11 +51,12 @@ abstract class TestCase extends BaseTestCase
     {
         $date = now()->format('Y-m-d');
         $logfileFullpath = storage_path("logs/laravel-{$date}.log");
+
         return $logfileFullpath;
     }
 
     /**
-     * Get index of logged message
+     * Get index of logged message.
      *
      * Get log line index number of the message
      *
@@ -71,6 +73,6 @@ abstract class TestCase extends BaseTestCase
                 return $i;
             }
         }
-        $this->fail('No information found in the log file ' . $this->getLogFileFullPath());
+        $this->fail('No information found in the log file '.$this->getLogFileFullPath());
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests\Feature;
 
 use App\User;
@@ -12,9 +14,7 @@ class EmailVerificationTest extends TestCase
     use DatabaseMigrations;
 
     /**
-     * Assert registered users can verify their email
-     *
-     * @return void
+     * Assert registered users can verify their email.
      */
     public function test_email_verification(): void
     {
@@ -31,7 +31,7 @@ class EmailVerificationTest extends TestCase
     }
 
     /**
-     * Test verification email is logged
+     * Test verification email is logged.
      *
      * assert that registered users receive a url to verify email
      *
@@ -44,14 +44,14 @@ class EmailVerificationTest extends TestCase
         $this->assertStringContainsString("To: $email", $log[$indexOfLoggedEmail], "No emails were found.\n");
         $this->assertStringContainsString(
             // 1 => user ID
-            config('app.url') . "/email/verify/$id/",
+            config('app.url')."/email/verify/$id/",
             $log[$indexOfLoggedEmail + 60], // Jump by 5 lines to find link
             "No links were found.\n"
         );
     }
 
     /**
-     * Get verification link
+     * Get verification link.
      *
      * Extract application relative URI to verify email
      *
@@ -70,6 +70,7 @@ class EmailVerificationTest extends TestCase
         $fullLink = rtrim($fullLink);
         // Extract as a relative URL
         $fullLink = str_replace_first(config('app.url'), '', $fullLink);
+
         return $fullLink;
     }
 }
