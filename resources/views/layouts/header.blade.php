@@ -27,8 +27,8 @@
 	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></span></a>
                                     <div class="departments__item-menu">
                                         <div class="megamenu departments__megamenu departments__megamenu--size--xl">
-                                            <div class="megamenu__image"><img src="images/departments/departments-2.jpg"
-                                                    alt=""></div>
+                                            <div class="megamenu__image"><img
+                                                    src="/images/departments/departments-2.jpg" alt=""></div>
                                             <div class="row">
                                                 <div class="col-1of5">
                                                     <ul class="megamenu__links megamenu-links megamenu-links--root">
@@ -214,8 +214,8 @@
 	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></span></a>
                                     <div class="departments__item-menu">
                                         <div class="megamenu departments__megamenu departments__megamenu--size--lg">
-                                            <div class="megamenu__image"><img src="images/departments/departments-1.jpg"
-                                                    alt=""></div>
+                                            <div class="megamenu__image"><img
+                                                    src="/images/departments/departments-1.jpg" alt=""></div>
                                             <div class="row">
                                                 <div class="col-3">
                                                     <ul class="megamenu__links megamenu-links megamenu-links--root">
@@ -379,8 +379,8 @@
 	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></span></a>
                                     <div class="departments__item-menu">
                                         <div class="megamenu departments__megamenu departments__megamenu--size--md">
-                                            <div class="megamenu__image"><img src="images/departments/departments-3.jpg"
-                                                    alt=""></div>
+                                            <div class="megamenu__image"><img
+                                                    src="/images/departments/departments-3.jpg" alt=""></div>
                                             <div class="row">
                                                 <div class="col-4">
                                                     <ul class="megamenu__links megamenu-links megamenu-links--root">
@@ -516,8 +516,8 @@
 	C-0.1,9.8-0.1,10.4,0.3,10.7z" /></svg></span></a>
                                     <div class="departments__item-menu">
                                         <div class="megamenu departments__megamenu departments__megamenu--size--nl">
-                                            <div class="megamenu__image"><img src="images/departments/departments-4.jpg"
-                                                    alt=""></div>
+                                            <div class="megamenu__image"><img
+                                                    src="/images/departments/departments-4.jpg" alt=""></div>
                                             <div class="row">
                                                 <div class="col-6">
                                                     <ul class="megamenu__links megamenu-links megamenu-links--root">
@@ -890,7 +890,7 @@
                         <div class="suggestions__group-title">Products</div>
                         <div class="suggestions__group-content"><a class="suggestions__item suggestions__product"
                                 href="#">
-                                <div class="suggestions__product-image"><img src="images/products/product-2-40x40.jpg"
+                                <div class="suggestions__product-image"><img src="/images/products/product-2-40x40.jpg"
                                         alt="">
                                 </div>
                                 <div class="suggestions__product-info">
@@ -913,7 +913,7 @@
                                 </div>
                                 <div class="suggestions__product-price">$224.00</div>
                             </a><a class="suggestions__item suggestions__product" href="#">
-                                <div class="suggestions__product-image"><img src="images/products/product-3-40x40.jpg"
+                                <div class="suggestions__product-image"><img src="/images/products/product-3-40x40.jpg"
                                         alt="">
                                 </div>
                                 <div class="suggestions__product-info">
@@ -936,7 +936,7 @@
                                 </div>
                                 <div class="suggestions__product-price">$349.00</div>
                             </a><a class="suggestions__item suggestions__product" href="#">
-                                <div class="suggestions__product-image"><img src="images/products/product-4-40x40.jpg"
+                                <div class="suggestions__product-image"><img src="/images/products/product-4-40x40.jpg"
                                         alt="">
                                 </div>
                                 <div class="suggestions__product-info">
@@ -1115,7 +1115,7 @@
                     <ul class="dropcart__list">
                         <li class="dropcart__item">
                             <div class="dropcart__item-image"><a href="product-full.html"><img
-                                        src="images/products/product-4-70x70.jpg" alt=""></a></div>
+                                        src="/images/products/product-4-70x70.jpg" alt=""></a></div>
                             <div class="dropcart__item-info">
                                 <div class="dropcart__item-name"><a href="product-full.html">Glossy Gray 19"
                                         Aluminium Wheel
@@ -1136,7 +1136,7 @@
                         <li class="dropcart__divider" role="presentation"></li>
                         <li class="dropcart__item">
                             <div class="dropcart__item-image"><a href="product-full.html"><img
-                                        src="images/products/product-2-70x70.jpg" alt=""></a></div>
+                                        src="/images/products/product-2-70x70.jpg" alt=""></a></div>
                             <div class="dropcart__item-info">
                                 <div class="dropcart__item-name"><a href="product-full.html">Brandix Brake
                                         Kit BDX-750Z370-S</a>
@@ -1153,7 +1153,7 @@
                         <li class="dropcart__divider" role="presentation"></li>
                         <li class="dropcart__item">
                             <div class="dropcart__item-image"><a href="product-full.html"><img
-                                        src="images/products/product-5-70x70.jpg" alt=""></a></div>
+                                        src="/images/products/product-5-70x70.jpg" alt=""></a></div>
                             <div class="dropcart__item-info">
                                 <div class="dropcart__item-name"><a href="product-full.html">Twin Exhaust
                                         Pipe From Brandix
