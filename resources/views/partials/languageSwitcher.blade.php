@@ -13,8 +13,8 @@
     </button>
     <div class="topbar__menu-body">
         @foreach (config('app.locales') as $locale)
-        <a class="topbar__menu-item" href="#">
-            <img src="/images/languages/{{ $locale }}.png" alt="">
+        <a class="topbar__menu-item" href="{{ route('locale', ['locale' => $locale]) }}">
+            <img src="/images/languages/{{ $locale }}.png" alt="@lang('Flag')">
             <span>@lang($locale)</span>
         </a>
         @endforeach
