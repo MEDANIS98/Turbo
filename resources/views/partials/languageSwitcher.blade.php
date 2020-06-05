@@ -3,7 +3,7 @@
         <span class="topbar__button-label">
             @lang('Language:')
         </span>
-        <span class="topbar__button-title">EN</span>
+        <span class="topbar__button-title">{{ strtoupper(app()->getLocale()) }}</span>
         <span class="topbar__button-arrow">
             <svg width="7px" height="5px">
                 <path
