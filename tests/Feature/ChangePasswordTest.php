@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests\Feature;
 
 use App\User;
@@ -21,15 +23,13 @@ class ChangePasswordTest extends TestCase
 
     /**
      * Test users can change their password.
-     *
-     * @return void
      */
     public function testPasswordChange(): void
     {
         $this->post('/password/confirm', ['password' => 'password']);
         $response = $this->post('/account/change-password', [
             'new_password' => 'New Password',
-            'new_password_confirmation' => 'New Password'
+            'new_password_confirmation' => 'New Password',
         ]);
         $response->assertRedirect('/');
         $response->assertSessionHas('message', __('Password has successfully been changed'));
@@ -40,7 +40,6 @@ class ChangePasswordTest extends TestCase
      *
      * Assert that sudo mode can be entered.
      *
-     * @return void
      **/
     public function testUsersCanConfirmPassword(): void
     {
@@ -57,7 +56,6 @@ class ChangePasswordTest extends TestCase
      * when attempting to access a route protected
      * by the password confirmation middleware
      *
-     * @return void
      **/
     public function testPasswordConfirmationRedirect(): void
     {
