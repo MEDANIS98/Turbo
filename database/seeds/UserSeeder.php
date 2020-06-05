@@ -21,7 +21,7 @@ class UserSeeder extends Seeder
         factory(User::class)->create()->each(function ($user) {
             $user->orders()->createMany(factory(Order::class, 5)->make()->toArray());
             $profile = factory(Profile::class)->create(['user_id' => $user->id]);
-            $profile->addMedia(storage_path('app/public/'.$profile->avatar))->toMediaCollection();
+            $profile->addMedia(storage_path('app/public/' . $profile->avatar))->toMediaCollection();
         });
     }
 }

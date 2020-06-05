@@ -6,7 +6,7 @@
         <div class="block-reviews__list">
             <div class="owl-carousel">
                 <div class="block-reviews__item">
-                    <div class="block-reviews__item-avatar"><img src="images/testimonials/testimonial-1-190x190.jpg"
+                    <div class="block-reviews__item-avatar"><img src="/images/testimonials/testimonial-1-190x190.jpg"
                             alt=""></div>
                     <div class="block-reviews__item-content">
                         <div class="block-reviews__item-text">This division is not obsolete but has changed.
@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="block-reviews__item">
-                    <div class="block-reviews__item-avatar"><img src="images/testimonials/testimonial-2-190x190.jpg"
+                    <div class="block-reviews__item-avatar"><img src="/images/testimonials/testimonial-2-190x190.jpg"
                             alt=""></div>
                     <div class="block-reviews__item-content">
                         <div class="block-reviews__item-text">Philosophical questions can be grouped into
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="block-reviews__item">
-                    <div class="block-reviews__item-avatar"><img src="images/testimonials/testimonial-3-190x190.jpg"
+                    <div class="block-reviews__item-avatar"><img src="/images/testimonials/testimonial-3-190x190.jpg"
                             alt=""></div>
                     <div class="block-reviews__item-content">
                         <div class="block-reviews__item-text">The ideas conceived by a society have profound

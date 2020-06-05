@@ -13,7 +13,7 @@
                 <div class="mobile-menu__settings-list">
                     <div class="mobile-menu__setting" data-mobile-menu-item><button class="mobile-menu__setting-button"
                             title="Language" data-mobile-menu-trigger><span class="mobile-menu__setting-icon"><img
-                                    src="images/languages/fr.png" alt="Français">
+                                    src="/images/languages/fr.png" alt="Français">
                             </span><span class="mobile-menu__setting-title">Français</span> <span
                                 class="mobile-menu__setting-arrow"><svg width="6px" height="9px">
                                     <path
@@ -32,14 +32,14 @@
                                     <ul class="mobile-menu__links">
                                         <li data-mobile-menu-item><button type="button" class=""
                                                 data-mobile-menu-trigger>
-                                                <div class="mobile-menu__links-image"><img src="images/languages/en.png"
-                                                        alt=""></div>
+                                                <div class="mobile-menu__links-image"><img
+                                                        src="/images/languages/en.png" alt=""></div>
                                                 English
                                             </button></li>
                                         <li data-mobile-menu-item><button type="button" class=""
                                                 data-mobile-menu-trigger>
-                                                <div class="mobile-menu__links-image"><img src="images/languages/fr.png"
-                                                        alt=""></div>
+                                                <div class="mobile-menu__links-image"><img
+                                                        src="/images/languages/fr.png" alt=""></div>
                                                 Français
                                             </button></li>
                                     </ul>
