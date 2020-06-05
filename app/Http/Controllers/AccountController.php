@@ -8,12 +8,12 @@ use App\Http\Requests\ChangePasswordRequest;
 class AccountController extends Controller
 {
     /**
-     * Change password
+     * Change password.
      *
-     * Change the current account password
+     * Change the current account password.
      *
-     * @param \App\Http\Requests\ChangePasswordRequest $request Validated change request
-     * @return redirect Redirect back with success message
+     * @param \App\Http\Requests\ChangePasswordRequest $request Validated change request.
+     * @return redirect Redirect back with success message.
      **/
     public function changePassword(ChangePasswordRequest $request)
     {
