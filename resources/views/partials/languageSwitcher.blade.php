@@ -1,7 +1,7 @@
 <div class="topbar__menu">
     <button class="topbar__button topbar__button--has-arrow topbar__menu-button" type="button">
         <span class="topbar__button-label">
-            Language:
+            @lang('Language:')
         </span>
         <span class="topbar__button-title">EN</span>
         <span class="topbar__button-arrow">
