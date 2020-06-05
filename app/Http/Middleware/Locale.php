@@ -13,7 +13,7 @@ class Locale
      * it should have been set by the user.
      *
      * Keep the locale if already in session.
-     * Fallback to English if undefined.
+     * Fallback to French if undefined.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next
