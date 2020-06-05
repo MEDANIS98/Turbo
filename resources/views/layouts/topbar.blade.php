@@ -24,13 +24,13 @@
     <div class="topbar topbar--spaceship-end">
         <div class="topbar__item-button">
             <a href="#" class="topbar__button">
-                <span class="topbar__button-label">Compare:</span>
+                <span class="topbar__button-label">@lang('Compare:')</span>
                 <span class="topbar__button-title">5</span>
             </a>
         </div>
         <div class="topbar__item-button topbar__menu">
             <button class="topbar__button topbar__button--has-arrow topbar__menu-button" type="button">
-                <span class="topbar__button-label">Currency:</span>
+                <span class="topbar__button-label">@lang('Currency:')</span>
                 <span class="topbar__button-title">USD</span>
                 <span class="topbar__button-arrow">
                     <svg width="7px" height="5px">
@@ -40,10 +40,10 @@
                 </span>
             </button>
             <div class="topbar__menu-body">
-                <a class="topbar__menu-item" href="#">€ Euro</a>
-                <a class="topbar__menu-item" href="#">£ Pound Sterling</a>
-                <a class="topbar__menu-item" href="#">$ US Dollar</a>
-                <a class="topbar__menu-item" href="#">₽ Russian Ruble</a>
+                <a class="topbar__menu-item" href="#">€ @lang('Euro')</a>
+                <a class="topbar__menu-item" href="#">£ @lang('Pound Sterling')</a>
+                <a class="topbar__menu-item" href="#">$ @lang('US Dollar')</a>
+                <a class="topbar__menu-item" href="#">₽ @lang('Russian Ruble')</a>
             </div>
         </div>
         @include('partials.languageSwitcher')
