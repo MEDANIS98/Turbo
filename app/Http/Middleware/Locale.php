@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Middleware;
 
 use Closure;
@@ -16,8 +18,6 @@ class Locale
      * Fallback to French if undefined.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
-     * @return mixed
      */
     public function handle($request, Closure $next)
     {
@@ -28,6 +28,7 @@ class Locale
             $locale = config('app.locale');
         }
         app()->setLocale($locale);
+
         return $next($request);
     }
 }
