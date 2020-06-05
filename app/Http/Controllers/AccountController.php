@@ -20,6 +20,6 @@ class AccountController extends Controller
         $user = User::find(auth()->id());
         $user->password = bcrypt($request->new_password);
         $user->save();
-        return back()->with('message', __('Le mot de passe a été changé avec succès'));
+        return back()->with('message', __('Password has successfully been changed'));
     }
 }
