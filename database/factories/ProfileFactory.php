@@ -5,12 +5,11 @@ declare(strict_types=1);
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use App\Profile;
-use App\Helpers\Image;
 use Faker\Generator as Faker;
 
 $factory->define(Profile::class, fn (Faker $faker) => [
-    'avatar' => 'avatars/'.Image::image(
-        $dir = storage_path().'/app/public/avatars',
+    'avatar' => 'avatars/' . ImageGenerator::image(
+        $dir = storage_path() . '/app/public/avatars',
         $width = 90,
         $height = 90,
         $fullPath = false,

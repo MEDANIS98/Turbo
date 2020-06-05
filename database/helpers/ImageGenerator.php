@@ -2,9 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Helpers;
-
-class Image
+class ImageGenerator
 {
     /**
      * Generate the URL that will return a random image.
@@ -23,10 +21,10 @@ class Image
         $url = "{$width}x{$height}/";
 
         if ($randomize) {
-            $url .= '?'.mt_rand();
+            $url .= '?' . mt_rand();
         }
 
-        return $baseUrl.$url;
+        return $baseUrl . $url;
     }
 
     /**
@@ -46,15 +44,15 @@ class Image
     {
         $dir = is_null($dir) ? sys_get_temp_dir() : $dir; // GNU/Linux / OS X / Windows compatible
         // Validate directory path
-        if (! is_dir($dir) || ! is_writable($dir)) {
+        if (!is_dir($dir) || !is_writable($dir)) {
             throw new \InvalidArgumentException(sprintf('Cannot write to directory "%s"', $dir));
         }
 
         // Generate a random filename. Use the server address so that a file
         // generated at the same time on a different server won't have a collision.
         $name = md5(uniqid(empty($_SERVER['SERVER_ADDR']) ? '' : $_SERVER['SERVER_ADDR'], true));
-        $filename = $name.'.jpg';
-        $filepath = $dir.DIRECTORY_SEPARATOR.$filename;
+        $filename = $name . '.jpg';
+        $filepath = $dir . DIRECTORY_SEPARATOR . $filename;
 
         $url = static::imageUrl($width, $height, $randomize);
 
@@ -68,7 +66,7 @@ class Image
             fclose($fp);
             curl_close($ch);
 
-            if (! $success) {
+            if (!$success) {
                 unlink($filepath);
 
                 // could not contact the distant URL or HTTP error - fail silently.
