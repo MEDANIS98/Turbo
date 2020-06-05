@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers;
 
 use App\User;
@@ -20,6 +22,7 @@ class AccountController extends Controller
         $user = User::find(auth()->id());
         $user->password = bcrypt($request->new_password);
         $user->save();
+
         return back()->with('message', __('Password has successfully been changed'));
     }
 }
