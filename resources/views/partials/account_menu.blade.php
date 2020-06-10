@@ -53,20 +53,11 @@
             <label for="header-signin-password" class="sr-only">@lang('Password')</label>
             <div class="account-menu__form-forgot">
                 <input id="header-signin-password" type="password"
-                    class="form-control form-control-sm @error('password') is-invalid @enderror"
-                    placeholder="@lang('Password')" name="password" required autocomplete="current-password">
+                    class="form-control form-control-sm" placeholder="@lang('Password')" name="password" required autocomplete="current-password">
 
-                @error('password')
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                </span>
-                @enderror
-
-                @if (Route::has('password.request'))
                 <a class="account-menu__form-forgot-link" href="{{ route('password.request') }}">
                     {{ __('Forgot?') }}
                 </a>
-                @endif
             </div>
         </div>
         <div class="form-group">
