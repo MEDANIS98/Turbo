@@ -2347,16 +2347,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "8.2.7",
+            "version": "8.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "117852093c0e8b5390a6c7dd5f9109dbce969788"
+                "reference": "c2158bcf350f666ca6a2c84cb1fc41324a62369b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/117852093c0e8b5390a6c7dd5f9109dbce969788",
-                "reference": "117852093c0e8b5390a6c7dd5f9109dbce969788",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/c2158bcf350f666ca6a2c84cb1fc41324a62369b",
+                "reference": "c2158bcf350f666ca6a2c84cb1fc41324a62369b",
                 "shasum": ""
             },
             "require": {
@@ -2433,20 +2433,20 @@
                 "media",
                 "spatie"
             ],
-            "time": "2020-05-13T12:04:55+00:00"
+            "time": "2020-06-08T11:30:07+00:00"
         },
         {
             "name": "spatie/temporary-directory",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/temporary-directory.git",
-                "reference": "fcb127e615700751dac2aefee0ea2808ff3f5bb1"
+                "reference": "eeb84a7a3543e90759cd852ccb468e3d3340d99d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/temporary-directory/zipball/fcb127e615700751dac2aefee0ea2808ff3f5bb1",
-                "reference": "fcb127e615700751dac2aefee0ea2808ff3f5bb1",
+                "url": "https://api.github.com/repos/spatie/temporary-directory/zipball/eeb84a7a3543e90759cd852ccb468e3d3340d99d",
+                "reference": "eeb84a7a3543e90759cd852ccb468e3d3340d99d",
                 "shasum": ""
             },
             "require": {
@@ -2479,7 +2479,7 @@
                 "spatie",
                 "temporary-directory"
             ],
-            "time": "2019-12-15T18:52:09+00:00"
+            "time": "2020-06-08T08:58:45+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
