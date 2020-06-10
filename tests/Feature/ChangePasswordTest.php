@@ -63,16 +63,15 @@ class ChangePasswordTest extends TestCase
         $response->assertRedirect('/password/confirm');
     }
 
-	/**
-	 * Test password confirmation route
-	 *
-	 * Assert an OK status on /password/confirm route
-	 *
-	 * @return void
-	 **/
-	public function test_password_confirmation_route(): void
-	{
-		$response = $this->get('/password/confirm');
-		$response->assertOk();
-	}
+    /**
+     * Test password confirmation route.
+     *
+     * Assert an OK status on /password/confirm route
+     *
+     **/
+    public function test_password_confirmation_route(): void
+    {
+        $response = $this->get('/password/confirm');
+        $response->assertOk();
+    }
 }
