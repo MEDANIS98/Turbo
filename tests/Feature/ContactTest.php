@@ -6,6 +6,7 @@ namespace Tests\Feature;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
+use Swift_TransportException;
 
 class ContactTest extends TestCase
 {
@@ -40,4 +41,21 @@ class ContactTest extends TestCase
             'Hacker' => '1337', // Tests request data trimming function
         ];
     }
+
+	/**
+	 * Test no internet error
+	 *
+	 * Assert that an error message is displayed
+	 * in case no internet connection is detected
+	 *
+	 * @return void
+	 **/
+	public function test_no_internet_exception(): void
+	{
+		config(['mail.default' => 'smtp']);
+		config(['mail.mailers.smtp.username' => null]);
+		$response = $this->post('/contact', $this->message());
+		$response->assertRedirect('/contact#errors'); // Assert a redirect to errors
+		$response->assertSessionHasErrors();
+	}
 }
