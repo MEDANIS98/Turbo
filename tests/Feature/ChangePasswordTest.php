@@ -72,7 +72,6 @@ class ChangePasswordTest extends TestCase
      **/
     public function test_password_confirmation_route(): void
     {
-        $this->withoutExceptionHandling();
         $response = $this->get('/password/confirm');
         $response->assertOk();
     }

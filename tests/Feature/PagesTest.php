@@ -53,7 +53,6 @@ class PagesTest extends TestCase
      */
     public function testDashboardPage(): void
     {
-        $this->withoutExceptionHandling();
         $this->login();
         $response = $this->get(RouteServiceProvider::HOME);
         $response->assertOk();
