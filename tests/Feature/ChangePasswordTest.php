@@ -43,6 +43,7 @@ class ChangePasswordTest extends TestCase
      **/
     public function testUsersCanConfirmPassword(): void
     {
+		$this->withoutExceptionHandling();
         $response = $this->post('/password/confirm', ['password' => 'password']);
         $response->assertRedirect('/dashboard');
         $response = $this->get('/account/password');
@@ -71,6 +72,7 @@ class ChangePasswordTest extends TestCase
      **/
     public function test_password_confirmation_route(): void
     {
+		$this->withoutExceptionHandling();
         $response = $this->get('/password/confirm');
         $response->assertOk();
     }
