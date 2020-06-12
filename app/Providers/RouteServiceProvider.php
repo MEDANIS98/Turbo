@@ -48,7 +48,7 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
-		if (app()->isLocal()) {
+        if (app()->isLocal()) {
             $this->mapDevRoutes();
         }
     }
@@ -82,7 +82,7 @@ class RouteServiceProvider extends ServiceProvider
             ->group(base_path('routes/api.php'));
     }
 
-	/**
+    /**
      * Define the "dev" routes for the application.
      *
      * These routes all receive session state, CSRF protection, etc.
