@@ -12,9 +12,28 @@ Auto Parts Store
 * PHP 7.4
 * MariaDB 10.4.13
 * SQLite 3
-* imagemagick
-* svgo
-* php-gd
+* For media library (necessary for image conversion)
+	* imagemagick
+	* php-gd
+	* jpegoptim
+	* optipng
+	* pngquant
+	* gifsicle
+	* svgo
+
+### On Linux
+```shell
+sudo apt install jpegoptim optipng pngquant gifsicle
+npm install -g svgo
+```
+### On macOS using [Homebrew](https://brew.sh/)
+```shell
+brew install jpegoptim
+brew install optipng
+brew install pngquant
+brew install svgo
+brew install gifsicle
+```
 
 1. Copy `.env.example` to `.env`
 ```shell
