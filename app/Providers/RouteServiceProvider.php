@@ -48,7 +48,7 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
-        if (app()->isLocal()) {
+        if (!app()->isProduction()) {
             $this->mapDevRoutes();
         }
     }
