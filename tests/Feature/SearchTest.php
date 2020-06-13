@@ -20,15 +20,15 @@ class SearchTest extends TestCase
      */
     public function test_vehicle_parts_search()
     {
-        $this->withoutExceptionHandling();
-        $vehicle = factory(Vehicle::class)->create();
-        $response = $this->post('/search', [
-            'year' => $vehicle->year,
-            'brand' => $vehicle->brand,
-            'model' => $vehicle->model,
-            'fuel' => $vehicle->fuel,
-        ]);
-
-        $response->assertOk();
+        Vehicle::withoutSyncingToSearch(function () {
+            $vehicle = factory(Vehicle::class)->create();
+            $response = $this->post('/search', [
+                'year' => $vehicle->year,
+                'brand' => $vehicle->brand,
+                'model' => $vehicle->model,
+                'fuel' => $vehicle->fuel,
+            ]);
+            $response->assertOk();
+        });
     }
 }
