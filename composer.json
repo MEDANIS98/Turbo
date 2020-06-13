@@ -16,11 +16,14 @@
 		"laravel/framework": "^7.0",
 		"laravel/helpers": "^1.2",
 		"laravel/horizon": "^4.3",
+		"laravel/nova": "*",
 		"laravel/scout": "^8.0",
 		"laravel/tinker": "^2.0",
 		"laravel/ui": "^2.0",
+		"optimistdigital/nova-translatable": "master",
 		"pelmered/fake-car": "^1.4",
-		"spatie/laravel-medialibrary": "^8.0.0"
+		"spatie/laravel-medialibrary": "^8.0.0",
+		"whitecube/nova-page": "master"
 	},
 	"require-dev": {
 		"barryvdh/laravel-debugbar": "^3.3",
@@ -79,7 +82,21 @@
 			"Illuminate\\Foundation\\ComposerScripts::postUpdate",
 			"@php artisan ide-helper:generate",
 			"@php artisan ide-helper:meta",
-			"@php artisan horizon:publish"
+			"@php artisan horizon:publish",
+			"@php artisan nova:publish"
 		]
-	}
+	},
+	"repositories": [{
+			"type": "path",
+			"url": "./nova"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/CaddyDz/nova-page"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/CaddyDz/nova-translatable"
+		}
+	]
 }
