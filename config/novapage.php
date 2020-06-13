@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
 
     /*
@@ -15,7 +17,7 @@ return [
         'pages' => 'Pages',
         'page' => 'Page',
         'options' => 'Options',
-        'option' => 'Option'
+        'option' => 'Option',
     ],
 
     /*
@@ -81,7 +83,7 @@ return [
     |
     */
     'default_source' => \Whitecube\NovaPage\Sources\Filesystem::class,
-    
+
     /*
     |--------------------------------------------------------------------------
     | Sources configuration
@@ -92,18 +94,18 @@ return [
     | provided when instanciated. This means you can add your own source's
     | configuration here too.
     |
-    | Path configurations can contain the following variables: 
+    | Path configurations can contain the following variables:
     | {type}, {key}, {locale}
     |
     */
     'sources' => [
         'filesystem' => [
-            'path' => resource_path('lang/{type}/{key}.json')
+            'path' => resource_path('lang/{type}/{key}.json'),
         ],
         'database' => [
             'table_name' => 'static_pages',
-            'model' => \Whitecube\NovaPage\Sources\StaticPage::class
+            'model' => \Whitecube\NovaPage\Sources\StaticPage::class,
         ],
-    ]
+    ],
 
 ];
