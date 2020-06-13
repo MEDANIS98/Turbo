@@ -18,14 +18,14 @@ use Illuminate\Support\Facades\Route;
 Auth::routes(['verify' => true]);
 Route::get('/dashboard', 'HomeController@index')->name('home');
 Route::get('/lang/{locale}', 'LocalizationController@switch')
-    ->name('locale')
-    ->where('locale', '(en|fr|ar)');
-
-// views
-Route::view('/', 'index');
+	->name('locale')
+	->where('locale', '(en|fr|ar)');
+Route::get('/', 'PagesController@index');
+Route::post('/search', 'SearchController@search')->name('search');
 Route::view('/about', 'about')->name('about');
 Route::view('/contact', 'contact');
 Route::post('/contact', 'ContactController@send')->name('contact');
+Route::get('/parts/{part}', 'PartsController@show')->name('part');
 Route::view('/track-order', 'track-order')->name('track');
 Route::view('/wishlist', 'wishlist');
 Route::view('/cart', 'cart');
@@ -38,11 +38,11 @@ Route::view('/compare', 'compare');
 Route::view('/product', 'product');
 Route::view('/garage', 'garage');
 Route::middleware('auth', 'verified')->group(function () {
-    Route::view('/account-addresses', 'account-addresses');
-    Route::view('/account/password', 'auth.passwords.change')->middleware('password.confirm');
-    Route::post('/account/change-password', 'AccountController@changePassword')->name('password.change');
-    Route::view('/account-orders', 'account-orders');
-    Route::view('/account-profile', 'account-profile');
+	Route::view('/account-addresses', 'account-addresses');
+	Route::view('/account/password', 'auth.passwords.change')->middleware('password.confirm');
+	Route::post('/account/change-password', 'AccountController@changePassword')->name('password.change');
+	Route::view('/account-orders', 'account-orders');
+	Route::view('/account-profile', 'account-profile');
 });
 Route::view('/shop-list', 'shop-list');
 Route::view('/shop-table', 'shop-table');
