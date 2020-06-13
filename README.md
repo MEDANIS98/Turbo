@@ -23,7 +23,7 @@ Auto Parts Store
 
 ### On Linux
 ```shell
-sudo apt install jpegoptim optipng pngquant gifsicle
+sudo apt install jpegoptim optipng pngquant gifsicle php-gd
 sudo npm install -g svgo
 ```
 ### On macOS using [Homebrew](https://brew.sh/)
@@ -53,15 +53,19 @@ DB_DATABASE=turbo
 DB_USERNAME=Your MySQL username here
 DB_PASSWORD=Your MySQL password here
 ```
-5. Migrate and seed the database
+5. Create the database
+```shell
+mysql -e "DROP DATABASE IF EXISTS turbo;CREATE DATABASE turbo;"
+```
+6. Migrate and seed the database
 ```shell
 php artisan migrate:refresh --seed
 ```
-6. Link storage to a publicly accessible endpoint
+7. Link storage to a publicly accessible endpoint
 ```shell
 php artisan storage:link
 ```
-7. Ensure everything works
+8. Ensure everything works
 ```shell
 vendor/bin/phpunit
 ```
