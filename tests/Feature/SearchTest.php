@@ -20,6 +20,7 @@ class SearchTest extends TestCase
      */
     public function test_vehicle_parts_search()
     {
+        $this->withoutExceptionHandling();
         $vehicle = factory(Vehicle::class)->create();
         $response = $this->post('/search', [
             'year' => $vehicle->year,
