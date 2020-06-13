@@ -24,7 +24,7 @@ Auto Parts Store
 ### On Linux
 ```shell
 sudo apt install jpegoptim optipng pngquant gifsicle
-npm install -g svgo
+sudo npm install -g svgo
 ```
 ### On macOS using [Homebrew](https://brew.sh/)
 ```shell
