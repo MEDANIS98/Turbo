@@ -5,9 +5,12 @@ declare(strict_types=1);
 namespace Tests\Feature;
 
 use Tests\TestCase;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class LocalizationTest extends TestCase
 {
+    use DatabaseMigrations;
+
     /**
      * Test users can change locale.
      *
