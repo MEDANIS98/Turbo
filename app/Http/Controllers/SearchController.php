@@ -16,7 +16,6 @@ class SearchController extends Controller
      * Search for parts with the given specs
      *
      * @param SearchRequest $request The search request
-     * @return View
      *
      **/
     public function search(SearchRequest $request): View
