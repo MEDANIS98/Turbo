@@ -15,11 +15,12 @@
 		"guzzlehttp/guzzle": "^6.3",
 		"laravel/framework": "^7.0",
 		"laravel/helpers": "^1.2",
-		"laravel/nova": "*",
 		"laravel/horizon": "^4.3",
+		"laravel/nova": "*",
 		"laravel/scout": "^8.0",
 		"laravel/tinker": "^2.0",
 		"laravel/ui": "^2.0",
+		"optimistdigital/nova-translatable": "master",
 		"pelmered/fake-car": "^1.4",
 		"spatie/laravel-medialibrary": "^8.0.0",
 		"whitecube/nova-page": "master"
@@ -92,6 +93,10 @@
 		{
 			"type": "vcs",
 			"url": "https://github.com/CaddyDz/nova-page"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/CaddyDz/nova-translatable"
 		}
 	]
 }

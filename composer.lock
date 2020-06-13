@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "259862e9505ae794890e92f9e8dfa8d5",
+    "content-hash": "b60353835b50c343e91f041d7da58a52",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -2431,6 +2431,66 @@
             "time": "2020-06-07T11:41:29+00:00"
         },
         {
+            "name": "optimistdigital/nova-translatable",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CaddyDz/nova-translatable.git",
+                "reference": "af5e549a2a413ac92017557f119a101d4f91b802"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CaddyDz/nova-translatable/zipball/af5e549a2a413ac92017557f119a101d4f91b802",
+                "reference": "af5e549a2a413ac92017557f119a101d4f91b802",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "*",
+                "php": ">=7.1.0",
+                "spatie/laravel-translatable": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "OptimistDigital\\NovaTranslatable\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "OptimistDigital\\NovaTranslatable\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tarvo Reinpalu",
+                    "email": "tarvoreinpalu@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Optimist Digital",
+                    "email": "info@optimistdigital.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "A laravel-translatable extension for Laravel Nova.",
+            "keywords": [
+                "i18n",
+                "laravel",
+                "nova",
+                "translatable",
+                "translate"
+            ],
+            "support": {
+                "source": "https://github.com/CaddyDz/nova-translatable/tree/master"
+            },
+            "time": "2020-06-13T14:56:05+00:00"
+        },
+        {
             "name": "pelmered/fake-car",
             "version": "1.4.0",
             "source": {
@@ -3392,6 +3452,84 @@
                 }
             ],
             "time": "2020-06-11T11:51:43+00:00"
+        },
+        {
+            "name": "spatie/laravel-translatable",
+            "version": "4.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-translatable.git",
+                "reference": "c15b457ddce4ccaf174de652780647cb086a77a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-translatable/zipball/c15b457ddce4ccaf174de652780647cb086a77a5",
+                "reference": "c15b457ddce4ccaf174de652780647cb086a77a5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~5.8.0|^6.0|^7.0",
+                "illuminate/support": "~5.8.0|^6.0|^7.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "~3.8.0|^4.0|^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Translatable\\TranslatableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Translatable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sebastian De Deyne",
+                    "email": "sebastian@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Mohamed Said",
+                    "email": "theMohamedSaid@gmail.com",
+                    "role": "Original idea"
+                }
+            ],
+            "description": "A trait to make an Eloquent model hold translations",
+            "homepage": "https://github.com/spatie/laravel-translatable",
+            "keywords": [
+                "eloquent",
+                "i8n",
+                "laravel-translatable",
+                "model",
+                "multilingual",
+                "spatie",
+                "translate"
+            ],
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                }
+            ],
+            "time": "2020-04-30T10:01:26+00:00"
         },
         {
             "name": "spatie/once",
