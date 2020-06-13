@@ -23,7 +23,7 @@
         <li>
             <a href="{{ route('logout') }}"
                 onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                {{ __('Logout') }}
+                @lang('Logout')
             </a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
@@ -52,11 +52,11 @@
         <div class="form-group">
             <label for="header-signin-password" class="sr-only">@lang('Password')</label>
             <div class="account-menu__form-forgot">
-                <input id="header-signin-password" type="password"
-                    class="form-control form-control-sm" placeholder="@lang('Password')" name="password" required autocomplete="current-password">
+                <input id="header-signin-password" type="password" class="form-control form-control-sm"
+                    placeholder="@lang('Password')" name="password" required autocomplete="current-password">
 
                 <a class="account-menu__form-forgot-link" href="{{ route('password.request') }}">
-                    {{ __('Forgot?') }}
+                    @lang('Forgot?') }}
                 </a>
             </div>
         </div>
@@ -66,7 +66,7 @@
                     {{ old('remember') ? 'checked' : '' }}>
 
                 <label class="form-check-label" for="remember">
-                    {{ __('Remember Me') }}
+                    @lang('Remember Me')
                 </label>
             </div>
         </div>
