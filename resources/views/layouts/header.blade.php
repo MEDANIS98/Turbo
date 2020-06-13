@@ -1083,7 +1083,7 @@
                         <path d="M23,4c3.9,0,7,3.1,7,7c0,6.3-11.4,15.9-14,16.9C13.4,26.9,2,17.3,2,11c0-3.9,3.1-7,7-7c2.1,0,4.1,1,5.4,2.6l1.6,2l1.6-2
 	C18.9,5,20.9,4,23,4 M23,2c-2.8,0-5.4,1.3-7,3.4C14.4,3.3,11.8,2,9,2c-5,0-9,4-9,9c0,8,14,19,16,19s16-11,16-19C32,6,28,2,23,2L23,2
 	z" /></svg></span></a></div>
-        <div class="indicator indicator--trigger--click @if($errors->any()) indicator--open @endif">
+        <div class="indicator indicator--trigger--click @if($errors->has('email') && (url()->previous() != url('login'))) indicator--open @endif">
             <a href="/login" class="indicator__button">
                 <span class="indicator__icon"><svg width="32" height="32">
                         <path d="M16,18C9.4,18,4,23.4,4,30H2c0-6.2,4-11.5,9.6-13.3C9.4,15.3,8,12.8,8,10c0-4.4,3.6-8,8-8s8,3.6,8,8c0,2.8-1.5,5.3-3.6,6.7

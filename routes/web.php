@@ -24,7 +24,8 @@ Route::get('/lang/{locale}', 'LocalizationController@switch')
 // views
 Route::view('/', 'index');
 Route::view('/about', 'about')->name('about');
-Route::view('/contact', 'contact')->name('contact');
+Route::view('/contact', 'contact');
+Route::post('/contact', 'ContactController@send')->name('contact');
 Route::view('/track-order', 'track-order')->name('track');
 Route::view('/wishlist', 'wishlist');
 Route::view('/cart', 'cart');

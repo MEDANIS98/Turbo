@@ -92,6 +92,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Global "to" Address
+    |--------------------------------------------------------------------------
+    |
+    | The Site owner email address, this is the address for example contact
+    | requests should be sent to
+    |
+    */
+
+    'address' => env('MAIL_TO_ADDRESS', 'contact@turbo.com'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Markdown Mail Settings
     |--------------------------------------------------------------------------
     |
