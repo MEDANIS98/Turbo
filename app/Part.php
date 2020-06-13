@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App;
 
 use Laravel\Scout\Searchable;
@@ -11,81 +13,74 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 class Part extends Model implements HasMedia
 {
-	use Searchable, InteractsWithMedia;
+    use Searchable, InteractsWithMedia;
 
-	/**
-	 * Get the vehicle of a part
-	 *
-	 * Defines the Part to Vehicle relationship
-	 *
-	 * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-	 **/
-	public function vehicle(): BelongsTo
-	{
-		return $this->belongsTo(Vehicle::class);
-	}
+    /**
+     * Get the vehicle of a part.
+     *
+     * Defines the Part to Vehicle relationship
+     *
+     **/
+    public function vehicle(): BelongsTo
+    {
+        return $this->belongsTo(Vehicle::class);
+    }
 
-	/**
-	 * Get the index name for the model.
-	 *
-	 * @return string
-	 */
-	public function searchableAs(): string
-	{
-		return 'parts_index';
-	}
+    /**
+     * Get the index name for the model.
+     */
+    public function searchableAs(): string
+    {
+        return 'parts_index';
+    }
 
-	/**
-	 * Get the indexable data array for the model.
-	 *
-	 * @return array
-	 */
-	public function toSearchableArray(): array
-	{
-		$vehicle = $this->vehicle->only('year', 'brand', 'model', 'fuel');
+    /**
+     * Get the indexable data array for the model.
+     */
+    public function toSearchableArray(): array
+    {
+        $vehicle = $this->vehicle->only('year', 'brand', 'model', 'fuel');
 
-		$part = $this->only('title', 'image', 'price');
+        $part = $this->only('title', 'image', 'price');
 
-		$searchable = array_merge($part, $vehicle);
+        $searchable = array_merge($part, $vehicle);
 
-		return $searchable;
-	}
+        return $searchable;
+    }
 
-	/**
-	 * Get the value used to index the model.
-	 *
-	 * @return mixed
-	 */
-	public function getScoutKey(): string
-	{
-		return $this->title;
-	}
+    /**
+     * Get the value used to index the model.
+     *
+     * @return mixed
+     */
+    public function getScoutKey(): string
+    {
+        return $this->title;
+    }
 
-	/**
-	 * Get the key name used to index the model.
-	 *
-	 * @return mixed
-	 */
-	public function getScoutKeyName(): string
-	{
-		return 'title';
-	}
+    /**
+     * Get the key name used to index the model.
+     *
+     * @return mixed
+     */
+    public function getScoutKeyName(): string
+    {
+        return 'title';
+    }
 
-	/**
-	 * Get the route key for the model.
-	 *
-	 * @return string
-	 */
-	public function getRouteKeyName(): string
-	{
-		return 'slug';
-	}
+    /**
+     * Get the route key for the model.
+     */
+    public function getRouteKeyName(): string
+    {
+        return 'slug';
+    }
 
-	public function registerMediaConversions(Media $media = null): void
-	{
-		$this->addMediaConversion('_245x245')
-			->width(245)
-			->height(245)
-			->sharpen(10);
-	}
+    public function registerMediaConversions(Media $media = null): void
+    {
+        $this->addMediaConversion('_245x245')
+            ->width(245)
+            ->height(245)
+            ->sharpen(10);
+    }
 }
