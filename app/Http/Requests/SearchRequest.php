@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
@@ -25,9 +27,9 @@ class SearchRequest extends FormRequest
     {
         return [
             'year' => 'bail|required|integer|exists:vehicles,year',
-			'brand' => 'bail|required|string|exists:vehicles,brand',
-			'model' => 'bail|required|string|exists:vehicles,model',
-			'fuel' => 'bail|required|string|exists:vehicles,fuel',
+            'brand' => 'bail|required|string|exists:vehicles,brand',
+            'model' => 'bail|required|string|exists:vehicles,model',
+            'fuel' => 'bail|required|string|exists:vehicles,fuel',
         ];
     }
 }
