@@ -131,5 +131,6 @@
 	"Reply": "Répondez",
 	"Your message has been sent! We will be in touch as soon as possible.": "Votre message a bien été envoyé! Nous serons en contact dès que possible.",
 	"Something went wrong, try refreshing and resubmitting the form.": "Quelque chose s'est mal passé, essayez de rafraîchir et de soumettre à nouveau le formulaire.",
-	"No internet connection detected": "Aucune connexion Internet détectée"
+	"No internet connection detected": "Aucune connexion Internet détectée",
+	"Page has expired, try refreshing the page": "La page a expiré, essayez d'actualiser la page"
 }
