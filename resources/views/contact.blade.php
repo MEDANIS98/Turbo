@@ -67,57 +67,60 @@
 						<div class="ml-1">
 							<h4 class="contact-us__header card-title">@lang('Leave us a Message')</h4>
 							@if ($errors->any())
-								<div class="alert alert-danger" id="errors">
-									<ul>
-										@foreach ($errors->all() as $error)
-											<li>{{ $error }}</li>
-										@endforeach
-									</ul>
-								</div>
+							<div class="alert alert-danger" id="errors">
+								<ul>
+									@foreach ($errors->all() as $error)
+									<li>{{ $error }}</li>
+									@endforeach
+								</ul>
+							</div>
 							@endif
 							@if(session()->exists('success'))
-								<div class="alert alert-success" role="alert" id="success">
-									<p>@lang('Your message has been sent! We will be in touch as soon as possible.')</p>
-								</div>
+							<div class="alert alert-success" role="alert" id="success">
+								<p>@lang('Your message has been sent! We will be in touch as soon as possible.')</p>
+							</div>
 							@endif
 							<form action="{{ route('contact') }}" method="POST" role="form">
-								@csrf
+								{{-- @csrf --}}
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="form-name">@lang('Your Name')</label>
-										<input type="text" id="form-name" name="name" class="form-control" placeholder="@lang('Your Name')" value="{{ old('name') }}" required>
+										<input type="text" id="form-name" name="name" class="form-control" placeholder="@lang('Your Name')"
+											value="{{ old('name') }}" required>
 										@error('name')
-											<span class="invalid-feedback" role="alert" style="display: block;">
-												<strong>{{ $message }}</strong>
-											</span>
+										<span class="invalid-feedback" role="alert" style="display: block;">
+											<strong>{{ $message }}</strong>
+										</span>
 										@enderror
 									</div>
 									<div class="form-group col-md-6">
 										<label for="form-email">@lang('Email')</label>
-										<input type="email" id="form-email" name="contact_email" class="form-control" placeholder="@lang('Email Address')" value="{{ old('contact_email') }}" required>
+										<input type="email" id="form-email" name="contact_email" class="form-control"
+											placeholder="@lang('Email Address')" value="{{ old('contact_email') }}" required>
 										@error('contact_email')
-											<span class="invalid-feedback" role="alert" style="display: block;">
-												<strong>{{ $message }}</strong>
-											</span>
+										<span class="invalid-feedback" role="alert" style="display: block;">
+											<strong>{{ $message }}</strong>
+										</span>
 										@enderror
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="form-subject">@lang('Subject')</label>
-									<input type="text" id="form-subject" name="subject" class="form-control" placeholder="@lang('Subject')" value="{{ old('subject') }}" required>
+									<input type="text" id="form-subject" name="subject" class="form-control"
+										placeholder="@lang('Subject')" value="{{ old('subject') }}" required>
 									@error('subject')
-										<span class="invalid-feedback" role="alert" style="display: block;">
-											<strong>{{ $message }}</strong>
-										</span>
+									<span class="invalid-feedback" role="alert" style="display: block;">
+										<strong>{{ $message }}</strong>
+									</span>
 									@enderror
 								</div>
 								<div class="form-group">
 									<label for="form-message">@lang('Message')</label>
 									<textarea id="form-message" name="message" class="form-control" rows="4" required></textarea>
 									@error('message')
-										<span class="invalid-feedback" role="alert" style="display: block;">
-											<strong>{{ $message }}</strong>
-										</span>
+									<span class="invalid-feedback" role="alert" style="display: block;">
+										<strong>{{ $message }}</strong>
+									</span>
 									@enderror
 								</div>
 								<button type="submit" class="btn btn-primary">@lang('Send Message')</button>
