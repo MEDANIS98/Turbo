@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
@@ -15,10 +17,10 @@ class CreateVehiclesTable extends Migration
     {
         Schema::create('vehicles', function (Blueprint $table) {
             $table->id();
-			$table->year('year');
-			$table->string('brand');
-			$table->string('model');
-			$table->string('fuel');
+            $table->year('year');
+            $table->string('brand');
+            $table->string('model');
+            $table->string('fuel');
             $table->timestamps();
         });
     }
