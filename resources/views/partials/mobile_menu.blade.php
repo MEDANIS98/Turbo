@@ -351,9 +351,11 @@
                                         <li data-mobile-menu-item><a href="/compare" class=""
                                                 data-mobile-menu-trigger>Compare</a>
                                         </li>
-                                        <li data-mobile-menu-item><a href="/track-order" class=""
-                                                data-mobile-menu-trigger>Track
-                                                Order</a></li>
+                                        {{-- <li data-mobile-menu-item>
+											<a href="/track-order" class="" data-mobile-menu-trigger>
+												@lang('Track Order')
+											</a>
+										</li> --}}
                                     </ul>
                                 </div>
                             </div>

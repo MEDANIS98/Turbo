@@ -12,11 +12,11 @@
                 @lang('Contact US')
             </a>
         </div>
-        <div class="topbar__item-text">
+        {{-- <div class="topbar__item-text">
             <a class="topbar__link" href="{{ route('track') }}">
                 @lang('Track Order')
             </a>
-        </div>
+        </div> --}}
     </div>
 </div>
 <div class="header__topbar-end-bg"></div>
