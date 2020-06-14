@@ -17,3 +17,4 @@ _ide_helper.php
 /nova
 /public/vendor/nova
 /resources/lang/vendor
+/resources/views/vendor
