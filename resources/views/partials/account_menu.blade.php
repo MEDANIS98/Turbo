@@ -56,7 +56,7 @@
                     placeholder="@lang('Password')" name="password" required autocomplete="current-password">
 
                 <a class="account-menu__form-forgot-link" href="{{ route('password.request') }}">
-                    @lang('Forgot?') }}
+                    @lang('Forgot?')
                 </a>
             </div>
         </div>
