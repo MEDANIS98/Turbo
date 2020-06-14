@@ -5974,9 +5974,14 @@ select.form-control-sm {
 	color: #fff
 }
 
-.block-finder__form-control--button:hover {
+.block-finder__form-control--button:hover,
+.block-finder__form-control--button:disabled {
 	background-color: #545454;
 	color: #fff
+}
+
+.block-finder__form-control--button:disabled {
+	cursor: not-allowed;
 }
 
 .block-finder__form-control--button:active {
