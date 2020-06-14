@@ -10,51 +10,51 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class PagesTest extends TestCase
 {
-    use DatabaseMigrations;
+	use DatabaseMigrations;
 
-    /**
-     * Test index page.
-     *
-     * @return void
-     */
-    public function testIndexPage()
-    {
-        $response = $this->get('/');
+	/**
+	 * Test index page.
+	 *
+	 * @return void
+	 */
+	public function testIndexPage()
+	{
+		$response = $this->get('/');
 
-        $response->assertOk();
-    }
+		$response->assertOk();
+	}
 
-    /**
-     * Test index page.
-     *
-     * @return void
-     */
-    public function testAboutPage()
-    {
-        $response = $this->get('/about');
+	/**
+	 * Test index page.
+	 *
+	 * @return void
+	 */
+	public function testAboutPage()
+	{
+		$response = $this->get('/about');
 
-        $response->assertOk();
-    }
+		$response->assertOk();
+	}
 
-    /**
-     * Test index page.
-     *
-     * @return void
-     */
-    public function testNotFoundPage()
-    {
-        $response = $this->get('/something');
+	/**
+	 * Test index page.
+	 *
+	 * @return void
+	 */
+	public function testNotFoundPage()
+	{
+		$response = $this->get('/something');
 
-        $response->assertNotFound();
-    }
+		$response->assertNotFound();
+	}
 
-    /**
-     * Test dashboard page.
-     */
-    public function testDashboardPage(): void
-    {
-        $this->login();
-        $response = $this->get(RouteServiceProvider::HOME);
-        $response->assertOk();
-    }
+	/**
+	 * Test dashboard page.
+	 */
+	public function testDashboardPage(): void
+	{
+		$this->login();
+		$response = $this->get(RouteServiceProvider::HOME);
+		$response->assertOk();
+	}
 }
