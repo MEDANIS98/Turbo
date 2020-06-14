@@ -39,9 +39,6 @@ class DatabaseSeeder extends Seeder
      **/
     public function cleanupStorage(): void
     {
-        for ($i = 1; $i < 50; $i++) {
-            Storage::disk('public')->deleteDirectory($i);
-        }
         Storage::disk('public')->deleteDirectory('parts');
         Storage::disk('public')->makeDirectory('parts');
         Storage::disk('public')->deleteDirectory('avatars');
