@@ -16,5 +16,4 @@ $factory->define(Profile::class, fn (Faker $faker) => [
         $randomize = true,
     ),
     'address' => $faker->address,
-    'phone' => $faker->regexify('/^(0)(5|6|7)(4|5|6|7)[0-9]{7}$/'),
 ]);

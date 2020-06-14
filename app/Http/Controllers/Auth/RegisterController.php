@@ -53,6 +53,7 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'phone' => $this->phone_validation_rules(),
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
     }
@@ -67,7 +68,26 @@ class RegisterController extends Controller
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'phone' => $data['phone'],
             'password' => Hash::make($data['password']),
         ]);
+    }
+
+    /**
+     * Phone validation rules.
+     *
+     * Return an array of phone validation rules.
+     *
+     * @return array
+     **/
+    private function phone_validation_rules(): array
+    {
+        return [
+            'required',
+            'size:10',
+            'starts_with:0',
+            'regex:/^(0)(5|6|7)(4|5|6|7)[0-9]{7}$/',
+            'unique:users'
+        ];
     }
 }
