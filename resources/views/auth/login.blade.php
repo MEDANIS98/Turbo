@@ -35,30 +35,45 @@
 									autocomplete="current-password">
 							</div>
 						</div>
-
-						<div class="form-group row">
-							<div class="col-md-6 offset-md-4">
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" name="remember" id="remember"
-										{{ old('remember') ? 'checked' : '' }}>
-
-									<label class="form-check-label" for="remember">
-										@lang('Remember Me')
-									</label>
+						<div>
+							<div class="form-group row">
+								<label for="Google" class="col-md-4 col-form-label text-md-right">@lang('Sign up with Google')
+								</label>
+								<div class="col-md-6">
+									<a href="/login/google">
+										@include('svg.google')
+									</a>
 								</div>
 							</div>
-						</div>
-
-						<div class="form-group row mb-0">
-							<div class="col-md-8 offset-md-4">
-								<button type="submit" class="btn btn-primary">
-									@lang('Login')
-								</button>
-								<a class="btn btn-link" href="{{ route('password.request') }}">
-									@lang('Forgot Your Password?')
-								</a>
+							<div class="form-group row">
+								<label for="Facebook" class="col-md-4 col-form-label text-md-right">@lang('Sign up with Facebook')
+								</label>
+								<div class="col-md-6">
+									<a href="/login/facebook">
+										@include('svg.facebook') </a>
+								</div>
 							</div>
-						</div>
+							<div class="form-group row">
+								<div class="col-md-6 offset-md-4">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" name="remember" id="remember"
+											{{ old('remember') ? 'checked' : '' }}>
+										<label class="form-check-label" for="remember">
+											@lang('Remember Me')
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group row mb-0">
+								<div class="col-md-8 offset-md-4">
+									<button type="submit" class="btn btn-primary">
+										@lang('Login')
+									</button>
+									<a class="btn btn-link" href="{{ route('password.request') }}">
+										@lang('Forgot Your Password?')
+									</a>
+								</div>
+							</div>
 					</form>
 				</div>
 			</div>
