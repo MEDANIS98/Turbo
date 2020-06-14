@@ -9,25 +9,25 @@ use Whitecube\NovaPage\Pages\OptionResource;
 
 class Option extends OptionResource
 {
-    use HasTranslations;
+	use HasTranslations;
 
-    /**
-     * Get the displayable label of the resource.
-     *
-     * @return string
-     */
-    public static function label()
-    {
-        return __(config('novapage.labels.options'));
-    }
+	/**
+	 * Get the displayable label of the resource.
+	 *
+	 * @return string
+	 */
+	public static function label()
+	{
+		return __(config('novapage.labels.options'));
+	}
 
-    /**
-     * Get the displayable singular label of the resource.
-     *
-     * @return string
-     */
-    public static function singularLabel()
-    {
-        return __(config('novapage.labels.option'));
-    }
+	/**
+	 * Get the displayable singular label of the resource.
+	 *
+	 * @return string
+	 */
+	public static function singularLabel()
+	{
+		return __(config('novapage.labels.option'));
+	}
 }

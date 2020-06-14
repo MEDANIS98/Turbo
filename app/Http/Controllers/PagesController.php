@@ -9,19 +9,19 @@ use Illuminate\View\View;
 
 class PagesController extends Controller
 {
-    /**
-     * Index page.
-     *
-     * Return the index view
-     * compacting data that includes
-     * Distinct vehicle years, brands, models and fuel types
-     *
-     * @return \Illuminate\View\View $view The index view
-     **/
-    public function index(): View
-    {
-        $years = Vehicle::select('year')->distinct()->orderBy('year')->pluck('year');
+	/**
+	 * Index page.
+	 *
+	 * Return the index view
+	 * compacting data that includes
+	 * Distinct vehicle years, brands, models and fuel types
+	 *
+	 * @return \Illuminate\View\View $view The index view
+	 **/
+	public function index(): View
+	{
+		$years = Vehicle::select('year')->distinct()->orderBy('year')->pluck('year');
 
-        return view('index', compact('years'));
-    }
+		return view('index', compact('years'));
+	}
 }

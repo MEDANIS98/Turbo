@@ -12,14 +12,14 @@ use Illuminate\Support\ServiceProvider;
 
 class ObserverServiceProvider extends ServiceProvider
 {
-    /**
-     * Bootstrap services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        Part::observe(PartObserver::class);
-        Profile::observe(ProfileObserver::class);
-    }
+	/**
+	 * Bootstrap services.
+	 *
+	 * @return void
+	 */
+	public function boot()
+	{
+		Part::observe(PartObserver::class);
+		Profile::observe(ProfileObserver::class);
+	}
 }
