@@ -15,10 +15,10 @@ before_install:
 install:
   - rm .env.example
   - cp .env.travis .env
+  - touch ./database/database.sqlite
   - travis_retry composer install --no-interaction --prefer-dist --no-suggest
 
 before_script:
-  - touch ./database/database.sqlite
   - php artisan key:generate
   - php artisan migrate --database=sqlite --no-interaction
   - travis_retry composer self-update
