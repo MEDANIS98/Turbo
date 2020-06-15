@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
+use App\Category;
 use App\Nova\Templates\HeaderOptions;
 use Whitecube\NovaPage\Pages\Manager;
 use Illuminate\Support\ServiceProvider;
@@ -28,5 +29,7 @@ class AppServiceProvider extends ServiceProvider
 	public function boot(Manager $pages)
 	{
 		$pages->register('option', 'header', HeaderOptions::class);
+		$categories = Category::where('category_id', null)->get();
+		view()->composer('layouts.header.navbar', fn ($view) => $view->with('categories', $categories));
 	}
 }

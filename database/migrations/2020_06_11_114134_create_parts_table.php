@@ -19,6 +19,8 @@ class CreatePartsTable extends Migration
 			$table->id();
 			$table->unsignedBigInteger('vehicle_id');
 			$table->foreign('vehicle_id')->references('id')->on('vehicles')->onDelete('cascade');
+			$table->unsignedBigInteger('type_id');
+			$table->foreign('type_id')->references('id')->on('types')->onDelete('cascade');
 			$table->string('title');
 			$table->longText('description')->nullable();
 			$table->string('image');

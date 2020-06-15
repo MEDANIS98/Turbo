@@ -11,6 +11,9 @@
 
     <title>@yield('title') | {{ config('app.name') }}</title>
 
+	<!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
     <link rel="icon" type="image/png" href="/images/favicon.png"><!-- fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i"><!-- css -->
     <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.css">
@@ -28,6 +31,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	{{-- <script src="/vendor/algolia/algoliasearch-lite.umd.js"></script>
+	<script src="/vendor/algolia/instantsearch.production.min.js"></script> --}}
 </head>
 
 <body>
@@ -58,6 +63,7 @@
     <script src="/vendor/select2/js/select2.min.js"></script>
     <script src="/js/number.js"></script>
     <script src="/js/main.js"></script>
+	{{-- <script src="/js/searchbox.js"></script> --}}
 </body>
 
 </html>
