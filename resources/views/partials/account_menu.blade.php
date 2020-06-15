@@ -54,7 +54,6 @@
 			<div class="account-menu__form-forgot">
 				<input id="header-signin-password" type="password" class="form-control form-control-sm"
 					placeholder="@lang('Password')" name="password" required autocomplete="current-password">
-
 				<a class="account-menu__form-forgot-link" href="{{ route('password.request') }}">
 					@lang('Forgot?')
 				</a>
