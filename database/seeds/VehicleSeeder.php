@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use App\Category;
 use App\Part;
 use App\Type;
 use App\Vehicle;
+use App\Category;
 use Illuminate\Database\Seeder;
 
 class VehicleSeeder extends Seeder
