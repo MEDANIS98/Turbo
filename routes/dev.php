@@ -48,5 +48,3 @@ Route::get('mailable', function () {
 
 	return new App\Mail\ContactMail($array);
 });
-
-Route::view('algolia', 'algolia');

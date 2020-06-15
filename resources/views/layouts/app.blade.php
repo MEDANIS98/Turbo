@@ -31,8 +31,6 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-	{{-- <script src="/vendor/algolia/algoliasearch-lite.umd.js"></script>
-	<script src="/vendor/algolia/instantsearch.production.min.js"></script> --}}
 </head>
 
 <body>
@@ -63,7 +61,6 @@
     <script src="/vendor/select2/js/select2.min.js"></script>
     <script src="/js/number.js"></script>
     <script src="/js/main.js"></script>
-	{{-- <script src="/js/searchbox.js"></script> --}}
 </body>
 
 </html>

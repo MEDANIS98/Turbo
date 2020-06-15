@@ -1,6 +1,6 @@
 <div class="header__indicators">
 	<div class="indicator">
-		<a href="/wishlist" class="indicator__button">
+		<a href="{{ route('wishlist') }}" class="indicator__button">
 			<span class="indicator__icon">
 				@include('svg.wish')
 			</span>

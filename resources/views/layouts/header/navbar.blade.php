@@ -32,7 +32,7 @@
 									</div>
 									<div class="row">
 										@foreach ($category->categories as $sub_category)
-										<div class="col-1of5">
+										<div class="col-1of4">
 											<ul class="megamenu__links megamenu-links megamenu-links--root">
 												<li class="megamenu-links__item megamenu-links__item--has-submenu">
 													<a class="megamenu-links__item-link" href="#">
@@ -74,7 +74,7 @@
 				{{-- Shop button --}}
 				<li class="main-menu__item main-menu__item--submenu--menu main-menu__item--has-submenu">
 					<a href="/shop-grid-4-columns-sidebar" class="main-menu__link">
-						Shop @include('svg.arrow_down')
+						@lang('Shop') @include('svg.arrow_down')
 					</a>
 					<div class="main-menu__submenu">
 						<ul class="menu">
@@ -90,46 +90,49 @@
 				</li>
 				{{-- Account button --}}
 				<li class="main-menu__item main-menu__item--submenu--menu main-menu__item--has-submenu">
-					<a href="/login" class="main-menu__link">
-						Account @include('svg.arrow_down')
+					<a href="@guest /login @else # @endguest" class="main-menu__link">
+						@lang('Account') @include('svg.arrow_down')
 					</a>
 					<div class="main-menu__submenu">
 						<ul class="menu">
+							@guest
 							<li class="menu__item">
 								<a href="/login" class="menu__link">
-									Login & Register
+									@lang('Login')
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="/register" class="menu__link">
+									@lang('Register')
+								</a>
+							</li>
+							@else
+							<li class="menu__item">
+								<a href="/dashboard" class="menu__link">
+									@lang('Dashboard')
 								</a>
 							</li>
 							<li class="menu__item">
 								<a href="/garage" class="menu__link">
-									Dashboard
+									@lang('Garage')
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="/garage" class="menu__link">
-									Garage
+								<a href="/account/profile" class="menu__link">
+									@lang('Edit Profile')
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="/account-profile" class="menu__link">
-									Edit Profile
+								<a href="/account/orders" class="menu__link">
+									@lang('Order History')
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="/account-orders" class="menu__link">
-									Order History
+								<a href="/account/addresses" class="menu__link">
+									@lang('Addresses')
 								</a>
 							</li>
-							<li class="menu__item">
-								<a href="/account-addresses" class="menu__link">
-									Address Book
-								</a>
-							</li>
-							<li class="menu__item">
-								<a href="/account-password" class="menu__link">
-									Change Password
-								</a>
-							</li>
+							@endguest
 						</ul>
 					</div>
 				</li>
