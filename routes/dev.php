@@ -48,3 +48,5 @@ Route::get('mailable', function () {
 
 	return new App\Mail\ContactMail($array);
 });
+
+Route::get('denied', fn () => abort(403));
