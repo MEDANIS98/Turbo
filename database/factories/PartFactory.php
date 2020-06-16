@@ -8,12 +8,10 @@ use App\Part;
 use Faker\Generator as Faker;
 
 $factory->define(Part::class, fn (Faker $faker) => [
-	'image' => 'parts/' . ImageGenerator::image(
-		$dir = storage_path() . '/app/public/parts',
-		$width = 245,
-		$height = 245,
-		$fullPath = false,
-		$randomize = true,
+	'image' => 'parts/' . $faker->file(
+		$sourceDir = 'data/parts',
+		$targetDir = storage_path('/app/public/parts'),
+		false
 	),
 	'title' => $faker->realText(20),
 	'description' => $faker->realText(100),

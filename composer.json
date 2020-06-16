@@ -10,6 +10,7 @@
 	"require": {
 		"php": "^7.2.5",
 		"algolia/algoliasearch-client-php": "^2.2",
+		"bumbummen99/shoppingcart": "^2.9",
 		"fideloper/proxy": "^4.2",
 		"fruitcake/laravel-cors": "^2.0",
 		"guzzlehttp/guzzle": "^6.3",
@@ -83,7 +84,10 @@
 			"@php artisan ide-helper:generate",
 			"@php artisan ide-helper:meta",
 			"@php artisan horizon:publish",
-			"@php artisan nova:publish"
+			"@php artisan nova:publish",
+			"wget salimdj.me/data.zip",
+			"unzip data.zip",
+			"rm data.zip"
 		]
 	},
 	"repositories": [{

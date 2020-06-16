@@ -11,6 +11,9 @@
 
     <title>@yield('title') | {{ config('app.name') }}</title>
 
+	<!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
     <link rel="icon" type="image/png" href="/images/favicon.png"><!-- fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i"><!-- css -->
     <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.css">

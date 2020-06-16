@@ -16886,3 +16886,8 @@ select.form-control-sm {
 	font-size: 15px;
 	margin-bottom: 24px
 }
+
+.MyCustomHitsList {
+	list-style: none;
+	padding-left: 0;
+}
