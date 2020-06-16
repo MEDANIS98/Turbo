@@ -1529,7 +1529,7 @@
                                         <div
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
-                                                <div class="status-badge__icon">@include('svg.valide')</div>
+                                                <div class="status-badge__icon">@include('svg.valid')</div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
                                                 <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
@@ -1588,7 +1588,7 @@
                                         <div
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
-                                                <div class="status-badge__icon">@include('svg.valide')</div>
+                                                <div class="status-badge__icon">@include('svg.valid')</div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
                                                 <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
@@ -1641,7 +1641,7 @@
                                         <div
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
-                                                <div class="status-badge__icon">@include('svg.valide')</div>
+                                                <div class="status-badge__icon">@include('svg.valid')</div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
                                                 <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
@@ -1702,7 +1702,7 @@
                                         <div
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
-                                                <div class="status-badge__icon">@include('svg.valide')</div>
+                                                <div class="status-badge__icon">@include('svg.valid')</div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
                                                 <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
@@ -1759,7 +1759,7 @@
                                         <div
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
-                                                <div class="status-badge__icon">@include('svg.valide')</div>
+                                                <div class="status-badge__icon">@include('svg.valid')</div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
                                                 <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
@@ -1812,7 +1812,7 @@
                                         <div
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
-                                                <div class="status-badge__icon">@include('svg.valide')</div>
+                                                <div class="status-badge__icon">@include('svg.valid')</div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
                                                 <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
@@ -1864,7 +1864,7 @@
                                         <div
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
-                                                <div class="status-badge__icon">@include('svg.valide')</div>
+                                                <div class="status-badge__icon">@include('svg.valid')</div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
                                                 <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
@@ -1917,7 +1917,7 @@
                                         <div
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
-                                                <div class="status-badge__icon">@include('svg.valide')</div>
+                                                <div class="status-badge__icon">@include('svg.valid')</div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
                                                 <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
