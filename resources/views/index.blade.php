@@ -165,11 +165,11 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="@lang('Quick view')">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                                 <button class="product-card__action product-card__action--wishlist" type="button"
                                     aria-label="Add to wish list">
-                                    @include( 'svg.heart' )
+                                    @include('svg.heart')
                                 </button>
                                 <button class="product-card__action product-card__action--compare" type="button"
                                     aria-label="Add to compare">
@@ -184,7 +184,7 @@
                                     class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                     <div class="status-badge__body">
                                         <div class="status-badge__icon">
-                                            @include( 'svg.valide' )
+                                            @include('svg.valid')
                                         </div>
                                         <div class="status-badge__text">Part Fit for 2011 Ford Focus S</div>
                                         <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
@@ -223,7 +223,7 @@
                                     <div class="product-card__price product-card__price--old">$415.00</div>
                                 </div>
                                 <button class="product-card__addtocart-icon" type="button" aria-label="Add to cart">
-                                    @include( 'svg.shop_circle' )
+                                    @include('svg.shop_circle')
                                 </button>
                             </div>
                         </div>
@@ -293,15 +293,15 @@
                                     <div class="product-card__actions-list">
                                         <button class="product-card__action product-card__action--quickview"
                                             type="button" aria-label="Quick view">
-                                            @include( 'svg.zoom' )
+                                            @include('svg.zoom')
                                         </button>
                                         <button class="product-card__action product-card__action--wishlist"
                                             type="button" aria-label="Add to wish list">
-                                            @include( 'svg.heart' )
+                                            @include('svg.heart')
                                         </button>
                                         <button class="product-card__action product-card__action--compare" type="button"
                                             aria-label="Add to compare">
-                                            @include( 'svg.chart' )
+                                            @include('svg.chart')
                                         </button>
                                     </div>
                                     <div class="product-card__image">
@@ -312,7 +312,7 @@
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
                                                 <div class="status-badge__icon">
-                                                    @include( 'svg.valide' )
+                                                    @include('svg.valid')
                                                 </div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                 </div>
@@ -356,7 +356,7 @@
                                                 $19.00</div>
                                         </div><button class="product-card__addtocart-icon" type="button"
                                             aria-label="Add to cart">
-                                            @include( 'svg.shop_circle' )
+                                            @include('svg.shop_circle')
                                         </button>
                                     </div>
                                 </div>
@@ -366,15 +366,15 @@
                                     <div class="product-card__actions-list">
                                         <button class="product-card__action product-card__action--quickview"
                                             type="button" aria-label="Quick view">
-                                            @include( 'svg.zoom' )
+                                            @include('svg.zoom')
                                         </button>
                                         <button class="product-card__action product-card__action--wishlist"
                                             type="button" aria-label="Add to wish list">
-                                            @include( 'svg.heart' )
+                                            @include('svg.heart')
                                         </button>
                                         <button class="product-card__action product-card__action--compare" type="button"
                                             aria-label="Add to compare">
-                                            @include( 'svg.chart' )
+                                            @include('svg.chart')
                                         </button>
                                     </div>
                                     <div class="product-card__image"><a href="product-full.html">
@@ -384,7 +384,7 @@
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
                                                 <div class="status-badge__icon">
-                                                    @include( 'svg.valide' )
+                                                    @include('svg.valid')
                                                 </div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                 </div>
@@ -425,7 +425,7 @@
                                                 $224.00</div>
                                         </div><button class="product-card__addtocart-icon" type="button"
                                             aria-label="Add to cart">
-                                            @include( 'svg.shop_circle' )
+                                            @include('svg.shop_circle')
                                         </button>
                                     </div>
                                 </div>
@@ -435,15 +435,15 @@
                                     <div class="product-card__actions-list">
                                         <button class="product-card__action product-card__action--quickview"
                                             type="button" aria-label="Quick view">
-                                            @include( 'svg.zoom' )
+                                            @include('svg.zoom')
                                         </button>
                                         <button class="product-card__action product-card__action--wishlist"
                                             type="button" aria-label="Add to wish list">
-                                            @include( 'svg.heart' )
+                                            @include('svg.heart')
                                         </button>
                                         <button class="product-card__action product-card__action--compare" type="button"
                                             aria-label="Add to compare">
-                                            @include( 'svg.chart' )
+                                            @include('svg.chart')
                                         </button>
                                     </div>
                                     <div class="product-card__image">
@@ -454,7 +454,7 @@
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
                                                 <div class="status-badge__icon">
-                                                    @include( 'svg.valide' )
+                                                    @include('svg.valid')
                                                 </div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                 </div>
@@ -500,7 +500,7 @@
                                                 $415.00</div>
                                         </div><button class="product-card__addtocart-icon" type="button"
                                             aria-label="Add to cart">
-                                            @include( 'svg.shop_circle' )
+                                            @include('svg.shop_circle')
                                         </button>
                                     </div>
                                 </div>
@@ -510,15 +510,15 @@
                                     <div class="product-card__actions-list">
                                         <button class="product-card__action product-card__action--quickview"
                                             type="button" aria-label="Quick view">
-                                            @include( 'svg.zoom' )
+                                            @include('svg.zoom')
                                         </button>
                                         <button class="product-card__action product-card__action--wishlist"
                                             type="button" aria-label="Add to wish list">
-                                            @include( 'svg.heart' )
+                                            @include('svg.heart')
                                         </button>
                                         <button class="product-card__action product-card__action--compare" type="button"
                                             aria-label="Add to compare">
-                                            @include( 'svg.chart' )
+                                            @include('svg.chart')
                                         </button>
                                     </div>
                                     <div class="product-card__image"><a href="product-full.html">
@@ -528,7 +528,7 @@
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
                                                 <div class="status-badge__icon">
-                                                    @include( 'svg.valide' )
+                                                    @include('svg.valid')
                                                 </div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                 </div>
@@ -572,7 +572,7 @@
                                                 $589.00</div>
                                         </div><button class="product-card__addtocart-icon" type="button"
                                             aria-label="Add to cart">
-                                            @include( 'svg.shop_circle' )
+                                            @include('svg.shop_circle')
                                         </button>
                                     </div>
                                 </div>
@@ -582,15 +582,15 @@
                                     <div class="product-card__actions-list">
                                         <button class="product-card__action product-card__action--quickview"
                                             type="button" aria-label="Quick view">
-                                            @include( 'svg.zoom' )
+                                            @include('svg.zoom')
                                         </button>
                                         <button class="product-card__action product-card__action--wishlist"
                                             type="button" aria-label="Add to wish list">
-                                            @include( 'svg.heart' )
+                                            @include('svg.heart')
                                         </button>
                                         <button class="product-card__action product-card__action--compare" type="button"
                                             aria-label="Add to compare">
-                                            @include( 'svg.chart' )
+                                            @include('svg.chart')
                                         </button>
                                     </div>
                                     <div class="product-card__image"><a href="product-full.html">
@@ -600,7 +600,7 @@
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
                                                 <div class="status-badge__icon">
-                                                    @include( 'svg.valide' )
+                                                    @include('svg.valid')
                                                 </div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
@@ -637,7 +637,7 @@
                                                 $749.00</div>
                                         </div><button class="product-card__addtocart-icon" type="button"
                                             aria-label="Add to cart">
-                                            @include( 'svg.shop_circle' )
+                                            @include('svg.shop_circle')
                                         </button>
                                     </div>
                                 </div>
@@ -647,15 +647,15 @@
                                     <div class="product-card__actions-list">
                                         <button class="product-card__action product-card__action--quickview"
                                             type="button" aria-label="Quick view">
-                                            @include( 'svg.zoom' )
+                                            @include('svg.zoom')
                                         </button>
                                         <button class="product-card__action product-card__action--wishlist"
                                             type="button" aria-label="Add to wish list">
-                                            @include( 'svg.heart' )
+                                            @include('svg.heart')
                                         </button>
                                         <button class="product-card__action product-card__action--compare" type="button"
                                             aria-label="Add to compare">
-                                            @include( 'svg.chart' )
+                                            @include('svg.chart')
                                         </button>
                                     </div>
                                     <div class="product-card__image"><a href="product-full.html"><img
@@ -664,7 +664,7 @@
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
                                                 <div class="status-badge__icon">
-                                                    @include( 'svg.valide' )</div>
+                                                    @include('svg.valid')</div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
                                                 <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
@@ -700,7 +700,7 @@
                                         </div>
                                         <button class="product-card__addtocart-icon" type="button"
                                             aria-label="Add to cart">
-                                            @include( 'svg.shop_circle' )
+                                            @include('svg.shop_circle')
                                         </button>
                                     </div>
                                 </div>
@@ -710,14 +710,14 @@
                                     <div class="product-card__actions-list"><button
                                             class="product-card__action product-card__action--quickview" type="button"
                                             aria-label="Quick view">
-                                            @include( 'svg.zoom' )
+                                            @include('svg.zoom')
                                         </button> <button class="product-card__action product-card__action--wishlist"
                                             type="button" aria-label="Add to wish list">
-                                            @include( 'svg.heart' )
+                                            @include('svg.heart')
                                         </button>
                                         <button class="product-card__action product-card__action--compare" type="button"
                                             aria-label="Add to compare">
-                                            @include( 'svg.chart' )
+                                            @include('svg.chart')
                                         </button>
                                     </div>
                                     <div class="product-card__image">
@@ -728,7 +728,7 @@
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
                                                 <div class="status-badge__icon">
-                                                    @include( 'svg.valide' )
+                                                    @include('svg.valid')
                                                 </div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
@@ -767,7 +767,7 @@
                                                 $452.00</div>
                                         </div><button class="product-card__addtocart-icon" type="button"
                                             aria-label="Add to cart">
-                                            @include( 'svg.shop_circle' )
+                                            @include('svg.shop_circle')
                                         </button>
                                     </div>
                                 </div>
@@ -777,15 +777,15 @@
                                     <div class="product-card__actions-list">
                                         <button class="product-card__action product-card__action--quickview"
                                             type="button" aria-label="Quick view">
-                                            @include( 'svg.zoom' )
+                                            @include('svg.zoom')
                                         </button>
                                         <button class="product-card__action product-card__action--wishlist"
                                             type="button" aria-label="Add to wish list">
-                                            @include( 'svg.heart' )
+                                            @include('svg.heart')
                                         </button>
                                         <button class="product-card__action product-card__action--compare" type="button"
                                             aria-label="Add to compare">
-                                            @include( 'svg.chart' )
+                                            @include('svg.chart')
                                         </button>
                                     </div>
                                     <div class="product-card__image">
@@ -796,7 +796,7 @@
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
                                                 <div class="status-badge__icon">
-                                                    @include( 'svg.valide' )
+                                                    @include('svg.valid')
                                                 </div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
@@ -834,7 +834,7 @@
                                                 $345.00</div>
                                         </div><button class="product-card__addtocart-icon" type="button"
                                             aria-label="Add to cart">
-                                            @include( 'svg.shop_circle' )
+                                            @include('svg.shop_circle')
                                         </button>
                                     </div>
                                 </div>
@@ -888,12 +888,12 @@
                     </div>
                     <div class="arrow block-zone__arrow block-zone__arrow--prev arrow--prev">
                         <button class="arrow__button" type="button">
-                            @include( 'svg.arrow_left' )
+                            @include('svg.arrow_left')
                         </button>
                     </div>
                     <div class="arrow block-zone__arrow block-zone__arrow--next arrow--next"><button
                             class="arrow__button" type="button">
-                            @include( 'svg.arrow_right' )
+                            @include('svg.arrow_right')
                         </button>
                     </div>
                 </div>
@@ -906,15 +906,15 @@
                                     <div class="product-card__actions-list">
                                         <button class="product-card__action product-card__action--quickview"
                                             type="button" aria-label="Quick view">
-                                            @include( 'svg.zoom' )
+                                            @include('svg.zoom')
                                         </button>
                                         <button class="product-card__action product-card__action--wishlist"
                                             type="button" aria-label="Add to wish list">
-                                            @include( 'svg.heart' )
+                                            @include('svg.heart')
                                         </button>
                                         <button class="product-card__action product-card__action--compare" type="button"
                                             aria-label="Add to compare">
-                                            @include( 'svg.chart' )
+                                            @include('svg.chart')
                                         </button>
                                     </div>
                                     <div class="product-card__image">
@@ -925,7 +925,7 @@
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
                                                 <div class="status-badge__icon">
-                                                    @include( 'svg.valide' )
+                                                    @include('svg.valid')
                                                 </div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
@@ -969,7 +969,7 @@
                                                 $19.00</div>
                                         </div><button class="product-card__addtocart-icon" type="button"
                                             aria-label="Add to cart">
-                                            @include( 'svg.shop_circle' )
+                                            @include('svg.shop_circle')
                                         </button>
                                     </div>
                                 </div>
@@ -979,15 +979,15 @@
                                     <div class="product-card__actions-list">
                                         <button class="product-card__action product-card__action--quickview"
                                             type="button" aria-label="Quick view">
-                                            @include( 'svg.zoom' )
+                                            @include('svg.zoom')
                                         </button>
                                         <button class="product-card__action product-card__action--wishlist"
                                             type="button" aria-label="Add to wish list">
-                                            @include( 'svg.heart' )
+                                            @include('svg.heart')
                                         </button>
                                         <button class="product-card__action product-card__action--compare" type="button"
                                             aria-label="Add to compare">
-                                            @include( 'svg.chart' )
+                                            @include('svg.chart')
                                         </button>
                                     </div>
                                     <div class="product-card__image">
@@ -998,7 +998,7 @@
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
                                                 <div class="status-badge__icon">
-                                                    @include( 'svg.valide' )
+                                                    @include('svg.valid')
                                                 </div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
@@ -1036,7 +1036,7 @@
                                         </div>
                                         <button class="product-card__addtocart-icon" type="button"
                                             aria-label="Add to cart">
-                                            @include( 'svg.shop_circle' )
+                                            @include('svg.shop_circle')
                                         </button>
                                     </div>
                                 </div>
@@ -1046,15 +1046,15 @@
                                     <div class="product-card__actions-list">
                                         <button class="product-card__action product-card__action--quickview"
                                             type="button" aria-label="Quick view">
-                                            @include( 'svg.zoom' )
+                                            @include('svg.zoom')
                                         </button>
                                         <button class="product-card__action product-card__action--wishlist"
                                             type="button" aria-label="Add to wish list">
-                                            @include( 'svg.heart' )
+                                            @include('svg.heart')
                                         </button>
                                         <button class="product-card__action product-card__action--compare" type="button"
                                             aria-label="Add to compare">
-                                            @include( 'svg.chart' )
+                                            @include('svg.chart')
                                         </button>
                                     </div>
                                     <div class="product-card__image">
@@ -1065,7 +1065,7 @@
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
                                                 <div class="status-badge__icon">
-                                                    @include( 'svg.valide' )
+                                                    @include('svg.valid')
                                                 </div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
@@ -1109,7 +1109,7 @@
                                         </div>
                                         <button class="product-card__addtocart-icon" type="button"
                                             aria-label="Add to cart">
-                                            @include( 'svg.shop_circle' )
+                                            @include('svg.shop_circle')
                                         </button>
                                     </div>
                                 </div>
@@ -1119,15 +1119,15 @@
                                     <div class="product-card__actions-list">
                                         <button class="product-card__action product-card__action--quickview"
                                             type="button" aria-label="Quick view">
-                                            @include( 'svg.zoom' )
+                                            @include('svg.zoom')
                                         </button>
                                         <button class="product-card__action product-card__action--wishlist"
                                             type="button" aria-label="Add to wish list">
-                                            @include( 'svg.heart' )
+                                            @include('svg.heart')
                                         </button>
                                         <button class="product-card__action product-card__action--compare" type="button"
                                             aria-label="Add to compare">
-                                            @include( 'svg.chart' )
+                                            @include('svg.chart')
                                         </button>
                                     </div>
                                     <div class="product-card__image">
@@ -1138,7 +1138,7 @@
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
                                                 <div class="status-badge__icon">
-                                                    @include( 'svg.valide' )
+                                                    @include('svg.valid')
                                                 </div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
@@ -1183,7 +1183,7 @@
                                         </div>
                                         <button class="product-card__addtocart-icon" type="button"
                                             aria-label="Add to cart">
-                                            @include( 'svg.shop_circle' )
+                                            @include('svg.shop_circle')
                                         </button>
                                     </div>
                                 </div>
@@ -1193,15 +1193,15 @@
                                     <div class="product-card__actions-list">
                                         <button class="product-card__action product-card__action--quickview"
                                             type="button" aria-label="Quick view">
-                                            @include( 'svg.zoom' )
+                                            @include('svg.zoom')
                                         </button>
                                         <button class="product-card__action product-card__action--wishlist"
                                             type="button" aria-label="Add to wish list">
-                                            @include( 'svg.heart' )
+                                            @include('svg.heart')
                                         </button>
                                         <button class="product-card__action product-card__action--compare" type="button"
                                             aria-label="Add to compare">
-                                            @include( 'svg.chart' )
+                                            @include('svg.chart')
                                         </button>
                                     </div>
                                     <div class="product-card__image">
@@ -1212,7 +1212,7 @@
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
                                                 <div class="status-badge__icon">
-                                                    @include( 'svg.valide' )
+                                                    @include('svg.valid')
                                                 </div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
@@ -1252,7 +1252,7 @@
                                         </div>
                                         <button class="product-card__addtocart-icon" type="button"
                                             aria-label="Add to cart">
-                                            @include( 'svg.shop_circle' )
+                                            @include('svg.shop_circle')
                                         </button>
                                     </div>
                                 </div>
@@ -1262,15 +1262,15 @@
                                     <div class="product-card__actions-list">
                                         <button class="product-card__action product-card__action--quickview"
                                             type="button" aria-label="Quick view">
-                                            @include( 'svg.zoom' )
+                                            @include('svg.zoom')
                                         </button>
                                         <button class="product-card__action product-card__action--wishlist"
                                             type="button" aria-label="Add to wish list">
-                                            @include( 'svg.heart' )
+                                            @include('svg.heart')
                                         </button>
                                         <button class="product-card__action product-card__action--compare" type="button"
                                             aria-label="Add to compare">
-                                            @include( 'svg.chart' )
+                                            @include('svg.chart')
                                         </button>
                                     </div>
                                     <div class="product-card__image">
@@ -1280,7 +1280,7 @@
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
                                                 <div class="status-badge__icon">
-                                                    @include( 'svg.valide' )
+                                                    @include('svg.valid')
                                                 </div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
@@ -1321,7 +1321,7 @@
                                         </div>
                                         <button class="product-card__addtocart-icon" type="button"
                                             aria-label="Add to cart">
-                                            @include( 'svg.shop_circle' )
+                                            @include('svg.shop_circle')
                                         </button>
                                     </div>
                                 </div>
@@ -1331,15 +1331,15 @@
                                     <div class="product-card__actions-list">
                                         <button class="product-card__action product-card__action--quickview"
                                             type="button" aria-label="Quick view">
-                                            @include( 'svg.zoom' )
+                                            @include('svg.zoom')
                                         </button>
                                         <button class="product-card__action product-card__action--wishlist"
                                             type="button" aria-label="Add to wish list">
-                                            @include( 'svg.heart' )
+                                            @include('svg.heart')
                                         </button>
                                         <button class="product-card__action product-card__action--compare" type="button"
                                             aria-label="Add to compare">
-                                            @include( 'svg.chart' )
+                                            @include('svg.chart')
                                         </button>
                                     </div>
                                     <div class="product-card__image"><a href="product-full.html"><img
@@ -1348,7 +1348,7 @@
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
                                                 <div class="status-badge__icon">
-                                                    @include( 'svg.valide' )
+                                                    @include('svg.valid')
                                                 </div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
@@ -1388,7 +1388,7 @@
                                         </div>
                                         <button class="product-card__addtocart-icon" type="button"
                                             aria-label="Add to cart">
-                                            @include( 'svg.shop_circle' )
+                                            @include('svg.shop_circle')
                                         </button>
                                     </div>
                                 </div>
@@ -1398,15 +1398,15 @@
                                     <div class="product-card__actions-list">
                                         <button class="product-card__action product-card__action--quickview"
                                             type="button" aria-label="Quick view">
-                                            @include( 'svg.zoom' )
+                                            @include('svg.zoom')
                                         </button>
                                         <button class="product-card__action product-card__action--wishlist"
                                             type="button" aria-label="Add to wish list">
-                                            @include( 'svg.heart' )
+                                            @include('svg.heart')
                                         </button>
                                         <button class="product-card__action product-card__action--compare" type="button"
                                             aria-label="Add to compare">
-                                            @include( 'svg.chart' )
+                                            @include('svg.chart')
                                         </button>
                                     </div>
                                     <div class="product-card__image">
@@ -1416,7 +1416,7 @@
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
                                                 <div class="status-badge__icon">
-                                                    @include( 'svg.valide' )
+                                                    @include('svg.valid')
                                                 </div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
@@ -1454,7 +1454,7 @@
                                                 $345.00</div>
                                         </div><button class="product-card__addtocart-icon" type="button"
                                             aria-label="Add to cart">
-                                            @include( 'svg.shop_circle' )
+                                            @include('svg.shop_circle')
                                         </button>
                                     </div>
                                 </div>
@@ -1504,12 +1504,12 @@
                     </div>
                     <div class="arrow block-zone__arrow block-zone__arrow--prev arrow--prev"><button
                             class="arrow__button" type="button">
-                            @include( 'svg.arrow_left' )
+                            @include('svg.arrow_left')
                         </button>
                     </div>
                     <div class="arrow block-zone__arrow block-zone__arrow--next arrow--next"><button
                             class="arrow__button" type="button">
-                            @include( 'svg.arrow_right' )</button></div>
+                            @include('svg.arrow_right')</button></div>
                 </div>
                 <div class="block-zone__widget-body">
                     <div class="block-zone__carousel">
@@ -1519,17 +1519,17 @@
                                 <div class="product-card">
                                     <div class="product-card__actions-list"><button
                                             class="product-card__action product-card__action--quickview" type="button"
-                                            aria-label="Quick view">@include( 'svg.zoom' )</button> <button
+                                            aria-label="Quick view">@include('svg.zoom')</button> <button
                                             class="product-card__action product-card__action--wishlist" type="button"
-                                            aria-label="Add to wish list">@include( 'svg.heart' )</button> <button
+                                            aria-label="Add to wish list">@include('svg.heart')</button> <button
                                             class="product-card__action product-card__action--compare" type="button"
-                                            aria-label="Add to compare">@include( 'svg.chart' )</button></div>
+                                            aria-label="Add to compare">@include('svg.chart')</button></div>
                                     <div class="product-card__image"><a href="product-full.html"><img
                                                 src="/images/products/product-1-245x245.jpg" alt=""></a>
                                         <div
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
-                                                <div class="status-badge__icon">@include( 'svg.valide' )</div>
+                                                <div class="status-badge__icon">@include('svg.valide')</div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
                                                 <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
@@ -1570,7 +1570,7 @@
                                             <div class="product-card__price product-card__price--current">
                                                 $19.00</div>
                                         </div><button class="product-card__addtocart-icon" type="button"
-                                            aria-label="Add to cart">@include( 'svg.shop_circle' )</button>
+                                            aria-label="Add to cart">@include('svg.shop_circle')</button>
                                     </div>
                                 </div>
                             </div>
@@ -1578,17 +1578,17 @@
                                 <div class="product-card">
                                     <div class="product-card__actions-list"><button
                                             class="product-card__action product-card__action--quickview" type="button"
-                                            aria-label="Quick view">@include( 'svg.zoom' )</button> <button
+                                            aria-label="Quick view">@include('svg.zoom')</button> <button
                                             class="product-card__action product-card__action--wishlist" type="button"
-                                            aria-label="Add to wish list">@include( 'svg.heart' )</button> <button
+                                            aria-label="Add to wish list">@include('svg.heart')</button> <button
                                             class="product-card__action product-card__action--compare" type="button"
-                                            aria-label="Add to compare">@include( 'svg.chart' )</button></div>
+                                            aria-label="Add to compare">@include('svg.chart')</button></div>
                                     <div class="product-card__image"><a href="product-full.html"><img
                                                 src="/images/products/product-2-245x245.jpg" alt=""></a>
                                         <div
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
-                                                <div class="status-badge__icon">@include( 'svg.valide' )</div>
+                                                <div class="status-badge__icon">@include('svg.valide')</div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
                                                 <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
@@ -1623,7 +1623,7 @@
                                             <div class="product-card__price product-card__price--current">
                                                 $224.00</div>
                                         </div><button class="product-card__addtocart-icon" type="button"
-                                            aria-label="Add to cart">@include( 'svg.shop_circle' )</button>
+                                            aria-label="Add to cart">@include('svg.shop_circle')</button>
                                     </div>
                                 </div>
                             </div>
@@ -1631,17 +1631,17 @@
                                 <div class="product-card">
                                     <div class="product-card__actions-list"><button
                                             class="product-card__action product-card__action--quickview" type="button"
-                                            aria-label="Quick view">@include( 'svg.zoom' )</button> <button
+                                            aria-label="Quick view">@include('svg.zoom')</button> <button
                                             class="product-card__action product-card__action--wishlist" type="button"
-                                            aria-label="Add to wish list">@include( 'svg.heart' )</button> <button
+                                            aria-label="Add to wish list">@include('svg.heart')</button> <button
                                             class="product-card__action product-card__action--compare" type="button"
-                                            aria-label="Add to compare">@include( 'svg.chart' )</button></div>
+                                            aria-label="Add to compare">@include('svg.chart')</button></div>
                                     <div class="product-card__image"><a href="product-full.html"><img
                                                 src="/images/products/product-3-245x245.jpg" alt=""></a>
                                         <div
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
-                                                <div class="status-badge__icon">@include( 'svg.valide' )</div>
+                                                <div class="status-badge__icon">@include('svg.valide')</div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
                                                 <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
@@ -1683,7 +1683,7 @@
                                                 $415.00</div>
                                         </div><button class="product-card__addtocart-icon" type="button"
                                             aria-label="Add to cart">
-                                            @include( 'svg.shop_circle' )
+                                            @include('svg.shop_circle')
                                         </button>
                                     </div>
                                 </div>
@@ -1692,17 +1692,17 @@
                                 <div class="product-card">
                                     <div class="product-card__actions-list"><button
                                             class="product-card__action product-card__action--quickview" type="button"
-                                            aria-label="Quick view">@include( 'svg.zoom' )</button> <button
+                                            aria-label="Quick view">@include('svg.zoom')</button> <button
                                             class="product-card__action product-card__action--wishlist" type="button"
-                                            aria-label="Add to wish list">@include( 'svg.heart' )</button> <button
+                                            aria-label="Add to wish list">@include('svg.heart')</button> <button
                                             class="product-card__action product-card__action--compare" type="button"
-                                            aria-label="Add to compare">@include( 'svg.chart' )</button></div>
+                                            aria-label="Add to compare">@include('svg.chart')</button></div>
                                     <div class="product-card__image"><a href="product-full.html"><img
                                                 src="/images/products/product-4-245x245.jpg" alt=""></a>
                                         <div
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
-                                                <div class="status-badge__icon">@include( 'svg.valide' )</div>
+                                                <div class="status-badge__icon">@include('svg.valide')</div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
                                                 <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
@@ -1741,7 +1741,7 @@
                                             <div class="product-card__price product-card__price--current">
                                                 $589.00</div>
                                         </div><button class="product-card__addtocart-icon" type="button"
-                                            aria-label="Add to cart">@include( 'svg.shop_circle' )</button>
+                                            aria-label="Add to cart">@include('svg.shop_circle')</button>
                                     </div>
                                 </div>
                             </div>
@@ -1749,17 +1749,17 @@
                                 <div class="product-card">
                                     <div class="product-card__actions-list"><button
                                             class="product-card__action product-card__action--quickview" type="button"
-                                            aria-label="Quick view">@include( 'svg.zoom' )</button> <button
+                                            aria-label="Quick view">@include('svg.zoom')</button> <button
                                             class="product-card__action product-card__action--wishlist" type="button"
-                                            aria-label="Add to wish list">@include( 'svg.heart' )</button> <button
+                                            aria-label="Add to wish list">@include('svg.heart')</button> <button
                                             class="product-card__action product-card__action--compare" type="button"
-                                            aria-label="Add to compare">@include( 'svg.chart' )</button></div>
+                                            aria-label="Add to compare">@include('svg.chart')</button></div>
                                     <div class="product-card__image"><a href="product-full.html"><img
                                                 src="/images/products/product-5-245x245.jpg" alt=""></a>
                                         <div
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
-                                                <div class="status-badge__icon">@include( 'svg.valide' )</div>
+                                                <div class="status-badge__icon">@include('svg.valide')</div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
                                                 <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
@@ -1794,7 +1794,7 @@
                                             <div class="product-card__price product-card__price--current">
                                                 $749.00</div>
                                         </div><button class="product-card__addtocart-icon" type="button"
-                                            aria-label="Add to cart">@include( 'svg.shop_circle' )</button>
+                                            aria-label="Add to cart">@include('svg.shop_circle')</button>
                                     </div>
                                 </div>
                             </div>
@@ -1802,17 +1802,17 @@
                                 <div class="product-card">
                                     <div class="product-card__actions-list"><button
                                             class="product-card__action product-card__action--quickview" type="button"
-                                            aria-label="Quick view">@include( 'svg.zoom' )</button> <button
+                                            aria-label="Quick view">@include('svg.zoom')</button> <button
                                             class="product-card__action product-card__action--wishlist" type="button"
-                                            aria-label="Add to wish list">@include( 'svg.heart' )</button> <button
+                                            aria-label="Add to wish list">@include('svg.heart')</button> <button
                                             class="product-card__action product-card__action--compare" type="button"
-                                            aria-label="Add to compare">@include( 'svg.chart' )</button></div>
+                                            aria-label="Add to compare">@include('svg.chart')</button></div>
                                     <div class="product-card__image"><a href="product-full.html"><img
                                                 src="/images/products/product-6-245x245.jpg" alt=""></a>
                                         <div
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
-                                                <div class="status-badge__icon">@include( 'svg.valide' )</div>
+                                                <div class="status-badge__icon">@include('svg.valide')</div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
                                                 <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
@@ -1846,7 +1846,7 @@
                                             <div class="product-card__price product-card__price--current">
                                                 $23.00</div>
                                         </div><button class="product-card__addtocart-icon" type="button"
-                                            aria-label="Add to cart">@include( 'svg.shop_circle' )</button>
+                                            aria-label="Add to cart">@include('svg.shop_circle')</button>
                                     </div>
                                 </div>
                             </div>
@@ -1854,17 +1854,17 @@
                                 <div class="product-card">
                                     <div class="product-card__actions-list"><button
                                             class="product-card__action product-card__action--quickview" type="button"
-                                            aria-label="Quick view">@include( 'svg.zoom' )</button> <button
+                                            aria-label="Quick view">@include('svg.zoom')</button> <button
                                             class="product-card__action product-card__action--wishlist" type="button"
-                                            aria-label="Add to wish list">@include( 'svg.heart' )</button> <button
+                                            aria-label="Add to wish list">@include('svg.heart')</button> <button
                                             class="product-card__action product-card__action--compare" type="button"
-                                            aria-label="Add to compare">@include( 'svg.chart' )</button></div>
+                                            aria-label="Add to compare">@include('svg.chart')</button></div>
                                     <div class="product-card__image"><a href="product-full.html"><img
                                                 src="/images/products/product-7-245x245.jpg" alt=""></a>
                                         <div
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
-                                                <div class="status-badge__icon">@include( 'svg.valide' )</div>
+                                                <div class="status-badge__icon">@include('svg.valide')</div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
                                                 <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
@@ -1899,7 +1899,7 @@
                                             <div class="product-card__price product-card__price--current">
                                                 $452.00</div>
                                         </div><button class="product-card__addtocart-icon" type="button"
-                                            aria-label="Add to cart">@include( 'svg.shop_circle' )</button>
+                                            aria-label="Add to cart">@include('svg.shop_circle')</button>
                                     </div>
                                 </div>
                             </div>
@@ -1907,17 +1907,17 @@
                                 <div class="product-card">
                                     <div class="product-card__actions-list"><button
                                             class="product-card__action product-card__action--quickview" type="button"
-                                            aria-label="Quick view">@include( 'svg.zoom' )</button> <button
+                                            aria-label="Quick view">@include('svg.zoom')</button> <button
                                             class="product-card__action product-card__action--wishlist" type="button"
-                                            aria-label="Add to wish list">@include( 'svg.heart' )</button> <button
+                                            aria-label="Add to wish list">@include('svg.heart')</button> <button
                                             class="product-card__action product-card__action--compare" type="button"
-                                            aria-label="Add to compare">@include( 'svg.chart' )</button></div>
+                                            aria-label="Add to compare">@include('svg.chart')</button></div>
                                     <div class="product-card__image"><a href="product-full.html"><img
                                                 src="/images/products/product-8-245x245.jpg" alt=""></a>
                                         <div
                                             class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
                                             <div class="status-badge__body">
-                                                <div class="status-badge__icon">@include( 'svg.valide' )</div>
+                                                <div class="status-badge__icon">@include('svg.valide')</div>
                                                 <div class="status-badge__text">Part Fit for 2011 Ford Focus
                                                     S</div>
                                                 <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
@@ -1952,7 +1952,7 @@
                                             <div class="product-card__price product-card__price--current">
                                                 $345.00</div>
                                         </div><button class="product-card__addtocart-icon" type="button"
-                                            aria-label="Add to cart">@include( 'svg.shop_circle' )</button>
+                                            aria-label="Add to cart">@include('svg.shop_circle')</button>
                                     </div>
                                 </div>
                             </div>
@@ -2016,12 +2016,12 @@
                 <div class="section-header__arrows">
                     <div class="arrow section-header__arrow section-header__arrow--prev arrow--prev">
                         <button class="arrow__button" type="button">
-                            @include( 'svg.arrow_left' )
+                            @include('svg.arrow_left')
                         </button>
                     </div>
                     <div class="arrow section-header__arrow section-header__arrow--next arrow--next">
                         <button class="arrow__button" type="button">
-                            @include( 'svg.arrow_right' )
+                            @include('svg.arrow_right')
                         </button>
                     </div>
                 </div>
@@ -2037,7 +2037,7 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
@@ -2081,7 +2081,7 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
@@ -2124,7 +2124,7 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
@@ -2166,7 +2166,7 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
@@ -2211,7 +2211,7 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
@@ -2250,7 +2250,7 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
@@ -2290,7 +2290,7 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image"><a href="product-full.html"><img
@@ -2325,7 +2325,7 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
@@ -2367,7 +2367,7 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
@@ -2406,7 +2406,7 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
@@ -2464,7 +2464,7 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
@@ -2508,7 +2508,7 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
@@ -2547,7 +2547,7 @@
                             <div class="product-card__actions-list"><button
                                     class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
@@ -2594,7 +2594,7 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
@@ -2637,7 +2637,7 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
@@ -2676,7 +2676,7 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
@@ -2722,7 +2722,7 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
@@ -2763,7 +2763,7 @@
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
                                     aria-label="Quick view">
-                                    @include( 'svg.zoom' )
+                                    @include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
@@ -2800,7 +2800,7 @@
                         <div class="product-card">
                             <div class="product-card__actions-list">
                                 <button class="product-card__action product-card__action--quickview" type="button"
-                                    aria-label="Quick view">@include( 'svg.zoom' )
+                                    aria-label="Quick view">@include('svg.zoom')
                                 </button>
                             </div>
                             <div class="product-card__image">
