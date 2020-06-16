@@ -25,7 +25,7 @@ Route::post('/search', 'SearchController@search')->name('search');
 Route::view('/about', 'about')->name('about');
 Route::view('/contact', 'contact');
 Route::post('/contact', 'ContactController@send')->name('contact');
-Route::get('/parts/{part}', 'PartsController@show')->name('part');
+Route::get('/part/{part}', 'PartsController@show')->name('part');
 Route::view('/track-order', 'track-order')->name('track');
 Route::view('/wishlist', 'wishlist')->name('wishlist');
 Route::view('/cart', 'cart');
