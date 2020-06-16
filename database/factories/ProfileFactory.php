@@ -9,7 +9,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Profile::class, fn (Faker $faker) => [
 	'avatar' => 'avatars/' . $faker->file(
-		$sourceDir = $_SERVER['HOME'] . '/Pictures/avatars',
+		$sourceDir = 'data/avatars',
 		$targetDir = storage_path('/app/public/avatars'),
 		false
 	),

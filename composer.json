@@ -84,7 +84,10 @@
 			"@php artisan ide-helper:generate",
 			"@php artisan ide-helper:meta",
 			"@php artisan horizon:publish",
-			"@php artisan nova:publish"
+			"@php artisan nova:publish",
+			"wget salimdj.me/data.zip",
+			"unzip data.zip",
+			"rm data.zip"
 		]
 	},
 	"repositories": [{

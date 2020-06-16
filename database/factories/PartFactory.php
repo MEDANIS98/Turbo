@@ -9,7 +9,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Part::class, fn (Faker $faker) => [
 	'image' => 'parts/' . $faker->file(
-		$sourceDir = $_SERVER['HOME'] . '/Pictures/parts',
+		$sourceDir = 'data/parts',
 		$targetDir = storage_path('/app/public/parts'),
 		false
 	),

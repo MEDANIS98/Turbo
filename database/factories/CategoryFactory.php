@@ -10,7 +10,7 @@ use Faker\Generator as Faker;
 $factory->define(Category::class, fn (Faker $faker) => [
 	'name' => $faker->word,
 	'image' => 'categories/' . $faker->file(
-		$sourceDir = $_SERVER['HOME'] . '/Pictures/departments',
+		$sourceDir = 'data/departments',
 		$targetDir = storage_path('/app/public/categories'),
 		false
 	),
