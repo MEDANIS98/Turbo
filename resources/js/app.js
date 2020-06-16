@@ -5,6 +5,7 @@ import VueI18n from 'vue-i18n';
 import InstantSearch from 'vue-instantsearch';
 Vue.use(InstantSearch);
 
+Vue.config.productionTip = false;
 import {
 	languages
 } from './locales'
