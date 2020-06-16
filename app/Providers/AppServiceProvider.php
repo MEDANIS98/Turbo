@@ -29,7 +29,9 @@ class AppServiceProvider extends ServiceProvider
 	public function boot(Manager $pages)
 	{
 		$pages->register('option', 'header', HeaderOptions::class);
-		$categories = Category::where('category_id', null)->get();
-		view()->composer('layouts.header.navbar', fn ($view) => $view->with('categories', $categories));
+		view()->composer('layouts.header.navbar', function ($view) {
+			$categories = Category::where('category_id', null)->get();
+			$view->with('categories', $categories);
+		});
 	}
 }
