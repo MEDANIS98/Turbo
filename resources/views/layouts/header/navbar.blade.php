@@ -28,7 +28,7 @@
 							<div class="departments__item-menu">
 								<div class="megamenu departments__megamenu departments__megamenu--size--xl">
 									<div class="megamenu__image">
-										<img src="{{ secure_asset($category->image) }}" alt="{{ $category->name }}">
+										<img src="{{ secure_asset('storage/'.$category->image) }}" alt="{{ $category->name }}">
 									</div>
 									<div class="row">
 										@foreach ($category->categories as $sub_category)
