@@ -13,7 +13,7 @@
 		</div>
 		<div class="product-card__image">
 			<a href="{{ route('part', ['part' => $part->slug]) }}">
-				<img src="{{ asset($part->image) }}" alt="{{ $part->title }}">
+				<img src="{{ secure_asset($part->image) }}" alt="{{ $part->title }}">
 			</a>
 			<div class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
 				<div class="status-badge__body">
