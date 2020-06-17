@@ -26,6 +26,8 @@ class CreatePartsTable extends Migration
 			$table->string('image');
 			$table->decimal('price');
 			$table->decimal('old_price')->nullable();
+			$table->string('sku')->nullable();
+			$table->tinyInteger('rating')->default(0);
 			$table->string('slug');
 			$table->timestamps();
 		});

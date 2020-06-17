@@ -7,13 +7,35 @@ namespace App;
 use Laravel\Scout\Searchable;
 use Spatie\MediaLibrary\HasMedia;
 use Illuminate\Database\Eloquent\Model;
+use Gloudemans\Shoppingcart\CanBeBought;
 use Spatie\MediaLibrary\InteractsWithMedia;
+use Gloudemans\Shoppingcart\Contracts\Buyable;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
-class Part extends Model implements HasMedia
+class Part extends Model implements HasMedia, Buyable
 {
-	use Searchable, InteractsWithMedia;
+	use Searchable, InteractsWithMedia, CanBeBought;
+
+	public function getBuyableIdentifier($options = null)
+	{
+		return $this->id;
+	}
+
+	public function getBuyableDescription($options = null)
+	{
+		return $this->title;
+	}
+
+	public function getBuyablePrice($options = null)
+	{
+		return $this->price;
+	}
+
+	public function getBuyableWeight($options = null)
+	{
+		return 0;
+	}
 
 	/**
 	 * Get the vehicle of a part.
@@ -82,5 +104,29 @@ class Part extends Model implements HasMedia
 			->width(245)
 			->height(245)
 			->sharpen(10);
+		$this->addMediaConversion('_70x70')
+			->width(70)
+			->height(70)
+			->sharpen(10);
+	}
+
+	public function getIndexImageAttribute(): string
+	{
+		$mediaItems = $this->getMedia();
+		if ($mediaItems) {
+			return $mediaItems[0]->getUrl('_245x245');
+		}
+
+		return '/images/avatar44x44.png';
+	}
+
+	public function getCartHeaderImageAttribute(): string
+	{
+		$mediaItems = $this->getMedia();
+		if ($mediaItems) {
+			return $mediaItems[0]->getUrl('_70x70');
+		}
+
+		return '/images/avatar44x44.png';
 	}
 }

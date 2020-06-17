@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
+use App\Part;
 use App\Vehicle;
 use Illuminate\View\View;
 
@@ -21,7 +22,9 @@ class PagesController extends Controller
 	public function index(): View
 	{
 		$years = Vehicle::select('year')->distinct()->orderBy('year')->pluck('year');
-
-		return view('index', compact('years'));
+		// Get 10 most popular (viewed) products
+		$ids = \Illuminate\Support\Facades\Redis::zrevrange('popular_parts', 0, 9);
+		$featured_parts = Part::whereIn('id', $ids)->get();
+		return view('index', compact('years', 'featured_parts'));
 	}
 }

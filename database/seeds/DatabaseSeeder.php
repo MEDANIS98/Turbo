@@ -13,10 +13,15 @@ class DatabaseSeeder extends Seeder
 	 */
 	public function run()
 	{
+		// Flush the redis cache to prevent seeing old data
+		\Illuminate\Support\Facades\Redis::flushall();
 		$this->clearSearchIndexes();
 		$this->cleanupStorage();
 		$this->call(UserSeeder::class);
+		$this->call(CategorySeeder::class);
+		$this->call(TypeSeeder::class);
 		$this->call(VehicleSeeder::class);
+		$this->call(PartSeeder::class);
 	}
 
 	/**
