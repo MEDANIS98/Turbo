@@ -15,11 +15,12 @@ _ide_helper.php
 .DS_Store
 /public/vendor/horizon
 /nova
+/data
+nova.zip
+data.zip
 /public/vendor/nova
 /resources/lang/vendor
 /resources/views/vendor
 /public/js/app.js
 /public/mix-manifest.json
-/data
-data.zip
 /storage/media-library
