@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers;
 
 use App\Part;
@@ -11,6 +13,7 @@ class CartController extends Controller
 	public function index()
 	{
 		$cart = Cart::content();
+
 		return view('cart', compact('cart'));
 	}
 
@@ -25,6 +28,7 @@ class CartController extends Controller
 	public function remove(string $rowId)
 	{
 		Cart::remove($rowId);
+
 		return back();
 	}
 }

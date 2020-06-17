@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use App\Part;
 use App\Type;
 use App\Vehicle;

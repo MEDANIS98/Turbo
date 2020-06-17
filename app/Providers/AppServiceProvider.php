@@ -6,9 +6,9 @@ namespace App\Providers;
 
 use App\Category;
 use App\Nova\Templates\HeaderOptions;
-use Gloudemans\Shoppingcart\Facades\Cart;
 use Whitecube\NovaPage\Pages\Manager;
 use Illuminate\Support\ServiceProvider;
+use Gloudemans\Shoppingcart\Facades\Cart;
 
 class AppServiceProvider extends ServiceProvider
 {
