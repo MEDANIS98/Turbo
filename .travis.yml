@@ -5,6 +5,9 @@ dist: bionic
 php:
   - 7.4
 
+services:
+  - redis-server
+
 before_install:
   - sudo wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
   - yes | pecl install imagick
