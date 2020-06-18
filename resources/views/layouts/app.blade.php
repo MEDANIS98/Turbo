@@ -12,7 +12,7 @@
     <title>@yield('title') | {{ config('app.name') }}</title>
 
 	<!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ secure_asset('js/app.js') }}" defer></script>
 
     <link rel="icon" type="image/png" href="/images/favicon.png"><!-- fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i"><!-- css -->
@@ -23,8 +23,10 @@
     <link rel="stylesheet" href="/vendor/select2/css/select2.min.css">
     <!-- Styles -->
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/style.header-spaceship-variant-one.css" media="(min-width: 1200px)">
-    <link rel="stylesheet" href="/css/style.mobile-header-variant-one.css" media="(max-width: 1199px)">
+    <link rel="stylesheet" href="/css/header.css" media="(min-width: 1200px)">
+	{{-- <link rel="stylesheet" href="/css/rtl.css"> --}}
+	{{-- <link rel="stylesheet" href="/css/header-rtl.css" media="(min-width: 1200px)"> --}}
+    <link rel="stylesheet" href="/css/mobile-header.css" media="(max-width: 1199px)">
     <!-- font - fontawesome -->
     <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css">
 

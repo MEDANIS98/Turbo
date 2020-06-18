@@ -37,7 +37,7 @@
                 :href="`/part/${item.slug}`"
               >
                 <div class="suggestions__product-image">
-                  <img :src="item.image" :alt="$t('photo')" width="40" height="40" />
+                  <img :src="`/storage/${item.image}`" :alt="$t('photo')" width="40" height="40" />
                 </div>
                 <div class="suggestions__product-info">
                   <ais-highlight

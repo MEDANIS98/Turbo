@@ -7,13 +7,20 @@ declare(strict_types=1);
 use App\Part;
 use Faker\Generator as Faker;
 
-$factory->define(Part::class, fn (Faker $faker) => [
-	'image' => 'parts/' . $faker->file(
-		$sourceDir = 'data/parts',
-		$targetDir = storage_path('/app/public/parts'),
-		false
-	),
-	'title' => $faker->realText(20),
-	'description' => $faker->realText(100),
-	'price' => $faker->randomFloat(2, 1000, 10000),
-]);
+$factory->define(Part::class, function (Faker $faker) {
+	$price = $faker->randomFloat(2, 1000, 10000);
+
+	return [
+		'image' => 'parts/' . $faker->file(
+			$sourceDir = 'data/parts',
+			$targetDir = storage_path('/app/public/parts'),
+			false
+		),
+		'title' => $faker->realText(20),
+		'description' => $faker->realText(100),
+		'price' => $price,
+		'old_price' => $price + ($price / rand(5, 10)),
+		'sku' => $faker->optional()->swiftBicNumber,
+		'rating' => rand(0, 5),
+	];
+});
