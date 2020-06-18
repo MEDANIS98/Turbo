@@ -6,7 +6,8 @@
 			</p>
 		</div>
 		<div class="logo__image">
-			<img src="@option('header.logo')" alt="@lang('logo')" width="168" height="26">
+			<img src="{{ secure_asset('storage/'.\Page::option('header')->logo) }}" alt="@lang('logo')" width="168"
+				height="26">
 		</div>
 	</a>
 </div>

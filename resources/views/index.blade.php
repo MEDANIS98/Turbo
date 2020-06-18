@@ -85,7 +85,7 @@
             </li>
             <li class="block-features__item">
                 <div class="block-features__item-icon">
-                    @include('svg.phone_24x7')
+                    @include('svg.mobile_24x7')
                 </div>
                 <div class="block-features__item-info">
                     <div class="block-features__item-title">Support 24/7</div>

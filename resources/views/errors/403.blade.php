@@ -9,7 +9,7 @@
         <div class="not-found">
             <div class="not-found__403">Oops! @lang('Error') 403</div>
             <div class="not-found__content">
-                <h1 class="not-found__title">@lang('Page Not Found')</h1>
+                <h1 class="not-found__title">@lang('Access Forbidden')</h1>
                 <p class="not-found__text">@lang('Access Forbidden')<br></p>
 
                 <p class="not-found__text">@lang('Or go to the home page to start over.')</p><a
