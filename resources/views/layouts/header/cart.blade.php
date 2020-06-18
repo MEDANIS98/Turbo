@@ -45,14 +45,6 @@
 			<div class="dropcart__totals">
 				<table>
 					<tr>
-						<th>@lang('Subtotal')</th>
-						<td>{{ Cart::total() }} DZD</td>
-					</tr>
-					<tr>
-						<th>@lang('Shipping')</th>
-						<td>$25.00</td>
-					</tr>
-					<tr>
 						<th>@lang('Total')</th>
 						<td>{{ Cart::total() }} DZD</td>
 					</tr>

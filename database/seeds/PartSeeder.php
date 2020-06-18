@@ -16,8 +16,8 @@ class PartSeeder extends Seeder
 	 */
 	public function run()
 	{
-		$types = Type::select('id')->pluck('id')->toArray();
-		$vehicles = Vehicle::select('id')->pluck('id')->toArray();
+		$types = Type::select('id')->limit(1)->pluck('id')->toArray();
+		$vehicles = Vehicle::select('id')->limit(10)->pluck('id')->toArray();
 		foreach ($types as $type) {
 			foreach ($vehicles as $vehicle) {
 				factory(Part::class, 2)->create([
