@@ -99,7 +99,7 @@
 						<ul class="menu">
 							@foreach ($categories as $category)
 							<li class="menu__item">
-								<a href="/shop-list" class="menu__link">
+								<a href="{{ route('category', ['category' => $category]) }}" class="menu__link">
 									{{ $category->name }}
 								</a>
 							</li>
