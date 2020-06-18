@@ -31,6 +31,7 @@ Route::view('/wishlist', 'wishlist')->name('wishlist');
 Route::get('/cart', 'CartController@index');
 Route::post('/cart/add/{part}', 'CartController@add')->name('cart.add');
 Route::post('/cart/remove/{part}', 'CartController@remove')->name('cart.remove');
+Route::get('/categories/{category}', 'CategoriesController@show')->name('category');
 Route::view('/terms', 'terms');
 Route::view('/faq', 'faq');
 Route::view('/components', 'components');

@@ -30,7 +30,7 @@ class AppServiceProvider extends ServiceProvider
 	public function boot(Manager $pages)
 	{
 		$pages->register('option', 'header', HeaderOptions::class);
-		view()->composer('layouts.header.navbar', function ($view) {
+		view()->composer(['layouts.header.navbar', 'partials.mobile_menu_links'], function ($view) {
 			// Get parent categories which have sub categories
 			$categories = Category::where('category_id', null)->whereHas('categories')->get();
 			// Get parent categories which don't have subcategories
