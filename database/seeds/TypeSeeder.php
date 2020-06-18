@@ -16,9 +16,9 @@ class TypeSeeder extends Seeder
 	public function run()
 	{
 		// Get the sub categories
-		$categories = Category::where('category_id', '!=', null)->select('id')->pluck('id')->toArray();
+		$categories = Category::where('category_id', '!=', null)->select('id')->limit(30)->pluck('id')->toArray();
 		foreach ($categories as $category) {
-			factory(Type::class)->create(['category_id' => $category]);
+			factory(Type::class, rand(4, 7))->create(['category_id' => $category]);
 		}
 	}
 }

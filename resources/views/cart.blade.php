@@ -114,25 +114,10 @@
 					<div class="card-body card-body--padding--2">
 						<h3 class="card-title">@lang('Cart Totals')</h3>
 						<table class="cart__totals-table">
-							<thead>
-								<tr>
-									<th>@lang('Subtotal')</th>
-									<td>$5,877.00</td>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th>@lang('Shipping')</th>
-									<td>$25.00<div><a href="#">@lang('Calculate shipping')</a></div>
-									</td>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<th>@lang('Total')</th>
-									<td>{{ Cart::total() }}</td>
-								</tr>
-							</tfoot>
+							<tr>
+								<th>@lang('Total')</th>
+								<td>{{ Cart::total() }}</td>
+							</tr>
 						</table>
 						<a class="btn btn-primary btn-xl btn-block" href="#">
 							@lang('Proceed to checkout')
