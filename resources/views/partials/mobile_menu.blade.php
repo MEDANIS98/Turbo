@@ -304,17 +304,14 @@
                         </div>
                     </li>
                 </ul>
-                <div class="mobile-menu__spring">
-
-                </div>
-                <div class="mobile-menu__divider">
-                </div>
-                <a class="mobile-menu__contacts" href="#">
-                    <div class="mobile-menu__contacts-subtitle">@lang('Call 24/7')</div>
-                    <a href="tel:@option('header.phone')" class="mobile-menu__contacts-title">
-                        @option('header.phone')
-                    </a>
-                </a>
+                <div class="mobile-menu__spring"></div>
+                <div class="mobile-menu__divider"></div>
+				<a class="mobile-menu__contacts" href="tel:@option('header.phone')">
+					<div class="mobile-menu__contacts-subtitle">@lang('Call 24/7')</div>
+					<div class="mobile-menu__contacts-title">
+						@option('header.phone')
+					</div>
+				</a>
             </div>
         </div>
     </div>
