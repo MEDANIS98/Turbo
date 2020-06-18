@@ -104,6 +104,10 @@ class Part extends Model implements HasMedia, Buyable
 			->width(245)
 			->height(245)
 			->sharpen(10);
+		$this->addMediaConversion('_40x40')
+			->width(40)
+			->height(40)
+			->sharpen(10);
 		$this->addMediaConversion('_70x70')
 			->width(70)
 			->height(70)

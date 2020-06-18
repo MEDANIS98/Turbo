@@ -20,8 +20,7 @@
                             </div>
                             <address class="footer-contacts__contacts">
                                 <dl>
-                                    <dt>@lang('Phone Number')</dt>
-                                    <dd>+1 (800) 060-07-30</dd>
+                                    <dt>@option('header.phone')</dt>
                                 </dl>
                                 <dl>
                                     <dt>@lang('Email Address')</dt>

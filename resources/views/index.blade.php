@@ -3,10 +3,236 @@
 @section('title', __('Home'))
 
 @section('content')
-@include('partials.finder')
-@include('partials.features')
-<div class="block-space block-space--layout--divider-nl"></div>
-@include('partials.featured')
+<div class="block-finder block">
+    <div class="decor block-finder__decor decor--type--bottom">
+        <div class="decor__body">
+            <div class="decor__start"></div>
+            <div class="decor__end"></div>
+            <div class="decor__center"></div>
+        </div>
+    </div>
+    <div class="block-finder__image" style="background-image: url('/images/finder-1903x500.jpg');"></div>
+    <div class="block-finder__body container container--max--xl">
+        <div class="block-finder__title">
+            @lang('Find Parts For Your Vehicle')
+        </div>
+        <div class="block-finder__subtitle">
+            @lang('Over hundreds of brands and tens of thousands of parts')
+        </div>
+        <form class="block-finder__form" action="{{ route('search') }}" method="POST" role="form">
+            @csrf
+            <div class="block-finder__form-control block-finder__form-control--select">
+                <select name="year" aria-label="@lang('Vehicle Year')" id="select-year" required>
+                    <option value="none">@lang('Select Year')</option>
+                    @foreach ($years as $year)
+                    <option value="{{ $year }}">{{ $year }}</option>
+                    @endforeach
+                </select>
+                @error('year')
+                <span class="invalid-feedback" role="alert" style="display: block;">
+                    <strong>{{ $message }}</strong>
+                </span>
+                @enderror
+            </div>
+            <div class="block-finder__form-control block-finder__form-control--select">
+                <select name="brand" aria-label="@lang('Vehicle Brand')" disabled="disabled" id="select-brand" required>
+                    <option value="none" selected>@lang('Sélectionnez la marque')</option>
+                </select>
+                @error('brand')
+                <span class="invalid-feedback" role="alert" style="display: block;">
+                    <strong>{{ $message }}</strong>
+                </span>
+                @enderror
+            </div>
+            <div class="block-finder__form-control block-finder__form-control--select">
+                <select name="model" aria-label="@lang('Vehicle Model')" disabled="disabled" id="select-model" required>
+                    <option value="none">@lang('Select Model')</option>
+                </select>
+                @error('model')
+                <span class="invalid-feedback" role="alert" style="display: block;">
+                    <strong>{{ $message }}</strong>
+                </span>
+                @enderror
+            </div>
+            <div class="block-finder__form-control block-finder__form-control--select">
+                <select name="fuel" aria-label="@lang('Vehicle Engine')" disabled="disabled" id="select-fuel" required>
+                    <option value="none" selected>@lang('Select Engine')</option>
+                </select>
+                @error('fuel')
+                <span class="invalid-feedback" role="alert" style="display: block;">
+                    <strong>{{ $message }}</strong>
+                </span>
+                @enderror
+            </div>
+            <button class="block-finder__form-control block-finder__form-control--button" type="submit"
+                id="submit-search" disabled>
+                @lang('Search')
+            </button>
+        </form>
+    </div>
+</div>
+<div class="block-features block block-features--layout--top-strip">
+    <div class="container">
+        <ul class="block-features__list">
+            <li class="block-features__item">
+                <div class="block-features__item-icon">
+                    @include('svg.free_shipping')
+                </div>
+                <div class="block-features__item-info">
+                    <div class="block-features__item-title">Free Shipping</div>
+                    <div class="block-features__item-subtitle">For orders from $50</div>
+                </div>
+            </li>
+            <li class="block-features__item">
+                <div class="block-features__item-icon">
+                    @include('svg.mobile_24x7')
+                </div>
+                <div class="block-features__item-info">
+                    <div class="block-features__item-title">Support 24/7</div>
+                    <div class="block-features__item-subtitle">Call us anytime</div>
+                </div>
+            </li>
+            <li class="block-features__item">
+                <div class="block-features__item-icon">
+                    @include('svg.secure_payments')
+                </div>
+                <div class="block-features__item-info">
+                    <div class="block-features__item-title">100% Safety</div>
+                    <div class="block-features__item-subtitle">Only secure payments</div>
+                </div>
+            </li>
+            <li class="block-features__item">
+                <div class="block-features__item-icon">
+                    @include('svg.hot_offers')
+                </div>
+                <div class="block-features__item-info">
+                    <div class="block-features__item-title">Hot Offers</div>
+                    <div class="block-features__item-subtitle">Discounts up to 90%</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="block-space block-space--layout--divider-nl">
+</div>
+<div class="block block-products-carousel" data-layout="grid-5">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-header__body">
+                <h2 class="section-header__title">Featured Products</h2>
+                <div class="section-header__spring">
+                </div>
+                <ul class="section-header__groups">
+                    <li class="section-header__groups-item">
+                        <button type="button"
+                            class="section-header__groups-button section-header__groups-button--active">
+                            All
+                        </button>
+                    </li>
+                    <li class="section-header__groups-item">
+                        <button type="button" class="section-header__groups-button">Power Tools</button>
+                    </li>
+                    <li class="section-header__groups-item">
+                        <button type="button" class="section-header__groups-button">Hand Tools
+                        </button>
+                    </li>
+                    <li class="section-header__groups-item"><button type="button"
+                            class="section-header__groups-button">Plumbing
+                        </button>
+                    </li>
+                </ul>
+                <div class="section-header__arrows">
+                    <div class="arrow section-header__arrow section-header__arrow--prev arrow--prev"><button
+                            class="arrow__button" type="button">
+                            @include('svg.arrow_left')
+                        </button>
+                    </div>
+                    <div class="arrow section-header__arrow section-header__arrow--next arrow--next"><button
+                            class="arrow__button" type="button">
+                            @include('svg.arrow_right')
+                        </button>
+                    </div>
+                </div>
+                <div class="section-header__divider"></div>
+            </div>
+        </div>
+        <div class="block-products-carousel__carousel">
+            <div class="block-products-carousel__carousel-loader"></div>
+            <div class="owl-carousel">
+                @for ($i = 0; $i < 32; $i++) <div class="block-products-carousel__column">
+                    <div class="block-products-carousel__cell">
+                        <div class="product-card product-card--layout--grid">
+                            <div class="product-card__actions-list">
+                                <button class="product-card__action product-card__action--quickview" type="button"
+                                    aria-label="@lang('Quick view')">
+                                    @include('svg.zoom')
+                                </button>
+                                <button class="product-card__action product-card__action--wishlist" type="button"
+                                    aria-label="Add to wish list">
+                                    @include('svg.heart')
+                                </button>
+                                <button class="product-card__action product-card__action--compare" type="button"
+                                    aria-label="Add to compare">
+                                    @include('svg.chart')
+                                </button>
+                            </div>
+                            <div class="product-card__image">
+                                <a href="product-full.html">
+                                    <img src="/images/products/product-3-245x245.jpg" alt="">
+                                </a>
+                                <div
+                                    class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
+                                    <div class="status-badge__body">
+                                        <div class="status-badge__icon">
+                                            @include('svg.valid')
+                                        </div>
+                                        <div class="status-badge__text">Part Fit for 2011 Ford Focus S</div>
+                                        <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
+                                            title="Part&#x20;Fit&#x20;for&#x20;2011&#x20;Ford&#x20;Focus&#x20;S">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__info">
+                                <div class="product-card__meta"><span class="product-card__meta-title">SKU:</span>
+                                    009-50078-Z
+                                </div>
+                                <div class="product-card__name">
+                                    <div>
+                                        <div class="product-card__badges">
+                                            <div class="tag-badge tag-badge--sale">sale</div>
+                                        </div><a href="product-full.html">Left Headlight Of Brandix Z54</a>
+                                    </div>
+                                </div>
+                                <div class="product-card__rating">
+                                    <div class="rating product-card__rating-stars">
+                                        <div class="rating__body">
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star"></div>
+                                            <div class="rating__star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__rating-label">{{ $i }} on 14 reviews</div>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <div class="product-card__prices">
+                                    <div class="product-card__price product-card__price--new">$349.00</div>
+                                    <div class="product-card__price product-card__price--old">$415.00</div>
+                                </div>
+                                <button class="product-card__addtocart-icon" type="button" aria-label="Add to cart">
+                                    @include('svg.shop_circle')
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            @endfor
+        </div>
+    </div>
+</div>
 <div class="block-space block-space--layout--divider-nl"></div>
 <div class="block-space block-space--layout--divider-lg"></div>
 <div class="block block-zone">
