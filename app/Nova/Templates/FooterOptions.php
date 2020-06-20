@@ -20,10 +20,16 @@ class FooterOptions extends Template
 	public function fields(Request $request)
 	{
 		return [
-			Text::make(__('Commentaire'), 'comment')->translatable(),
+			Text::make(__('Comment'), 'comment')->translatable(),
 			Text::make(__('Email Address'), 'email'),
 			Text::make(__('Location Address'), 'address'),
 			Text::make(__('Working Hours'), 'schedule'),
+			Text::make(__('Facebook Page'), 'facebook'),
+			Text::make(__('Twitter Account'), 'twitter'),
+			Text::make(__('Youtube Channel'), 'youtube'),
+			Text::make(__('Instagram Account'), 'instagram'),
+
+
 		];
 	}
 
