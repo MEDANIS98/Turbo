@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Providers;
 
 use App\Category;
+use App\Nova\Templates\FooterOptions;
 use App\Nova\Templates\HeaderOptions;
 use Whitecube\NovaPage\Pages\Manager;
 use Illuminate\Support\ServiceProvider;
@@ -30,6 +31,7 @@ class AppServiceProvider extends ServiceProvider
 	public function boot(Manager $pages)
 	{
 		$pages->register('option', 'header', HeaderOptions::class);
+		$pages->register('option', 'footer', FooterOptions::class);
 		view()->composer(['layouts.header.navbar', 'partials.mobile_menu_links'], function ($view) {
 			// Get parent categories which have sub categories
 			$categories = Category::where('category_id', null)->whereHas('categories')->get();
