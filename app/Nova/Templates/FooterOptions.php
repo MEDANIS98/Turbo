@@ -28,8 +28,6 @@ class FooterOptions extends Template
 			Text::make(__('Twitter Account'), 'twitter'),
 			Text::make(__('Youtube Channel'), 'youtube'),
 			Text::make(__('Instagram Account'), 'instagram'),
-
-
 		];
 	}
 
