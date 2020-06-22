@@ -13,6 +13,24 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 class Supplier extends Resource
 {
 	/**
+	 * Get the displayable label of the resource.
+	 */
+	public static function label(): string
+	{
+		return __('Suppliers');
+	}
+
+	/**
+	 * Get the displayable singular label of the resource.
+	 *
+	 * @return string
+	 */
+	public static function singularLabel()
+	{
+		return __('Supplier');
+	}
+
+	/**
 	 * The model the resource corresponds to.
 	 *
 	 * @var string
