@@ -14,6 +14,24 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 class Part extends Resource
 {
 	/**
+	 * Get the displayable label of the resource.
+	 */
+	public static function label(): string
+	{
+		return __('Parts');
+	}
+
+	/**
+	 * Get the displayable singular label of the resource.
+	 *
+	 * @return string
+	 */
+	public static function singularLabel()
+	{
+		return __('Part');
+	}
+
+	/**
 	 * The model the resource corresponds to.
 	 *
 	 * @var string
