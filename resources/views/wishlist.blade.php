@@ -42,7 +42,8 @@
 				</thead>
 				<tbody class="wishlist__body">
 					<tr class="wishlist__row wishlist__row--body">
-						<td class="wishlist__column wishlist__column--body wishlist__column--image"><a href="#"><img src="images/products/product-1-160x160.jpg" alt=""></a></td>
+						<td class="wishlist__column wishlist__column--body wishlist__column--image"><a href="#"><img
+									src="/images/products/product-1-160x160.jpg" alt="@lang('Photo')"></a></td>
 						<td class="wishlist__column wishlist__column--body wishlist__column--product">
 							<div class="wishlist__product-name"><a href="#">Brandix Spark Plug Kit ASR-400</a></div>
 							<div class="wishlist__product-rating">
@@ -68,12 +69,17 @@
 							</div>
 						</td>
 						<td class="wishlist__column wishlist__column--body wishlist__column--price">$19.00</td>
-						<td class="wishlist__column wishlist__column--body wishlist__column--button"><button type="button" class="btn btn-sm btn-primary">Add to cart</button></td>
-						<td class="wishlist__column wishlist__column--body wishlist__column--remove"><button type="button" class="wishlist__remove btn btn-sm btn-muted btn-icon"><svg width="12" height="12">
-									<path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6 c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4 C11.2,9.8,11.2,10.4,10.8,10.8z" /></svg></button></td>
+						<td class="wishlist__column wishlist__column--body wishlist__column--button"><button type="button"
+								class="btn btn-sm btn-primary">Add to cart</button></td>
+						<td class="wishlist__column wishlist__column--body wishlist__column--remove"><button type="button"
+								class="wishlist__remove btn btn-sm btn-muted btn-icon"><svg width="12" height="12">
+									<path
+										d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6 c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4 C11.2,9.8,11.2,10.4,10.8,10.8z" />
+								</svg></button></td>
 					</tr>
 					<tr class="wishlist__row wishlist__row--body">
-						<td class="wishlist__column wishlist__column--body wishlist__column--image"><a href="#"><img src="images/products/product-2-160x160.jpg" alt=""></a></td>
+						<td class="wishlist__column wishlist__column--body wishlist__column--image"><a href="#"><img
+									src="/images/products/product-2-160x160.jpg" alt="@lang('Photo')"></a></td>
 						<td class="wishlist__column wishlist__column--body wishlist__column--product">
 							<div class="wishlist__product-name"><a href="#">Brandix Brake Kit BDX-750Z370-S</a></div>
 							<div class="wishlist__product-rating">
@@ -99,12 +105,17 @@
 							</div>
 						</td>
 						<td class="wishlist__column wishlist__column--body wishlist__column--price">$224.00</td>
-						<td class="wishlist__column wishlist__column--body wishlist__column--button"><button type="button" class="btn btn-sm btn-primary">Add to cart</button></td>
-						<td class="wishlist__column wishlist__column--body wishlist__column--remove"><button type="button" class="wishlist__remove btn btn-sm btn-muted btn-icon"><svg width="12" height="12">
-									<path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6 c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4 C11.2,9.8,11.2,10.4,10.8,10.8z" /></svg></button></td>
+						<td class="wishlist__column wishlist__column--body wishlist__column--button"><button type="button"
+								class="btn btn-sm btn-primary">Add to cart</button></td>
+						<td class="wishlist__column wishlist__column--body wishlist__column--remove"><button type="button"
+								class="wishlist__remove btn btn-sm btn-muted btn-icon"><svg width="12" height="12">
+									<path
+										d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6 c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4 C11.2,9.8,11.2,10.4,10.8,10.8z" />
+								</svg></button></td>
 					</tr>
 					<tr class="wishlist__row wishlist__row--body">
-						<td class="wishlist__column wishlist__column--body wishlist__column--image"><a href="#"><img src="images/products/product-3-160x160.jpg" alt=""></a></td>
+						<td class="wishlist__column wishlist__column--body wishlist__column--image"><a href="#"><img
+									src="/images/products/product-3-160x160.jpg" alt="@lang('Photo')"></a></td>
 						<td class="wishlist__column wishlist__column--body wishlist__column--product">
 							<div class="wishlist__product-name"><a href="#">Left Headlight Of Brandix Z54</a></div>
 							<div class="wishlist__product-rating">
@@ -130,9 +141,13 @@
 							</div>
 						</td>
 						<td class="wishlist__column wishlist__column--body wishlist__column--price">$349.00</td>
-						<td class="wishlist__column wishlist__column--body wishlist__column--button"><button type="button" class="btn btn-sm btn-primary">Add to cart</button></td>
-						<td class="wishlist__column wishlist__column--body wishlist__column--remove"><button type="button" class="wishlist__remove btn btn-sm btn-muted btn-icon"><svg width="12" height="12">
-									<path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6 c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4 C11.2,9.8,11.2,10.4,10.8,10.8z" /></svg></button></td>
+						<td class="wishlist__column wishlist__column--body wishlist__column--button"><button type="button"
+								class="btn btn-sm btn-primary">Add to cart</button></td>
+						<td class="wishlist__column wishlist__column--body wishlist__column--remove"><button type="button"
+								class="wishlist__remove btn btn-sm btn-muted btn-icon"><svg width="12" height="12">
+									<path
+										d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6 c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4 C11.2,9.8,11.2,10.4,10.8,10.8z" />
+								</svg></button></td>
 					</tr>
 				</tbody>
 			</table>
