@@ -22,7 +22,7 @@ class UserSeeder extends Seeder
 			'email_verified_at' => now(),
 			'password' => bcrypt('password'),
 		]);
-		factory(User::class)->create()->each(function ($user) {
+		factory(User::class, 5)->create()->each(function ($user) {
 			$user->orders()->createMany(factory(Order::class, 5)->make()->toArray());
 			factory(Profile::class)->create(['user_id' => $user->id]);
 		});
