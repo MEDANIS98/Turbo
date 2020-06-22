@@ -152,4 +152,11 @@ class Part extends Model implements HasMedia, Buyable
 
 		return '/images/avatar44x44.png';
 	}
+
+	public function getIsHotAttribute(): bool
+	{
+		$ids = \Illuminate\Support\Facades\Redis::zrevrange('popular_parts', 0, 9);
+
+		return in_array($this->id, $ids);
+	}
 }

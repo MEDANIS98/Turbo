@@ -1945,9 +1945,7 @@
 <div class="block block-posts-carousel block-posts-carousel--layout--grid" data-layout="grid">
 </div>
 <div class="block-space block-space--layout--divider-nl"></div>
-<div class="block block-brands block-brands--layout--columns-8-full">
-
-</div>
+@include('partials.brands')
 <div class="block-space block-space--layout--divider-nl d-xl-block d-none"></div>
 <div class="block block-products-columns">
 	<div class="container">

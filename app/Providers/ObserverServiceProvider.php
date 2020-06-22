@@ -5,9 +5,13 @@ declare(strict_types=1);
 namespace App\Providers;
 
 use App\Part;
+use App\Type;
 use App\Profile;
+use App\Category;
 use App\Observers\PartObserver;
+use App\Observers\TypeObserver;
 use App\Observers\ProfileObserver;
+use App\Observers\CategoryObserver;
 use Illuminate\Support\ServiceProvider;
 
 class ObserverServiceProvider extends ServiceProvider
@@ -21,5 +25,7 @@ class ObserverServiceProvider extends ServiceProvider
 	{
 		Part::observe(PartObserver::class);
 		Profile::observe(ProfileObserver::class);
+		Type::observe(TypeObserver::class);
+		Category::observe(CategoryObserver::class);
 	}
 }

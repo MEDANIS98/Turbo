@@ -20,7 +20,7 @@ $factory->define(Part::class, function (Faker $faker) {
 		'title' => $faker->realText(20),
 		'description' => $faker->realText(100),
 		'price' => $price,
-		'old_price' => $price + ($price / rand(5, 10)),
+		'old_price' => $price + ($price / rand(5, 10)), // TODO: make this optional
 		'sku' => $faker->optional()->swiftBicNumber,
 		'rating' => rand(0, 5),
 	];
