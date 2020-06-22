@@ -1,7 +1,9 @@
 <?php
 
-use App\Supplier;
+declare(strict_types=1);
+
 use App\User;
+use App\Supplier;
 use Illuminate\Database\Seeder;
 
 class SupplierSeeder extends Seeder
