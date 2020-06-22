@@ -185,7 +185,7 @@
 	"Add to compare": "Ajouter pour comparer",
 	"SKU": "REF",
 	"unavailable": "indisponible",
-	"hot": "fort",
+	"hot": "populaire",
 	"sale": "sold",
 	"new": "nouveau",
 	"Add to cart": "Ajouter au chariot",
@@ -201,5 +201,6 @@
 	"Part Price": "Prix de la pièce",
 	"Add": "Ajouter",
 	"New Arrivals": "Nouvelles Arrivées",
-	"Show All": "Afficher tout"
+	"Show All": "Afficher tout",
+	"Parts": "Les pièces"
 }

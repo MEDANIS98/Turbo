@@ -6,124 +6,7 @@
 @include('partials.finder')
 @include('partials.features')
 <div class="block-space block-space--layout--divider-nl"></div>
-<div class="block block-products-carousel" data-layout="grid-5">
-	<div class="container">
-		<div class="section-header">
-			<div class="section-header__body">
-				<h2 class="section-header__title">Featured Products</h2>
-				<div class="section-header__spring">
-				</div>
-				<ul class="section-header__groups">
-					<li class="section-header__groups-item">
-						<button type="button"
-							class="section-header__groups-button section-header__groups-button--active">
-							All
-						</button>
-					</li>
-					<li class="section-header__groups-item">
-						<button type="button" class="section-header__groups-button">Power Tools</button>
-					</li>
-					<li class="section-header__groups-item">
-						<button type="button" class="section-header__groups-button">Hand Tools
-						</button>
-					</li>
-					<li class="section-header__groups-item"><button type="button"
-							class="section-header__groups-button">Plumbing
-						</button>
-					</li>
-				</ul>
-				<div class="section-header__arrows">
-					<div class="arrow section-header__arrow section-header__arrow--prev arrow--prev"><button
-							class="arrow__button" type="button">
-							@include('svg.arrow_left')
-						</button>
-					</div>
-					<div class="arrow section-header__arrow section-header__arrow--next arrow--next"><button
-							class="arrow__button" type="button">
-							@include('svg.arrow_right')
-						</button>
-					</div>
-				</div>
-				<div class="section-header__divider"></div>
-			</div>
-		</div>
-		<div class="block-products-carousel__carousel">
-			<div class="block-products-carousel__carousel-loader"></div>
-			<div class="owl-carousel">
-				@for ($i = 0; $i < 32; $i++) <div class="block-products-carousel__column">
-					<div class="block-products-carousel__cell">
-						<div class="product-card product-card--layout--grid">
-							<div class="product-card__actions-list">
-								<button class="product-card__action product-card__action--quickview" type="button"
-									aria-label="@lang('Quick view')">
-									@include('svg.zoom')
-								</button>
-								<button class="product-card__action product-card__action--wishlist" type="button"
-									aria-label="Add to wish list">
-									@include('svg.heart')
-								</button>
-								<button class="product-card__action product-card__action--compare" type="button"
-									aria-label="Add to compare">
-									@include('svg.chart')
-								</button>
-							</div>
-							<div class="product-card__image">
-								<a href="product-full.html">
-									<img src="/images/products/product-3-245x245.jpg" alt="">
-								</a>
-								<div
-									class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
-									<div class="status-badge__body">
-										<div class="status-badge__icon">
-											@include('svg.valid')
-										</div>
-										<div class="status-badge__text">Part Fit for 2011 Ford Focus S</div>
-										<div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip"
-											title="Part&#x20;Fit&#x20;for&#x20;2011&#x20;Ford&#x20;Focus&#x20;S">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="product-card__info">
-								<div class="product-card__meta"><span class="product-card__meta-title">SKU:</span>
-									009-50078-Z
-								</div>
-								<div class="product-card__name">
-									<div>
-										<div class="product-card__badges">
-											<div class="tag-badge tag-badge--sale">sale</div>
-										</div><a href="product-full.html">Left Headlight Of Brandix Z54</a>
-									</div>
-								</div>
-								<div class="product-card__rating">
-									<div class="rating product-card__rating-stars">
-										<div class="rating__body">
-											<div class="rating__star rating__star--active"></div>
-											<div class="rating__star rating__star--active"></div>
-											<div class="rating__star rating__star--active"></div>
-											<div class="rating__star"></div>
-											<div class="rating__star"></div>
-										</div>
-									</div>
-									<div class="product-card__rating-label">{{ $i }} on 14 reviews</div>
-								</div>
-							</div>
-							<div class="product-card__footer">
-								<div class="product-card__prices">
-									<div class="product-card__price product-card__price--new">$349.00</div>
-									<div class="product-card__price product-card__price--old">$415.00</div>
-								</div>
-								<button class="product-card__addtocart-icon" type="button" aria-label="Add to cart">
-									@include('svg.shop_circle')
-								</button>
-							</div>
-						</div>
-					</div>
-			</div>
-			@endfor
-		</div>
-	</div>
-</div>
+@include('partials.featured', ['layout' => 'grid-5'])
 <div class="block-space block-space--layout--divider-nl"></div>
 <div class="block-space block-space--layout--divider-lg"></div>
 <div class="block block-zone">
@@ -1679,9 +1562,7 @@
 <div class="block block-posts-carousel block-posts-carousel--layout--grid" data-layout="grid">
 </div>
 <div class="block-space block-space--layout--divider-nl"></div>
-<div class="block block-brands block-brands--layout--columns-8-full">
-
-</div>
+@include('partials.brands')
 <div class="block-space block-space--layout--divider-nl d-xl-block d-none"></div>
 <div class="block block-products-columns">
 	<div class="container">

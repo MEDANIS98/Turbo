@@ -46,7 +46,12 @@ class CategoriesController extends Controller
 	 */
 	public function show(Category $category)
 	{
-		return $category;
+		if ($category->parent) {
+			$items = $category->types;
+		} else {
+			$items = $category->categories;
+		}
+		return view('category', compact('category', 'items'));
 	}
 
 	/**

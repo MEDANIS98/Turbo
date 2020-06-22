@@ -14,7 +14,7 @@ class PartObserver
 	public function creating(Part $part): void
 	{
 		$part->slug = sluggify($part->title);
-		if (! $part->user_id && auth()->check()) {
+		if (!$part->user_id && auth()->check()) {
 			$part->user_id = auth()->id();
 		}
 	}
@@ -26,6 +26,26 @@ class PartObserver
 	{
 		// Just app/public because the image attribute already includes 'parts' folder name
 		if ($part->image) {
+			$part->addMedia(storage_path('app/public/' . $part->image))
+				->preservingOriginal()
+				->toMediaCollection();
+		}
+	}
+
+	/**
+	 * Handle the part "updated" event.
+	 *
+	 * @param  \App\Part $part
+	 * @return void
+	 */
+	public function updated(Part $part)
+	{
+		if ($part->isDirty('title')) {
+			$part->slug = sluggify($part->title);
+			$part->save();
+		}
+		// Just app/public because the image attribute already includes 'parts' folder name
+		if ($part->isDirty('image')) {
 			$part->addMedia(storage_path('app/public/' . $part->image))
 				->preservingOriginal()
 				->toMediaCollection();
