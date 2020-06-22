@@ -51,6 +51,7 @@ class CategoriesController extends Controller
 		} else {
 			$items = $category->categories;
 		}
+
 		return view('category', compact('category', 'items'));
 	}
 

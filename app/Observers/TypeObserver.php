@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Observers;
 
 use App\Type;
@@ -9,7 +11,6 @@ class TypeObserver
 	/**
 	 * Handle the type "creating" event.
 	 *
-	 * @param  \App\Type  $type
 	 * @return void
 	 */
 	public function creating(Type $type)
@@ -20,7 +21,6 @@ class TypeObserver
 	/**
 	 * Handle the type "created" event.
 	 *
-	 * @param  \App\Type  $type
 	 * @return void
 	 */
 	public function created(Type $type)
@@ -36,7 +36,6 @@ class TypeObserver
 	/**
 	 * Handle the type "updated" event.
 	 *
-	 * @param  \App\Type  $type
 	 * @return void
 	 */
 	public function updated(Type $type)
@@ -56,7 +55,6 @@ class TypeObserver
 	/**
 	 * Handle the type "deleted" event.
 	 *
-	 * @param  \App\Type  $type
 	 * @return void
 	 */
 	public function deleted(Type $type)
@@ -67,7 +65,6 @@ class TypeObserver
 	/**
 	 * Handle the type "restored" event.
 	 *
-	 * @param  \App\Type  $type
 	 * @return void
 	 */
 	public function restored(Type $type)
@@ -78,7 +75,6 @@ class TypeObserver
 	/**
 	 * Handle the type "force deleted" event.
 	 *
-	 * @param  \App\Type  $type
 	 * @return void
 	 */
 	public function forceDeleted(Type $type)

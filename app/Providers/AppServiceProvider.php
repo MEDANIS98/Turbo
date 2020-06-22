@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
+use App\Part;
 use App\Category;
 use App\Nova\Templates\HeaderOptions;
-use App\Part;
 use Whitecube\NovaPage\Pages\Manager;
 use Illuminate\Support\ServiceProvider;
 use Gloudemans\Shoppingcart\Facades\Cart;
@@ -25,8 +25,6 @@ class AppServiceProvider extends ServiceProvider
 
 	/**
 	 * Bootstrap any application services.
-	 *
-	 * @return void
 	 */
 	public function boot(Manager $pages): void
 	{

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
-use App\Type;
 use App\Part;
+use App\Type;
 use App\Profile;
 use App\Category;
 use App\Observers\PartObserver;

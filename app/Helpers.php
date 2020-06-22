@@ -12,5 +12,6 @@ function sluggify($string)
 	$url = preg_replace('/\s+/', ' ', $url);
 	// Replace space with dashes -
 	$url = str_replace(' ', '-', $url);
+
 	return $url;
 }
