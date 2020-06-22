@@ -42,11 +42,11 @@
 						</tr>
 					</thead>
 					<tbody class="cart-table__body">
-					@foreach ($cart as $item)
+						@foreach ($cart as $item)
 						<tr class="cart-table__row">
 							<td class="cart-table__column cart-table__column--image">
 								<a href="{{ route('part', ['part' => $item->model]) }}">
-									{{-- <img src="images/products/product-4-160x160.jpg" alt=""> --}}
+									{{-- <img src="images/products/product-4-160x160.jpg" alt="@lang('Photo')"> --}}
 									<img src="{{ secure_asset($item->model->image) }}" alt="@lang('Image')">
 								</a>
 							</td>
@@ -82,7 +82,7 @@
 								</button>
 							</td>
 						</tr>
-					@endforeach
+						@endforeach
 					</tbody>
 					<tfoot class="cart-table__foot">
 						<tr>

@@ -21,7 +21,8 @@
                 selling spare parts for cars, trucks and motorcycles. During our work we managed to create a
                 unique service for the sale and delivery of spare parts around the world.</div>
             <div class="about__card-author">Ryan Ford, CEO RedParts</div>
-            <div class="about__card-signature"><img src="/images/signature.jpg" width="160" height="55" alt=""></div>
+            <div class="about__card-signature"><img src="/images/signature.jpg" width="160" height="55"
+                    alt="@lang('Photo')"></div>
         </div>
         <div class="about__indicators">
             <div class="about__indicators-body">
