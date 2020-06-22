@@ -18,6 +18,8 @@ javascript:
 
 Localization: resources/lang/*
 
+database: database/*
+
 UI: resources/views/*
 
 
