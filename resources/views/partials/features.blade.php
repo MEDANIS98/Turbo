@@ -6,8 +6,8 @@
 					@include('svg.free_shipping')
 				</div>
 				<div class="block-features__item-info">
-					<div class="block-features__item-title">Free Shipping</div>
-					<div class="block-features__item-subtitle">For orders from $50</div>
+					<div class="block-features__item-title">@lang('Free Shipping')</div>
+					<div class="block-features__item-subtitle">@lang('For orders from 50000DA')</div>
 				</div>
 			</li>
 			<li class="block-features__item">
@@ -16,7 +16,7 @@
 				</div>
 				<div class="block-features__item-info">
 					<div class="block-features__item-title">Support 24/7</div>
-					<div class="block-features__item-subtitle">Call us anytime</div>
+					<div class="block-features__item-subtitle">@lang('Call us anytime')</div>
 				</div>
 			</li>
 			<li class="block-features__item">
@@ -24,8 +24,8 @@
 					@include('svg.secure_payments')
 				</div>
 				<div class="block-features__item-info">
-					<div class="block-features__item-title">100% Safety</div>
-					<div class="block-features__item-subtitle">Only secure payments</div>
+					<div class="block-features__item-title">@lang('100% Safety')</div>
+					<div class="block-features__item-subtitle">@lang('Only secure payments') </div>
 				</div>
 			</li>
 			<li class="block-features__item">
@@ -33,8 +33,8 @@
 					@include('svg.hot_offers')
 				</div>
 				<div class="block-features__item-info">
-					<div class="block-features__item-title">Hot Offers</div>
-					<div class="block-features__item-subtitle">Discounts up to 90%</div>
+					<div class="block-features__item-title">@lang('Hot Offers')</div>
+					<div class="block-features__item-subtitle">@lang('Discounts up to 50%')</div>
 				</div>
 			</li>
 		</ul>
