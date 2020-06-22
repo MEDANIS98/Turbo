@@ -7,7 +7,7 @@
             <div class="owl-carousel">
                 <div class="block-reviews__item">
                     <div class="block-reviews__item-avatar"><img src="/images/testimonials/testimonial-1-190x190.jpg"
-                            alt=""></div>
+                            alt="@lang('Photo')"></div>
                     <div class="block-reviews__item-content">
                         <div class="block-reviews__item-text">This division is not obsolete but has changed.
                             Natural philosophy has split into the various natural sciences, especially
@@ -31,7 +31,7 @@
                 </div>
                 <div class="block-reviews__item">
                     <div class="block-reviews__item-avatar"><img src="/images/testimonials/testimonial-2-190x190.jpg"
-                            alt=""></div>
+                            alt="@lang('Photo')"></div>
                     <div class="block-reviews__item-content">
                         <div class="block-reviews__item-text">Philosophical questions can be grouped into
                             categories. These groupings allow philosophers. The groupings also make
@@ -54,7 +54,7 @@
                 </div>
                 <div class="block-reviews__item">
                     <div class="block-reviews__item-avatar"><img src="/images/testimonials/testimonial-3-190x190.jpg"
-                            alt=""></div>
+                            alt="@lang('Photo')"></div>
                     <div class="block-reviews__item-content">
                         <div class="block-reviews__item-text">The ideas conceived by a society have profound
                             repercussions on what actions the society performs. Philosophy yields

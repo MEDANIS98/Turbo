@@ -17,7 +17,7 @@
 	</a>
 	<a class="mobile-menu__indicator" href="/cart">
 		<span class="mobile-menu__indicator-icon">
-			@include('svg.mobile.shop_circle')
+			@include('svg.shop_circle')
 			<span class="mobile-menu__indicator-counter">
 				{{ Cart::count() }}
 			</span>
