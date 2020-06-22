@@ -22,6 +22,8 @@ database: database/*
 
 UI: resources/views/*
 
+admin: app/Nova/*
+
 
 config:
   - config/*
