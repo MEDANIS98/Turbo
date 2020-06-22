@@ -39,13 +39,14 @@ Route::view('/typography', 'typography');
 Route::view('/checkout', 'checkout');
 Route::view('/compare', 'compare');
 Route::view('/product', 'product');
-Route::view('/garage', 'garage');
 Route::middleware('auth', 'verified')->group(function () {
 	Route::view('/account/addresses', 'account-addresses');
 	Route::view('/account/password', 'auth.passwords.change')->middleware('password.confirm');
 	Route::post('/account/change-password', 'AccountController@changePassword')->name('password.change');
 	Route::view('/account/orders', 'account-orders');
 	Route::view('/account/profile', 'account-profile');
+	Route::get('/garage', 'PartsController@index');
+	Route::post('/parts/add', 'PartsController@store')->name('part.add');
 });
 Route::view('/shop-list', 'shop-list');
 Route::view('/shop-table', 'shop-table');

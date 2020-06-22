@@ -14,6 +14,9 @@ class PartObserver
 	public function creating(Part $part): void
 	{
 		$part->slug = sluggify($part->title);
+		if (! $part->user_id && auth()->check()) {
+			$part->user_id = auth()->id();
+		}
 	}
 
 	/**
@@ -22,8 +25,10 @@ class PartObserver
 	public function created(Part $part): void
 	{
 		// Just app/public because the image attribute already includes 'parts' folder name
-		$part->addMedia(storage_path('app/public/' . $part->image))
-			->preservingOriginal()
-			->toMediaCollection();
+		if ($part->image) {
+			$part->addMedia(storage_path('app/public/' . $part->image))
+				->preservingOriginal()
+				->toMediaCollection();
+		}
 	}
 }

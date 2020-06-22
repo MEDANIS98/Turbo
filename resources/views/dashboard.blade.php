@@ -13,7 +13,7 @@
 				<div class="dashboard__profile card profile-card">
 					<div class="card-body profile-card__body">
 						<div class="profile-card__avatar">
-							<img src="{{ $user->avatar }}" alt="@lang('Avatar')">
+							<img src="{{ $user->dashboardAvatar }}" alt="@lang('Avatar')" width="90" height="90">
 						</div>
 						<div class="profile-card__name">{{ $user->name }}</div>
 						<div class="profile-card__email">{{ $user->email }}</div>

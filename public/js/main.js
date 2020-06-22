@@ -1511,17 +1511,20 @@
 	// .vehicle-form
 	*/
 	$(function() {
-		$('.vehicle-form__item--select select').on('change', function() {
-			const item = $(this).closest('.vehicle-form__item--select');
-
-			if ($(this).val() !== 'none') {
-				item.find('~ .vehicle-form__item--select:eq(0) select').prop('disabled', false).val('none');
-				item.find('~ .vehicle-form__item--select:gt(0) select').prop('disabled', true).val('none');
-			} else {
-				item.find('~ .vehicle-form__item--select select').prop('disabled', true).val('none');
-			}
-
-			item.find('~ .vehicle-form__item--select select').trigger('change.select2');
+		$('#select-category').on('change', function() {
+			var selectedCategory = $('#select-category').val();
+			$.post('/api/getCategoryTypes', {
+				category: selectedCategory
+			}, (data) => {
+				var defaultOption = $('#select-type').children(":first")[0].outerHTML;
+				$('#select-type').empty();
+				$('#select-type').append(defaultOption);
+				$.each(data, (type) => {
+					var option = document.createElement('option');
+					$('#select-type').append($(option).attr('value', data[type].id).html(data[type].name));
+				});
+				$('#select-type').prop('disabled', false).val('none');
+			})
 		});
 	});
 })(jQuery);

@@ -11,6 +11,7 @@ $factory->define(Part::class, function (Faker $faker) {
 	$price = $faker->randomFloat(2, 1000, 10000);
 
 	return [
+		'user_id' => rand(1, 2),
 		'image' => 'parts/' . $faker->file(
 			$sourceDir = 'data/parts',
 			$targetDir = storage_path('/app/public/parts'),

@@ -189,5 +189,17 @@
 	"sale": "sold",
 	"new": "nouveau",
 	"Add to cart": "Ajouter au chariot",
-	"photo": "photo"
+	"photo": "photo",
+	"Add a part": "Ajouter une pièce",
+	"Vehicle": "Véhicule",
+	"Select Type": "Sélectionner Le Genre",
+	"Category": "Catégorie",
+	"Select Category": "Choisir une catégorie",
+	"Part Details": "Détails de pièce",
+	"Title": "La Désignation",
+	"Designation of part": "Désignation de pièce",
+	"Part Price": "Prix de la pièce",
+	"Add": "Ajouter",
+	"New Arrivals": "Nouvelles Arrivées",
+	"Show All": "Afficher tout"
 }
