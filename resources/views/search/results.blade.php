@@ -646,7 +646,7 @@
 								<div class="widget-products__list">
 									<div class="widget-products__item">
 										<div class="widget-products__image"><a href="product-full.html"><img
-													src="images/products/product-1-64x64.jpg" alt="@lang('Photo')"></a>
+													src="/images/products/product-1-64x64.jpg" alt="@lang('Photo')"></a>
 										</div>
 										<div class="widget-products__info">
 											<div class="widget-products__name"><a href="product-full.html">Brandix Spark
@@ -660,7 +660,9 @@
 									</div>
 									<div class="widget-products__item">
 										<div class="widget-products__image"><a href="product-full.html"><img
-													src="images/products/product-2-64x64.jpg" alt="@lang('Photo')"></a>
+
+													src="/images/products/product-2-64x64.jpg" alt="@lang('Photo')"></a>
+
 										</div>
 										<div class="widget-products__info">
 											<div class="widget-products__name"><a href="product-full.html">Brandix Brake
@@ -674,7 +676,7 @@
 									</div>
 									<div class="widget-products__item">
 										<div class="widget-products__image"><a href="product-full.html"><img
-													src="images/products/product-3-64x64.jpg" alt="@lang('Photo')"></a>
+													src="/images/products/product-3-64x64.jpg" alt="@lang('Photo')"></a>
 										</div>
 										<div class="widget-products__info">
 											<div class="widget-products__name"><a href="product-full.html">Left
@@ -690,7 +692,7 @@
 									</div>
 									<div class="widget-products__item">
 										<div class="widget-products__image"><a href="product-full.html"><img
-													src="images/products/product-4-64x64.jpg" alt="@lang('Photo')"></a>
+													src="/images/products/product-4-64x64.jpg" alt="@lang('Photo')"></a>
 										</div>
 										<div class="widget-products__info">
 											<div class="widget-products__name"><a href="product-full.html">Glossy Gray
@@ -704,7 +706,7 @@
 									</div>
 									<div class="widget-products__item">
 										<div class="widget-products__image"><a href="product-full.html"><img
-													src="images/products/product-5-64x64.jpg" alt="@lang('Photo')"></a>
+													src="/images/products/product-5-64x64.jpg" alt="@lang('Photo')"></a>
 										</div>
 										<div class="widget-products__info">
 											<div class="widget-products__name"><a href="product-full.html">Twin Exhaust
