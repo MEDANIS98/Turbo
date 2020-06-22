@@ -14,7 +14,7 @@ class PartObserver
 	public function creating(Part $part): void
 	{
 		$part->slug = sluggify($part->title);
-		if (!$part->user_id && auth()->check()) {
+		if (! $part->user_id && auth()->check()) {
 			$part->user_id = auth()->id();
 		}
 	}

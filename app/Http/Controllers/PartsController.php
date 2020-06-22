@@ -21,6 +21,7 @@ class PartsController extends Controller
 		$vehicles = Vehicle::select('model', 'id')->get();
 		$categories = Category::select('name', 'id')->get();
 		$parts = Part::where('user_id', auth()->id())->limit(4)->get();
+
 		return view('garage', compact('vehicles', 'categories', 'parts'));
 	}
 
@@ -48,7 +49,7 @@ class PartsController extends Controller
 			'description' => 'nullable|string|min:5|max:1000',
 			'image' => 'nullable|image|max:10000',
 			'price' => 'required|integer|min:10|max:1000000',
-			'sku' => 'nullable|string|min:6|max:20'
+			'sku' => 'nullable|string|min:6|max:20',
 		]);
 		$part = new Part();
 		$part->vehicle_id = $request->vehicle;
@@ -62,6 +63,7 @@ class PartsController extends Controller
 		$part->price = $request->price;
 		$part->sku = $request->sku;
 		$part->save();
+
 		return back();
 	}
 
