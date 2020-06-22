@@ -25,7 +25,9 @@ class PagesController extends Controller
 		// Get 10 most popular (viewed) products
 		$ids = \Illuminate\Support\Facades\Redis::zrevrange('popular_parts', 0, 9);
 		$featured_parts = Part::whereIn('id', $ids)->get();
-
-		return view('index', compact('years', 'featured_parts'));
+		// Get new arrivals
+		$new_parts = Part::latest()->get();
+		// Get their types
+		return view('index', compact('years', 'featured_parts', 'new_parts'));
 	}
 }

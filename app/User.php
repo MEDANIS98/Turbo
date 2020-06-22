@@ -49,7 +49,7 @@ class User extends Authenticatable implements MustVerifyEmail
 	public function getAvatarAttribute(): string
 	{
 		$mediaItems = optional($this->profile)->getMedia();
-		if ($mediaItems) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getFullUrl();
 		}
 
@@ -59,11 +59,21 @@ class User extends Authenticatable implements MustVerifyEmail
 	public function getAccountMenuAvatarAttribute(): string
 	{
 		$mediaItems = optional($this->profile)->getMedia();
-		if ($mediaItems) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('account_menu');
 		}
 
 		return '/images/avatar44x44.png';
+	}
+
+	public function getDashboardAvatarAttribute(): string
+	{
+		$mediaItems = optional($this->profile)->getMedia();
+		if (!empty($mediaItems)) {
+			return $mediaItems[0]->getUrl('dashboard');
+		}
+
+		return '/images/avatar.png'; // Default 90x90
 	}
 
 	public function orders(): HasMany

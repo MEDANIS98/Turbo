@@ -16,6 +16,12 @@ class UserSeeder extends Seeder
 	 */
 	public function run()
 	{
+		User::create([
+			'name' => config('site.admin.name'),
+			'email' => config('site.admin.email'),
+			'email_verified_at' => now(),
+			'password' => bcrypt('password'),
+		]);
 		factory(User::class)->create()->each(function ($user) {
 			$user->orders()->createMany(factory(Order::class, 5)->make()->toArray());
 			factory(Profile::class)->create(['user_id' => $user->id]);

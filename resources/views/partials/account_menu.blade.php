@@ -3,7 +3,7 @@
 	<div class="account-menu__divider"></div>
 	<a href="#" class="account-menu__user">
 		<div class="account-menu__user-avatar">
-			<img src="{{ auth()->user()->accountMenuAvatar }}" alt="@lang('Avatar')">
+			<img src="{{ auth()->user()->accountMenuAvatar }}" alt="@lang('Avatar')" width="40" height="40">
 		</div>
 		<div class="account-menu__user-info">
 			<div class="account-menu__user-name">{{ auth()->user()->name }}</div>

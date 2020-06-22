@@ -25,5 +25,9 @@ class Profile extends Model implements HasMedia
 			->width(44)
 			->height(44)
 			->sharpen(10);
+		$this->addMediaConversion('dashboard')
+			->width(90)
+			->height(90)
+			->sharpen(10);
 	}
 }

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App;
 
+use Exception;
 use Laravel\Scout\Searchable;
 use Spatie\MediaLibrary\HasMedia;
 use Illuminate\Database\Eloquent\Model;
@@ -112,12 +113,16 @@ class Part extends Model implements HasMedia, Buyable
 			->width(70)
 			->height(70)
 			->sharpen(10);
+		$this->addMediaConversion('_92x92')
+			->width(70)
+			->height(70)
+			->sharpen(10);
 	}
 
 	public function getIndexImageAttribute(): string
 	{
 		$mediaItems = $this->getMedia();
-		if ($mediaItems) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('_245x245');
 		}
 
@@ -127,10 +132,23 @@ class Part extends Model implements HasMedia, Buyable
 	public function getCartHeaderImageAttribute(): string
 	{
 		$mediaItems = $this->getMedia();
-		if ($mediaItems) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('_70x70');
 		}
 
+		return '/images/avatar44x44.png';
+	}
+
+	public function getNewArrivalImageAttribute(): string
+	{
+		$mediaItems = $this->getMedia();
+		if (!empty($mediaItems)) {
+			try {
+				return $mediaItems[0]->getUrl('_92x92');
+			} catch (Exception $ex) {
+				return '/images/avatar44x44.png';
+			}
+		}
 		return '/images/avatar44x44.png';
 	}
 }

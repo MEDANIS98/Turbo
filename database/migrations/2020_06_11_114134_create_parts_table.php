@@ -17,13 +17,15 @@ class CreatePartsTable extends Migration
 	{
 		Schema::create('parts', function (Blueprint $table) {
 			$table->id();
-			$table->unsignedBigInteger('vehicle_id');
+			$table->unsignedBigInteger('user_id');
+			$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+			$table->unsignedBigInteger('vehicle_id')->nullable();
 			$table->foreign('vehicle_id')->references('id')->on('vehicles')->onDelete('cascade');
-			$table->unsignedBigInteger('type_id');
+			$table->unsignedBigInteger('type_id')->nullable();
 			$table->foreign('type_id')->references('id')->on('types')->onDelete('cascade');
 			$table->string('title');
 			$table->longText('description')->nullable();
-			$table->string('image');
+			$table->string('image')->nullable();
 			$table->decimal('price');
 			$table->decimal('old_price')->nullable();
 			$table->string('sku')->nullable();
