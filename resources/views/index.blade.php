@@ -67,7 +67,7 @@
 							</div>
 							<div class="product-card__image">
 								<a href="product-full.html">
-									<img src="/images/products/product-3-245x245.jpg" alt="">
+									<img src="/images/products/product-3-245x245.jpg" alt="@lang('Photo')">
 								</a>
 								<div
 									class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -195,7 +195,7 @@
 									</div>
 									<div class="product-card__image">
 										<a href="product-full.html">
-											<img src="/images/products/product-1-245x245.jpg" alt="">
+											<img src="/images/products/product-1-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -266,7 +266,7 @@
 										</button>
 									</div>
 									<div class="product-card__image"><a href="product-full.html">
-											<img src="/images/products/product-2-245x245.jpg" alt="">
+											<img src="/images/products/product-2-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -335,7 +335,7 @@
 									</div>
 									<div class="product-card__image">
 										<a href="product-full.html">
-											<img src="/images/products/product-3-245x245.jpg" alt="">
+											<img src="/images/products/product-3-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -408,7 +408,7 @@
 										</button>
 									</div>
 									<div class="product-card__image"><a href="product-full.html">
-											<img src="/images/products/product-4-245x245.jpg" alt="">
+											<img src="/images/products/product-4-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -479,7 +479,7 @@
 										</button>
 									</div>
 									<div class="product-card__image"><a href="product-full.html">
-											<img src="/images/products/product-5-245x245.jpg" alt="">
+											<img src="/images/products/product-5-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -542,7 +542,7 @@
 										</button>
 									</div>
 									<div class="product-card__image"><a href="product-full.html"><img
-												src="/images/products/product-6-245x245.jpg" alt=""></a>
+												src="/images/products/product-6-245x245.jpg" alt="@lang('Photo')"></a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
 											<div class="status-badge__body">
@@ -603,7 +603,7 @@
 									</div>
 									<div class="product-card__image">
 										<a href="product-full.html">
-											<img src="/images/products/product-7-245x245.jpg" alt="">
+											<img src="/images/products/product-7-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -669,7 +669,7 @@
 									</div>
 									<div class="product-card__image">
 										<a href="product-full.html">
-											<img src="/images/products/product-8-245x245.jpg" alt="">
+											<img src="/images/products/product-8-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -797,7 +797,7 @@
 									</div>
 									<div class="product-card__image">
 										<a href="product-full.html">
-											<img src="/images/products/product-1-245x245.jpg" alt="">
+											<img src="/images/products/product-1-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -869,7 +869,7 @@
 									</div>
 									<div class="product-card__image">
 										<a href="product-full.html">
-											<img src="/images/products/product-2-245x245.jpg" alt="">
+											<img src="/images/products/product-2-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -934,7 +934,7 @@
 									</div>
 									<div class="product-card__image">
 										<a href="product-full.html">
-											<img src="/images/products/product-3-245x245.jpg" alt="">
+											<img src="/images/products/product-3-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -1005,7 +1005,7 @@
 									</div>
 									<div class="product-card__image">
 										<a href="product-full.html">
-											<img src="/images/products/product-4-245x245.jpg" alt="">
+											<img src="/images/products/product-4-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -1078,7 +1078,7 @@
 									</div>
 									<div class="product-card__image">
 										<a href="product-full.html">
-											<img src="/images/products/product-5-245x245.jpg" alt="">
+											<img src="/images/products/product-5-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -1146,7 +1146,7 @@
 									</div>
 									<div class="product-card__image">
 										<a href="product-full.html">
-											<img src="/images/products/product-6-245x245.jpg" alt=""></a>
+											<img src="/images/products/product-6-245x245.jpg" alt="@lang('Photo')"></a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
 											<div class="status-badge__body">
@@ -1213,7 +1213,7 @@
 										</button>
 									</div>
 									<div class="product-card__image"><a href="product-full.html"><img
-												src="/images/products/product-7-245x245.jpg" alt=""></a>
+												src="/images/products/product-7-245x245.jpg" alt="@lang('Photo')"></a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
 											<div class="status-badge__body">
@@ -1279,7 +1279,8 @@
 										</button>
 									</div>
 									<div class="product-card__image">
-										<a href="product-full.html"><img src="/images/products/product-8-245x245.jpg" alt=""></a>
+										<a href="product-full.html"><img src="/images/products/product-8-245x245.jpg"
+												alt="@lang('Photo')"></a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
 											<div class="status-badge__body">
@@ -1393,7 +1394,7 @@
 											class="product-card__action product-card__action--compare" type="button"
 											aria-label="@lang('Add to compare')">@include('svg.chart')</button></div>
 									<div class="product-card__image"><a href="product-full.html"><img
-												src="/images/products/product-1-245x245.jpg" alt=""></a>
+												src="/images/products/product-1-245x245.jpg" alt="@lang('Photo')"></a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
 											<div class="status-badge__body">
@@ -1451,7 +1452,7 @@
 											class="product-card__action product-card__action--compare" type="button"
 											aria-label="@lang('Add to compare')">@include('svg.chart')</button></div>
 									<div class="product-card__image"><a href="product-full.html"><img
-												src="/images/products/product-2-245x245.jpg" alt=""></a>
+												src="/images/products/product-2-245x245.jpg" alt="@lang('Photo')"></a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
 											<div class="status-badge__body">
@@ -1511,7 +1512,7 @@
 									</div>
 									<div class="product-card__image">
 										<a href="product-full.html">
-											<img src="/images/products/product-3-245x245.jpg" alt="">
+											<img src="/images/products/product-3-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -1579,7 +1580,7 @@
 									</div>
 									<div class="product-card__image">
 										<a href="product-full.html">
-											<img src="/images/products/product-4-245x245.jpg" alt="">
+											<img src="/images/products/product-4-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -1649,7 +1650,7 @@
 									</div>
 									<div class="product-card__image">
 										<a href="product-full.html">
-											<img src="/images/products/product-5-245x245.jpg" alt="">
+											<img src="/images/products/product-5-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -1713,7 +1714,7 @@
 									</div>
 									<div class="product-card__image">
 										<a href="product-full.html">
-											<img src="/images/products/product-6-245x245.jpg" alt="">
+											<img src="/images/products/product-6-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -1776,7 +1777,7 @@
 									</div>
 									<div class="product-card__image">
 										<a href="product-full.html">
-											<img src="/images/products/product-7-245x245.jpg" alt="">
+											<img src="/images/products/product-7-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -1840,7 +1841,7 @@
 									</div>
 									<div class="product-card__image">
 										<a href="product-full.html">
-											<img src="/images/products/product-8-245x245.jpg" alt="">
+											<img src="/images/products/product-8-245x245.jpg" alt="@lang('Photo')">
 										</a>
 										<div
 											class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -1899,10 +1900,10 @@
 		<div class="block-banners__list">
 			<a href="#" class="block-banners__item block-banners__item--style--one">
 				<span class="block-banners__item-image">
-					<img src="/images/banners/banner1.jpg" alt="">
+					<img src="/images/banners/banner1.jpg" alt="@lang('Photo')">
 				</span>
 				<span class="block-banners__item-image block-banners__item-image--blur">
-					<img src="/images/banners/banner1.jpg" alt="">
+					<img src="/images/banners/banner1.jpg" alt="@lang('Photo')">
 				</span>
 				<span class="block-banners__item-title">Motor
 					Oils
@@ -1918,10 +1919,10 @@
 			</a>
 			<a href="#" class="block-banners__item block-banners__item--style--two">
 				<span class="block-banners__item-image">
-					<img src="/images/banners/banner2.jpg" alt="">
+					<img src="/images/banners/banner2.jpg" alt="@lang('Photo')">
 				</span>
 				<span class="block-banners__item-image block-banners__item-image--blur"><img src="/images/banners/banner2.jpg"
-						alt="">
+						alt="@lang('Photo')">
 				</span>
 				<span class="block-banners__item-title">Save
 					up
@@ -1964,7 +1965,7 @@
 							</div>
 							<div class="product-card__image">
 								<a href="product-full.html">
-									<img src="/images/products/product-1-245x245.jpg" alt="">
+									<img src="/images/products/product-1-245x245.jpg" alt="@lang('Photo')">
 								</a>
 							</div>
 							<div class="product-card__info">
@@ -2008,7 +2009,7 @@
 							</div>
 							<div class="product-card__image">
 								<a href="product-full.html">
-									<img src="/images/products/product-2-245x245.jpg" alt="">
+									<img src="/images/products/product-2-245x245.jpg" alt="@lang('Photo')">
 								</a>
 							</div>
 							<div class="product-card__info">
@@ -2047,7 +2048,7 @@
 							</div>
 							<div class="product-card__image">
 								<a href="product-full.html">
-									<img src="/images/products/product-3-245x245.jpg" alt="">
+									<img src="/images/products/product-3-245x245.jpg" alt="@lang('Photo')">
 								</a>
 							</div>
 							<div class="product-card__info">
@@ -2094,7 +2095,7 @@
 							</div>
 							<div class="product-card__image">
 								<a href="product-full.html">
-									<img src="/images/products/product-4-245x245.jpg" alt="">
+									<img src="/images/products/product-4-245x245.jpg" alt="@lang('Photo')">
 								</a>
 							</div>
 							<div class="product-card__info">
@@ -2137,7 +2138,7 @@
 							</div>
 							<div class="product-card__image">
 								<a href="product-full.html">
-									<img src="/images/products/product-5-245x245.jpg" alt="">
+									<img src="/images/products/product-5-245x245.jpg" alt="@lang('Photo')">
 								</a>
 							</div>
 							<div class="product-card__info">
@@ -2176,7 +2177,7 @@
 							</div>
 							<div class="product-card__image">
 								<a href="product-full.html">
-									<img src="/images/products/product-6-245x245.jpg" alt="">
+									<img src="/images/products/product-6-245x245.jpg" alt="@lang('Photo')">
 								</a>
 							</div>
 							<div class="product-card__info">
@@ -2222,7 +2223,7 @@
 							</div>
 							<div class="product-card__image">
 								<a href="product-full.html">
-									<img src="/images/products/product-7-245x245.jpg" alt="">
+									<img src="/images/products/product-7-245x245.jpg" alt="@lang('Photo')">
 								</a>
 							</div>
 							<div class="product-card__info">
@@ -2263,7 +2264,7 @@
 							</div>
 							<div class="product-card__image">
 								<a href="product-full.html">
-									<img src="/images/products/product-8-245x245.jpg" alt="">
+									<img src="/images/products/product-8-245x245.jpg" alt="@lang('Photo')">
 								</a>
 							</div>
 							<div class="product-card__info">
@@ -2301,7 +2302,7 @@
 							</div>
 							<div class="product-card__image">
 								<a href="product-full.html">
-									<img src="/images/products/product-9-245x245.jpg" alt="">
+									<img src="/images/products/product-9-245x245.jpg" alt="@lang('Photo')">
 								</a>
 							</div>
 							<div class="product-card__info">
