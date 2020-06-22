@@ -46,8 +46,7 @@
 						<tr class="cart-table__row">
 							<td class="cart-table__column cart-table__column--image">
 								<a href="{{ route('part', ['part' => $item->model]) }}">
-									{{-- <img src="/images/products/product-4-160x160.jpg" alt="@lang('Photo')"> --}}
-									<img src="{{ secure_asset($item->model->image) }}" alt="@lang('Image')">
+									<img src="{{ secure_asset($item->model->image) }}" alt="@lang('Photo')">
 								</a>
 							</td>
 							<td class="cart-table__column cart-table__column--product">

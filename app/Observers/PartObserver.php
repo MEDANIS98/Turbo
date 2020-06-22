@@ -31,4 +31,23 @@ class PartObserver
 				->toMediaCollection();
 		}
 	}
+
+	/**
+	 * Handle the part "updated" event.
+	 *
+	 * @return void
+	 */
+	public function updated(Part $part)
+	{
+		if ($part->isDirty('title')) {
+			$part->slug = sluggify($part->title);
+			$part->save();
+		}
+		// Just app/public because the image attribute already includes 'parts' folder name
+		if ($part->isDirty('image')) {
+			$part->addMedia(storage_path('app/public/' . $part->image))
+				->preservingOriginal()
+				->toMediaCollection();
+		}
+	}
 }

@@ -660,7 +660,9 @@
 									</div>
 									<div class="widget-products__item">
 										<div class="widget-products__image"><a href="product-full.html"><img
+
 													src="/images/products/product-2-64x64.jpg" alt="@lang('Photo')"></a>
+
 										</div>
 										<div class="widget-products__info">
 											<div class="widget-products__name"><a href="product-full.html">Brandix Brake
