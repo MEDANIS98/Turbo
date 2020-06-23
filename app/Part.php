@@ -15,7 +15,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 /**
- * App\Part
+ * App\Part.
  *
  * @property int $id
  * @property int $user_id

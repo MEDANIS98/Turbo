@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 /**
- * App\Profile
+ * App\Profile.
  *
  * @property int $id
  * @property string $avatar

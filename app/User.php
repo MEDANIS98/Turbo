@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 /**
- * App\User
+ * App\User.
  *
  * @property int $id
  * @property string $name

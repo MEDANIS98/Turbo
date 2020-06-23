@@ -10,7 +10,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 /**
- * App\Category
+ * App\Category.
  *
  * @property int $id
  * @property int|null $category_id

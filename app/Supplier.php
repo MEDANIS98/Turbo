@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
- * App\Supplier
+ * App\Supplier.
  *
  * @property int $id
  * @property int $user_id
