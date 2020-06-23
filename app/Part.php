@@ -10,9 +10,9 @@ use Spatie\MediaLibrary\HasMedia;
 use Illuminate\Database\Eloquent\Model;
 use Gloudemans\Shoppingcart\CanBeBought;
 use Spatie\MediaLibrary\InteractsWithMedia;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Gloudemans\Shoppingcart\Contracts\Buyable;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 /**
@@ -166,7 +166,7 @@ class Part extends Model implements HasMedia, Buyable
 	public function getIndexImageAttribute(): string
 	{
 		$mediaItems = $this->getMedia();
-		if (!empty($mediaItems)) {
+		if (! empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('_245x245');
 		}
 
@@ -176,7 +176,7 @@ class Part extends Model implements HasMedia, Buyable
 	public function getCartHeaderImageAttribute(): string
 	{
 		$mediaItems = $this->getMedia();
-		if (!empty($mediaItems)) {
+		if (! empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('_70x70');
 		}
 
@@ -186,7 +186,7 @@ class Part extends Model implements HasMedia, Buyable
 	public function getNewArrivalImageAttribute(): string
 	{
 		$mediaItems = $this->getMedia();
-		if (!empty($mediaItems)) {
+		if (! empty($mediaItems)) {
 			try {
 				return $mediaItems[0]->getUrl('_92x92');
 			} catch (Exception $ex) {
