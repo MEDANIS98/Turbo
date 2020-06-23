@@ -9,6 +9,40 @@ use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
+/**
+ * App\Category.
+ *
+ * @property int $id
+ * @property int|null $category_id
+ * @property string $name
+ * @property string|null $image
+ * @property string $slug
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Category[] $categories
+ * @property-read int|null $categories_count
+ * @property-read mixed $fertile_sub_categories
+ * @property-read mixed $infertile_sub_categories
+ * @property-read string $mega_menu_size
+ * @property-read string $sub_category_image
+ * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection|\Spatie\MediaLibrary\MediaCollections\Models\Media[] $media
+ * @property-read int|null $media_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Part[] $parts
+ * @property-read int|null $parts_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Type[] $types
+ * @property-read int|null $types_count
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Category newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Category newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Category query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Category whereCategoryId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Category whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Category whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Category whereImage($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Category whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Category whereSlug($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Category whereUpdatedAt($value)
+ * @mixin \Eloquent
+ */
 class Category extends Model implements HasMedia
 {
 	use InteractsWithMedia;

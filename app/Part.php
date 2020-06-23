@@ -14,6 +14,49 @@ use Gloudemans\Shoppingcart\Contracts\Buyable;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
+/**
+ * App\Part.
+ *
+ * @property int $id
+ * @property int $user_id
+ * @property int|null $vehicle_id
+ * @property int|null $type_id
+ * @property string $title
+ * @property string|null $description
+ * @property string|null $image
+ * @property float $price
+ * @property float|null $old_price
+ * @property string|null $sku
+ * @property int $rating
+ * @property string $slug
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read string $cart_header_image
+ * @property-read string $index_image
+ * @property-read bool $is_hot
+ * @property-read string $new_arrival_image
+ * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection|\Spatie\MediaLibrary\MediaCollections\Models\Media[] $media
+ * @property-read int|null $media_count
+ * @property-read \App\Vehicle|null $vehicle
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Part newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Part newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Part query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Part whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Part whereDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Part whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Part whereImage($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Part whereOldPrice($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Part wherePrice($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Part whereRating($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Part whereSku($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Part whereSlug($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Part whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Part whereTypeId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Part whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Part whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Part whereVehicleId($value)
+ * @mixin \Eloquent
+ */
 class Part extends Model implements HasMedia, Buyable
 {
 	use Searchable, InteractsWithMedia, CanBeBought;
