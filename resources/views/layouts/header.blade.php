@@ -1,6 +1,6 @@
 <!-- site__header -->
 <header class="site__header">
-	<div class="header">
+	<div class="header" id="header">
 		<div class="header__megamenu-area megamenu-area"></div>
 		@include('layouts.header.topbar')
 		@include('layouts.header.navbar')

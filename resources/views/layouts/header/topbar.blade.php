@@ -19,6 +19,6 @@
 				@lang('About')
 			</a>
 		</div>
-		@include('partials.languageSwitcher')
+		<language-switcher />
 	</div>
 </div>
