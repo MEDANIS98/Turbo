@@ -10,6 +10,7 @@ use Spatie\MediaLibrary\HasMedia;
 use Illuminate\Database\Eloquent\Model;
 use Gloudemans\Shoppingcart\CanBeBought;
 use Spatie\MediaLibrary\InteractsWithMedia;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Gloudemans\Shoppingcart\Contracts\Buyable;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
@@ -59,7 +60,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  */
 class Part extends Model implements HasMedia, Buyable
 {
-	use Searchable, InteractsWithMedia, CanBeBought;
+	use Searchable, InteractsWithMedia, CanBeBought, SoftDeletes;
 
 	public function getBuyableIdentifier($options = null)
 	{
