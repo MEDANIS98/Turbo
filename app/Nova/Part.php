@@ -66,7 +66,7 @@ class Part extends Resource
 			Text::make(__('Title'), 'title')->required(),
 			Trix::make(__('Description'), 'description'),
 			Image::make(__('Image'), 'image'),
-			Number::make(__('Price'), 'price')->displayUsing(fn () => round($this->price) . ' DZD'),
+			Number::make(__('Price'), 'price')->required()->displayUsing(fn () => round($this->price) . ' DZD'),
 		];
 	}
 
