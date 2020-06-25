@@ -36,7 +36,6 @@ class Vehicle extends Model
 {
 	use Searchable;
 
-
 	public function brand()
 	{
 		return $this->belongsTo(Brand::class);

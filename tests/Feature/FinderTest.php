@@ -1,12 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests\Feature;
 
 use App\Brand;
 use App\Vehicle;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class FinderTest extends TestCase
@@ -14,7 +14,7 @@ class FinderTest extends TestCase
 	use DatabaseMigrations;
 
 	/**
-	 * Test get brands by year
+	 * Test get brands by year.
 	 *
 	 * Assert correct API response
 	 *

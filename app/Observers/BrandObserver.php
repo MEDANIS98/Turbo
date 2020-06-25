@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Observers;
 
 use App\Brand;
@@ -9,7 +11,6 @@ class BrandObserver
 	/**
 	 * Handle the brand "creating" event.
 	 *
-	 * @param  \App\Brand  $brand
 	 * @return void
 	 */
 	public function creating(Brand $brand)
@@ -20,7 +21,6 @@ class BrandObserver
 	/**
 	 * Handle the brand "created" event.
 	 *
-	 * @param  \App\Brand  $brand
 	 * @return void
 	 */
 	public function created(Brand $brand)
@@ -31,7 +31,6 @@ class BrandObserver
 	/**
 	 * Handle the brand "updating" event.
 	 *
-	 * @param  \App\Brand  $brand
 	 * @return void
 	 */
 	public function updating(Brand $brand)
@@ -44,7 +43,6 @@ class BrandObserver
 	/**
 	 * Handle the brand "updated" event.
 	 *
-	 * @param  \App\Brand  $brand
 	 * @return void
 	 */
 	public function updated(Brand $brand)
@@ -55,7 +53,6 @@ class BrandObserver
 	/**
 	 * Handle the brand "deleted" event.
 	 *
-	 * @param  \App\Brand  $brand
 	 * @return void
 	 */
 	public function deleted(Brand $brand)
@@ -66,7 +63,6 @@ class BrandObserver
 	/**
 	 * Handle the brand "restored" event.
 	 *
-	 * @param  \App\Brand  $brand
 	 * @return void
 	 */
 	public function restored(Brand $brand)
@@ -77,7 +73,6 @@ class BrandObserver
 	/**
 	 * Handle the brand "force deleted" event.
 	 *
-	 * @param  \App\Brand  $brand
 	 * @return void
 	 */
 	public function forceDeleted(Brand $brand)

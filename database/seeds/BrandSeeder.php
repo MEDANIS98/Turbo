@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use App\Brand;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Storage;
@@ -15,7 +17,7 @@ class BrandSeeder extends Seeder
 	{
 		Storage::disk('public')->deleteDirectory('brands');
 		Storage::disk('public')->makeDirectory('brands');
-		require_once(dirname(__FILE__) . '/data/brands.php');
+		require_once dirname(__FILE__) . '/data/brands.php';
 		foreach ($brands as $name => $country) {
 			copy(
 				base_path("data/brands/$name.png"),

@@ -16,7 +16,7 @@ class VehiclesController extends Controller
 	 *
 	 * Select model names where brand is passed brand
 	 *
-	 * @param integer \App\Http\Requests\BrandModelsRequest the brand id
+	 * @param int \App\Http\Requests\BrandModelsRequest the brand id
 	 * @return \Illuminate\Support\Collection $models
 	 **/
 	public function getModelsByBrand(BrandModelsRequest $request): Collection

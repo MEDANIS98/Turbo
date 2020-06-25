@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
-use App\Brand;
 use App\Part;
+use App\Brand;
 use App\Category;
 use App\Nova\Templates\FooterOptions;
 use App\Nova\Templates\HeaderOptions;

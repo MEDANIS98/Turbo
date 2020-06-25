@@ -32,7 +32,6 @@ class BrandsController extends Controller
 	/**
 	 * Display the specified resource.
 	 *
-	 * @param  \App\Brand  $brand
 	 * @return \Illuminate\Http\Response
 	 */
 	public function show(Brand $brand)

@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
-use App\Brand;
 use App\Part;
 use App\Type;
+use App\Brand;
 use App\Invoice;
 use App\Profile;
 use App\Category;
-use App\Observers\BrandObserver;
 use App\Observers\PartObserver;
 use App\Observers\TypeObserver;
+use App\Observers\BrandObserver;
 use App\Observers\InvoiceObserver;
 use App\Observers\ProfileObserver;
 use App\Observers\CategoryObserver;
