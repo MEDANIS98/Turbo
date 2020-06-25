@@ -4,6 +4,9 @@
 		<li class="account-nav__item @if($active == 'dashboard') account-nav__item--active @endif">
 			<a href="{{ route('home') }}">@lang('Dashboard')</a>
 		</li>
+		<li class="account-nav__item">
+			<a href="/admin">@lang('Stock System')</a>
+		</li>
 		<li class="account-nav__item @if($active == 'garage') account-nav__item--active @endif">
 			<a href="/garage">@lang('Garage')</a>
 		</li>

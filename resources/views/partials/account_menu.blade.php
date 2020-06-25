@@ -13,6 +13,7 @@
 	<div class="account-menu__divider"></div>
 	<ul class="account-menu__links">
 		<li><a href="/dashboard">@lang('Dashboard')</a></li>
+		<li><a href="/admin">@lang('Stock System')</a></li>
 		<li><a href="/garage">@lang('Garage')</a></li>
 		<li><a href="/account-profile">@lang('Edit Profile')</a></li>
 		<li><a href="/account-orders">@lang('Order History')</a></li>
