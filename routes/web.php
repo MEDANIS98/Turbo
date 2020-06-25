@@ -66,3 +66,4 @@ Route::view('/category-5-full', 'category-5-full');
 Route::view('/category-6-full', 'category-6-full');
 Route::view('/category-7-full', 'category-7-full');
 Route::view('/category-right-sidebar', 'category-right-sidebar');
+Route::get('brands/{brand}', 'BrandsController@show')->name('brand');

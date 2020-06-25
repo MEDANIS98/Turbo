@@ -5,6 +5,7 @@
 @section('content')
 @include('partials.finder')
 @include('partials.features')
+@include('partials.brands')
 <div class="block-space block-space--layout--divider-nl"></div>
 <div class="block block-products-carousel" data-layout="grid-5">
 	<div class="container">
@@ -1942,10 +1943,8 @@
 <div class="block-space block-space--layout--divider-nl"></div>
 @include('partials.new_arrivals')
 <div class="block-space block-space--layout--divider-nl"></div>
-<div class="block block-posts-carousel block-posts-carousel--layout--grid" data-layout="grid">
-</div>
+<div class="block block-posts-carousel block-posts-carousel--layout--grid" data-layout="grid"></div>
 <div class="block-space block-space--layout--divider-nl"></div>
-@include('partials.brands')
 <div class="block-space block-space--layout--divider-nl d-xl-block d-none"></div>
 <div class="block block-products-columns">
 	<div class="container">

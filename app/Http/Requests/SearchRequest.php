@@ -27,7 +27,7 @@ class SearchRequest extends FormRequest
 	{
 		return [
 			'year' => 'bail|required|integer|exists:vehicles,year',
-			'brand' => 'bail|required|string|exists:vehicles,brand',
+			'brand' => 'bail|required|integer|exists:brands,id',
 			'model' => 'bail|required|string|exists:vehicles,model',
 			'fuel' => 'bail|required|string|exists:vehicles,fuel',
 		];

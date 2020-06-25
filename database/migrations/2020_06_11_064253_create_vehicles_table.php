@@ -18,7 +18,8 @@ class CreateVehiclesTable extends Migration
 		Schema::create('vehicles', function (Blueprint $table) {
 			$table->id();
 			$table->year('year');
-			$table->string('brand');
+			$table->unsignedBigInteger('brand_id');
+			$table->foreign('brand_id')->references('id')->on('brands')->onDelete('cascade');
 			$table->string('model');
 			$table->string('fuel');
 			$table->timestamps();

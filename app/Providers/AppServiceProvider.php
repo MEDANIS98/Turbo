@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
+use App\Brand;
 use App\Part;
 use App\Category;
 use App\Nova\Templates\FooterOptions;
@@ -43,6 +44,11 @@ class AppServiceProvider extends ServiceProvider
 			$ids = \Illuminate\Support\Facades\Redis::zrevrange('popular_parts', 0, 9);
 			$featured_parts = Part::whereIn('id', $ids)->get();
 			$view->with('featured_parts', $featured_parts);
+		});
+		view()->composer('partials.brands', function ($view) {
+			// Get brands
+			$brands = Brand::all();
+			$view->with('brands', $brands);
 		});
 		view()->composer('layouts.header.cart', fn ($view) => $view->with('cart', Cart::content()));
 	}

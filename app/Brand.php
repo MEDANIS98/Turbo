@@ -10,4 +10,14 @@ class Brand extends Model
 	{
 		return 'slug';
 	}
+
+	public function vehicles()
+	{
+		return $this->hasMany(Vehicle::class);
+	}
+
+	public function parts()
+	{
+		return $this->hasManyThrough(Part::class, Vehicle::class);
+	}
 }

@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Brand;
 use App\Vehicle;
 use Illuminate\Database\Seeder;
 
@@ -14,6 +15,9 @@ class VehicleSeeder extends Seeder
 	 */
 	public function run()
 	{
-		factory(Vehicle::class, 2)->create();
+		$brands = Brand::all();
+		foreach ($brands as $brand) {
+			factory(Vehicle::class, 2)->create(['brand_id' => $brand->id]);
+		}
 	}
 }

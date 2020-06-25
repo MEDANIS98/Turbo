@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
+use App\Brand;
 use App\Vehicle;
 use Illuminate\Support\Collection;
 use App\Http\Requests\YearsBrandRequest;
@@ -20,8 +21,22 @@ class BrandsController extends Controller
 	 **/
 	public function getByYear(YearsBrandRequest $request): Collection
 	{
-		$brands = Vehicle::where('year', $request->year)->select('brand')->distinct()->orderBy('brand')->pluck('brand');
+		// Get vehicles of year
+		$vehicles = Vehicle::where('year', $request->year)->select('brand_id')->distinct()->pluck('brand_id')->toArray();
+
+		$brands = Brand::whereIn('id', $vehicles)->select('name', 'id')->get();
 
 		return $brands;
+	}
+
+	/**
+	 * Display the specified resource.
+	 *
+	 * @param  \App\Brand  $brand
+	 * @return \Illuminate\Http\Response
+	 */
+	public function show(Brand $brand)
+	{
+		return view('brand', compact('brand'));
 	}
 }
