@@ -1,20 +1,5 @@
 <div class="header__navbar">
-	<div class="header__navbar-departments">
-		<div class="departments">
-			<button class="departments__button" type="button">
-				<span class="departments__button-icon">
-					@include('svg.sidebar')
-				</span>
-				<span class="departments__button-title">
-					@lang('Menu')
-				</span>
-				<span class="departments__button-arrow">
-					@include('svg.button_arrow')
-				</span>
-			</button>
-			@include('layouts.header.megamenu')
-		</div>
-	</div>
+	@includeIf($categories->isNotEmpty(), 'layouts.header.megamenu')
 	{{-- Left navigation start --}}
 	<div class="header__navbar-menu">
 		<div class="main-menu">
