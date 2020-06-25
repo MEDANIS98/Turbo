@@ -22,6 +22,9 @@
 	},
 	"dependencies": {
 		"algoliasearch": "^4.3.0",
+		"bootstrap": "^4.5.0",
+		"jquery": "^3.5.1",
+		"popper.js": "^1.16.1",
 		"vue": "^2.6.11",
 		"vue-i18n": "^8.18.2",
 		"vue-instantsearch": "^3.0.3"
