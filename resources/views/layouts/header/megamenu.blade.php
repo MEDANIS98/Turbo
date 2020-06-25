@@ -33,7 +33,7 @@
 									<div class="col-1of{{ round($category->fertileSubCategories->count() / 2) }}">
 										<ul class="megamenu__links megamenu-links megamenu-links--root">
 											<li class="megamenu-links__item megamenu-links__item--has-submenu">
-												<a class="megamenu-links__item-link" href="{{ route('category', ['category' => $category]) }}">
+												<a class="megamenu-links__item-link" href="{{ route('category', ['category' => $sub_category]) }}">
 													{{ $sub_category->name }}
 												</a>
 												<ul class="megamenu-links">

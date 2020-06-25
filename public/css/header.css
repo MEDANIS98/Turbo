@@ -252,6 +252,8 @@
 }
 
 .departments__megamenu--open {
+	min-width: 450px;
+	min-height: 280px;
 	display: block
 }
 

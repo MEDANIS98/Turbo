@@ -1,5 +1,5 @@
 <div class="header__navbar">
-	@includeIf($categories->isNotEmpty(), 'layouts.header.megamenu')
+	@includeWhen(($infertile_categories->isNotEmpty() || $categories->isNotEmpty()), 'layouts.header.megamenu')
 	{{-- Left navigation start --}}
 	<div class="header__navbar-menu">
 		<div class="main-menu">

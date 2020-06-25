@@ -47,6 +47,11 @@ class Category extends Model implements HasMedia
 {
 	use InteractsWithMedia;
 
+	public function category()
+	{
+		return $this->belongsTo(self::class);
+	}
+
 	public function categories()
 	{
 		return $this->hasMany(self::class);
@@ -105,7 +110,7 @@ class Category extends Model implements HasMedia
 	public function getSubCategoryImageAttribute(): string
 	{
 		$mediaItems = $this->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('_148x148');
 		}
 

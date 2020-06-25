@@ -34,16 +34,24 @@ class TypeObserver
 	}
 
 	/**
+	 * Handle the type "updating" event.
+	 *
+	 * @return void
+	 */
+	public function updating(Type $type)
+	{
+		if ($type->isDirty('name')) {
+			$type->slug = sluggify($type->name);
+		}
+	}
+
+	/**
 	 * Handle the type "updated" event.
 	 *
 	 * @return void
 	 */
 	public function updated(Type $type)
 	{
-		if ($type->isDirty('name')) {
-			$type->slug = sluggify($type->name);
-			$type->save();
-		}
 		// Just app/public because the image attribute already includes 'types' folder name
 		if ($type->isDirty('image')) {
 			$type->addMedia(storage_path('app/public/' . $type->image))
