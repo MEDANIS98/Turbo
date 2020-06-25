@@ -1,0 +1,5 @@
+<?php
+
+$brands = [
+	'Audi' => 'Germany'
+];
