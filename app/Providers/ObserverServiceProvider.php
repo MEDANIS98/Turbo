@@ -4,11 +4,13 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
+use App\Brand;
 use App\Part;
 use App\Type;
 use App\Invoice;
 use App\Profile;
 use App\Category;
+use App\Observers\BrandObserver;
 use App\Observers\PartObserver;
 use App\Observers\TypeObserver;
 use App\Observers\InvoiceObserver;
@@ -30,5 +32,6 @@ class ObserverServiceProvider extends ServiceProvider
 		Type::observe(TypeObserver::class);
 		Category::observe(CategoryObserver::class);
 		Invoice::observe(InvoiceObserver::class);
+		Brand::observe(BrandObserver::class);
 	}
 }
