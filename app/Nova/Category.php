@@ -1,13 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Nova;
 
-use Illuminate\Http\Request;
-use Laravel\Nova\Fields\BelongsTo;
-use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Fields\Image;
+use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Image;
+use Laravel\Nova\Fields\HasMany;
+use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Category extends Resource
@@ -27,6 +29,7 @@ class Category extends Resource
 			// A type can not belong to a parent category
 			return parent::relatableQuery($request, $query->where('category_id', '!=', null));
 		}
+
 		return parent::relatableQuery($request, $query);
 	}
 
@@ -74,7 +77,6 @@ class Category extends Resource
 	/**
 	 * Get the fields displayed by the resource.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function fields(Request $request)
@@ -85,14 +87,13 @@ class Category extends Resource
 			Image::make(__('Image'), 'image'),
 			BelongsTo::make(__('Category'), 'category', self::class)->nullable(),
 			HasMany::make(__('Categories'), 'categories', self::class),
-			HasMany::make(__('Types'), 'types', Type::class)
+			HasMany::make(__('Types'), 'types', Type::class),
 		];
 	}
 
 	/**
 	 * Get the cards available for the request.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function cards(Request $request)
@@ -103,7 +104,6 @@ class Category extends Resource
 	/**
 	 * Get the filters available for the resource.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function filters(Request $request)
@@ -114,7 +114,6 @@ class Category extends Resource
 	/**
 	 * Get the lenses available for the resource.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function lenses(Request $request)
@@ -125,7 +124,6 @@ class Category extends Resource
 	/**
 	 * Get the actions available for the resource.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function actions(Request $request)
