@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Console\Commands;
 
 use App\User;
@@ -33,12 +35,9 @@ class CreateAdmin extends Command
 
 	/**
 	 * Execute the console command.
-	 *
-	 * @return mixed
 	 */
 	public function handle()
 	{
-
 		$user = User::create([
 			'name' => config('site.admin.name'),
 			'email' => config('site.admin.email'),
