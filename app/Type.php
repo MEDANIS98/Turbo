@@ -38,6 +38,11 @@ class Type extends Model implements HasMedia
 {
 	use InteractsWithMedia;
 
+	public function category()
+	{
+		return $this->belongsTo(Category::class);
+	}
+
 	public function getRouteKeyName(): string
 	{
 		return 'slug';

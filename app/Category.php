@@ -47,6 +47,11 @@ class Category extends Model implements HasMedia
 {
 	use InteractsWithMedia;
 
+	public function category()
+	{
+		return $this->belongsTo(self::class);
+	}
+
 	public function categories()
 	{
 		return $this->hasMany(self::class);
