@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2413db2bbf7134e1dd19ab6a4ba02af9",
+    "content-hash": "3769d3ef3ebdb01dcc818b28eb75291f",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -458,6 +458,47 @@
             ],
             "abandoned": true,
             "time": "2019-12-30T22:50:51+00:00"
+        },
+        {
+            "name": "dillingham/nova-attach-many",
+            "version": "1.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dillingham/nova-attach-many.git",
+                "reference": "66e0b01e1be3aecbbfc72e7df81b45bf7fb9674a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dillingham/nova-attach-many/zipball/66e0b01e1be3aecbbfc72e7df81b45bf7fb9674a",
+                "reference": "66e0b01e1be3aecbbfc72e7df81b45bf7fb9674a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NovaAttachMany\\Providers\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NovaAttachMany\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Attach Many Nova field",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "time": "2019-03-22T13:17:50+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
