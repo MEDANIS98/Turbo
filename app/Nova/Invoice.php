@@ -1,16 +1,16 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Nova;
 
+use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
+use NovaAttachMany\AttachMany;
+use Laravel\Nova\Fields\Number;
+use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\BelongsToMany;
-use Laravel\Nova\Fields\DateTime;
-use Laravel\Nova\Fields\HasMany;
-use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Fields\Number;
-use Laravel\Nova\Http\Requests\NovaRequest;
-use NovaAttachMany\AttachMany;
 
 class Invoice extends Resource
 {
@@ -57,8 +57,6 @@ class Invoice extends Resource
 
 	/**
 	 * Get a fresh instance of the model represented by the resource.
-	 *
-	 * @return mixed
 	 */
 	public static function newModel()
 	{
@@ -66,14 +64,13 @@ class Invoice extends Resource
 		$var = new $model;
 		// Set the dafault value for the reception date
 		$var->reception_date = now();
+
 		return $var;
 	}
-
 
 	/**
 	 * Get the fields displayed by the resource.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function fields(Request $request)
@@ -85,7 +82,7 @@ class Invoice extends Resource
 			AttachMany::make(__('Parts'), 'parts', 'App\Nova\Part')->showCounts()->showPreview(),
 			BelongsToMany::make(__('Parts'), 'parts', 'App\Nova\Part')->fields(function () {
 				return [
-					Number::make(__('Quantity'), 'quantity')
+					Number::make(__('Quantity'), 'quantity'),
 				];
 			}),
 		];
@@ -94,7 +91,6 @@ class Invoice extends Resource
 	/**
 	 * Get the cards available for the request.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function cards(Request $request)
@@ -105,7 +101,6 @@ class Invoice extends Resource
 	/**
 	 * Get the filters available for the resource.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function filters(Request $request)
@@ -116,7 +111,6 @@ class Invoice extends Resource
 	/**
 	 * Get the lenses available for the resource.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function lenses(Request $request)
@@ -127,7 +121,6 @@ class Invoice extends Resource
 	/**
 	 * Get the actions available for the resource.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function actions(Request $request)

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Observers;
 
 use App\Invoice;
@@ -9,7 +11,6 @@ class InvoiceObserver
 	/**
 	 * Handle the invoice "creating" event.
 	 *
-	 * @param  \App\Invoice  $invoice
 	 * @return void
 	 */
 	public function creating(Invoice $invoice)
@@ -20,7 +21,6 @@ class InvoiceObserver
 	/**
 	 * Handle the invoice "created" event.
 	 *
-	 * @param  \App\Invoice  $invoice
 	 * @return void
 	 */
 	public function created(Invoice $invoice)
@@ -31,7 +31,6 @@ class InvoiceObserver
 	/**
 	 * Handle the invoice "updated" event.
 	 *
-	 * @param  \App\Invoice  $invoice
 	 * @return void
 	 */
 	public function updated(Invoice $invoice)
@@ -42,7 +41,6 @@ class InvoiceObserver
 	/**
 	 * Handle the invoice "deleted" event.
 	 *
-	 * @param  \App\Invoice  $invoice
 	 * @return void
 	 */
 	public function deleted(Invoice $invoice)
@@ -53,7 +51,6 @@ class InvoiceObserver
 	/**
 	 * Handle the invoice "restored" event.
 	 *
-	 * @param  \App\Invoice  $invoice
 	 * @return void
 	 */
 	public function restored(Invoice $invoice)
@@ -64,7 +61,6 @@ class InvoiceObserver
 	/**
 	 * Handle the invoice "force deleted" event.
 	 *
-	 * @param  \App\Invoice  $invoice
 	 * @return void
 	 */
 	public function forceDeleted(Invoice $invoice)
