@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
-            "version": "2.6.2",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/algolia/algoliasearch-client-php.git",
-                "reference": "6721dd2bff8c5a9de6152d550c896d147e013e40"
+                "reference": "ce8b35a5aa842ad3e0dc05bbd7aaf5ed82481d71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/algolia/algoliasearch-client-php/zipball/6721dd2bff8c5a9de6152d550c896d147e013e40",
-                "reference": "6721dd2bff8c5a9de6152d550c896d147e013e40",
+                "url": "https://api.github.com/repos/algolia/algoliasearch-client-php/zipball/ce8b35a5aa842ad3e0dc05bbd7aaf5ed82481d71",
+                "reference": "ce8b35a5aa842ad3e0dc05bbd7aaf5ed82481d71",
                 "shasum": ""
             },
             "require": {
@@ -74,7 +74,7 @@
                 "php",
                 "search"
             ],
-            "time": "2020-06-23T15:16:17+00:00"
+            "time": "2020-06-25T08:47:13+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -1864,7 +1864,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "2e153bce9ebf78d2c0652830d708058922171cb5"
+                "reference": "b91d4086ce1e480403dfb913293118b5dc6337b0"
             },
             "require": {
                 "brick/money": "^0.4.2",
