@@ -64,6 +64,7 @@
 	<script src="/vendor/select2/js/select2.min.js"></script>
 	<script src="/js/number.js"></script>
 	<script src="/js/main.js"></script>
+	@stack('scripts')
 </body>
 
 </html>

@@ -66,3 +66,7 @@
 		</form>
 	</div>
 </div>
+
+@push('scripts')
+	<script src="/js/finder.js"></script>
+@endpush

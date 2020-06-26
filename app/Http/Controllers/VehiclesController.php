@@ -16,12 +16,12 @@ class VehiclesController extends Controller
 	 *
 	 * Select model names where brand is passed brand
 	 *
-	 * @param string \App\Http\Requests\BrandModelsRequest the brand string
-	 * @return \Illuminate\Support\Collection $brands
+	 * @param int \App\Http\Requests\BrandModelsRequest the brand id
+	 * @return \Illuminate\Support\Collection $models
 	 **/
 	public function getModelsByBrand(BrandModelsRequest $request): Collection
 	{
-		$models = Vehicle::where('brand', $request->brand)->select('model')->distinct()->orderBy('brand')->pluck('model');
+		$models = Vehicle::where('brand_id', $request->brand)->select('model')->distinct()->orderBy('brand_id')->pluck('model');
 
 		return $models;
 	}

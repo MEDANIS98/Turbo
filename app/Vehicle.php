@@ -36,6 +36,11 @@ class Vehicle extends Model
 {
 	use Searchable;
 
+	public function brand()
+	{
+		return $this->belongsTo(Brand::class);
+	}
+
 	/**
 	 * Get the index name for the model.
 	 *
