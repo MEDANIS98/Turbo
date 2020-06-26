@@ -7,11 +7,19 @@ namespace Tests\Feature;
 use App\Brand;
 use App\Vehicle;
 use Tests\TestCase;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class SearchTest extends TestCase
 {
 	use DatabaseMigrations;
+
+	public function setUp(): void
+	{
+		parent::setUp();
+		Storage::disk('public')->deleteDirectory('brands');
+		Storage::disk('public')->makeDirectory('brands');
+	}
 
 	/**
 	 * Test users can search for parts
