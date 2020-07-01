@@ -3813,16 +3813,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "8.3.2",
+            "version": "8.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "a834a75abc739c8b0181e6eb68073b85b9b419dd"
+                "reference": "70b6d6406532a1ace0663a66235ba38b7ab58691"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/a834a75abc739c8b0181e6eb68073b85b9b419dd",
-                "reference": "a834a75abc739c8b0181e6eb68073b85b9b419dd",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/70b6d6406532a1ace0663a66235ba38b7ab58691",
+                "reference": "70b6d6406532a1ace0663a66235ba38b7ab58691",
                 "shasum": ""
             },
             "require": {
@@ -3909,7 +3909,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-06-22T10:20:34+00:00"
+            "time": "2020-06-30T07:57:43+00:00"
         },
         {
             "name": "spatie/laravel-translatable",
