@@ -27,54 +27,7 @@
 					@foreach ($chunk as $part)
 					<div class="block-products-carousel__cell">
 						<div class="product-card product-card--layout--horizontal">
-							<div class="product-card__actions-list">
-								<button class="product-card__action product-card__action--quickview" type="button" aria-label="@lang('Quick view')">
-									@include('svg.zoom')
-								</button>
-							</div>
-							<div class="product-card__image">
-								<a href="{{ route('part', ['part' => $part]) }}">
-									<img src="{{ secure_asset($part->indexImage) }}" alt="@lang('Photo')">
-								</a>
-							</div>
-							<div class="product-card__info">
-								<div class="product-card__name">
-									<div>
-										<div class="product-card__badges">
-											@if($part->old_price)
-												<div class="tag-badge tag-badge--sale">@lang('sale')</div>
-											@endif
-											<div class="tag-badge tag-badge--hot">@lang('hot')</div>
-											@if($part->wasRecentlyCreated)
-												<div class="tag-badge tag-badge--new">@lang('new')</div>
-											@endif
-										</div>
-										<a href="{{ route('part', ['part' => $part]) }}">
-											{{ $part->title }}
-										</a>
-									</div>
-								</div>
-								<div class="product-card__rating">
-									<div class="rating product-card__rating-stars">
-										<div class="rating__body">
-											@for($i = 0; $i < $part->rating; $i++)
-												<div class="rating__star rating__star--active"></div>
-											@endfor
-											@for($s = $part->rating; $s < 5; $s++)
-												<div class="rating__star"></div>
-											@endfor
-										</div>
-									</div>
-									<div class="product-card__rating-label">4 on 3 reviews</div>
-								</div>
-							</div>
-							<div class="product-card__footer">
-								<div class="product-card__prices">
-									<div class="product-card__price product-card__price--current">
-										{{ $part->price }} DZD
-									</div>
-								</div>
-							</div>
+							@include('partials.part_card')
 						</div>
 					</div>
 					@endforeach

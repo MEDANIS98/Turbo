@@ -639,7 +639,7 @@
 							</div>
 							<div class="products-list__content">
 								@foreach ($parts as $part)
-								@include('parts.list_item')
+									@include('parts.product_card')
 								@endforeach
 							</div>
 						</div>

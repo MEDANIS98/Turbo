@@ -7,7 +7,7 @@
 				</div>
 				<div class="block-features__item-info">
 					<div class="block-features__item-title">@lang('Free Shipping')</div>
-					<div class="block-features__item-subtitle">@lang('For orders from 50000DA')</div>
+					<div class="block-features__item-subtitle">@lang('For orders from 50000 DA')</div>
 				</div>
 			</li>
 			<li class="block-features__item">

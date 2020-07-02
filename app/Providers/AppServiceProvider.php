@@ -39,10 +39,11 @@ class AppServiceProvider extends ServiceProvider
 			$infertile_categories = Category::where('category_id', null)->whereDoesntHave('categories')->get();
 			$view->with(['categories' => $categories, 'infertile_categories' => $infertile_categories]);
 		});
-		view()->composer(['partials.featured', 'partials.category_featured'], function ($view) {
+		view()->composer(['partials.featured', 'partials.index.featured', 'partials.category_featured'], function ($view) {
 			// Get 10 most popular (viewed) products
 			$ids = \Illuminate\Support\Facades\Redis::zrevrange('popular_parts', 0, 9);
 			$featured_parts = Part::whereIn('id', $ids)->get();
+			info($featured_parts);
 			$view->with('featured_parts', $featured_parts);
 		});
 		view()->composer('partials.brands', function ($view) {

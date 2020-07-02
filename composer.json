@@ -27,6 +27,7 @@
 		"optimistdigital/nova-translatable": "master",
 		"pelmered/fake-car": "^1.4",
 		"spatie/laravel-medialibrary": "^8.0.0",
+		"staudenmeir/eloquent-has-many-deep": "^1.7",
 		"whitecube/nova-page": "master"
 	},
 	"require-dev": {
@@ -46,6 +47,9 @@
 	"extra": {
 		"laravel": {
 			"dont-discover": []
+		},
+		"symfony": {
+			"require": "5.0.x"
 		}
 	},
 	"autoload": {

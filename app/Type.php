@@ -43,6 +43,11 @@ class Type extends Model implements HasMedia
 		return $this->belongsTo(Category::class);
 	}
 
+	public function parts()
+	{
+		return $this->hasMany(Part::class);
+	}
+
 	public function getRouteKeyName(): string
 	{
 		return 'slug';
@@ -59,7 +64,7 @@ class Type extends Model implements HasMedia
 	public function getSubCategoryImageAttribute(): string
 	{
 		$mediaItems = $this->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('_148x148');
 		}
 
