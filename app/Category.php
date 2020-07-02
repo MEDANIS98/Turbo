@@ -47,7 +47,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
 class Category extends Model implements HasMedia
 {
 	use HasRelationships;
-
 	use InteractsWithMedia;
 
 	public function category()
@@ -78,6 +77,7 @@ class Category extends Model implements HasMedia
 	public function subType()
 	{
 		return $this->hasManyThrough(Type::class, self::class)->limit(1);
+
 		return $this->hasMany(Type::class)->limit(1);
 	}
 
@@ -129,7 +129,7 @@ class Category extends Model implements HasMedia
 	public function getSubCategoryImageAttribute(): string
 	{
 		$mediaItems = $this->getMedia();
-		if (!empty($mediaItems)) {
+		if (! empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('_148x148');
 		}
 
