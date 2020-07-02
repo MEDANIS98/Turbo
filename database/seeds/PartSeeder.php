@@ -7,7 +7,6 @@ use App\Type;
 use App\Vehicle;
 use App\Category;
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Eloquent\Builder;
 
 class PartSeeder extends Seeder
 {
