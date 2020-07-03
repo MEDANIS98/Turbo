@@ -46,7 +46,7 @@ Route::middleware('auth', 'verified')->group(function () {
 	Route::post('/account/change-password', 'AccountController@changePassword')->name('password.change');
 	Route::view('/account/orders', 'account-orders');
 	Route::view('/account/profile', 'account-profile');
-	Route::get('/garage', 'PartsController@index');
+	Route::get('/shop', 'PartsController@index');
 	Route::post('/parts/add', 'PartsController@store')->name('part.add');
 });
 Route::view('/shop-list', 'shop-list');

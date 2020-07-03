@@ -64,8 +64,8 @@
 							</a>
 						</li>
 						<li data-mobile-menu-item>
-							<a href="/garage" class="" data-mobile-menu-trigger>
-								@lang('Garage')
+							<a href="/shop" class="" data-mobile-menu-trigger>
+								@lang('Shop')
 							</a>
 						</li>
 						<li data-mobile-menu-item>

@@ -1,6 +1,6 @@
 @extends('layouts.block')
 
-@section('title', __('Garage'))
+@section('title', __('Shop'))
 
 @section('block')
 <div class="container container--max--xl">
@@ -11,7 +11,7 @@
 		<div class="col-12 col-lg-9 mt-4 mt-lg-0">
 			<div class="card">
 				<div class="card-header">
-					<h5>@lang('Garage')</h5>
+					<h5>@lang('Shop')</h5>
 				</div>
 				<div class="card-divider"></div>
 				<div class="card-body card-body--padding--2">

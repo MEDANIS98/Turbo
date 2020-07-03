@@ -50,8 +50,8 @@
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="/garage" class="menu__link">
-									@lang('Garage')
+								<a href="/shop" class="menu__link">
+									@lang('Shop')
 								</a>
 							</li>
 							<li class="menu__item">
