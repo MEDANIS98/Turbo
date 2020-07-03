@@ -135,4 +135,9 @@ class Category extends Model implements HasMedia
 
 		return '/images/avatar44x44.png';
 	}
+
+	public function getIsParentAttribute(): bool
+	{
+		return (bool) ! $this->category_id;
+	}
 }

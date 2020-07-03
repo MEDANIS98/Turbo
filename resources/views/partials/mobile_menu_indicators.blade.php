@@ -26,12 +26,12 @@
 			@lang('Cart')
 		</span>
 	</a>
-	<a class="mobile-menu__indicator" href="/garage">
+	<a class="mobile-menu__indicator" href="/shop">
 		<span class="mobile-menu__indicator-icon">
 			@include('svg.mobile.car')
 		</span>
 		<span class="mobile-menu__indicator-title">
-			@lang('Garage')
+			@lang('Shop')
 		</span>
 	</a>
 </div>

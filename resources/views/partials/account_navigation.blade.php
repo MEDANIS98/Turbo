@@ -8,7 +8,7 @@
 			<a href="/admin">@lang('Stock System')</a>
 		</li>
 		<li class="account-nav__item @if($active == 'garage') account-nav__item--active @endif">
-			<a href="/garage">@lang('Garage')</a>
+			<a href="/shop">@lang('Shop')</a>
 		</li>
 		<li class="account-nav__item @if($active == 'profile') account-nav__item--active @endif">
 			<a href="/profile">@lang('Edit Profile')</a>

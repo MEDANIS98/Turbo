@@ -14,7 +14,13 @@ class TypesController extends Controller
 	{
 		$request->validate(['category' => 'required|integer|exists:categories,id']);
 
-		return Category::find($request->category)->types;
+		$category = Category::findOrFail($request->category);
+
+		if ($category->isParent) {
+			return $category->subTypes;
+		}
+
+		return $category->types;
 	}
 
 	public function show(Type $type)

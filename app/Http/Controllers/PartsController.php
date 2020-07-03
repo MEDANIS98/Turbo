@@ -22,7 +22,7 @@ class PartsController extends Controller
 		$categories = Category::select('name', 'id')->get();
 		$parts = Part::where('user_id', auth()->id())->limit(4)->get();
 
-		return view('garage', compact('vehicles', 'categories', 'parts'));
+		return view('shop', compact('vehicles', 'categories', 'parts'));
 	}
 
 	/**
