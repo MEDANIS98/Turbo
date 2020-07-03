@@ -83,7 +83,7 @@ class User extends Authenticatable implements MustVerifyEmail
 	public function getAvatarAttribute(): string
 	{
 		$mediaItems = optional($this->profile)->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getFullUrl();
 		}
 
@@ -93,7 +93,7 @@ class User extends Authenticatable implements MustVerifyEmail
 	public function getAccountMenuAvatarAttribute(): string
 	{
 		$mediaItems = optional($this->profile)->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('account_menu');
 		}
 
@@ -103,7 +103,7 @@ class User extends Authenticatable implements MustVerifyEmail
 	public function getDashboardAvatarAttribute(): string
 	{
 		$mediaItems = optional($this->profile)->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('dashboard');
 		}
 
@@ -118,5 +118,10 @@ class User extends Authenticatable implements MustVerifyEmail
 	public function suppliers(): HasMany
 	{
 		return $this->hasMany(Supplier::class);
+	}
+
+	public function workshop()
+	{
+		return $this->hasOne(Workshop::class);
 	}
 }
