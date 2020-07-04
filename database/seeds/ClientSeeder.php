@@ -1,12 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
+use App\Client;
 use App\User;
-use App\Supplier;
 use Illuminate\Database\Seeder;
 
-class SupplierSeeder extends Seeder
+class ClientSeeder extends Seeder
 {
 	/**
 	 * Run the database seeds.
@@ -17,7 +15,7 @@ class SupplierSeeder extends Seeder
 	{
 		$ids = User::select('id')->pluck('id');
 		foreach ($ids as $id) {
-			factory(Supplier::class, 5)->create(['user_id' => $id]);
+			factory(Client::class, 50)->create(['user_id' => $id]);
 		}
 	}
 }
