@@ -208,4 +208,9 @@ class Part extends Model implements HasMedia, Buyable
 	{
 		return $this->belongsToMany(Invoice::class);
 	}
+
+	public function brand()
+	{
+		return $this->belongsTo(Brand::class, 'vehicle_id', 'id', Vehicle::class);
+	}
 }
