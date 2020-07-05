@@ -234,5 +234,15 @@
 	"Types": "Les types",
 	"Country": "Pays",
 	"Clients": "Les clients",
-	"Client": "Client"
+	"Client": "Client",
+	"Total of parts": "Total de pièces",
+	"Total Quantity": "Quantité totale",
+	"Created at": "Créé à",
+	"Print Receipt": "Imprimer le reçu",
+	"Receipt for": "Reçu pour",
+	"Date of receipt": "Date de réception",
+	"Thank you!": "Nous vous remercie!",
+	"Notices": "Remarques",
+	"Invoice was created on a computer and is valid without the signature and seal.": "Le reçu a été créé sur un ordinateur et est valide sans la signature et le sceau.",
+	"Print": "Imprimer"
 }

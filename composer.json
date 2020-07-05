@@ -10,6 +10,7 @@
 	"require": {
 		"php": "^7.2.5",
 		"algolia/algoliasearch-client-php": "^2.2",
+		"armincms/many-to-many": "^0.2.1",
 		"bumbummen99/shoppingcart": "^2.9",
 		"coderello/laravel-nova-lang": "^1.4",
 		"davejamesmiller/laravel-breadcrumbs": "5.x",

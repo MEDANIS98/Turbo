@@ -52,6 +52,17 @@ class Client extends Resource
 	];
 
 	/**
+	 * Build an "index" query for the given resource.
+	 *
+	 * @param  \Illuminate\Database\Eloquent\Builder  $query
+	 * @return \Illuminate\Database\Eloquent\Builder
+	 */
+	public static function indexQuery(NovaRequest $request, $query)
+	{
+		return $query->where('user_id', auth()->id());
+	}
+
+	/**
 	 * Get the fields displayed by the resource.
 	 *
 	 * @param  \Illuminate\Http\Request  $request

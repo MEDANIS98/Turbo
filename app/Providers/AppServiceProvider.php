@@ -43,7 +43,6 @@ class AppServiceProvider extends ServiceProvider
 			// Get 10 most popular (viewed) products
 			$ids = \Illuminate\Support\Facades\Redis::zrevrange('popular_parts', 0, 9);
 			$featured_parts = Part::whereIn('id', $ids)->get();
-			info($featured_parts);
 			$view->with('featured_parts', $featured_parts);
 		});
 		view()->composer('partials.brands', function ($view) {
@@ -52,5 +51,6 @@ class AppServiceProvider extends ServiceProvider
 			$view->with('brands', $brands);
 		});
 		view()->composer('layouts.header.cart', fn ($view) => $view->with('cart', Cart::content()));
+		app('view')->addNamespace('mail', resource_path('views') . '/print');
 	}
 }
