@@ -78,7 +78,6 @@ class RegisterController extends Controller
 	 *
 	 * Return an array of phone validation rules.
 	 *
-	 * @return array
 	 **/
 	private function phone_validation_rules(): array
 	{
@@ -87,7 +86,7 @@ class RegisterController extends Controller
 			'size:10',
 			'starts_with:0',
 			'regex:/^(0)(5|6|7)(4|5|6|7)[0-9]{7}$/',
-			'unique:users'
+			'unique:users',
 		];
 	}
 }

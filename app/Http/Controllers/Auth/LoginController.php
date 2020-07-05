@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Http\Controllers\Auth;
 
 use App\User;
-use App\Http\Controllers\Controller;
 use App\Profile;
+use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -61,9 +61,10 @@ class LoginController extends Controller
 		]);
 		Profile::create([
 			'avatar' => $user->getAvatar(),
-			'user_id' => $userModel->id
+			'user_id' => $userModel->id,
 		]);
 		auth()->login($userModel, true);
+
 		return redirect(RouteServiceProvider::HOME);
 	}
 }
