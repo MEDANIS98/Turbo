@@ -4,8 +4,13 @@ declare(strict_types=1);
 
 namespace App\Nova;
 
-use Laravel\Nova\Fields\ID;
+use App\PartReceipt;
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\Number;
+use Laravel\Nova\Fields\DateTime;
+use App\Nova\Actions\PrintReceipt;
+use Armincms\Fields\BelongsToMany;
+use Laravel\Nova\Fields\BelongsTo;
 
 class Receipt extends Resource
 {
@@ -58,7 +63,44 @@ class Receipt extends Resource
 	public function fields(Request $request)
 	{
 		return [
-			ID::make()->sortable(),
+			DateTime::make(__('Created at'), function () {
+				return $this->created_at;
+			}),
+			BelongsTo::make(__('Client'), 'client', 'App\Nova\Client')->showCreateRelationButton(),
+			BelongsToMany::make(__('Parts'), 'parts', Part::class)->hideFromIndex()
+				->fields(function ($ids) {
+					$part_receipt = PartReceipt::where([
+						'part_id' => $ids['relatedId'],
+						'receipt_id' => $ids['resourceId'],
+					])->first();
+
+					return [
+						Number::make(__('Quantity'), 'quantity')
+							->rules('required', 'numeric')->displayUsing(function () use ($part_receipt) {
+								return $part_receipt->quantity;
+							}),
+					];
+				})
+				->pivots(),
+			Number::make(__('Total of parts'), function () {
+				return $this->parts()->count();
+			}),
+			Number::make(__('Total Quantity'), function () {
+				$quantity = 0;
+				foreach ($this->parts as $part) {
+					$quantity += (int) $part->pivot->quantity;
+				}
+				// Get the quantity of each part in the receipt
+				return $quantity;
+			}),
+			Number::make(__('Total'), function () {
+				$price = 0;
+				foreach ($this->parts as $part) {
+					$price += ($part->price * (int) $part->pivot->quantity);
+				}
+				// Get the quantity of each part in the receipt
+				return $price;
+			}),
 		];
 	}
 
@@ -99,6 +141,8 @@ class Receipt extends Resource
 	 */
 	public function actions(Request $request)
 	{
-		return [];
+		return [
+			new PrintReceipt,
+		];
 	}
 }

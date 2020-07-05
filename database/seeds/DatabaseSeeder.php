@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
 		$this->cleanupStorage();
 		$this->call(UserSeeder::class);
 		$this->call(SupplierSeeder::class);
+		$this->call(ClientSeeder::class);
 		$this->call(CategorySeeder::class);
 		$this->call(TypeSeeder::class);
 		$this->call(BrandSeeder::class);
