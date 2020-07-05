@@ -20,6 +20,7 @@ class CreateProfilesTable extends Migration
 			$table->string('avatar');
 			$table->string('address')->nullable();
 			$table->unsignedBigInteger('user_id');
+			$table->string('phone')->unique()->nullable();
 			$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 			$table->timestamps();
 		});
