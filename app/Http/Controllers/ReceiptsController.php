@@ -7,7 +7,7 @@ namespace App\Http\Controllers;
 use App\Receipt;
 use Illuminate\Http\Request;
 
-class ReceiptController extends Controller
+class ReceiptsController extends Controller
 {
 	/**
 	 * Display a listing of the resource.
@@ -77,5 +77,10 @@ class ReceiptController extends Controller
 	public function destroy(Receipt $receipt)
 	{
 		//
+	}
+
+	public function print(Receipt $receipt)
+	{
+		return view('print.receipt', compact('receipt'));
 	}
 }
