@@ -43,6 +43,21 @@
 						</div>
 
 						<div class="form-group row">
+							<label for="phone-number" class="col-md-4 col-form-label text-md-right">@lang('Phone number') </label>
+
+							<div class="col-md-6">
+								<input id="phone-number" type="tel" class="form-control @error('phone') is-invalid @enderror"
+									name="phone" value="{{ old('phone') }}" required autocomplete="tel">
+
+								@error('phone')
+								<span class="invalid-feedback" role="alert">
+									<strong>{{ $message }}</strong>
+								</span>
+								@enderror
+							</div>
+						</div>
+
+						<div class="form-group row">
 							<label for="password" class="col-md-4 col-form-label text-md-right">@lang('Password')</label>
 
 							<div class="col-md-6">

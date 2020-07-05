@@ -68,3 +68,5 @@ Route::view('/category-7-full', 'category-7-full');
 Route::view('/category-right-sidebar', 'category-right-sidebar');
 Route::get('brands/{brand}', 'BrandsController@show')->name('brand');
 Route::get('print/receipt/{receipt}', 'ReceiptsController@print');
+Route::get('/login/google', 'Auth\LoginController@redirectToProvider');
+Route::get('/login/google/callback', 'Auth\LoginController@handleProviderCallback');

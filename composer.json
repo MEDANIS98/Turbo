@@ -23,6 +23,7 @@
 		"laravel/horizon": "^4.3",
 		"laravel/nova": "*",
 		"laravel/scout": "^8.0",
+		"laravel/socialite": "^4.4",
 		"laravel/tinker": "^2.0",
 		"laravel/ui": "^2.0",
 		"optimistdigital/nova-translatable": "master",
