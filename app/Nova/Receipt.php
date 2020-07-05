@@ -4,15 +4,13 @@ declare(strict_types=1);
 
 namespace App\Nova;
 
-use App\Nova\Actions\PrintReceipt;
 use App\PartReceipt;
-use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
-use NovaAttachMany\AttachMany;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\DateTime;
-use Laravel\Nova\Fields\BelongsTo;
+use App\Nova\Actions\PrintReceipt;
 use Armincms\Fields\BelongsToMany;
+use Laravel\Nova\Fields\BelongsTo;
 
 class Receipt extends Resource
 {
@@ -73,8 +71,9 @@ class Receipt extends Resource
 				->fields(function ($ids) {
 					$part_receipt = PartReceipt::where([
 						'part_id' => $ids['relatedId'],
-						'receipt_id' => $ids['resourceId']
+						'receipt_id' => $ids['resourceId'],
 					])->first();
+
 					return [
 						Number::make(__('Quantity'), 'quantity')
 							->rules('required', 'numeric')->displayUsing(function () use ($part_receipt) {
@@ -101,7 +100,7 @@ class Receipt extends Resource
 				}
 				// Get the quantity of each part in the receipt
 				return $price;
-			})
+			}),
 		];
 	}
 
