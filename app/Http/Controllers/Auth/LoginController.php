@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers\Auth;
 
+use App\User;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
+use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
@@ -38,5 +40,85 @@ class LoginController extends Controller
 	public function __construct()
 	{
 		$this->middleware('guest')->except('logout');
+	}
+
+	public function redirectToProvider(string $provider)
+	{
+		return Socialite::driver($provider)->redirect();
+	}
+
+	public function handleProviderCallback()
+	{
+		try {
+			$response = Socialite::driver('google')->user();
+		} catch (\Exception $exception) {
+			return redirect('/login')->with('error', $exception->getMessage());
+		}
+
+		$db_user = User::where('email', $response->email)->first();
+
+		if ($db_user) {
+			auth()->login($db_user);
+
+			return redirect(RouteServiceProvider::HOME);
+		} else {
+			$userInfo = $response->user;
+			$user = User::create([
+				'name' => $userInfo['name'],
+				'email' => $userInfo['email'],
+				'token' => $response->token,
+				'google_id' => $userInfo['id'],
+				'provider' => 'google',
+			]);
+			$user->markEmailAsVerified();
+
+			$user->profile()->create([
+				'avatar' => $userInfo['picture'],
+				'locale' => $userInfo['locale'],
+			]);
+
+			app()->setLocale($userInfo['locale']);
+
+			auth()->login($user);
+
+			return redirect(RouteServiceProvider::HOME);
+		}
+	}
+
+	public function handleFacebookCallback()
+	{
+		try {
+			$response = Socialite::driver('facebook')->user();
+		} catch (\Exception $exception) {
+			return redirect('/login')->with('error', $exception->getMessage());
+		}
+
+		$db_user = User::where('facebook_id', $response->id)->first();
+
+		if ($db_user) {
+			auth()->login($db_user);
+
+			return redirect(RouteServiceProvider::HOME);
+		} else {
+			$userInfo = $response->user;
+			$user = User::create([
+				'name' => $userInfo['name'],
+				'email' => $response->email,
+				'token' => $response->token,
+				'facebook_id' => $userInfo['id'],
+				'provider' => 'facebook',
+			]);
+
+			$user->markEmailAsVerified();
+
+			$user->profile()->create([
+				'avatar' => $response->avatar,
+				'avatar_original' => $response->avatar_original,
+			]);
+
+			auth()->login($user);
+
+			return redirect(RouteServiceProvider::HOME);
+		}
 	}
 }

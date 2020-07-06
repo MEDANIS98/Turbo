@@ -37,6 +37,8 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  */
 class Profile extends Model implements HasMedia
 {
+	protected $guarded = []; // yolo
+
 	use InteractsWithMedia;
 
 	public function user(): BelongsTo
