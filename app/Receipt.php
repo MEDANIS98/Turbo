@@ -21,6 +21,18 @@ class Receipt extends Model
 
 	public function getTotalAttribute(): float
 	{
+		return $this->subTotal + $this->vatValue;
+	}
+
+	public function getVatValueAttribute()
+	{
+		$value = $this->subTotal * $this->vat / 100;
+		return number_format((float) $value, 2, '.', '');
+	}
+
+	// Total of receipt H.T without tax
+	public function getSubtotalAttribute(): float
+	{
 		$price = 0;
 		foreach ($this->parts as $part) {
 			$price += ($part->price * (int) $part->pivot->quantity);

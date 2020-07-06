@@ -21,6 +21,8 @@ class CreateReceiptsTable extends Migration
 			$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 			$table->unsignedBigInteger('client_id');
 			$table->foreign('client_id')->references('id')->on('clients')->onDelete('cascade');
+			$table->integer('vat')->nullable();
+			$table->boolean('display_vat')->default(true);
 			$table->timestamps();
 		});
 	}

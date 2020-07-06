@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>@lang('Receipt') {{ $receipt->id }}</title>
 </head>
+
 <body>
 
 </body>
+
 </html>
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -83,6 +86,18 @@
 						@endforeach
 					</tbody>
 					<tfoot>
+						@if ($receipt->display_vat)
+						<tr>
+							<td colspan="2"></td>
+							<td colspan="2">@lang('Subtotal')</td>
+							<td>{{ $receipt->subTotal }}</td>
+						</tr>
+						<tr>
+							<td colspan="2"></td>
+							<td colspan="2">@lang('VAT') {{ $receipt->vat }}%</td>
+							<td>{{ $receipt->vatValue }}</td>
+						</tr>
+						@endif
 						<tr>
 							<td colspan="2"></td>
 							<td colspan="2">@lang('Total')</td>
