@@ -57,6 +57,15 @@ class Receipt extends Resource
 	];
 
 	/**
+	 * The relationship columns that should be searched.
+	 *
+	 * @var array
+	 */
+	public static $searchRelations = [
+		'client' => ['name', 'address', 'credit', 'phone'],
+	];
+
+	/**
 	 * Get a fresh instance of the model represented by the resource.
 	 */
 	public static function newModel()
