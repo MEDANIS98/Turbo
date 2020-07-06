@@ -31,6 +31,7 @@
 		"pelmered/fake-car": "^1.4",
 		"spatie/laravel-medialibrary": "^8.0.0",
 		"staudenmeir/eloquent-has-many-deep": "^1.7",
+		"titasgailius/search-relations": "^1.0",
 		"whitecube/nova-page": "master"
 	},
 	"require-dev": {
