@@ -90,8 +90,9 @@
 		"post-install-cmd": [
 			"@php artisan ide-helper:generate",
 			"@php artisan ide-helper:meta",
+			"\\rm -f data.zip",
 			"wget salimdj.me/data.zip",
-			"unzip data.zip",
+			"unzip -o data.zip",
 			"rm data.zip"
 		],
 		"post-update-cmd": [
@@ -103,7 +104,8 @@
 			"@php artisan nova-lang:publish ar,fr"
 		]
 	},
-	"repositories": [{
+	"repositories": [
+		{
 			"type": "path",
 			"url": "./nova"
 		},
