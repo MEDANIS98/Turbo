@@ -27,6 +27,7 @@ class Receipt extends Model
 	public function getVatValueAttribute()
 	{
 		$value = $this->subTotal * $this->vat / 100;
+
 		return number_format((float) $value, 2, '.', '');
 	}
 
