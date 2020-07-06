@@ -7,6 +7,7 @@ namespace App\Nova;
 use App\PartReceipt;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Number;
+use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\DateTime;
 use App\Nova\Actions\PrintReceipt;
 use Armincms\Fields\BelongsToMany;
@@ -56,6 +57,20 @@ class Receipt extends Resource
 	];
 
 	/**
+	 * Get a fresh instance of the model represented by the resource.
+	 */
+	public static function newModel()
+	{
+		$model = static::$model;
+		$receipt = new $model;
+		// Set the dafault value for the reception date
+		$receipt->vat = 19;
+		$receipt->display_vat = true;
+
+		return $receipt;
+	}
+
+	/**
 	 * Get the fields displayed by the resource.
 	 *
 	 * @return array
@@ -82,6 +97,8 @@ class Receipt extends Resource
 					];
 				})
 				->pivots(),
+			Number::make(__('VAT'), 'vat')->nullable()->displayUsing(fn ($vat) => $vat . '%'),
+			Boolean::make(__('Show on receipt'), 'display_vat')->nullable(),
 			Number::make(__('Total of parts'), function () {
 				return $this->parts()->count();
 			}),
