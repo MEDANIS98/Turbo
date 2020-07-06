@@ -54,7 +54,7 @@ class User extends Authenticatable implements MustVerifyEmail
 	 * @var array
 	 */
 	protected $fillable = [
-		'name', 'email', 'password', 'phone', 'token', 'google_id', 'provider', 'facebook_id'
+		'name', 'email', 'password', 'phone', 'token', 'google_id', 'provider', 'facebook_id',
 	];
 
 	/**
@@ -86,7 +86,7 @@ class User extends Authenticatable implements MustVerifyEmail
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (!empty($mediaItems)) {
+		if (! empty($mediaItems)) {
 			return $mediaItems[0]->getFullUrl();
 		}
 
@@ -99,7 +99,7 @@ class User extends Authenticatable implements MustVerifyEmail
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (!empty($mediaItems)) {
+		if (! empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('account_menu');
 		}
 
@@ -112,7 +112,7 @@ class User extends Authenticatable implements MustVerifyEmail
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (!empty($mediaItems)) {
+		if (! empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('dashboard');
 		}
 

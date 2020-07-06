@@ -59,6 +59,7 @@ class LoginController extends Controller
 
 		if ($db_user) {
 			auth()->login($db_user);
+
 			return redirect(RouteServiceProvider::HOME);
 		} else {
 			$userInfo = $response->user;
@@ -79,6 +80,7 @@ class LoginController extends Controller
 			app()->setLocale($userInfo['locale']);
 
 			auth()->login($user);
+
 			return redirect(RouteServiceProvider::HOME);
 		}
 	}
@@ -95,6 +97,7 @@ class LoginController extends Controller
 
 		if ($db_user) {
 			auth()->login($db_user);
+
 			return redirect(RouteServiceProvider::HOME);
 		} else {
 			$userInfo = $response->user;
@@ -114,6 +117,7 @@ class LoginController extends Controller
 			]);
 
 			auth()->login($user);
+
 			return redirect(RouteServiceProvider::HOME);
 		}
 	}
