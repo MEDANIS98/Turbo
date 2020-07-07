@@ -9,6 +9,7 @@ use App\Review;
 use App\Vehicle;
 use App\Category;
 use Illuminate\Http\Request;
+use App\Http\Requests\StorePartRequest;
 
 class PartsController extends Controller
 {
@@ -41,22 +42,14 @@ class PartsController extends Controller
 	 *
 	 * @return \Illuminate\Http\Response
 	 */
-	public function store(Request $request)
+	public function store(StorePartRequest $request)
 	{
-		$request->validate([
-			'vehicle' => 'nullable|integer|exists:vehicles,id',
-			'type' => 'nullable|integer|exists:types,id',
-			'title' => 'required|string|max:50',
-			'description' => 'nullable|string|min:5|max:1000',
-			'image' => 'nullable|image|max:10000',
-			'price' => 'required|integer|min:10|max:1000000',
-			'sku' => 'nullable|string|min:6|max:20',
-		]);
 		$part = new Part();
 		$part->vehicle_id = $request->vehicle;
 		$part->type_id = $request->type;
 		$part->title = $request->title;
 		$part->description = $request->description;
+		$part->key_features = json_encode(array_combine($request->keys, $request->features));
 		if ($request->file('image')) {
 			$path = $request->file('image')->store('parts', 'public');
 			$part->image = $path;

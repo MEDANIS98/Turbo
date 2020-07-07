@@ -9,6 +9,7 @@ use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Number;
+use Laravel\Nova\Fields\KeyValue;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Part extends Resource
@@ -67,6 +68,10 @@ class Part extends Resource
 			Trix::make(__('Description'), 'description'),
 			Image::make(__('Image'), 'image'),
 			Number::make(__('Price'), 'price')->required()->displayUsing(fn () => round($this->price) . ' DZD'),
+			KeyValue::make(__('Key Features'), 'key_features')->nullable()->rules('json')
+				->keyLabel(__('Feature'))
+				->valueLabel(__('Value'))
+				->actionText('Add Item'), // Customize the "add row" button text
 		];
 	}
 

@@ -62,6 +62,15 @@ class Part extends Model implements HasMedia, Buyable
 {
 	use Searchable, InteractsWithMedia, CanBeBought, SoftDeletes;
 
+	/**
+	 * The attributes that should be cast.
+	 *
+	 * @var array
+	 */
+	protected $casts = [
+		// 'key_features' => 'array',
+	];
+
 	public function getBuyableIdentifier($options = null)
 	{
 		return $this->id;
@@ -217,5 +226,10 @@ class Part extends Model implements HasMedia, Buyable
 	public function reviews()
 	{
 		return $this->hasMany(Review::class);
+	}
+
+	public function getFeaturesAttribute()
+	{
+		return json_decode($this->key_features);
 	}
 }
