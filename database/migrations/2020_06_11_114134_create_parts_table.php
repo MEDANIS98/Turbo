@@ -24,7 +24,8 @@ class CreatePartsTable extends Migration
 			$table->unsignedBigInteger('type_id')->nullable();
 			$table->foreign('type_id')->references('id')->on('types')->onDelete('cascade');
 			$table->string('title');
-			$table->longText('description')->nullable();
+			$table->text('excerpt')->nullable();
+			$table->text('description')->nullable();
 			$table->string('image')->nullable();
 			$table->decimal('price');
 			$table->decimal('old_price')->nullable();

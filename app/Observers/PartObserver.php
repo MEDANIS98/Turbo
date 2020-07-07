@@ -14,6 +14,7 @@ class PartObserver
 	public function creating(Part $part): void
 	{
 		$part->slug = sluggify($part->title);
+		$part->excerpt = str_limit($part->description, 200);
 		if (! $part->user_id && auth()->check()) {
 			$part->user_id = auth()->id();
 		}
@@ -42,6 +43,9 @@ class PartObserver
 		if ($part->isDirty('title')) {
 			$part->slug = sluggify($part->title);
 			$part->save();
+		}
+		if ($part->isDirty('description')) {
+			$part->excerpt = str_limit($part->description, 200);
 		}
 		// Just app/public because the image attribute already includes 'parts' folder name
 		if ($part->isDirty('image')) {
