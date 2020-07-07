@@ -80,12 +80,12 @@
 								<div class="section-header__arrows">
 									<div class="arrow section-header__arrow section-header__arrow--prev arrow--prev">
 										<button class="arrow__button" type="button">
-											@include('svg.arrow_prev')
+											@include('svg.arrow_left')
 										</button>
 									</div>
 									<div class="arrow section-header__arrow section-header__arrow--next arrow--next">
 										<button class="arrow__button" type="button">
-											@include('svg.arrow_next')
+											@include('svg.arrow_right')
 										</button>
 									</div>
 								</div>
