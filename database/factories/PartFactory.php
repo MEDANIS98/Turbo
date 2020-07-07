@@ -23,5 +23,12 @@ $factory->define(Part::class, function (Faker $faker) {
 		'old_price' => $price + ($price / rand(5, 10)), // TODO: make this optional
 		'sku' => $faker->optional()->swiftBicNumber,
 		'rating' => rand(0, 5),
+		'key_features' => json_encode([
+			'Speed' => '750 RPM',
+			'Power Source' => 'Cordless-Electric',
+			'Battery Cell Type' => 'Lithium',
+			'Voltage' => '20 Volts',
+			'Battery Capacity' => '2 Ah',
+		])
 	];
 });

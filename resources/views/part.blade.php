@@ -98,13 +98,11 @@
 					<div class="product__main">
 						<div class="product__excerpt">{{ $part->description }}</div>
 						<div class="product__features">
-							<div class="product__features-title">Key Features:</div>
+							<div class="product__features-title">@lang('Key Features'):</div>
 							<ul>
-								<li>Speed: <span>750 RPM</span></li>
-								<li>Power Source: <span>Cordless-Electric</span></li>
-								<li>Battery Cell Type: <span>Lithium</span></li>
-								<li>Voltage: <span>20 Volts</span></li>
-								<li>Battery Capacity: <span>2 Ah</span></li>
+								@foreach ($part->features as $feature => $value)
+									<li>{{ $feature }}: <span>{{ $value }}</span></li>
+								@endforeach
 							</ul>
 						</div>
 					</div>
@@ -147,7 +145,7 @@
 										</tr>
 										<tr>
 											<th>@lang('Country')</th>
-											<td>{{ $part->brand->country }}</td>
+											<td>{{ __($part->brand->country) }}</td>
 										</tr>
 									</table>
 								</div>

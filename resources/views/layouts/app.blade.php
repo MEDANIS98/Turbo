@@ -38,7 +38,7 @@
 
 <body>
 	<!-- site -->
-	<div class="site">
+	<div class="site" id="app">
 		@include('layouts.mobile_header')
 		@include('layouts.header')
 		<!-- site__body -->

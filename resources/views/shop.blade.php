@@ -78,7 +78,7 @@
 							</div>
 							<div class="vehicle-form__item vehicle-form__item--select">
 								<select class="form-control form-control-select2" aria-label="@lang('Type')" disabled id="select-type" name="type">
-									<option value="none">@lang('Select Type')</option>
+									<option value="null" selected>@lang('Select Type')</option>
 								</select>
 								@error('type')
 									<span class="invalid-feedback" role="alert" style="display: block;">
@@ -139,6 +139,15 @@
 										@enderror
 									</div>
 								</div>
+								<div class="form-row">
+									<label for="key-features">@lang('Key Features')</label>
+									@error('key_features')
+										<span class="invalid-feedback" role="alert" style="display: block;">
+											<strong>{{ $message }}</strong>
+										</span>
+									@enderror
+								</div>
+								<key-features/>
 							</div>
 						</div>
 						<div class="mt-4 pt-3">

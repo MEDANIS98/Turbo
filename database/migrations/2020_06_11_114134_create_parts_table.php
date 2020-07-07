@@ -30,6 +30,7 @@ class CreatePartsTable extends Migration
 			$table->decimal('old_price')->nullable();
 			$table->string('sku')->nullable();
 			$table->tinyInteger('rating')->default(0);
+			$table->json('key_features')->nullable();
 			$table->string('slug');
 			$table->timestamp('deleted_at')->nullable();
 			$table->timestamps();

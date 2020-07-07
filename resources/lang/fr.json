@@ -504,5 +504,12 @@
 	"Review Stars": "Revoir les étoiles",
 	"Post Your Review": "Postez votre avis",
 	"Your Review": "Votre avis",
-	"Star": "Étoil|Étoiles"
+	"Star": "Étoil|Étoiles",
+	"Key Features": "Principales caractéristiques",
+	"Feature": "Caractéristique",
+	"Show Part": "Afficher la piéce",
+	"Enter Key Feature": "Entrez la fonction clé",
+	"Enter Feature Value": "Entrez la valeur de la fonction",
+	"Add another": "Ajouter un autre",
+	"Remove the last": "Supprimer le dernier"
 }
