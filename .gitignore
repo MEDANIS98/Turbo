@@ -20,7 +20,7 @@ nova.zip
 data.zip
 /public/vendor/nova
 /resources/lang/vendor
-/resources/views/vendor
+/resources/views/vendor/nova
 /public/js/app.js
 /public/mix-manifest.json
 /storage/media-library

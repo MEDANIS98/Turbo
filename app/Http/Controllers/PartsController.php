@@ -7,6 +7,7 @@ namespace App\Http\Controllers;
 use App\Part;
 use App\Vehicle;
 use App\Category;
+use App\Review;
 use Illuminate\Http\Request;
 
 class PartsController extends Controller
@@ -74,7 +75,8 @@ class PartsController extends Controller
 	 */
 	public function show(Part $part)
 	{
-		return view('part', compact('part'));
+		$reviews = Review::where('part_id', $part->id)->paginate(1);
+		return view('part', compact('part', 'reviews'));
 	}
 
 	/**
