@@ -71,3 +71,4 @@ Route::get('print/receipt/{receipt}', 'ReceiptsController@print');
 Route::get('/login/{provider}', 'Auth\LoginController@redirectToProvider')->where('provider', '(google|facebook)');
 Route::get('/login/google/callback', 'Auth\LoginController@handleProviderCallback');
 Route::get('/login/facebook/callback', 'Auth\LoginController@handleFacebookCallback');
+Route::post('/review/{part}', 'ReviewsController@store')->name('review.store');

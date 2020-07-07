@@ -1,0 +1,20 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Review extends Model
+{
+	public function part()
+	{
+		return $this->belongsTo(Part::class);
+	}
+
+	public function user()
+	{
+		return $this->belongsTo(User::class);
+	}
+}
