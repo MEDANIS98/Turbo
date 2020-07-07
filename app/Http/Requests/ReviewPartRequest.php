@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
@@ -28,7 +30,7 @@ class ReviewPartRequest extends FormRequest
 			// If user is logged in then email and name are not required
 			'name' => 'bail|' . auth()->check() ? 'nullable|' : 'required|' . 'string|min:3|max:30',
 			'email' => 'bail|' . auth()->check() ? 'nullable|' : 'required|' . 'email',
-			'rating' => 'bail|required|integer|between:1,5'
+			'rating' => 'bail|required|integer|between:1,5',
 		];
 	}
 }

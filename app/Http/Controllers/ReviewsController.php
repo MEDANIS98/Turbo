@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ReviewPartRequest;
 use App\Part;
 use App\Review;
 use Illuminate\Http\Request;
+use App\Http\Requests\ReviewPartRequest;
 
 class ReviewsController extends Controller
 {
@@ -32,7 +34,6 @@ class ReviewsController extends Controller
 	/**
 	 * Store a newly created resource in storage.
 	 *
-	 * @param  \App\Http\Requests\ReviewPartRequest $request
 	 * @return \Illuminate\Http\Response
 	 */
 	public function store(ReviewPartRequest $request, Part $part)
@@ -44,13 +45,13 @@ class ReviewsController extends Controller
 		$review->name = $request->name;
 		$review->email = $request->email;
 		$review->save();
+
 		return redirect(route('part', $part) . '#product-tab-reviews')->with(['active_tab' => 'reviews']);
 	}
 
 	/**
 	 * Display the specified resource.
 	 *
-	 * @param  \App\Review  $review
 	 * @return \Illuminate\Http\Response
 	 */
 	public function show(Review $review)
@@ -61,7 +62,6 @@ class ReviewsController extends Controller
 	/**
 	 * Show the form for editing the specified resource.
 	 *
-	 * @param  \App\Review  $review
 	 * @return \Illuminate\Http\Response
 	 */
 	public function edit(Review $review)
@@ -72,8 +72,6 @@ class ReviewsController extends Controller
 	/**
 	 * Update the specified resource in storage.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
-	 * @param  \App\Review  $review
 	 * @return \Illuminate\Http\Response
 	 */
 	public function update(Request $request, Review $review)
@@ -84,7 +82,6 @@ class ReviewsController extends Controller
 	/**
 	 * Remove the specified resource from storage.
 	 *
-	 * @param  \App\Review  $review
 	 * @return \Illuminate\Http\Response
 	 */
 	public function destroy(Review $review)

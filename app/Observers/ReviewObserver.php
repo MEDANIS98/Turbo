@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Observers;
 
 use App\Review;
@@ -9,7 +11,6 @@ class ReviewObserver
 	/**
 	 * Handle the review "creating" event.
 	 *
-	 * @param  \App\Review  $review
 	 * @return void
 	 */
 	public function creating(Review $review)
@@ -22,7 +23,6 @@ class ReviewObserver
 	/**
 	 * Handle the review "created" event.
 	 *
-	 * @param  \App\Review  $review
 	 * @return void
 	 */
 	public function created(Review $review)
@@ -33,7 +33,6 @@ class ReviewObserver
 	/**
 	 * Handle the review "updated" event.
 	 *
-	 * @param  \App\Review  $review
 	 * @return void
 	 */
 	public function updated(Review $review)
@@ -44,7 +43,6 @@ class ReviewObserver
 	/**
 	 * Handle the review "deleted" event.
 	 *
-	 * @param  \App\Review  $review
 	 * @return void
 	 */
 	public function deleted(Review $review)
@@ -55,7 +53,6 @@ class ReviewObserver
 	/**
 	 * Handle the review "restored" event.
 	 *
-	 * @param  \App\Review  $review
 	 * @return void
 	 */
 	public function restored(Review $review)
@@ -66,7 +63,6 @@ class ReviewObserver
 	/**
 	 * Handle the review "force deleted" event.
 	 *
-	 * @param  \App\Review  $review
 	 * @return void
 	 */
 	public function forceDeleted(Review $review)
