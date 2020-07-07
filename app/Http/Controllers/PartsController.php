@@ -8,8 +8,8 @@ use App\Part;
 use App\Review;
 use App\Vehicle;
 use App\Category;
-use App\Http\Requests\StorePartRequest;
 use Illuminate\Http\Request;
+use App\Http\Requests\StorePartRequest;
 
 class PartsController extends Controller
 {

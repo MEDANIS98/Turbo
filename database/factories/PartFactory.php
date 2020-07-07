@@ -29,6 +29,6 @@ $factory->define(Part::class, function (Faker $faker) {
 			'Battery Cell Type' => 'Lithium',
 			'Voltage' => '20 Volts',
 			'Battery Capacity' => '2 Ah',
-		])
+		]),
 	];
 });

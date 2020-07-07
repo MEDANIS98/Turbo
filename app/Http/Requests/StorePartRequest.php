@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
@@ -32,7 +34,7 @@ class StorePartRequest extends FormRequest
 			'price' => 'required|integer|min:10|max:1000000',
 			'sku' => 'nullable|string|min:6|max:20',
 			'keys' => 'nullable|array',
-			'features' => 'required_if:keys,value|array'
+			'features' => 'required_if:keys,value|array',
 		];
 	}
 }
