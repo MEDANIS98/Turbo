@@ -68,7 +68,7 @@ class PartsController extends Controller
 	 */
 	public function show(Part $part)
 	{
-		$reviews = Review::where('part_id', $part->id)->paginate(1);
+		$reviews = Review::where('part_id', $part->id)->paginate(5);
 
 		return view('part', compact('part', 'reviews'));
 	}
