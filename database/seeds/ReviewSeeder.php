@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use App\Part;
-use App\User;
 use App\Review;
 use Illuminate\Database\Seeder;
 
@@ -19,9 +18,7 @@ class ReviewSeeder extends Seeder
 		$parts = Part::all();
 		foreach ($parts as $part) {
 			$part->reviews()->createMany(
-				factory(Review::class, rand(3, 15))->make([
-					'user_id' => User::inRandomOrder()->select('id')->limit(1)->first()->id,
-				])->toArray()
+				factory(Review::class, rand(3, 15))->make(['user_id' => null])->toArray()
 			);
 			$part->reviews()->createMany(
 				factory(Review::class, rand(3, 15))->make()->toArray()
