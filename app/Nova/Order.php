@@ -2,9 +2,14 @@
 
 namespace App\Nova;
 
+use App\Nova\Order\Supplier;
+use App\OrderPart;
+use Armincms\Fields\BelongsToMany;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\BelongsToMany as FieldsBelongsToMany;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Order extends Resource
@@ -51,6 +56,28 @@ class Order extends Resource
 	];
 
 	/**
+	 * Build an "index" query for the given resource.
+	 *
+	 * @param  \Illuminate\Database\Eloquent\Builder  $query
+	 * @return \Illuminate\Database\Eloquent\Builder
+	 */
+	public static function indexQuery(NovaRequest $request, $query)
+	{
+		return $query->where('user_id', auth()->id());
+	}
+
+	/**
+	 * Build a "detail" query for the given resource.
+	 *
+	 * @param  \Illuminate\Database\Eloquent\Builder  $query
+	 * @return \Illuminate\Database\Eloquent\Builder
+	 */
+	public static function detailQuery(NovaRequest $request, $query)
+	{
+		return parent::detailQuery($request, $query->where('user_id', auth()->id()));
+	}
+
+	/**
 	 * Get the fields displayed by the resource.
 	 *
 	 * @param  \Illuminate\Http\Request  $request
@@ -60,7 +87,23 @@ class Order extends Resource
 	{
 		return [
 			ID::make()->sortable(),
-			BelongsTo::make(__('Supplier'), 'supplier', Supplier::class)->required()
+			BelongsTo::make(__('Supplier'), 'supplier', Supplier::class)->required()->searchable(),
+			BelongsToMany::make(__('Parts'), 'parts', Part::class)->hideFromIndex()
+				->fields(function ($ids) {
+					$order_part = OrderPart::where([
+						'part_id' => $ids['relatedId'],
+						'order_id' => $ids['resourceId'],
+					])->first();
+
+					return [
+						Number::make(__('Quantity'), 'quantity')
+							->rules('required', 'numeric')->displayUsing(function () use ($order_part) {
+								return $order_part->quantity;
+							}),
+					];
+				})
+				->pivots(),
+			FieldsBelongsToMany::make(__('Parts'), 'parts', Part::class)
 		];
 	}
 
