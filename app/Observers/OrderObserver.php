@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Observers;
 
 use App\Order;
@@ -9,12 +11,11 @@ class OrderObserver
 	/**
 	 * Handle the order "creating" event.
 	 *
-	 * @param  \App\Order  $order
 	 * @return void
 	 */
 	public function creating(Order $order)
 	{
-		if (!$order->user_id) {
+		if (! $order->user_id) {
 			$order->user_id = auth()->id();
 		}
 	}
@@ -22,7 +23,6 @@ class OrderObserver
 	/**
 	 * Handle the order "created" event.
 	 *
-	 * @param  \App\Order  $order
 	 * @return void
 	 */
 	public function created(Order $order)
@@ -33,7 +33,6 @@ class OrderObserver
 	/**
 	 * Handle the order "updated" event.
 	 *
-	 * @param  \App\Order  $order
 	 * @return void
 	 */
 	public function updated(Order $order)
@@ -44,7 +43,6 @@ class OrderObserver
 	/**
 	 * Handle the order "deleted" event.
 	 *
-	 * @param  \App\Order  $order
 	 * @return void
 	 */
 	public function deleted(Order $order)
@@ -55,7 +53,6 @@ class OrderObserver
 	/**
 	 * Handle the order "restored" event.
 	 *
-	 * @param  \App\Order  $order
 	 * @return void
 	 */
 	public function restored(Order $order)
@@ -66,7 +63,6 @@ class OrderObserver
 	/**
 	 * Handle the order "force deleted" event.
 	 *
-	 * @param  \App\Order  $order
 	 * @return void
 	 */
 	public function forceDeleted(Order $order)

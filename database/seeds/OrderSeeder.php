@@ -1,8 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
+use App\User;
 use App\Order;
 use App\Supplier;
-use App\User;
 use Illuminate\Database\Seeder;
 
 class OrderSeeder extends Seeder

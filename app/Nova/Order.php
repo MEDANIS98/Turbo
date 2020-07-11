@@ -1,16 +1,18 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Nova;
 
-use App\Nova\Order\Supplier;
 use App\OrderPart;
-use Armincms\Fields\BelongsToMany;
-use Illuminate\Http\Request;
-use Laravel\Nova\Fields\BelongsTo;
-use Laravel\Nova\Fields\BelongsToMany as FieldsBelongsToMany;
 use Laravel\Nova\Fields\ID;
+use App\Nova\Order\Supplier;
+use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Number;
+use Armincms\Fields\BelongsToMany;
+use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Laravel\Nova\Fields\BelongsToMany as FieldsBelongsToMany;
 
 class Order extends Resource
 {
@@ -80,7 +82,6 @@ class Order extends Resource
 	/**
 	 * Get the fields displayed by the resource.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function fields(Request $request)
@@ -103,14 +104,13 @@ class Order extends Resource
 					];
 				})
 				->pivots(),
-			FieldsBelongsToMany::make(__('Parts'), 'parts', Part::class)
+			FieldsBelongsToMany::make(__('Parts'), 'parts', Part::class),
 		];
 	}
 
 	/**
 	 * Get the cards available for the request.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function cards(Request $request)
@@ -121,7 +121,6 @@ class Order extends Resource
 	/**
 	 * Get the filters available for the resource.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function filters(Request $request)
@@ -132,7 +131,6 @@ class Order extends Resource
 	/**
 	 * Get the lenses available for the resource.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function lenses(Request $request)
@@ -143,7 +141,6 @@ class Order extends Resource
 	/**
 	 * Get the actions available for the resource.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function actions(Request $request)
