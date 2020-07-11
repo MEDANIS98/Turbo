@@ -6,6 +6,7 @@ namespace Tests\Feature;
 
 use App\User;
 use App\Order;
+use App\Supplier;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
@@ -24,7 +25,8 @@ class OrderTest extends TestCase
 	public function testUserRelationship(): void
 	{
 		$user = create(User::class);
-		$order = create(Order::class, ['user_id' => $user->id]);
+		$supplier = create(Supplier::class, ['user_id' => $user->id]);
+		$order = create(Order::class, ['user_id' => $user->id, 'supplier_id' => $supplier->id]);
 		$this->assertInstanceOf(User::class, $order->user);
 	}
 }
