@@ -9,6 +9,8 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Supplier extends NovaSupplier
 {
+	public static $displayInNavigation = false;
+
 	/**
 	 * Build an "index" query for the given resource.
 	 *
