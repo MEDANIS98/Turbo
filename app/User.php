@@ -80,7 +80,6 @@ class User extends Authenticatable implements MustVerifyEmail
 		return $this->hasOne(Profile::class);
 	}
 
-
 	// The supplier associated with this user
 	public function supplier(): HasOne
 	{
@@ -93,7 +92,7 @@ class User extends Authenticatable implements MustVerifyEmail
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (!empty($mediaItems)) {
+		if (! empty($mediaItems)) {
 			return $mediaItems[0]->getFullUrl();
 		}
 
@@ -106,7 +105,7 @@ class User extends Authenticatable implements MustVerifyEmail
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (!empty($mediaItems)) {
+		if (! empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('account_menu');
 		}
 
@@ -119,7 +118,7 @@ class User extends Authenticatable implements MustVerifyEmail
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (!empty($mediaItems)) {
+		if (! empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('dashboard');
 		}
 
