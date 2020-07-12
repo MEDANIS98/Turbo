@@ -11,7 +11,6 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-
 /**
  * App\User.
  *
@@ -94,7 +93,7 @@ class User extends Authenticatable implements MustVerifyEmail
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (!empty($mediaItems)) {
+		if (! empty($mediaItems)) {
 			return $mediaItems[0]->getFullUrl();
 		}
 
@@ -107,7 +106,7 @@ class User extends Authenticatable implements MustVerifyEmail
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (!empty($mediaItems)) {
+		if (! empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('account_menu');
 		}
 
@@ -120,7 +119,7 @@ class User extends Authenticatable implements MustVerifyEmail
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (!empty($mediaItems)) {
+		if (! empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('dashboard');
 		}
 
