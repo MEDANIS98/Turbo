@@ -15,13 +15,15 @@ class UserSeeder extends Seeder
 	 */
 	public function run()
 	{
-		User::create([
+		$admin = User::create([
 			'name' => config('site.admin.name'),
 			'email' => config('site.admin.email'),
 			'email_verified_at' => now(),
 			'password' => bcrypt('password'),
 		]);
+		$admin->assignRole('Super Admin');
 		factory(User::class, 5)->create()->each(function ($user) {
+			$user->givePermissionTo('Access Stock');
 			factory(Profile::class)->create(['user_id' => $user->id]);
 		});
 	}

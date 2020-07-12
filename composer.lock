@@ -7299,12 +7299,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CaddyDz/nova-page.git",
-                "reference": "3c1082ce2965dfaa031527a2e31a9b794f671a25"
+                "reference": "65b33b673a1c36b108f2a1ea8de34be0f2ac2916"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CaddyDz/nova-page/zipball/3c1082ce2965dfaa031527a2e31a9b794f671a25",
-                "reference": "3c1082ce2965dfaa031527a2e31a9b794f671a25",
+                "url": "https://api.github.com/repos/CaddyDz/nova-page/zipball/65b33b673a1c36b108f2a1ea8de34be0f2ac2916",
+                "reference": "65b33b673a1c36b108f2a1ea8de34be0f2ac2916",
                 "shasum": ""
             },
             "require": {
@@ -7367,7 +7367,7 @@
                     "url": "https://github.com/whitecube"
                 }
             ],
-            "time": "2020-06-13T11:33:45+00:00"
+            "time": "2020-07-12T14:58:07+00:00"
         }
     ],
     "packages-dev": [

@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
 		\Illuminate\Support\Facades\Redis::flushall();
 		$this->clearSearchIndexes();
 		$this->cleanupStorage();
+		$this->call(RoleSeeder::class);
 		$this->call(UserSeeder::class);
 		$this->call(SupplierSeeder::class);
 		$this->call(ClientSeeder::class);

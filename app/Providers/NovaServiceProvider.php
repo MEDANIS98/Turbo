@@ -46,7 +46,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
 	protected function gate()
 	{
 		Gate::define('viewNova', function ($user) {
-			return true;
+			return $user->hasPermissionTo('Access Stock');
 		});
 	}
 
@@ -80,7 +80,9 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
 	public function tools()
 	{
 		return [
-			NovaPageTool::make(),
+			NovaPageTool::make()->canSee(fn ($request) => $request->user()->hasRole('Super Admin')),
+			\Vyuldashev\NovaPermission\NovaPermissionTool::make()
+				->canSee(fn ($request) => $request->user()->hasRole('Super Admin')),
 		];
 	}
 

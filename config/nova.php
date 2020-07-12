@@ -100,6 +100,7 @@ return [
 	*/
 
 	'middleware' => [
+		\Vyuldashev\NovaPermission\ForgetCachedPermissions::class,
 		'web',
 		Authenticate::class,
 		DispatchServingNovaEvent::class,

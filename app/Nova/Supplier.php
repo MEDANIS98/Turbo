@@ -77,7 +77,7 @@ class Supplier extends Resource
 	 */
 	public static function indexQuery(NovaRequest $request, $query)
 	{
-		return $query->where('user_id', auth()->id());
+		return $query->where('owner_id', auth()->id());
 	}
 
 	/**
