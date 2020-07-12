@@ -17,7 +17,10 @@ class SupplierSeeder extends Seeder
 	{
 		$ids = User::select('id')->pluck('id');
 		foreach ($ids as $id) {
-			factory(Supplier::class, 5)->create(['user_id' => $id]);
+			// Create the user associated supplier (treated as a profile)
+			factory(Supplier::class)->create(['user_id' => $id]);
+			// Create suppliers owner by the user
+			factory(Supplier::class, 5)->create(['owner_id' => $id]);
 		}
 	}
 }

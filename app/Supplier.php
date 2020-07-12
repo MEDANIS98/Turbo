@@ -38,4 +38,9 @@ class Supplier extends Model
 	{
 		return $this->belongsTo(User::class);
 	}
+
+	public function owner(): BelongsTo
+	{
+		return $this->belongsTo(User::class, 'owner_id');
+	}
 }

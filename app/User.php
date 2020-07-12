@@ -80,13 +80,20 @@ class User extends Authenticatable implements MustVerifyEmail
 		return $this->hasOne(Profile::class);
 	}
 
+
+	// The supplier associated with this user
+	public function supplier(): HasOne
+	{
+		return $this->hasOne(Supplier::class);
+	}
+
 	public function getAvatarAttribute(): string
 	{
 		if ($this->provider) {
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getFullUrl();
 		}
 
@@ -99,7 +106,7 @@ class User extends Authenticatable implements MustVerifyEmail
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('account_menu');
 		}
 
@@ -112,7 +119,7 @@ class User extends Authenticatable implements MustVerifyEmail
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('dashboard');
 		}
 
@@ -124,9 +131,10 @@ class User extends Authenticatable implements MustVerifyEmail
 		return $this->hasMany(Order::class);
 	}
 
+	// The suppliers created by this user
 	public function suppliers(): HasMany
 	{
-		return $this->hasMany(Supplier::class);
+		return $this->hasMany(Supplier::class, 'owner_id');
 	}
 
 	public function workshop()
