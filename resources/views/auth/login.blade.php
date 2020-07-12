@@ -72,6 +72,11 @@
 										@lang('Forgot Your Password?')
 									</a>
 								</div>
+								<div class="col-md-8 offset-md-4">
+									<a class="btn btn-link" href="{{ route('register') }}">
+										@lang('Create An Account')
+									</a>
+								</div>
 							</div>
 					</form>
 				</div>
