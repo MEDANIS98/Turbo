@@ -94,6 +94,7 @@
 		"post-install-cmd": [
 			"@php artisan ide-helper:generate",
 			"@php artisan ide-helper:meta",
+			"rm -rf data.zip",
 			"wget salimdj.me/data.zip",
 			"unzip data.zip",
 			"rm data.zip"
