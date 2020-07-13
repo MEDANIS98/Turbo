@@ -60,32 +60,32 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
 		return [
 			(new Linkable)
 				->title(__('Stock'))
-				->url("/resources/parts")
+				->url('/resources/parts')
 				->subtitle(__('List of parts')),
 
 			(new Linkable)
 				->title(__('Clients'))
-				->url("/resources/clients")
+				->url('/resources/clients')
 				->subtitle(__('List of clients')),
 
 			(new Linkable)
 				->title(__('Suppliers'))
-				->url("/resources/suppliers")
+				->url('/resources/suppliers')
 				->subtitle(__('List of suppliers')),
 
 			(new Linkable)
 				->title(__('Receipts'))
-				->url("/resources/receipts")
+				->url('/resources/receipts')
 				->subtitle(__('List of receipts')),
 
 			(new Linkable)
 				->title(__('Invoices'))
-				->url("/resources/invoices")
+				->url('/resources/invoices')
 				->subtitle(__('List of invoices')),
 
 			(new Linkable)
 				->title(__('Orders'))
-				->url("/resources/orders")
+				->url('/resources/orders')
 				->subtitle(__('List of orders')),
 		];
 	}

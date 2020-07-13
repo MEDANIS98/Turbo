@@ -29,6 +29,7 @@ class Discount extends Resource
 	{
 		return __('Discount');
 	}
+
 	/**
 	 * The model the resource corresponds to.
 	 *
