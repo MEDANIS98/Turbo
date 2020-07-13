@@ -72,7 +72,10 @@
 							<td class="no">{{ $index + 1 }}</td>
 							<td class="text-left">
 								<h3>{{ $part->title }}</h3>
-								{{ $part->excerpt }}
+								{{ $part->excerpt }} <br>
+								@if($part->vehicles->isNotEmpty())
+									@lang('Compatible with:') {{ $part->compatibility }}
+								@endif
 							</td>
 							<td class="total">{{ $part->brand->name }}</td>
 							<td class="unit">{{ $part->price }}</td>

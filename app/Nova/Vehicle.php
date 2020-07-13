@@ -6,41 +6,22 @@ namespace App\Nova;
 
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Number;
-use Laravel\Nova\Fields\DateTime;
 
-class Discount extends Resource
+class Vehicle extends Resource
 {
-	/**
-	 * Get the displayable label of the resource.
-	 */
-	public static function label(): string
-	{
-		return __('Discounts');
-	}
-
-	/**
-	 * Get the displayable singular label of the resource.
-	 */
-	public static function singularLabel(): string
-	{
-		return __('Discount');
-	}
-
 	/**
 	 * The model the resource corresponds to.
 	 *
 	 * @var string
 	 */
-	public static $model = 'App\Discount';
+	public static $model = 'App\Vehicle';
 
 	/**
 	 * The single value that should be used to represent the resource when being displayed.
 	 *
 	 * @var string
 	 */
-	public static $title = 'id';
+	public static $title = 'model';
 
 	/**
 	 * The columns that should be searched.
@@ -52,19 +33,6 @@ class Discount extends Resource
 	];
 
 	/**
-	 * Get a fresh instance of the model represented by the resource.
-	 */
-	public static function newModel()
-	{
-		$model = static::$model;
-		$discount = new $model;
-		// Set the dafault value for the reception date
-		$discount->percentage = 10;
-
-		return $discount;
-	}
-
-	/**
 	 * Get the fields displayed by the resource.
 	 *
 	 * @return array
@@ -73,9 +41,6 @@ class Discount extends Resource
 	{
 		return [
 			ID::make()->sortable(),
-			Text::make(__('Code'), 'code')->required()->default(str_random()),
-			Number::make(__('Percentage'), 'percentage')->required(),
-			DateTime::make(__('Expires'), 'expires')->required()->default(today()->addDays(5)),
 		];
 	}
 
