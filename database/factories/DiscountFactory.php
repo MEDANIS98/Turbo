@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use App\Discount;
@@ -9,6 +11,6 @@ $factory->define(Discount::class, function (Faker $faker) {
 	return [
 		'percentage' => 10,
 		'code' => str_random(8),
-		'expires' => $faker->dateTime
+		'expires' => $faker->dateTime,
 	];
 });

@@ -1,12 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Nova;
 
-use Illuminate\Http\Request;
-use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Fields\Number;
+use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Number;
+use Laravel\Nova\Fields\DateTime;
 
 class Discount extends Resource
 {
@@ -42,13 +44,13 @@ class Discount extends Resource
 		$discount = new $model;
 		// Set the dafault value for the reception date
 		$discount->percentage = 10;
+
 		return $discount;
 	}
 
 	/**
 	 * Get the fields displayed by the resource.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function fields(Request $request)
@@ -64,7 +66,6 @@ class Discount extends Resource
 	/**
 	 * Get the cards available for the request.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function cards(Request $request)
@@ -75,7 +76,6 @@ class Discount extends Resource
 	/**
 	 * Get the filters available for the resource.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function filters(Request $request)
@@ -86,7 +86,6 @@ class Discount extends Resource
 	/**
 	 * Get the lenses available for the resource.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function lenses(Request $request)
@@ -97,7 +96,6 @@ class Discount extends Resource
 	/**
 	 * Get the actions available for the resource.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function actions(Request $request)
