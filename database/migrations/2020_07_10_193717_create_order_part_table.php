@@ -19,6 +19,7 @@ class CreateOrderPartTable extends Migration
 			$table->id();
 			$table->unsignedBigInteger('order_id');
 			$table->unsignedBigInteger('part_id');
+			$table->integer('quantity');
 		});
 	}
 
