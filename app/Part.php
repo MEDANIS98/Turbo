@@ -68,7 +68,7 @@ class Part extends Model implements HasMedia, Buyable
 	 * @var array
 	 */
 	protected $casts = [
-		// 'key_features' => 'array',
+		'key_features' => 'array',
 	];
 
 	public function getBuyableIdentifier($options = null)
@@ -100,6 +100,18 @@ class Part extends Model implements HasMedia, Buyable
 	public function vehicle(): BelongsTo
 	{
 		return $this->belongsTo(Vehicle::class);
+	}
+
+	public function vehicles()
+	{
+		return $this->belongsToMany(Vehicle::class, 'compatibilities')->using(Compatibility::class);
+	}
+
+	public function getCompatibilityAttribute(): string
+	{
+		$array = $this->vehicles()->select('model')->pluck('model')->toArray();
+		$string = implode(", ", $array);
+		return $string;
 	}
 
 	/**
@@ -175,7 +187,7 @@ class Part extends Model implements HasMedia, Buyable
 	public function getIndexImageAttribute(): string
 	{
 		$mediaItems = $this->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('_245x245');
 		}
 
@@ -185,7 +197,7 @@ class Part extends Model implements HasMedia, Buyable
 	public function getCartHeaderImageAttribute(): string
 	{
 		$mediaItems = $this->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('_70x70');
 		}
 
@@ -195,7 +207,7 @@ class Part extends Model implements HasMedia, Buyable
 	public function getNewArrivalImageAttribute(): string
 	{
 		$mediaItems = $this->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			try {
 				return $mediaItems[0]->getUrl('_92x92');
 			} catch (Exception $ex) {

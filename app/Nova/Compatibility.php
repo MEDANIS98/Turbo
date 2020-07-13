@@ -1,41 +1,23 @@
 <?php
 
-declare(strict_types=1);
-
 namespace App\Nova;
 
-use Laravel\Nova\Fields\ID;
+use App\Nova\Vehicle;
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Number;
-use Laravel\Nova\Fields\DateTime;
+use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Http\Requests\NovaRequest;
+use Armincms\Fields\BelongsToMany;
 
-class Discount extends Resource
+
+class Compatibility extends Resource
 {
-	/**
-	 * Get the displayable label of the resource.
-	 */
-	public static function label(): string
-	{
-		return __('Discounts');
-	}
-
-	/**
-	 * Get the displayable singular label of the resource.
-	 *
-	 * @return string
-	 */
-	public static function singularLabel(): string
-	{
-		return __('Discount');
-	}
-
 	/**
 	 * The model the resource corresponds to.
 	 *
 	 * @var string
 	 */
-	public static $model = 'App\Discount';
+	public static $model = 'App\Compatibility';
 
 	/**
 	 * The single value that should be used to represent the resource when being displayed.
@@ -54,36 +36,24 @@ class Discount extends Resource
 	];
 
 	/**
-	 * Get a fresh instance of the model represented by the resource.
-	 */
-	public static function newModel()
-	{
-		$model = static::$model;
-		$discount = new $model;
-		// Set the dafault value for the reception date
-		$discount->percentage = 10;
-
-		return $discount;
-	}
-
-	/**
 	 * Get the fields displayed by the resource.
 	 *
+	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function fields(Request $request)
 	{
 		return [
 			ID::make()->sortable(),
-			Text::make(__('Code'), 'code')->required()->default(str_random()),
-			Number::make(__('Percentage'), 'percentage')->required(),
-			DateTime::make(__('Expires'), 'expires')->required()->default(today()->addDays(5)),
+			BelongsTo::make(__('Part'), 'part', Part::class)->required(),
+			BelongsToMany::make(__('Vehicles'), 'vehicles', Vehicle::class)->hideFromIndex()
 		];
 	}
 
 	/**
 	 * Get the cards available for the request.
 	 *
+	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function cards(Request $request)
@@ -94,6 +64,7 @@ class Discount extends Resource
 	/**
 	 * Get the filters available for the resource.
 	 *
+	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function filters(Request $request)
@@ -104,6 +75,7 @@ class Discount extends Resource
 	/**
 	 * Get the lenses available for the resource.
 	 *
+	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function lenses(Request $request)
@@ -114,6 +86,7 @@ class Discount extends Resource
 	/**
 	 * Get the actions available for the resource.
 	 *
+	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function actions(Request $request)

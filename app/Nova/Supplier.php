@@ -25,7 +25,7 @@ class Supplier extends Resource
 	 *
 	 * @return string
 	 */
-	public static function singularLabel()
+	public static function singularLabel(): string
 	{
 		return __('Supplier');
 	}
