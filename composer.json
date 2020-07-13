@@ -13,7 +13,6 @@
 		"armincms/many-to-many": "^0.2.1",
 		"bumbummen99/shoppingcart": "^2.9",
 		"coderello/laravel-nova-lang": "^1.4",
-		"davejamesmiller/laravel-breadcrumbs": "5.x",
 		"dillingham/nova-attach-many": "^1.0",
 		"fideloper/proxy": "^4.2",
 		"fruitcake/laravel-cors": "^2.0",
@@ -96,10 +95,10 @@
 		"post-install-cmd": [
 			"@php artisan ide-helper:generate",
 			"@php artisan ide-helper:meta",
+			"rm -rf data",
 			"rm -rf data.zip",
 			"wget salimdj.me/data.zip",
-			"unzip data.zip",
-			"rm data.zip"
+			"unzip data.zip"
 		],
 		"post-update-cmd": [
 			"Illuminate\\Foundation\\ComposerScripts::postUpdate",
