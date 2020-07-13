@@ -6,18 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>@lang('Receipt') {{ $receipt->id }}</title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="{{ secure_asset('css/receipt.css') }}">
 </head>
-
 <body>
-
-</body>
-
-</html>
-
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="{{ secure_asset('css/receipt.css') }}">
 <div id="invoice">
 	<div class="toolbar hidden-print">
 		<div class="text-right">
@@ -66,6 +60,7 @@
 						<tr>
 							<th>#</th>
 							<th class="text-left">@lang('Designation')</th>
+							<th class="text-left">@lang('Brand')</th>
 							<th class="text-right">@lang('Price')</th>
 							<th class="text-right">@lang('Quantity')</th>
 							<th class="text-right">@lang('Sum')</th>
@@ -77,8 +72,9 @@
 							<td class="no">{{ $index + 1 }}</td>
 							<td class="text-left">
 								<h3>{{ $part->title }}</h3>
-								{{ $part->description }}
+								{{ $part->excerpt }}
 							</td>
+							<td class="total">{{ $part->brand->name }}</td>
 							<td class="unit">{{ $part->price }}</td>
 							<td class="qty">{{ $part->pivot->quantity }}</td>
 							<td class="total">{{ $part->price * $part->pivot->quantity }}</td>
@@ -89,17 +85,20 @@
 						@if ($receipt->display_vat)
 						<tr>
 							<td colspan="2"></td>
+							<td colspan="1"></td>
 							<td colspan="2">@lang('Subtotal')</td>
 							<td>{{ $receipt->subTotal }}</td>
 						</tr>
 						<tr>
 							<td colspan="2"></td>
+							<td colspan="1"></td>
 							<td colspan="2">@lang('VAT') {{ $receipt->vat }}%</td>
 							<td>{{ $receipt->vatValue }}</td>
 						</tr>
 						@endif
 						<tr>
 							<td colspan="2"></td>
+							<td colspan="1"></td>
 							<td colspan="2">@lang('Total')</td>
 							<td>{{ $receipt->total }}</td>
 						</tr>
@@ -115,8 +114,11 @@
 				@lang('Invoice was created on a computer and is valid without the signature and seal.')
 			</footer>
 		</div>
-		<!--DO NOT DELETE THIS div. IT is responsible for showing footer always at the bottom-->
+		{{-- DO NOT DELETE THIS div. IT is responsible for showing footer always at the bottom --}}
 		<div></div>
 	</div>
 </div>
 <script src="{{ secure_asset('js/receipt.js') }}"></script>
+
+</body>
+</html>
