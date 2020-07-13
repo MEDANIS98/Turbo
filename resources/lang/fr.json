@@ -512,5 +512,8 @@
 	"Enter Feature Value": "Entrez la valeur de la fonction",
 	"Add another": "Ajouter un autre",
 	"Remove the last": "Supprimer le dernier",
-	"Orders": "Commandes"
+	"Orders": "Commandes",
+	"List of parts": "Liste des piéces",
+	"List of clients": "Liste des clients",
+	"List of suppliers": "Liste des fournisseurs"
 }

@@ -7,6 +7,7 @@ namespace App\Providers;
 use Laravel\Nova\Nova;
 use Illuminate\Support\Facades\Gate;
 use Whitecube\NovaPage\NovaPageTool;
+use Jubeki\Nova\Cards\Linkable\Linkable;
 use Laravel\Nova\NovaApplicationServiceProvider;
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
@@ -56,7 +57,37 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
 	 */
 	protected function cards()
 	{
-		return [];
+		return [
+			(new Linkable)
+				->title(__('Stock'))
+				->url("/resources/parts")
+				->subtitle(__('List of parts')),
+
+			(new Linkable)
+				->title(__('Clients'))
+				->url("/resources/clients")
+				->subtitle(__('List of clients')),
+
+			(new Linkable)
+				->title(__('Suppliers'))
+				->url("/resources/suppliers")
+				->subtitle(__('List of suppliers')),
+
+			(new Linkable)
+				->title(__('Receipts'))
+				->url("/resources/bills")
+				->subtitle(__('List of receipts')),
+
+			(new Linkable)
+				->title(__('Invoices'))
+				->url("/resources/invoices")
+				->subtitle(__('List of invoices')),
+
+			(new Linkable)
+				->title(__('Orders'))
+				->url("/resources/orders")
+				->subtitle(__('List of orders')),
+		];
 	}
 
 	/**

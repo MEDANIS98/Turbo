@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "00ccfa3a9416af3d79bf683851772bdf",
+    "content-hash": "39836841b6c3400224114e77b707f690",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -1702,6 +1702,53 @@
             "time": "2019-07-01T23:21:34+00:00"
         },
         {
+            "name": "inspheric/nova-defaultable",
+            "version": "v1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inspheric/nova-defaultable-fields.git",
+                "reference": "e1d9efbcab0b94d983f81d5f10f217551fcfad25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inspheric/nova-defaultable-fields/zipball/e1d9efbcab0b94d983f81d5f10f217551fcfad25",
+                "reference": "e1d9efbcab0b94d983f81d5f10f217551fcfad25",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Inspheric\\NovaDefaultable\\DefaultableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Inspheric\\NovaDefaultable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Default values for Nova fields when creating resources.",
+            "keywords": [
+                "default",
+                "field",
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/inspheric/nova-defaultable-fields/issues",
+                "source": "https://github.com/inspheric/nova-defaultable-fields/tree/master"
+            },
+            "time": "2019-05-29T15:38:50+00:00"
+        },
+        {
             "name": "intervention/image",
             "version": "2.5.1",
             "source": {
@@ -1774,6 +1821,51 @@
                 "source": "https://github.com/Intervention/image/tree/master"
             },
             "time": "2019-11-02T09:15:47+00:00"
+        },
+        {
+            "name": "jubeki/nova-card-linkable",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jubeki/Nova-Card-Linkable.git",
+                "reference": "2b71925efe1cab207bcc235ffc8214d1a383ecbe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jubeki/Nova-Card-Linkable/zipball/2b71925efe1cab207bcc235ffc8214d1a383ecbe",
+                "reference": "2b71925efe1cab207bcc235ffc8214d1a383ecbe",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jubeki\\Nova\\Cards\\Linkable\\CardServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jubeki\\Nova\\Cards\\Linkable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova card, which has a link",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/Jubeki/Nova-Card-Linkable/issues",
+                "source": "https://github.com/Jubeki/Nova-Card-Linkable/tree/master"
+            },
+            "time": "2020-02-14T10:20:16+00:00"
         },
         {
             "name": "laravel/framework",
