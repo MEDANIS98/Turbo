@@ -75,7 +75,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
 
 			(new Linkable)
 				->title(__('Receipts'))
-				->url("/resources/bills")
+				->url("/resources/receipts")
 				->subtitle(__('List of receipts')),
 
 			(new Linkable)
