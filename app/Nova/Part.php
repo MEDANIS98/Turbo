@@ -25,8 +25,6 @@ class Part extends Resource
 
 	/**
 	 * Get the displayable singular label of the resource.
-	 *
-	 * @return string
 	 */
 	public static function singularLabel(): string
 	{
