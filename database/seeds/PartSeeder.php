@@ -6,6 +6,7 @@ use App\Part;
 use App\Type;
 use App\Vehicle;
 use App\Category;
+use App\User;
 use Illuminate\Database\Seeder;
 
 class PartSeeder extends Seeder
@@ -35,6 +36,7 @@ class PartSeeder extends Seeder
 				factory(Part::class, 2)->create([ // 60 parts
 					'vehicle_id' => $vehicle,
 					'type_id' => $types[0],
+					'user_id' => rand(1, User::count()),
 				])->each(fn ($part) => \Illuminate\Support\Facades\Redis::zincrby('popular_parts', rand(1, 100), $part->id));
 			}
 		}
