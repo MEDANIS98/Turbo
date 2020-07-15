@@ -15,7 +15,7 @@ class PartObserver
 	{
 		$part->slug = sluggify($part->title);
 		$part->excerpt = str_limit($part->description, 200);
-		if (! $part->user_id && auth()->check()) {
+		if (!$part->user_id && auth()->check()) {
 			$part->user_id = auth()->id();
 		}
 	}
@@ -34,11 +34,23 @@ class PartObserver
 	}
 
 	/**
+	 * Handle the part "updating" event.
+	 *
+	 * @return void
+	 */
+	public function updating(Part $part): void
+	{
+		if ($part->isDirty('price')) {
+			$part->old_price = $part->getOriginal('price');
+		}
+	}
+
+	/**
 	 * Handle the part "updated" event.
 	 *
 	 * @return void
 	 */
-	public function updated(Part $part)
+	public function updated(Part $part): void
 	{
 		if ($part->isDirty('title')) {
 			$part->slug = sluggify($part->title);
