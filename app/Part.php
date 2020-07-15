@@ -240,9 +240,4 @@ class Part extends Model implements HasMedia, Buyable
 	{
 		return $this->hasMany(Review::class);
 	}
-
-	public function getFeaturesAttribute()
-	{
-		return json_decode($this->key_features);
-	}
 }

@@ -97,14 +97,16 @@
 					</div>
 					<div class="product__main">
 						<div class="product__excerpt">{{ $part->excerpt }}</div>
+						@if($part->key_features)
 						<div class="product__features">
 							<div class="product__features-title">@lang('Key Features'):</div>
 							<ul>
-								@foreach ($part->features as $feature => $value)
+								@foreach ($part->key_features as $feature => $value)
 									<li>{{ $feature }}: <span>{{ $value }}</span></li>
 								@endforeach
 							</ul>
 						</div>
+						@endif
 					</div>
 					<div class="product__info">
 						<div class="product__info-card">
@@ -135,6 +137,7 @@
 											<th>@lang('SKU')</th>
 											<td>{{ $part->sku ?? __('unavailable') }}</td>
 										</tr>
+										@if($part->brand)
 										<tr>
 											<th>@lang('brand')</th>
 											<td>
@@ -147,6 +150,7 @@
 											<th>@lang('Country')</th>
 											<td>{{ __($part->brand->country) }}</td>
 										</tr>
+										@endif
 									</table>
 								</div>
 							</div>
