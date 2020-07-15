@@ -15,7 +15,7 @@ class PartObserver
 	{
 		$part->slug = sluggify($part->title);
 		$part->excerpt = str_limit($part->description, 200);
-		if (! $part->user_id && auth()->check()) {
+		if (!$part->user_id && auth()->check()) {
 			$part->user_id = auth()->id();
 		}
 	}
@@ -41,6 +41,12 @@ class PartObserver
 		if ($part->isDirty('price')) {
 			$part->old_price = $part->getOriginal('price');
 		}
+		if ($part->isDirty('title')) {
+			$part->slug = sluggify($part->title);
+		}
+		if ($part->isDirty('description')) {
+			$part->excerpt = str_limit($part->description, 200);
+		}
 	}
 
 	/**
@@ -48,13 +54,6 @@ class PartObserver
 	 */
 	public function updated(Part $part): void
 	{
-		if ($part->isDirty('title')) {
-			$part->slug = sluggify($part->title);
-			$part->save();
-		}
-		if ($part->isDirty('description')) {
-			$part->excerpt = str_limit($part->description, 200);
-		}
 		// Just app/public because the image attribute already includes 'parts' folder name
 		if ($part->isDirty('image')) {
 			$part->addMedia(storage_path('app/public/' . $part->image))

@@ -34,16 +34,24 @@ class CategoryObserver
 	}
 
 	/**
+	 * Handle the category "updating" event.
+	 *
+	 * @return void
+	 */
+	public function updating(Category $category)
+	{
+		if ($category->isDirty('name')) {
+			$category->slug = sluggify($category->name);
+		}
+	}
+
+	/**
 	 * Handle the category "updated" event.
 	 *
 	 * @return void
 	 */
 	public function updated(Category $category)
 	{
-		if ($category->isDirty('name')) {
-			$category->slug = sluggify($category->name);
-			$category->save();
-		}
 		// Just app/public because the image attribute already includes 'categories' folder name
 		if ($category->isDirty('image')) {
 			$category->addMedia(storage_path('app/public/' . $category->image))
