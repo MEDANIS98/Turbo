@@ -18,11 +18,10 @@ $brands = [
 	'Mazda' => 'Japan',
 	'Hyundai' => 'Korea',
 	'Kia' => 'Korea',
-	'Chevrolet' => 'United States of America',
+	'Chevrolet' => 'United States',
 	'Subaru' => 'Japan',
 	'Mitsubishi' => 'Japan',
 	'Suzuki' => 'Korea',
 	'Ford' => 'United States of America',
 	'Skoda' => 'Germany',
-
 ];
