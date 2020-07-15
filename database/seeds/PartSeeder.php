@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 use App\Part;
 use App\Type;
+use App\User;
 use App\Vehicle;
 use App\Category;
-use App\User;
 use Illuminate\Database\Seeder;
 
 class PartSeeder extends Seeder
