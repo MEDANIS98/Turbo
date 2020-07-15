@@ -34,11 +34,19 @@ class PartObserver
 	}
 
 	/**
-	 * Handle the part "updated" event.
-	 *
-	 * @return void
+	 * Handle the part "updating" event.
 	 */
-	public function updated(Part $part)
+	public function updating(Part $part): void
+	{
+		if ($part->isDirty('price')) {
+			$part->old_price = $part->getOriginal('price');
+		}
+	}
+
+	/**
+	 * Handle the part "updated" event.
+	 */
+	public function updated(Part $part): void
 	{
 		if ($part->isDirty('title')) {
 			$part->slug = sluggify($part->title);
