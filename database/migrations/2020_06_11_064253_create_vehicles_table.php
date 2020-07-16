@@ -21,7 +21,7 @@ class CreateVehiclesTable extends Migration
 			$table->unsignedBigInteger('brand_id');
 			$table->foreign('brand_id')->references('id')->on('brands')->onDelete('cascade');
 			$table->string('model');
-			$table->string('fuel');
+			$table->enum('fuel', ['electric', 'hybrid', 'diesel', 'gas']);
 			$table->timestamps();
 		});
 	}

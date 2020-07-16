@@ -6,6 +6,9 @@ namespace App\Nova;
 
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Number;
+use Laravel\Nova\Fields\Select;
 
 class Vehicle extends Resource
 {
@@ -29,7 +32,7 @@ class Vehicle extends Resource
 	 * @var array
 	 */
 	public static $search = [
-		'id',
+		'id', 'year', 'model', 'fuel',
 	];
 
 	/**
@@ -41,6 +44,15 @@ class Vehicle extends Resource
 	{
 		return [
 			ID::make()->sortable(),
+			Text::make(__('Model'), 'model')->required(),
+			Number::make(__('Year'), 'year')->min(1950)->max(now()->year)->required(),
+			Select::make(__('Fuel'), 'fuel')->options([
+				'Diesel' => __('Diesel'),
+				'Petrol' => __('Petrol'),
+				'Gas' => __('Gaz'),
+				'electric' => __('Electric'),
+				'hybrid' => __('Hybrid'),
+			])->displayUsingLabels()->required(),
 		];
 	}
 

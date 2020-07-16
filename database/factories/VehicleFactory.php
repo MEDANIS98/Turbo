@@ -13,8 +13,8 @@ $factory->define(Vehicle::class, function (Faker $faker) {
 	$v = $faker->vehicleArray();
 
 	return [
-		'year'  => $faker->biasedNumberBetween(1998, 2020, 'sqrt'),
+		'year' => $faker->biasedNumberBetween(1998, 2020, 'sqrt'),
 		'model' => $v['model'],
-		'fuel'  => $faker->vehicleFuelType,
+		'fuel' => $faker->vehicleFuelType,
 	];
 });
