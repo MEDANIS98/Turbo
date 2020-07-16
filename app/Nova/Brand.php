@@ -64,7 +64,7 @@ class Brand extends Resource
 			Text::make(__('Name'), 'name')->required(),
 			Country::make(__('Country'), 'country')->required()->displayUsingLabels(),
 			Avatar::make(__('Logo'), 'logo')->required(),
-			HasMany::make(__('Vehicles'), 'vehicles')
+			HasMany::make(__('Vehicles'), 'vehicles'),
 		];
 	}
 

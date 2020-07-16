@@ -6,9 +6,9 @@ namespace App\Nova;
 
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Select;
-use Laravel\Nova\Fields\Text;
 
 class Vehicle extends Resource
 {
@@ -32,7 +32,7 @@ class Vehicle extends Resource
 	 * @var array
 	 */
 	public static $search = [
-		'id', 'year', 'model', 'fuel'
+		'id', 'year', 'model', 'fuel',
 	];
 
 	/**
@@ -52,7 +52,7 @@ class Vehicle extends Resource
 				'Gas' => __('Gaz'),
 				'electric' => __('Electric'),
 				'hybrid' => __('Hybrid'),
-			])->displayUsingLabels()->required()
+			])->displayUsingLabels()->required(),
 		];
 	}
 
