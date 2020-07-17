@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Stock extends Model
 {
 	protected $guarded = [];
+
 	/**
 	 * Get the part that owns the stock.
 	 *

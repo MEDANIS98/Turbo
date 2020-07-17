@@ -11,8 +11,8 @@ use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\KeyValue;
 use Armincms\Fields\BelongsToMany;
-use Laravel\Nova\Http\Requests\NovaRequest;
 use Emiliogrv\NovaBatchLoad\BatchLoadField;
+use Laravel\Nova\Http\Requests\NovaRequest;
 use Maatwebsite\LaravelNovaExcel\Actions\DownloadExcel;
 
 class Part extends Resource
