@@ -25,7 +25,7 @@
 										{{ $part->title }}
 									</div>
 									<div class="vehicles-list__item-details">
-										{{ $part->description }}
+										{{ $part->excerpt }}
 									</div>
 									<div class="vehicles-list__item-links">
 										<a href="{{ route('part', ['part' => $part]) }}">@lang('Show Part')</a>
