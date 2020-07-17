@@ -141,4 +141,14 @@ class User extends Authenticatable implements MustVerifyEmail
 	{
 		return $this->hasOne(Workshop::class);
 	}
+
+	/**
+	 * Get the stocks for the user.
+	 *
+	 * @return \Illuminate\Database\Eloquent\Collection $stocks
+	 */
+	public function stocks(): HasMany
+	{
+		return $this->hasMany(Stock::class);
+	}
 }

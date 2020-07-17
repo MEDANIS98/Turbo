@@ -31,6 +31,9 @@ class PartObserver
 				->preservingOriginal()
 				->toMediaCollection();
 		}
+		if (auth()->check()) {
+			auth()->user()->stocks()->create(['part_id' => $part->id, 'quantity' => 0]);
+		}
 	}
 
 	/**
