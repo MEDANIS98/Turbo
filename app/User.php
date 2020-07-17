@@ -93,7 +93,7 @@ class User extends Authenticatable implements MustVerifyEmail
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getFullUrl();
 		}
 
@@ -106,7 +106,7 @@ class User extends Authenticatable implements MustVerifyEmail
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('account_menu');
 		}
 
@@ -119,7 +119,7 @@ class User extends Authenticatable implements MustVerifyEmail
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('dashboard');
 		}
 
@@ -140,5 +140,15 @@ class User extends Authenticatable implements MustVerifyEmail
 	public function workshop()
 	{
 		return $this->hasOne(Workshop::class);
+	}
+
+	/**
+	 * Get the stocks for the user.
+	 *
+	 * @return \Illuminate\Database\Eloquent\Collection $stocks
+	 */
+	public function stocks(): HasMany
+	{
+		return $this->hasMany(Stock::class);
 	}
 }

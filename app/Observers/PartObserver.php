@@ -15,7 +15,7 @@ class PartObserver
 	{
 		$part->slug = sluggify($part->title);
 		$part->excerpt = str_limit($part->description, 200);
-		if (! $part->user_id && auth()->check()) {
+		if (!$part->user_id && auth()->check()) {
 			$part->user_id = auth()->id();
 		}
 	}
@@ -31,6 +31,7 @@ class PartObserver
 				->preservingOriginal()
 				->toMediaCollection();
 		}
+		auth()->user()->stocks()->create(['part_id' => $part->id, 'quantity' => 0]);
 	}
 
 	/**
