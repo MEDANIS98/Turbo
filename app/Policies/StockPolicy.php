@@ -17,7 +17,7 @@ class StockPolicy
 	 */
 	public function viewAny(User $user)
 	{
-		return $user->has('stocks');
+		return $user->has('stocks')->exists();
 	}
 
 	/**
@@ -33,7 +33,7 @@ class StockPolicy
 	 */
 	public function create(User $user)
 	{
-		return true;
+		return false;
 	}
 
 	/**

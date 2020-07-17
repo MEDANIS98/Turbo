@@ -8,10 +8,13 @@ use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Stock extends Resource
 {
+	public static $with = ['part'];
+
 	/**
 	 * Build an "index" query for the given resource.
 	 *
@@ -81,6 +84,7 @@ class Stock extends Resource
 		return [
 			ID::make()->sortable(),
 			BelongsTo::make(__('Part'), 'part', Part::class),
+			Text::make(__('SKU'), 'part.sku'),
 			Number::make(__('Quantity'), 'quantity')->min(1)->max(1e4)->step(1),
 		];
 	}
