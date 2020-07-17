@@ -9,7 +9,11 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Gravatar;
 use Laravel\Nova\Fields\Password;
+use Vyuldashev\NovaPermission\Role;
 use Laravel\Nova\Fields\MorphToMany;
+use Vyuldashev\NovaPermission\Permission;
+use Vyuldashev\NovaPermission\RoleBooleanGroup;
+use Vyuldashev\NovaPermission\PermissionBooleanGroup;
 
 class User extends Resource
 {
@@ -62,8 +66,11 @@ class User extends Resource
 		return [
 			ID::make()->sortable(),
 
-			MorphToMany::make('Roles', 'roles', \Vyuldashev\NovaPermission\Role::class),
-			MorphToMany::make('Permissions', 'permissions', \Vyuldashev\NovaPermission\Permission::class),
+			MorphToMany::make('Roles', 'roles', Role::class),
+			MorphToMany::make('Permissions', 'permissions', Permission::class),
+
+			RoleBooleanGroup::make('Roles'),
+			PermissionBooleanGroup::make('Permissions'),
 
 			Gravatar::make()->maxWidth(50),
 

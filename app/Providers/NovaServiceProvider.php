@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Gate;
 use Whitecube\NovaPage\NovaPageTool;
 use Jubeki\Nova\Cards\Linkable\Linkable;
 use Laravel\Nova\NovaApplicationServiceProvider;
+use Vyuldashev\NovaPermission\NovaPermissionTool;
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
@@ -109,7 +110,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
 	{
 		return [
 			NovaPageTool::make()->canSee(fn ($request) => $request->user()->hasRole('Super Admin')),
-			\Vyuldashev\NovaPermission\NovaPermissionTool::make()
+			NovaPermissionTool::make()
 				->canSee(fn ($request) => $request->user()->hasRole('Super Admin')),
 		];
 	}

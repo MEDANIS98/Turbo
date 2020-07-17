@@ -20,8 +20,9 @@ class UserSeeder extends Seeder
 			'password' => bcrypt('password'),
 		]);
 		$admin->assignRole('Super Admin');
+		$admin->givePermissionTo('Access Stock');
 		factory(User::class, 5)->create()->each(function ($user) {
-			$user->givePermissionTo('Access Stock');
+			$user->assignRole('Member');
 			factory(Profile::class)->create(['user_id' => $user->id]);
 		});
 	}
