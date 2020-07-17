@@ -11,7 +11,9 @@ use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\KeyValue;
 use Armincms\Fields\BelongsToMany;
+use Emiliogrv\NovaBatchLoad\BatchLoadField;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Maatwebsite\LaravelNovaExcel\Actions\DownloadExcel;
 
 class Part extends Resource
 {
@@ -69,11 +71,16 @@ class Part extends Resource
 			Number::make(__('Price'), 'price')
 				->min(1)->max(1e6)->step(0.01)
 				->required()->displayUsing(fn () => round($this->price) . ' DZD'),
-			KeyValue::make(__('Key Features'), 'key_features')->nullable()->rules('json')
+			KeyValue::make(__('Key Features'), 'key_features')->nullable()
 				->keyLabel(__('Feature'))
 				->valueLabel(__('Value'))
-				->actionText('Add Item'), // Customize the "add row" button text
+				->actionText(__('Add Item')), // Customize the "add row" button text
 			BelongsToMany::make(__('Compatible with'), 'vehicles', Vehicle::class)->hideFromIndex(),
+			BatchLoadField::make()
+				->accept('.xlsx') // Optional
+				->defaultTabActive(1) // Optional
+				->ignoreAttributes('some_attribute_name') // Optional
+				->keepOriginalFields('belongs|select|boolean'), // Optional
 		];
 	}
 
@@ -138,6 +145,8 @@ class Part extends Resource
 	 */
 	public function actions(Request $request)
 	{
-		return [];
+		return [
+			// new DownloadExcel,
+		];
 	}
 }
