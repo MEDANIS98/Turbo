@@ -1,8 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 use App\Part;
-use App\Stock;
 use App\User;
+use App\Stock;
 use Illuminate\Database\Seeder;
 
 class StockSeeder extends Seeder
