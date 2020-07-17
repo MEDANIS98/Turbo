@@ -18,6 +18,7 @@ class PartObserver
 		if (! $part->user_id && auth()->check()) {
 			$part->user_id = auth()->id();
 		}
+		$part->price = preg_replace('/[^0-9]/', '', $part->price);
 	}
 
 	/**
@@ -42,6 +43,7 @@ class PartObserver
 	public function updating(Part $part): void
 	{
 		if ($part->isDirty('price')) {
+			$part->price = preg_replace('/[^0-9]/', '', $part->price);
 			$part->old_price = $part->getOriginal('price');
 		}
 		if ($part->isDirty('title')) {

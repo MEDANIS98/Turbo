@@ -525,5 +525,10 @@
 	"Discounts": "Remises",
 	"Model": "Modèle",
 	"Year": "L'année",
-	"Fuel": "Energé"
+	"Fuel": "Energé",
+	"File empty!": "Fichier vide",
+	"Load per file": "Importer par excel",
+	"Manual loading": "Chargement Manuel",
+	"Upload file": "Téléverser un fichier",
+	"Upload file & Add Another": "Télécharger un fichier et en ajouter un autre"
 }
