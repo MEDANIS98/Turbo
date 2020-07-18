@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
@@ -15,8 +17,6 @@ class UpdateProfileRequest extends FormRequest
 
 	/**
 	 * Determine if the user is authorized to make this request.
-	 *
-	 * @return bool
 	 */
 	public function authorize(): bool
 	{
@@ -25,22 +25,18 @@ class UpdateProfileRequest extends FormRequest
 
 	/**
 	 * Get the validation rules that apply to the request.
-	 *
-	 * @return array
 	 */
 	public function rules(): array
 	{
 		return [
 			'name' => ['bail', 'required', 'string', 'max:255'],
 			'email' => ['bail', 'required', 'string', 'email', 'max:255', 'unique:users,email,' . auth()->id()],
-			'phone' => $this->phone_rules()
+			'phone' => $this->phone_rules(),
 		];
 	}
 
 	/**
 	 * Get the validation rules that apply to the phone number.
-	 *
-	 * @return array
 	 */
 	private function phone_rules(): array
 	{

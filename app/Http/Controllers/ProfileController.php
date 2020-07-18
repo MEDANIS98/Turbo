@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers;
 
-use App\Http\Requests\UpdateProfileRequest;
 use App\Profile;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\RedirectResponse;
+use App\Http\Requests\UpdateProfileRequest;
 
 class ProfileController extends Controller
 {
@@ -32,7 +34,6 @@ class ProfileController extends Controller
 	/**
 	 * Store a newly created resource in storage.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return \Illuminate\Http\Response
 	 */
 	public function store(Request $request)
@@ -43,7 +44,6 @@ class ProfileController extends Controller
 	/**
 	 * Display the specified resource.
 	 *
-	 * @param  \App\Profile  $profile
 	 * @return \Illuminate\Http\Response
 	 */
 	public function show(Profile $profile)
@@ -59,14 +59,13 @@ class ProfileController extends Controller
 	public function edit()
 	{
 		$profile = auth()->user()->profile;
+
 		return view('profile', compact('profile'));
 	}
 
 	/**
 	 * Update the specified resource in storage.
 	 *
-	 * @param  \App\Http\Requests\UpdateProfileRequest $request
-	 * @param  \App\Profile $profile
 	 * @return \Illuminate\Http\RedirectResponse back
 	 */
 	public function update(UpdateProfileRequest $request, Profile $profile): RedirectResponse
@@ -77,13 +76,13 @@ class ProfileController extends Controller
 		auth()->user()->name = $request->name;
 		auth()->user()->email = $request->email;
 		auth()->user()->save();
+
 		return back()->with('status', 'Profile updated successfully!');
 	}
 
 	/**
 	 * Remove the specified resource from storage.
 	 *
-	 * @param  \App\Profile  $profile
 	 * @return \Illuminate\Http\Response
 	 */
 	public function destroy(Profile $profile)
