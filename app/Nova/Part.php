@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace App\Nova;
 
-use App\Nova\Actions\ChangePartViews;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
@@ -12,6 +11,7 @@ use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\KeyValue;
 use Armincms\Fields\BelongsToMany;
+use App\Nova\Actions\ChangePartViews;
 use Emiliogrv\NovaBatchLoad\BatchLoadField;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Maatwebsite\LaravelNovaExcel\Actions\DownloadExcel;

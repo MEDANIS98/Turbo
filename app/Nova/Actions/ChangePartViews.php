@@ -1,15 +1,17 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Nova\Actions;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Queue\InteractsWithQueue;
+use Laravel\Nova\Fields\Number;
+use Laravel\Nova\Actions\Action;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Redis;
-use Laravel\Nova\Actions\Action;
 use Laravel\Nova\Fields\ActionFields;
-use Laravel\Nova\Fields\Number;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Laravel\Nova\Http\Requests\ActionRequest;
 
 class ChangePartViews extends Action implements ShouldQueue
@@ -18,8 +20,6 @@ class ChangePartViews extends Action implements ShouldQueue
 
 	/**
 	 * Get the displayable name of the action.
-	 *
-	 * @return string
 	 */
 	public function name(): string
 	{
@@ -28,10 +28,6 @@ class ChangePartViews extends Action implements ShouldQueue
 
 	/**
 	 * Perform the action on the given models.
-	 *
-	 * @param  \Laravel\Nova\Fields\ActionFields  $fields
-	 * @param  \Illuminate\Support\Collection  $models
-	 * @return mixed
 	 */
 	public function handle(ActionFields $fields, Collection $models)
 	{
