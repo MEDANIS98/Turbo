@@ -13,6 +13,8 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Gloudemans\Shoppingcart\Contracts\Buyable;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Facades\Redis;
+use Laravel\Nova\Actions\Actionable;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 /**
@@ -60,7 +62,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  */
 class Part extends Model implements HasMedia, Buyable
 {
-	use Searchable, InteractsWithMedia, CanBeBought, SoftDeletes;
+	use Searchable, InteractsWithMedia, CanBeBought, SoftDeletes, Actionable;
 
 	/**
 	 * The attributes that should be cast.
@@ -188,7 +190,7 @@ class Part extends Model implements HasMedia, Buyable
 	public function getIndexImageAttribute(): string
 	{
 		$mediaItems = $this->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('_245x245');
 		}
 
@@ -198,7 +200,7 @@ class Part extends Model implements HasMedia, Buyable
 	public function getCartHeaderImageAttribute(): string
 	{
 		$mediaItems = $this->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('_70x70');
 		}
 
@@ -208,7 +210,7 @@ class Part extends Model implements HasMedia, Buyable
 	public function getNewArrivalImageAttribute(): string
 	{
 		$mediaItems = $this->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			try {
 				return $mediaItems[0]->getUrl('_92x92');
 			} catch (Exception $ex) {
@@ -239,5 +241,10 @@ class Part extends Model implements HasMedia, Buyable
 	public function reviews()
 	{
 		return $this->hasMany(Review::class);
+	}
+
+	public function getViewsAttribute()
+	{
+		return Redis::zscore('popular_parts', $this->id);
 	}
 }

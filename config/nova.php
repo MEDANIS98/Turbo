@@ -101,7 +101,7 @@ return [
 	*/
 
 	'middleware' => [
-		ForgetCachedPermissions::class,
+		// ForgetCachedPermissions::class,
 		'web',
 		Authenticate::class,
 		DispatchServingNovaEvent::class,

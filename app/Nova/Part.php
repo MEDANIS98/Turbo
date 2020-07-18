@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Nova;
 
+use App\Nova\Actions\ChangePartViews;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
@@ -71,16 +72,19 @@ class Part extends Resource
 			Number::make(__('Price'), 'price')
 				->min(1)->max(1e6)->step(0.01)
 				->required()->displayUsing(fn () => round($this->price) . ' DZD'),
-			KeyValue::make(__('Key Features'), 'key_features')->nullable()
-				->keyLabel(__('Feature'))
-				->valueLabel(__('Value'))
-				->actionText(__('Add Item')), // Customize the "add row" button text
+			KeyValue::make('Key Features'),
+
+			// KeyValue::make(__('Key Features'), '')->nullable()->rules('json')
+			// 	->keyLabel(__('Feature'))
+			// 	->valueLabel(__('Value'))
+			// 	->actionText(__('Add Another')), // Customize the "add row" button text
 			BelongsToMany::make(__('Compatible with'), 'vehicles', Vehicle::class)->hideFromIndex(),
 			BatchLoadField::make()
 				->accept('.xlsx') // Optional
 				->defaultTabActive(1) // Optional
 				->ignoreAttributes('some_attribute_name') // Optional
 				->keepOriginalFields('belongs|select|boolean'), // Optional
+			Number::make(__('Views'), fn ($part) => $part->views)->canSee(fn ($request) => $request->user()->can('See Part Views')),
 		];
 	}
 
@@ -147,6 +151,8 @@ class Part extends Resource
 	{
 		return [
 			// new DownloadExcel,
+			(new ChangePartViews)->confirmButtonText(__('Update'))
+				->canSee(fn ($request) => $request->user()->can('Update Part Views')),
 		];
 	}
 }

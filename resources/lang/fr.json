@@ -512,7 +512,7 @@
 	"Show Part": "Afficher la piéce",
 	"Enter Key Feature": "Entrez la fonction clé",
 	"Enter Feature Value": "Entrez la valeur de la fonction",
-	"Add another": "Ajouter un autre",
+	"Add Another": "Ajouter un autre",
 	"Remove the last": "Supprimer le dernier",
 	"Orders": "Commandes",
 	"List of parts": "Liste des piéces",
@@ -530,5 +530,9 @@
 	"Load per file": "Importer par excel",
 	"Manual loading": "Chargement Manuel",
 	"Upload file": "Téléverser un fichier",
-	"Upload file & Add Another": "Télécharger un fichier et en ajouter un autre"
+	"Upload file & Add Another": "Télécharger un fichier et en ajouter un autre",
+	"Compatible with": "Compatible avec",
+	"Update Part View Count": "Mettre à jour le nombre de vues de pièce",
+	"Views": "Vues",
+	"Views count updated successfully!": "Le nombre de vues a été mis à jour avec succès!"
 }
