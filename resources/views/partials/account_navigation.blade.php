@@ -11,7 +11,7 @@
 			<a href="/shop">@lang('Shop')</a>
 		</li>
 		<li class="account-nav__item @if($active == 'profile') account-nav__item--active @endif">
-			<a href="/profile">@lang('Edit Profile')</a>
+			<a href="{{ route('profile.edit') }}">@lang('Edit Profile')</a>
 		</li>
 		<li class="account-nav__item @if($active == 'orders') account-nav__item--active @endif">
 			<a href="/orders">@lang('Order History')</a>

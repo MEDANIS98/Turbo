@@ -22,6 +22,8 @@ use App\Observers\InvoiceObserver;
 use App\Observers\ProfileObserver;
 use App\Observers\ReceiptObserver;
 use App\Observers\CategoryObserver;
+use App\Observers\UserObserver;
+use App\User;
 use Illuminate\Support\ServiceProvider;
 
 class ObserverServiceProvider extends ServiceProvider
@@ -42,5 +44,6 @@ class ObserverServiceProvider extends ServiceProvider
 		Brand::observe(BrandObserver::class);
 		Review::observe(ReviewObserver::class);
 		Order::observe(OrderObserver::class);
+		User::observe(UserObserver::class);
 	}
 }

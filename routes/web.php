@@ -45,7 +45,8 @@ Route::middleware('auth', 'verified')->group(function () {
 	Route::view('/account/password', 'auth.passwords.change')->middleware('password.confirm');
 	Route::post('/account/change-password', 'AccountController@changePassword')->name('password.change');
 	Route::view('/account/orders', 'account-orders');
-	Route::view('/account/profile', 'account-profile');
+	Route::get('/account/profile', 'ProfileController@edit')->name('profile.edit');
+	Route::post('/account/profile', 'ProfileController@update')->name('profile.update');
 	Route::get('/shop', 'PartsController@index');
 	Route::post('/parts/add', 'PartsController@store')->name('part.add');
 });
