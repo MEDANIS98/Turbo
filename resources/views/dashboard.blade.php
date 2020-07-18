@@ -33,7 +33,7 @@
 						<div class="address-card__row">{{ optional($profile)->address }}</div>
 						<div class="address-card__row">
 							<div class="address-card__row-title">@lang('Phone Number')</div>
-							<div class="address-card__row-content">{{ $user->profile->phone }}</div>
+							<div class="address-card__row-content">{{ optional($user->profile)->phone }}</div>
 						</div>
 						<div class="address-card__row">
 							<div class="address-card__row-title">@lang('Email Address')</div>
