@@ -78,7 +78,7 @@ class LoginTest extends TestCase
 	 * Assert that unauthenticated access attempt redirects to login
 	 *
 	 **/
-	public function testUnauthenticatedRedirection(): void
+	public function test_unauthenticated_redirection(): void
 	{
 		$response = $this->get('/dashboard');
 		$response->assertRedirect('/login');

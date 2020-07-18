@@ -3,7 +3,6 @@
 @section('title', __('Page Not Found'))
 
 @section('content')
-
 <div class="block-space block-space--layout--spaceship-ledge-height"></div>
 <div class="block">
 	<div class="container">

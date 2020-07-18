@@ -17,7 +17,7 @@ class PagesTest extends TestCase
 	 *
 	 * @return void
 	 */
-	public function testIndexPage()
+	public function test_index_page()
 	{
 		$response = $this->get('/');
 
@@ -29,7 +29,7 @@ class PagesTest extends TestCase
 	 *
 	 * @return void
 	 */
-	public function testAboutPage()
+	public function test_about_page()
 	{
 		$response = $this->get('/about');
 
@@ -41,7 +41,7 @@ class PagesTest extends TestCase
 	 *
 	 * @return void
 	 */
-	public function testNotFoundPage()
+	public function test_not_found_page()
 	{
 		$response = $this->get('/something');
 
@@ -51,7 +51,7 @@ class PagesTest extends TestCase
 	/**
 	 * Test dashboard page.
 	 */
-	public function testDashboardPage(): void
+	public function test_dashboard_page(): void
 	{
 		$this->login();
 		$response = $this->get(RouteServiceProvider::HOME);
