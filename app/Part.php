@@ -7,6 +7,8 @@ namespace App;
 use Exception;
 use Laravel\Scout\Searchable;
 use Spatie\MediaLibrary\HasMedia;
+use Laravel\Nova\Actions\Actionable;
+use Illuminate\Support\Facades\Redis;
 use Illuminate\Database\Eloquent\Model;
 use Gloudemans\Shoppingcart\CanBeBought;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -60,7 +62,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  */
 class Part extends Model implements HasMedia, Buyable
 {
-	use Searchable, InteractsWithMedia, CanBeBought, SoftDeletes;
+	use Searchable, InteractsWithMedia, CanBeBought, SoftDeletes, Actionable;
 
 	/**
 	 * The attributes that should be cast.
@@ -239,5 +241,10 @@ class Part extends Model implements HasMedia, Buyable
 	public function reviews()
 	{
 		return $this->hasMany(Review::class);
+	}
+
+	public function getViewsAttribute()
+	{
+		return Redis::zscore('popular_parts', $this->id);
 	}
 }
