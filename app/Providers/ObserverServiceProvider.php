@@ -6,6 +6,7 @@ namespace App\Providers;
 
 use App\Part;
 use App\Type;
+use App\User;
 use App\Brand;
 use App\Order;
 use App\Review;
@@ -15,6 +16,7 @@ use App\Receipt;
 use App\Category;
 use App\Observers\PartObserver;
 use App\Observers\TypeObserver;
+use App\Observers\UserObserver;
 use App\Observers\BrandObserver;
 use App\Observers\OrderObserver;
 use App\Observers\ReviewObserver;
@@ -42,5 +44,6 @@ class ObserverServiceProvider extends ServiceProvider
 		Brand::observe(BrandObserver::class);
 		Review::observe(ReviewObserver::class);
 		Order::observe(OrderObserver::class);
+		User::observe(UserObserver::class);
 	}
 }
