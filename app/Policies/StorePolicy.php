@@ -18,19 +18,19 @@ class StorePolicy
 	 */
 	public function viewAny(User $user)
 	{
-		//
+		return $user->has('store')->exists();
 	}
 
 	/**
 	 * Determine whether the user can view the model.
 	 *
-	 * @param  \App\User  $user
-	 * @param  \App\Store  $store
+	 * @param \App\User $user
+	 * @param \App\Store $store
 	 * @return mixed
 	 */
 	public function view(User $user, Store $store)
 	{
-		//
+		return $user->id == $store->user_id;
 	}
 
 	/**
@@ -53,7 +53,7 @@ class StorePolicy
 	 */
 	public function update(User $user, Store $store)
 	{
-		//
+		return (bool) $user->id == $store->user_id;
 	}
 
 	/**
