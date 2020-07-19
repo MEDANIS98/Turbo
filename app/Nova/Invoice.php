@@ -6,11 +6,10 @@ namespace App\Nova;
 
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
-use NovaAttachMany\AttachMany;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\DateTime;
+use Armincms\Fields\BelongsToMany;
 use Laravel\Nova\Fields\BelongsTo;
-use Laravel\Nova\Fields\BelongsToMany;
 
 class Invoice extends Resource
 {
@@ -85,13 +84,21 @@ class Invoice extends Resource
 		return [
 			ID::make()->sortable(),
 			DateTime::make(__('Reception Date'), 'reception_date')->required(),
-			BelongsTo::make(__('Supplier'), 'supplier', 'App\Nova\Supplier')->showCreateRelationButton(),
-			AttachMany::make(__('Parts'), 'parts', 'App\Nova\Part')->showCounts()->showPreview(),
-			BelongsToMany::make(__('Parts'), 'parts', 'App\Nova\Part')->fields(function () {
-				return [
-					Number::make(__('Quantity'), 'quantity'),
-				];
-			}),
+			BelongsTo::make(__('Supplier'), 'supplier', Supplier::class)->showCreateRelationButton(),
+			BelongsToMany::make(__('Parts'), 'parts', Part::class)->hideFromIndex()
+				->fields(function () {
+					return [
+						Number::make(__('Buy Price'), 'buy_price')
+							->min(1)->max(1e6)->step(0.01)
+							->required()->displayUsing(fn () => round($this->buy_price) . ' DZD'),
+						Number::make(__('Sell Price'), 'sell_price')
+							->min(1)->max(1e6)->step(0.01)
+							->required()->displayUsing(fn () => round($this->sell_price) . ' DZD'),
+						Number::make(__('Quantity'), 'quantity')
+							->rules('required', 'numeric'),
+					];
+				})
+				->pivots(),
 		];
 	}
 

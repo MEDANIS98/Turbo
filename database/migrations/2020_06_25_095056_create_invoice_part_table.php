@@ -16,8 +16,9 @@ class CreateInvoicePartTable extends Migration
 	public function up()
 	{
 		Schema::create('invoice_part', function (Blueprint $table) {
-			$table->unsignedBigInteger('part_id');
-			$table->unsignedBigInteger('invoice_id');
+			$table->id();
+			$table->foreignId('part_id');
+			$table->foreignId('invoice_id');
 			$table->integer('quantity');
 			$table->double('buy_price');
 			$table->double('sell_price');

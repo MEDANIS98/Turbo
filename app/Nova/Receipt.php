@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Nova;
 
 use App\PartReceipt;
+use App\Nova\Receipt\Part;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Boolean;
@@ -89,6 +90,7 @@ class Receipt extends Resource
 				return $this->created_at;
 			}),
 			BelongsTo::make(__('Client'), 'client', 'App\Nova\Client')->showCreateRelationButton(),
+			// Should only show parts which we have stock for
 			BelongsToMany::make(__('Parts'), 'parts', Part::class)->hideFromIndex()
 				->fields(function ($ids) {
 					$part_receipt = PartReceipt::where([
