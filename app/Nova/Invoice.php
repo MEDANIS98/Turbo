@@ -8,8 +8,8 @@ use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\DateTime;
-use Laravel\Nova\Fields\BelongsTo;
 use Armincms\Fields\BelongsToMany;
+use Laravel\Nova\Fields\BelongsTo;
 
 class Invoice extends Resource
 {
@@ -95,7 +95,7 @@ class Invoice extends Resource
 							->min(1)->max(1e6)->step(0.01)
 							->required()->displayUsing(fn () => round($this->sell_price) . ' DZD'),
 						Number::make(__('Quantity'), 'quantity')
-							->rules('required', 'numeric')
+							->rules('required', 'numeric'),
 					];
 				})
 				->pivots(),

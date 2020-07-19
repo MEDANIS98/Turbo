@@ -5,12 +5,12 @@ declare(strict_types=1);
 namespace App\Nova;
 
 use App\PartReceipt;
+use App\Nova\Receipt\Part;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\DateTime;
 use App\Nova\Actions\PrintReceipt;
-use App\Nova\Receipt\Part;
 use Armincms\Fields\BelongsToMany;
 use Laravel\Nova\Fields\BelongsTo;
 

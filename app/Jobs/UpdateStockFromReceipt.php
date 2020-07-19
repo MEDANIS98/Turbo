@@ -1,20 +1,23 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Jobs;
 
-use App\PartReceipt;
 use App\Stock;
+use App\PartReceipt;
 use Illuminate\Bus\Queueable;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
-use Illuminate\Queue\InteractsWithQueue;
-use Illuminate\Queue\SerializesModels;
 
 class UpdateStockFromReceipt implements ShouldQueue
 {
 	use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-	public int $receipt_id, $user_id;
+	public int $receipt_id;
+	public int $user_id;
 
 	/**
 	 * Create a new job instance.

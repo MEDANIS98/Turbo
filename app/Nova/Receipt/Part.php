@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Nova\Receipt;
 
-use App\Nova\Part as NovaPart;
 use App\Stock;
+use App\Nova\Part as NovaPart;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Part extends NovaPart
@@ -32,6 +32,7 @@ class Part extends NovaPart
 	public static function relatableQuery(NovaRequest $request, $query)
 	{
 		$parts_in_stock = Stock::where('user_id', auth()->id())->select('part_id')->pluck('part_id')->toArray();
+
 		return parent::relatableQuery($request, $query->whereIn('id', $parts_in_stock));
 	}
 }

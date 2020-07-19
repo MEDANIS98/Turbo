@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Jobs;
 
 use App\Stock;
@@ -14,12 +16,12 @@ class UpdateStockFromInvoice implements ShouldQueue
 {
 	use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-	public int $invoice_id, $user_id;
+	public int $invoice_id;
+	public int $user_id;
 
 	/**
 	 * Create a new job instance.
 	 *
-	 * @param int $invoiceId
 	 * @return void
 	 */
 	public function __construct(int $invoiceId, int $userId)
