@@ -10,6 +10,7 @@ use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\DateTime;
 use App\Nova\Actions\PrintReceipt;
+use App\Nova\Receipt\Part;
 use Armincms\Fields\BelongsToMany;
 use Laravel\Nova\Fields\BelongsTo;
 
@@ -89,6 +90,7 @@ class Receipt extends Resource
 				return $this->created_at;
 			}),
 			BelongsTo::make(__('Client'), 'client', 'App\Nova\Client')->showCreateRelationButton(),
+			// Should only show parts which we have stock for
 			BelongsToMany::make(__('Parts'), 'parts', Part::class)->hideFromIndex()
 				->fields(function ($ids) {
 					$part_receipt = PartReceipt::where([

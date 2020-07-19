@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Observers;
 
 use App\Invoice;
+use App\Jobs\UpdateStockFromInvoice;
 
 class InvoiceObserver
 {
@@ -25,7 +26,7 @@ class InvoiceObserver
 	 */
 	public function created(Invoice $invoice)
 	{
-		//
+		dispatch(new UpdateStockFromInvoice($invoice->id, auth()->id()))->delay(now()->addSeconds(3));
 	}
 
 	/**
@@ -45,7 +46,8 @@ class InvoiceObserver
 	 */
 	public function deleted(Invoice $invoice)
 	{
-		//
+		// Delete pivot data
+		$invoice->parts()->detach();
 	}
 
 	/**

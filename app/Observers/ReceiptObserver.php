@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Observers;
 
+use App\Jobs\UpdateStockFromReceipt;
 use App\Receipt;
 
 class ReceiptObserver
@@ -25,7 +26,7 @@ class ReceiptObserver
 	 */
 	public function created(Receipt $receipt)
 	{
-		//
+		dispatch(new UpdateStockFromReceipt($receipt->id, auth()->id()))->delay(now()->addSeconds(3));
 	}
 
 	/**
