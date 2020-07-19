@@ -11,6 +11,13 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 class Part extends NovaPart
 {
 	/**
+	 * Indicates if the resource should be displayed in the sidebar.
+	 *
+	 * @var bool
+	 */
+	public static $displayInNavigation = false;
+
+	/**
 	 * Build an "index" query for the given resource.
 	 *
 	 * @param  \Illuminate\Database\Eloquent\Builder  $query

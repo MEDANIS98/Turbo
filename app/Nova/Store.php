@@ -3,88 +3,86 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Store extends Resource
 {
-    /**
-     * The model the resource corresponds to.
-     *
-     * @var string
-     */
-    public static $model = 'App\Store';
+	/**
+	 * Get the displayable label of the resource.
+	 */
+	public static function label(): string
+	{
+		return __('Store');
+	}
 
-    /**
-     * The single value that should be used to represent the resource when being displayed.
-     *
-     * @var string
-     */
-    public static $title = 'id';
+	/**
+	 * Get the displayable singular label of the resource.
+	 */
+	public static function singularLabel(): string
+	{
+		return __('Store');
+	}
 
-    /**
-     * The columns that should be searched.
-     *
-     * @var array
-     */
-    public static $search = [
-        'id',
-    ];
+	/**
+	 * Indicates if the resource should be globally searchable.
+	 *
+	 * @var bool
+	 */
+	public static $globallySearchable = false;
 
-    /**
-     * Get the fields displayed by the resource.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return array
-     */
-    public function fields(Request $request)
-    {
-        return [
-            ID::make()->sortable(),
-        ];
-    }
+	/**
+	 * Build an "index" query for the given resource.
+	 *
+	 * @param  \Illuminate\Database\Eloquent\Builder  $query
+	 * @return \Illuminate\Database\Eloquent\Builder
+	 */
+	public static function indexQuery(NovaRequest $request, $query)
+	{
+		return $query->where('user_id', auth()->id());
+	}
 
-    /**
-     * Get the cards available for the request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return array
-     */
-    public function cards(Request $request)
-    {
-        return [];
-    }
+	/**
+	 * The pagination per-page options configured for this resource.
+	 *
+	 * @return array
+	 */
+	public static function perPageOptions(): array
+	{
+		return [1];
+	}
 
-    /**
-     * Get the filters available for the resource.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return array
-     */
-    public function filters(Request $request)
-    {
-        return [];
-    }
+	/**
+	 * The model the resource corresponds to.
+	 *
+	 * @var string
+	 */
+	public static $model = 'App\Store';
 
-    /**
-     * Get the lenses available for the resource.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return array
-     */
-    public function lenses(Request $request)
-    {
-        return [];
-    }
+	/**
+	 * The single value that should be used to represent the resource when being displayed.
+	 *
+	 * @var string
+	 */
+	public static $title = 'name';
 
-    /**
-     * Get the actions available for the resource.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return array
-     */
-    public function actions(Request $request)
-    {
-        return [];
-    }
+	/**
+	 * The columns that should be searched.
+	 *
+	 * @var array
+	 */
+	public static $search = [];
+
+	/**
+	 * Get the fields displayed by the resource.
+	 *
+	 * @param  \Illuminate\Http\Request  $request
+	 * @return array
+	 */
+	public function fields(Request $request)
+	{
+		return [
+			Text::make(__('Name'), 'name')->required()->rules('min:3|max:50')
+		];
+	}
 }
