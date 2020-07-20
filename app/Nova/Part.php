@@ -72,12 +72,10 @@ class Part extends Resource
 			Number::make(__('Price'), 'price')
 				->min(1)->max(1e6)->step(0.01)
 				->required()->displayUsing(fn () => round($this->price) . ' DZD'),
-			KeyValue::make('Key Features'),
-
-			// KeyValue::make(__('Key Features'), '')->nullable()->rules('json')
-			// 	->keyLabel(__('Feature'))
-			// 	->valueLabel(__('Value'))
-			// 	->actionText(__('Add Another')), // Customize the "add row" button text
+			KeyValue::make(__('Key Features'), 'key_features')->rules('json')
+				->keyLabel(__('Feature'))
+				->valueLabel(__('Value'))
+				->actionText(__('Add Another')),
 			BelongsToMany::make(__('Compatible with'), 'vehicles', Vehicle::class)->hideFromIndex(),
 			BatchLoadField::make()
 				->accept('.xlsx') // Optional

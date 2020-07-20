@@ -9,6 +9,13 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 class Store extends Resource
 {
 	/**
+	 * The logical group associated with the resource.
+	 *
+	 * @var string
+	 */
+	public static $group = 'Store';
+
+	/**
 	 * Get the displayable label of the resource.
 	 */
 	public static function label(): string

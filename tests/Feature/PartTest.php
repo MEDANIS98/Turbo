@@ -23,7 +23,6 @@ class PartTest extends TestCase
 		$user = create(User::class);
 		$part = create(Part::class, [
 			'user_id' => $user->id,
-			'key_features' => null,
 		]);
 		$response = $this->get(route('part', ['part' => $part]));
 

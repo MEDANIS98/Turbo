@@ -5,10 +5,7 @@
 @section('content')
 <div class="block-map block">
 	<div class="block-map__body">
-		<iframe
-			src="https://maps.google.com/maps?q=Holbrook-Palmer%20Park&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-			frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-		</iframe>
+		<iframe src="https://maps.google.com/maps?q={{ $contact->latitude }},{{ $contact->longitude }}&hl=es;z=14&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 	</div>
 </div>
 <div class="block-header block-header--has-breadcrumb block-header--has-title">
@@ -44,9 +41,9 @@
 							<h4 class="contact-us__header card-title">@lang('Our Address')</h4>
 							<div class="contact-us__address">
 								<p>
-									715 Fake Ave, Apt. 34, New York, NY 10021 USA<br>
-									@lang('Email Address'): redparts@example.com<br>
-									@lang('Phone Number'): +1 754 000-00-00
+									{{ $contact->address }}<br>
+									@lang('Email Address'): {{ $contact->email }}<br>
+									@lang('Phone Number'): {{ $contact->phone }}
 								</p>
 								<p>
 									<strong>@lang('Opening Hours')</strong><br>
@@ -56,9 +53,7 @@
 								</p>
 								<p>
 									<strong>@lang('Comment')</strong><br>
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit. Curabitur suscipit suscipit mi, non tempor nulla
-									finibus eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									{{ $contact->comment }}
 								</p>
 							</div>
 						</div>

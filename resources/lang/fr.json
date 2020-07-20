@@ -535,5 +535,8 @@
 	"Update Part View Count": "Mettre à jour le nombre de vues de pièce",
 	"Views": "Vues",
 	"Views count updated successfully!": "Le nombre de vues a été mis à jour avec succès!",
-	"Buy Price": "Prix d'achat"
+	"Buy Price": "Prix d'achat",
+	"Counter": "Comptoir",
+	"Enter Address": "Entrer l'adresse",
+	"Could not send your message": "Impossible d'envoyer votre message"
 }
