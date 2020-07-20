@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ContactStoreRequest;
 use App\Message;
 use Illuminate\Http\Request;
+use App\Http\Requests\ContactStoreRequest;
 
 class MessagesController extends Controller
 {
@@ -31,7 +33,6 @@ class MessagesController extends Controller
 	/**
 	 * Store a newly created resource in storage.
 	 *
-	 * @param \App\Http\Requests\ContactStoreRequest $request
 	 * @return \Illuminate\Http\Response
 	 */
 	public function store(ContactStoreRequest $request)
@@ -41,7 +42,7 @@ class MessagesController extends Controller
 			'email' => $request->email,
 			'phone' => $request->phone,
 			'subject' => $request->subject,
-			'content' => $request->message
+			'content' => $request->message,
 		]);
 		if ($created) {
 			return redirect('/contact#success')->with('success');
@@ -53,7 +54,6 @@ class MessagesController extends Controller
 	/**
 	 * Display the specified resource.
 	 *
-	 * @param  \App\Message  $message
 	 * @return \Illuminate\Http\Response
 	 */
 	public function show(Message $message)
@@ -64,7 +64,6 @@ class MessagesController extends Controller
 	/**
 	 * Show the form for editing the specified resource.
 	 *
-	 * @param  \App\Message  $message
 	 * @return \Illuminate\Http\Response
 	 */
 	public function edit(Message $message)
@@ -75,8 +74,6 @@ class MessagesController extends Controller
 	/**
 	 * Update the specified resource in storage.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
-	 * @param  \App\Message  $message
 	 * @return \Illuminate\Http\Response
 	 */
 	public function update(Request $request, Message $message)
@@ -87,7 +84,6 @@ class MessagesController extends Controller
 	/**
 	 * Remove the specified resource from storage.
 	 *
-	 * @param  \App\Message  $message
 	 * @return \Illuminate\Http\Response
 	 */
 	public function destroy(Message $message)

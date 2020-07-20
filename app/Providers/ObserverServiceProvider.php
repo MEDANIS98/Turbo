@@ -14,6 +14,7 @@ use App\Invoice;
 use App\Profile;
 use App\Receipt;
 use App\Category;
+use App\StoreContact;
 use App\Observers\PartObserver;
 use App\Observers\TypeObserver;
 use App\Observers\UserObserver;
@@ -25,7 +26,6 @@ use App\Observers\ProfileObserver;
 use App\Observers\ReceiptObserver;
 use App\Observers\CategoryObserver;
 use App\Observers\StoreContactObserver;
-use App\StoreContact;
 use Illuminate\Support\ServiceProvider;
 
 class ObserverServiceProvider extends ServiceProvider

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Nova;
 
 use Illuminate\Http\Request;
@@ -51,8 +53,6 @@ class Store extends Resource
 
 	/**
 	 * The pagination per-page options configured for this resource.
-	 *
-	 * @return array
 	 */
 	public static function perPageOptions(): array
 	{
@@ -83,13 +83,12 @@ class Store extends Resource
 	/**
 	 * Get the fields displayed by the resource.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
 	 * @return array
 	 */
 	public function fields(Request $request)
 	{
 		return [
-			Text::make(__('Name'), 'name')->required()->rules('min:3|max:50')
+			Text::make(__('Name'), 'name')->required()->rules('min:3|max:50'),
 		];
 	}
 }

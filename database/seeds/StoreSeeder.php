@@ -1,7 +1,9 @@
 <?php
 
-use App\Store;
+declare(strict_types=1);
+
 use App\User;
+use App\Store;
 use Illuminate\Database\Seeder;
 
 class StoreSeeder extends Seeder
