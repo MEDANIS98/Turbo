@@ -17,6 +17,16 @@ use Laravel\Nova\Fields\BelongsTo;
 class Receipt extends Resource
 {
 	/**
+	 * Get the logical group associated with the resource.
+	 *
+	 * @return string
+	 */
+	public static function group()
+	{
+		return __('Counter');
+	}
+
+	/**
 	 * Get the displayable label of the resource.
 	 */
 	public static function label(): string

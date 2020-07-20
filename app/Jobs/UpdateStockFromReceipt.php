@@ -22,6 +22,9 @@ class UpdateStockFromReceipt implements ShouldQueue
 	/**
 	 * Create a new job instance.
 	 *
+	 * @param int $receiptId the id of the receipt
+	 * @param int $userId the id of the authenticated user
+	 *
 	 * @return void
 	 */
 	public function __construct(int $receiptId, int $userId)
@@ -32,10 +35,8 @@ class UpdateStockFromReceipt implements ShouldQueue
 
 	/**
 	 * Execute the job.
-	 *
-	 * @return void
 	 */
-	public function handle()
+	public function handle(): void
 	{
 		// loop through the parts in the invoice
 		// get their quantity and update the stock accordingly

@@ -137,7 +137,7 @@ class User extends Authenticatable implements MustVerifyEmail
 		return $this->hasMany(Supplier::class, 'owner_id');
 	}
 
-	public function workshop()
+	public function workshop(): HasOne
 	{
 		return $this->hasOne(Workshop::class);
 	}
@@ -150,5 +150,13 @@ class User extends Authenticatable implements MustVerifyEmail
 	public function stocks(): HasMany
 	{
 		return $this->hasMany(Stock::class);
+	}
+
+	/**
+	 * Get the store record associated with the user.
+	 */
+	public function store(): HasOne
+	{
+		return $this->hasOne(Store::class);
 	}
 }

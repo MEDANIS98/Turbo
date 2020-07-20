@@ -4,7 +4,7 @@
 			@foreach ($brands as $brand)
 			<li class="block-brands__item">
 				<a href="{{ route('brand', ['brand' => $brand]) }}" class="block-brands__item-link">
-					<img src="{{ secure_asset('storage/' . $brand->logo) }}" alt="@lang('Photo')">
+					<img src="{{ secure_asset('storage/' . $brand->logo) }}" alt="@lang('Photo')" loading="lazy">
 					<span class="block-brands__item-name">{{ $brand->name }}</span>
 				</a>
 			</li>
