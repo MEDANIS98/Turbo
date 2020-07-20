@@ -366,6 +366,10 @@ h6 {
 	background: #1a79ff;
 }
 
+.add_part_button {
+	cursor: pointer;
+}
+
 .arrow__button svg {
 	fill: currentColor;
 	display: block;

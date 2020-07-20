@@ -41,10 +41,10 @@
 				</div>
 				<div class="card-divider"></div>
 				<div class="card-header">
-					<h5>@lang('Add a part')</h5>
+					<h5 @click="addPart = !addPart" class="add_part_button">@lang('Add a part')</h5>
 				</div>
 				<div class="card-divider"></div>
-				<div class="card-body card-body--padding--2">
+				<div class="card-body card-body--padding--2" v-show="addPart">
 					<form action="{{ route('part.add') }}" method="post" enctype="multipart/form-data" role="form">
 						@csrf
 						<div class="vehicle-form vehicle-form--layout--account">
@@ -52,38 +52,40 @@
 								<select class="form-control form-control-select2" aria-label="@lang('Vehicle')" name="vehicle">
 									<option value="none">@lang('Select Vehicle')</option>
 									@foreach ($vehicles as $vehicle)
-										<option value="{{ $vehicle->id }}" @if(old('vehicle') == $vehicle->id) selected @endif>
-											{{ $vehicle->model }}
-										</option>
+									<option value="{{ $vehicle->id }}" @if(old('vehicle')==$vehicle->id) selected @endif>
+										{{ $vehicle->model }}
+									</option>
 									@endforeach
 								</select>
 								@error('vehicle')
-									<span class="invalid-feedback" role="alert" style="display: block;">
-										<strong>{{ $message }}</strong>
-									</span>
+								<span class="invalid-feedback" role="alert" style="display: block;">
+									<strong>{{ $message }}</strong>
+								</span>
 								@enderror
 							</div>
 							<div class="vehicle-form__item vehicle-form__item--select">
-								<select class="form-control form-control-select2" aria-label="@lang('Category')" id="select-category" name="category">
+								<select class="form-control form-control-select2" aria-label="@lang('Category')" id="select-category"
+									name="category">
 									<option value="none">@lang('Select Category')</option>
 									@foreach ($categories as $category)
-										<option value="{{ $category->id }}">{{ $category->name }}</option>
+									<option value="{{ $category->id }}">{{ $category->name }}</option>
 									@endforeach
 								</select>
 								@error('category')
-									<span class="invalid-feedback" role="alert" style="display: block;">
-										<strong>{{ $message }}</strong>
-									</span>
+								<span class="invalid-feedback" role="alert" style="display: block;">
+									<strong>{{ $message }}</strong>
+								</span>
 								@enderror
 							</div>
 							<div class="vehicle-form__item vehicle-form__item--select">
-								<select class="form-control form-control-select2" aria-label="@lang('Type')" disabled id="select-type" name="type">
+								<select class="form-control form-control-select2" aria-label="@lang('Type')" disabled id="select-type"
+									name="type">
 									<option value="null" selected>@lang('Select Type')</option>
 								</select>
 								@error('type')
-									<span class="invalid-feedback" role="alert" style="display: block;">
-										<strong>{{ $message }}</strong>
-									</span>
+								<span class="invalid-feedback" role="alert" style="display: block;">
+									<strong>{{ $message }}</strong>
+								</span>
 								@enderror
 							</div>
 							<div class="vehicle-form__divider">@lang('Part Details')</div>
@@ -91,8 +93,8 @@
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="form-title">@lang('Title')</label>
-										<input type="text" id="form-title" name="title" class="form-control" placeholder="@lang('Designation of part')"
-											value="{{ old('title') }}" required>
+										<input type="text" id="form-title" name="title" class="form-control"
+											placeholder="@lang('Designation of part')" value="{{ old('title') }}" required>
 										@error('title')
 										<span class="invalid-feedback" role="alert" style="display: block;">
 											<strong>{{ $message }}</strong>
@@ -114,40 +116,42 @@
 									<label for="description">@lang('Description')</label>
 									<textarea name="description" class="form-control" id="description" rows="4"></textarea>
 									@error('description')
-										<span class="invalid-feedback" role="alert" style="display: block;">
-											<strong>{{ $message }}</strong>
-										</span>
+									<span class="invalid-feedback" role="alert" style="display: block;">
+										<strong>{{ $message }}</strong>
+									</span>
 									@enderror
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="sku">@lang('Reference')</label>
-										<input type="text" name="sku" id="sku" class="form-control" placeholder="@lang('Reference')" value="{{ old('sku') }}">
+										<input type="text" name="sku" id="sku" class="form-control" placeholder="@lang('Reference')"
+											value="{{ old('sku') }}">
 										@error('sku')
-											<span class="invalid-feedback" role="alert" style="display: block;">
-												<strong>{{ $message }}</strong>
-											</span>
+										<span class="invalid-feedback" role="alert" style="display: block;">
+											<strong>{{ $message }}</strong>
+										</span>
 										@enderror
 									</div>
 									<div class="form-group col-md-6">
 										<label for="image">@lang('Image')</label>
-										<input type="file" name="image" id="image" class="form-control" placeholder="@lang('Image')" value="{{ old('image') }}">
+										<input type="file" name="image" id="image" class="form-control" placeholder="@lang('Image')"
+											value="{{ old('image') }}">
 										@error('image')
-											<span class="invalid-feedback" role="alert" style="display: block;">
-												<strong>{{ $message }}</strong>
-											</span>
+										<span class="invalid-feedback" role="alert" style="display: block;">
+											<strong>{{ $message }}</strong>
+										</span>
 										@enderror
 									</div>
 								</div>
 								<div class="form-row">
 									<label for="key-features">@lang('Key Features')</label>
 									@error('key_features')
-										<span class="invalid-feedback" role="alert" style="display: block;">
-											<strong>{{ $message }}</strong>
-										</span>
+									<span class="invalid-feedback" role="alert" style="display: block;">
+										<strong>{{ $message }}</strong>
+									</span>
 									@enderror
 								</div>
-								<key-features/>
+								<key-features />
 							</div>
 						</div>
 						<div class="mt-4 pt-3">
