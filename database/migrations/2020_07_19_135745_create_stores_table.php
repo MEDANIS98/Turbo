@@ -19,6 +19,7 @@ class CreateStoresTable extends Migration
 			$table->id();
 			$table->foreignId('user_id')->onDelete('cascade');
 			$table->string('name');
+			$table->string('slug');
 			$table->timestamps();
 		});
 	}

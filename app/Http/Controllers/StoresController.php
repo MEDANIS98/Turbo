@@ -7,7 +7,7 @@ namespace App\Http\Controllers;
 use App\Store;
 use Illuminate\Http\Request;
 
-class StoreController extends Controller
+class StoresController extends Controller
 {
 	/**
 	 * Display a listing of the resource.
@@ -46,7 +46,7 @@ class StoreController extends Controller
 	 */
 	public function show(Store $store)
 	{
-		//
+		return view('store.index', compact('store'));
 	}
 
 	/**

@@ -159,6 +159,16 @@
 											<td>{{ __($part->brand->country) }}</td>
 										</tr>
 										@endif
+										@if($part->user->store)
+										<tr>
+											<th>@lang('Store')</th>
+											<td>
+												<a href="{{ route('store', ['store' => $part->user->store]) }}">
+													{{ $part->user->store->name }}
+												</a>
+											</td>
+										</tr>
+										@endif
 									</table>
 								</div>
 							</div>

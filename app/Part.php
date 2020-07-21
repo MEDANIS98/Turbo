@@ -247,4 +247,14 @@ class Part extends Model implements HasMedia, Buyable
 	{
 		return Redis::zscore('popular_parts', $this->id);
 	}
+
+	/**
+	 * Get the user that owns the part.
+	 *
+	 * @return \Illuminate\Database\Eloquent\Relations\BelongsTo App\User
+	 */
+	public function user(): BelongsTo
+	{
+		return $this->belongsTo(User::class);
+	}
 }

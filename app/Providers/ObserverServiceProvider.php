@@ -9,6 +9,7 @@ use App\Type;
 use App\User;
 use App\Brand;
 use App\Order;
+use App\Store;
 use App\Review;
 use App\Invoice;
 use App\Profile;
@@ -20,6 +21,7 @@ use App\Observers\TypeObserver;
 use App\Observers\UserObserver;
 use App\Observers\BrandObserver;
 use App\Observers\OrderObserver;
+use App\Observers\StoreObserver;
 use App\Observers\ReviewObserver;
 use App\Observers\InvoiceObserver;
 use App\Observers\ProfileObserver;
@@ -47,6 +49,7 @@ class ObserverServiceProvider extends ServiceProvider
 		Review::observe(ReviewObserver::class);
 		Order::observe(OrderObserver::class);
 		User::observe(UserObserver::class);
+		Store::observe(StoreObserver::class);
 		StoreContact::observe(StoreContactObserver::class);
 	}
 }

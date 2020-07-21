@@ -154,9 +154,16 @@ class User extends Authenticatable implements MustVerifyEmail
 
 	/**
 	 * Get the store record associated with the user.
+	 *
+	 * @return \App\Store $store
 	 */
 	public function store(): HasOne
 	{
 		return $this->hasOne(Store::class);
+	}
+
+	public function parts()
+	{
+		return $this->hasMany(Part::class);
 	}
 }
