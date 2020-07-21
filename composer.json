@@ -19,7 +19,7 @@
 		"fideloper/proxy": "^4.2",
 		"fruitcake/laravel-cors": "^2.0",
 		"genealabs/nova-map-marker-field": "^0.1.16",
-		"gregoriohc/laravel-nova-theme-responsive": "^0.8.1",
+		"gregoriohc/laravel-nova-theme-responsive": "master",
 		"guzzlehttp/guzzle": "^6.5.5",
 		"inspheric/nova-defaultable": "^1.2",
 		"jubeki/nova-card-linkable": "^1.1",
@@ -114,7 +114,8 @@
 			"@php artisan nova-lang:publish ar,fr"
 		]
 	},
-	"repositories": [{
+	"repositories": [
+		{
 			"type": "path",
 			"url": "./nova"
 		},
@@ -125,6 +126,10 @@
 		{
 			"type": "vcs",
 			"url": "https://github.com/CaddyDz/nova-translatable"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/CaddyDz/laravel-nova-theme-responsive"
 		}
 	]
 }
