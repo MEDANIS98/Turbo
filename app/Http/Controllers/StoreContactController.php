@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
+use App\Store;
 use App\StoreContact;
 use Illuminate\Http\Request;
 
@@ -44,9 +45,10 @@ class StoreContactController extends Controller
 	 *
 	 * @return \Illuminate\Http\Response
 	 */
-	public function show(StoreContact $storeContact)
+	public function show(Store $store)
 	{
-		//
+		$contact = $store->contact;
+		return view('store.contact', compact('contact', 'store'));
 	}
 
 	/**

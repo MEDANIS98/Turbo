@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class StoreContact extends Model
 {
@@ -25,4 +26,14 @@ class StoreContact extends Model
 	protected $casts = [
 		'opening_hours' => 'array',
 	];
+
+	/**
+	 * The store which the contact page belongs to
+	 *
+	 * @return \App\Store $store
+	 */
+	public function store(): BelongsTo
+	{
+		return $this->belongsTo(Store::class);
+	}
 }

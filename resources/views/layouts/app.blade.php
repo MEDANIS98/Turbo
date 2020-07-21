@@ -24,8 +24,8 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/header.css" media="(min-width: 1200px)">
-	{{-- <link rel="stylesheet" href="/css/rtl.css"> --}}
-	{{-- <link rel="stylesheet" href="/css/header-rtl.css" media="(min-width: 1200px)"> --}}
+	{{-- <link rel="stylesheet" href="/css/rtl.css">
+	<link rel="stylesheet" href="/css/header-rtl.css" media="(min-width: 1200px)"> --}}
 	<link rel="stylesheet" href="/css/mobile-header.css" media="(max-width: 1199px)">
 	<!-- font - fontawesome -->
 	<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css">

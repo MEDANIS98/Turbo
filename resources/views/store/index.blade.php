@@ -19,6 +19,13 @@
 							{{ $store->name }}
 						</span>
 					</li>
+					@if($store->has('contact')->exists())
+					<li class="contact_store breadcrumb__item--parent breadcrumb__item--first">
+						<a href="{{ route('store.contact', ['store' => $store]) }}" class="breadcrumb__item-link">
+							@lang('Contact US')
+						</a>
+					</li>
+					@endif
 					<li class="breadcrumb__title-safe-area" role="presentation"></li>
 				</ol>
 			</nav>

@@ -19,6 +19,11 @@
 							@lang('Home')
 						</a>
 					</li>
+					<li class="breadcrumb__item">
+						<a href="{{ route('store', ['store' => $store]) }}" class="breadcrumb__item-link">
+							{{ $store->name }}
+						</a>
+					</li>
 					<li class="breadcrumb__item breadcrumb__item--current breadcrumb__item--last" aria-current="page">
 						<span class="breadcrumb__item-link">
 							@lang('Contact US')
@@ -36,7 +41,7 @@
 		<div class="card">
 			<div class="card-body card-body--padding--2">
 				<div class="row">
-					<div class="col-12 col-lg-6 pb-4 pb-lg-0">
+					<div class="col-12 col-lg-12 pb-4 pb-lg-0">
 						<div class="mr-1">
 							<h4 class="contact-us__header card-title">@lang('Our Address')</h4>
 							<div class="contact-us__address">
@@ -47,18 +52,24 @@
 								</p>
 								<p>
 									<strong>@lang('Opening Hours')</strong><br>
-									@lang('Monday to Friday'): 8am-8pm<br>
-									@lang('Saturday'): 8am-6pm<br>
-									@lang('Sunday'): 10am-4pm
+									@foreach ($contact->opening_hours as $day => $hours)
+										{{ __(ucfirst($day)) }}:
+										@if(empty($hours))
+											@lang('Closed') <br>
+										@else
+										@foreach ($hours as $hour)
+											{{ $hour }}
+										@endforeach <br>
+										@endif
+									@endforeach
 								</p>
 								<p>
-									<strong>@lang('Comment')</strong><br>
-									{{ $contact->comment }}
+									{!! $contact->comment !!}
 								</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-lg-6">
+					{{-- <div class="col-12 col-lg-6">
 						<div class="ml-1">
 							<h4 class="contact-us__header card-title">@lang('Leave us a Message')</h4>
 							@if ($errors->any())
@@ -121,7 +132,7 @@
 								<button type="submit" class="btn btn-primary">@lang('Send Message')</button>
 							</form>
 						</div>
-					</div>
+					</div> --}}
 				</div>
 			</div>
 		</div>

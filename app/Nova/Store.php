@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
@@ -48,6 +49,9 @@ class Store extends Resource
 	 */
 	public static function indexQuery(NovaRequest $request, $query)
 	{
+		if ($request->user()->hasRole('Super Admin')) {
+			return $query;
+		}
 		return $query->where('user_id', auth()->id());
 	}
 
@@ -56,6 +60,10 @@ class Store extends Resource
 	 */
 	public static function perPageOptions(): array
 	{
+		if (auth()->user()->hasRole('Super Admin')) {
+			return static::$perPageOptions;
+		}
+
 		return [1];
 	}
 
@@ -89,6 +97,9 @@ class Store extends Resource
 	{
 		return [
 			Text::make(__('Name'), 'name')->required()->rules('min:3|max:50'),
+			BelongsTo::make(__('User'), 'user', User::class)->canSee(function ($request) {
+				return $request->user()->hasRole('Super Admin');
+			})
 		];
 	}
 }

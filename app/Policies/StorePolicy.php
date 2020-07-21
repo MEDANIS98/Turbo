@@ -25,7 +25,7 @@ class StorePolicy
 	 */
 	public function view(User $user, Store $store)
 	{
-		return $user->id == $store->user_id;
+		return ($user->id == $store->user_id) || $user->hasRole('Super Admin');
 	}
 
 	/**
@@ -33,7 +33,7 @@ class StorePolicy
 	 */
 	public function create(User $user)
 	{
-		return false;
+		return $user->hasRole('Super Admin');
 	}
 
 	/**
