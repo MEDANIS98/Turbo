@@ -93,7 +93,7 @@ class User extends Authenticatable implements MustVerifyEmail
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getFullUrl();
 		}
 
@@ -106,7 +106,7 @@ class User extends Authenticatable implements MustVerifyEmail
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('account_menu');
 		}
 
@@ -119,7 +119,7 @@ class User extends Authenticatable implements MustVerifyEmail
 			return $this->profile->avatar;
 		}
 		$mediaItems = optional($this->profile)->getMedia();
-		if (! empty($mediaItems)) {
+		if (!empty($mediaItems)) {
 			return $mediaItems[0]->getUrl('dashboard');
 		}
 
@@ -154,9 +154,16 @@ class User extends Authenticatable implements MustVerifyEmail
 
 	/**
 	 * Get the store record associated with the user.
+	 *
+	 * @return \App\Store $store
 	 */
 	public function store(): HasOne
 	{
 		return $this->hasOne(Store::class);
+	}
+
+	public function parts()
+	{
+		return $this->hasMany(Part::class);
 	}
 }

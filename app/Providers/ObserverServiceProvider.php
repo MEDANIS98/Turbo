@@ -26,6 +26,8 @@ use App\Observers\ProfileObserver;
 use App\Observers\ReceiptObserver;
 use App\Observers\CategoryObserver;
 use App\Observers\StoreContactObserver;
+use App\Observers\StoreObserver;
+use App\Store;
 use Illuminate\Support\ServiceProvider;
 
 class ObserverServiceProvider extends ServiceProvider
@@ -47,6 +49,7 @@ class ObserverServiceProvider extends ServiceProvider
 		Review::observe(ReviewObserver::class);
 		Order::observe(OrderObserver::class);
 		User::observe(UserObserver::class);
+		Store::observe(StoreObserver::class);
 		StoreContact::observe(StoreContactObserver::class);
 	}
 }
