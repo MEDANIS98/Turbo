@@ -9,6 +9,7 @@ use App\Type;
 use App\User;
 use App\Brand;
 use App\Order;
+use App\Store;
 use App\Review;
 use App\Invoice;
 use App\Profile;
@@ -20,14 +21,13 @@ use App\Observers\TypeObserver;
 use App\Observers\UserObserver;
 use App\Observers\BrandObserver;
 use App\Observers\OrderObserver;
+use App\Observers\StoreObserver;
 use App\Observers\ReviewObserver;
 use App\Observers\InvoiceObserver;
 use App\Observers\ProfileObserver;
 use App\Observers\ReceiptObserver;
 use App\Observers\CategoryObserver;
 use App\Observers\StoreContactObserver;
-use App\Observers\StoreObserver;
-use App\Store;
 use Illuminate\Support\ServiceProvider;
 
 class ObserverServiceProvider extends ServiceProvider
