@@ -28,7 +28,7 @@ class StoreContact extends Model
 	];
 
 	/**
-	 * The store which the contact page belongs to
+	 * The store which the contact page belongs to.
 	 *
 	 * @return \App\Store $store
 	 */

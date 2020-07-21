@@ -48,6 +48,7 @@ class StoreContactController extends Controller
 	public function show(Store $store)
 	{
 		$contact = $store->contact;
+
 		return view('store.contact', compact('contact', 'store'));
 	}
 
