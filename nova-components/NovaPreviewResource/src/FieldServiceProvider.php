@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Caddydz\NovaPreviewResource;
 
-use Illuminate\Support\ServiceProvider;
-use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Nova;
+use Laravel\Nova\Events\ServingNova;
+use Illuminate\Support\ServiceProvider;
 
 class FieldServiceProvider extends ServiceProvider
 {

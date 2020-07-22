@@ -1,8 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Caddydz\NovaPreviewResource;
 
-use Laravel\Nova\Fields\BooleanGroup;
 use Laravel\Nova\Fields\Field;
 
 class NovaPreviewResource extends Field
@@ -15,7 +16,7 @@ class NovaPreviewResource extends Field
 	public $component = 'nova-preview-resource';
 
 	/**
-	 * Set the image for the preview
+	 * Set the image for the preview.
 	 *
 	 * @param string image path
 	 *
@@ -24,12 +25,12 @@ class NovaPreviewResource extends Field
 	public function image($path)
 	{
 		return $this->withMeta([
-			'image' => $path
+			'image' => $path,
 		]);
 	}
 
 	/**
-	 * Set the title for the preview
+	 * Set the title for the preview.
 	 *
 	 * @param string title text
 	 *
@@ -38,14 +39,14 @@ class NovaPreviewResource extends Field
 	public function title($text)
 	{
 		return $this->withMeta([
-			'title' => $text
+			'title' => $text,
 		]);
 	}
 
 	public function list($list)
 	{
 		return $this->withMeta([
-			'list' => $list
+			'list' => $list,
 		]);
 	}
 
@@ -56,7 +57,7 @@ class NovaPreviewResource extends Field
 		}
 
 		return $this->withMeta([
-			'buyPrice' => $price
+			'buyPrice' => $price,
 		]);
 	}
 
@@ -67,14 +68,14 @@ class NovaPreviewResource extends Field
 		}
 
 		return $this->withMeta([
-			'sellPrice' => $price
+			'sellPrice' => $price,
 		]);
 	}
 
 	public function related($related)
 	{
 		return $this->withMeta([
-			'related' => $related
+			'related' => $related,
 		]);
 	}
 }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Observers;
 
 use App\Supplier;
@@ -9,7 +11,6 @@ class SupplierObserver
 	/**
 	 * Handle the supplier "creating" event.
 	 *
-	 * @param  \App\Supplier  $supplier
 	 * @return void
 	 */
 	public function creating(Supplier $supplier)
@@ -20,7 +21,6 @@ class SupplierObserver
 	/**
 	 * Handle the supplier "created" event.
 	 *
-	 * @param  \App\Supplier  $supplier
 	 * @return void
 	 */
 	public function created(Supplier $supplier)
@@ -31,7 +31,6 @@ class SupplierObserver
 	/**
 	 * Handle the supplier "updated" event.
 	 *
-	 * @param  \App\Supplier  $supplier
 	 * @return void
 	 */
 	public function updated(Supplier $supplier)
@@ -42,7 +41,6 @@ class SupplierObserver
 	/**
 	 * Handle the supplier "deleted" event.
 	 *
-	 * @param  \App\Supplier  $supplier
 	 * @return void
 	 */
 	public function deleted(Supplier $supplier)
@@ -53,7 +51,6 @@ class SupplierObserver
 	/**
 	 * Handle the supplier "restored" event.
 	 *
-	 * @param  \App\Supplier  $supplier
 	 * @return void
 	 */
 	public function restored(Supplier $supplier)
@@ -64,7 +61,6 @@ class SupplierObserver
 	/**
 	 * Handle the supplier "force deleted" event.
 	 *
-	 * @param  \App\Supplier  $supplier
 	 * @return void
 	 */
 	public function forceDeleted(Supplier $supplier)

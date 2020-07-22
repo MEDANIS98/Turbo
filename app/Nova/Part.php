@@ -13,10 +13,9 @@ use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\KeyValue;
 use Armincms\Fields\BelongsToMany;
 use App\Nova\Actions\ChangePartViews;
-use Caddydz\NovaPreviewResource\NovaPreviewResource;
 use Emiliogrv\NovaBatchLoad\BatchLoadField;
-use Laravel\Nova\Fields\BooleanGroup;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Caddydz\NovaPreviewResource\NovaPreviewResource;
 use Maatwebsite\LaravelNovaExcel\Actions\DownloadExcel;
 
 class Part extends Resource
@@ -94,7 +93,7 @@ class Part extends Resource
 				})
 				->sellPrice(function () {
 					return optional(InvoicePart::where('part_id', $this->id)->first())->sellPrice;
-				})
+				}),
 		];
 	}
 
