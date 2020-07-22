@@ -6,6 +6,7 @@ namespace App;
 
 use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
@@ -84,9 +85,16 @@ class Vehicle extends Model
 	 *
 	 * Defines the hasMany relationship
 	 *
+	 * @return \Illuminate\Database\Eloquent\Relations\HasMany parts()
+	 * @return mixed \Illuminate\Database\Eloquent\Collection $parts
 	 **/
 	public function parts(): HasMany
 	{
 		return $this->hasMany(Part::class);
+	}
+
+	public function compatibileParts(): BelongsToMany
+	{
+		return $this->belongsToMany(Part::class);
 	}
 }

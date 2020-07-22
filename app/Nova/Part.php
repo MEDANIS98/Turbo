@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Nova;
 
+use App\InvoicePart;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
@@ -12,7 +13,9 @@ use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\KeyValue;
 use Armincms\Fields\BelongsToMany;
 use App\Nova\Actions\ChangePartViews;
+use Caddydz\NovaPreviewResource\NovaPreviewResource;
 use Emiliogrv\NovaBatchLoad\BatchLoadField;
+use Laravel\Nova\Fields\BooleanGroup;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Maatwebsite\LaravelNovaExcel\Actions\DownloadExcel;
 
@@ -83,6 +86,15 @@ class Part extends Resource
 				->ignoreAttributes('some_attribute_name') // Optional
 				->keepOriginalFields('belongs|select|boolean'), // Optional
 			Number::make(__('Views'), fn ($part) => $part->views)->canSee(fn ($request) => $request->user()->can('See Part Views')),
+			NovaPreviewResource::make(__('Preview'))
+				->image($this->cartHeaderImage)
+				->title("$this->sku $this->title")
+				->buyPrice(function () {
+					return optional(InvoicePart::where('part_id', $this->id)->first())->buyPrice;
+				})
+				->sellPrice(function () {
+					return optional(InvoicePart::where('part_id', $this->id)->first())->sellPrice;
+				})
 		];
 	}
 

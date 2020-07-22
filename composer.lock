@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ca6c273db4d9a6245175876b0ccac57",
+    "content-hash": "fd23c0ad8ef04e25ea53872c001c06b1",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -415,6 +415,42 @@
                 "source": "https://github.com/bumbummen99/LaravelShoppingcart/tree/2.9.1"
             },
             "time": "2020-05-08T19:20:56+00:00"
+        },
+        {
+            "name": "caddydz/nova-preview-resource",
+            "version": "dev-patch-375",
+            "dist": {
+                "type": "path",
+                "url": "./nova-components/NovaPreviewResource",
+                "reference": "ae1470e39a5346d9bb6f7e52361294a0217018eb"
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Caddydz\\NovaPreviewResource\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Caddydz\\NovaPreviewResource\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova field.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "cakephp/chronos",
