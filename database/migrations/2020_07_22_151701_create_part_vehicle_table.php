@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCompatibilitiesTable extends Migration
+class CreatePartVehicleTable extends Migration
 {
 	/**
 	 * Run the migrations.
@@ -15,11 +15,10 @@ class CreateCompatibilitiesTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create('compatibilities', function (Blueprint $table) {
-			$table->id();
+		Schema::create('part_vehicle', function (Blueprint $table) {
 			$table->unsignedBigInteger('part_id');
 			$table->unsignedBigInteger('vehicle_id');
-			$table->timestamps();
+			$table->unique(['part_id', 'vehicle_id']);
 		});
 	}
 
@@ -30,6 +29,6 @@ class CreateCompatibilitiesTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::dropIfExists('compatibilities');
+		Schema::dropIfExists('part_vehicle');
 	}
 }

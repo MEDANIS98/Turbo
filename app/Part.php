@@ -106,7 +106,7 @@ class Part extends Model implements HasMedia, Buyable
 
 	public function vehicles()
 	{
-		return $this->belongsToMany(Vehicle::class, 'compatibilities')->using(Compatibility::class);
+		return $this->belongsToMany(Vehicle::class);
 	}
 
 	public function getCompatibilityAttribute(): string
