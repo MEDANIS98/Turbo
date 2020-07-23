@@ -61,7 +61,7 @@ class Supplier extends Resource
 		return [
 			ID::make()->sortable(),
 			Text::make(__('Name'), 'name')->required()->sortable(),
-			Text::make(__('Address'), 'address')->hideFromIndex(),
+			Text::make(__('Address'), 'address')->hideFromIndex()->required(),
 			Number::make(__('Phone number'), 'phone')->resolveUsing(fn ($phone) => 0 . $phone),
 			Number::make(__('Credit'), 'credit')->resolveUsing(fn ($credit) => round($credit) . ' DZD'),
 		];
